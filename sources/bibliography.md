@@ -1,0 +1,166 @@
+# Bibliography
+
+Generated from `site/data/sources.js`.
+
+- Abelard, Peter. *Sic et Non: A Critical Edition*. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77.
+- al-Bukhārī. *Ṣaḥīḥ al-Bukhārī*, Kitāb al-Iʿtiṣām, no. 7352 (the ijtihād hadith). https://sunnah.com/bukhari:7352
+- Andrew, Donna T., ed. *London Debating Societies, 1776–1799*. London: London Record Society, 1994.
+- Aristotle. *The Complete Works of Aristotle: The Revised Oxford Translation*. Edited by Jonathan Barnes. 2 vols. Princeton: Princeton University Press, 1984. (Cited by Bekker pagination.)
+- Atran, Scott, and Robert Axelrod. “Reframing Sacred Values.” *Negotiation Journal* 24, no. 3 (2008): 221–246.
+- Aumann, Robert J. “Agreeing to Disagree.” *Annals of Statistics* 4, no. 6 (1976): 1236–1239.
+- Aung, Shwe Zan, and C. A. F. Rhys Davids, trans. *Points of Controversy, or Subjects of Discourse: Being a Translation of the Kathā-vatthu*. London: Pali Text Society, 1915.
+- Babylonian Talmud (Eruvin 13b; Bava Metzia 59a–b; Taanit 7a, 23a). Cited by folio. Text and translation: Sefaria, https://www.sefaria.org
+- Berlin, Isaiah. “Two Concepts of Liberty” (1958). In *Four Essays on Liberty*. Oxford: Oxford University Press, 1969.
+- Bodhi, Bhikkhu, trans. *The Suttanipāta: An Ancient Collection of the Buddha’s Discourses*. Boston: Wisdom Publications, 2017.
+- Boghossian, Peter. *A Manual for Creating Atheists*. Durham, NC: Pitchstone, 2013.
+- Bohm, David. *On Dialogue*. Edited by Lee Nichol. London: Routledge, 1996.
+- Braithwaite, John. *Crime, Shame and Reintegration*. Cambridge: Cambridge University Press, 1989.
+- Broockman, David, and Joshua Kalla. “Durably Reducing Transphobia: A Field Experiment on Door-to-Door Canvassing.” *Science* 352, no. 6282 (2016): 220–224.
+- Burton, John W. *Conflict and Communication: The Use of Controlled Communication in International Relations*. London: Macmillan, 1969.
+- Burton, John W., ed. *Conflict: Human Needs Theory*. New York: St. Martin’s Press, 1990.
+- Bush, Robert A. Baruch, and Joseph P. Folger. *The Promise of Mediation*. San Francisco: Jossey-Bass, 1994.
+- Caplan, Bryan. “The Ideological Turing Test.” *EconLog*, June 2011. https://www.econlib.org/archives/2011/06/the_ideological.html
+- Chalmers, David J. “Verbal Disputes.” *Philosophical Review* 120, no. 4 (2011): 515–566.
+- Chapman, David. *In the Cells of the Eggplant: Meta-rationality* (web book, 2016– ). https://metarationality.com
+- Chasin, Richard, Margaret Herzig, Sallyann Roth, Laura Chasin, Carol Becker, and Robert R. Stains Jr. “From Diatribe to Dialogue on Divisive Public Issues: Approaches Drawn from Family Therapy.” *Mediation Quarterly* 13, no. 4 (1996): 323–344.
+- Chazan, Robert. *Barcelona and Beyond: The Disputation of 1263 and Its Aftermath*. Berkeley: University of California Press, 1992.
+- Christensen, David. “Epistemology of Disagreement: The Good News.” *Philosophical Review* 116, no. 2 (2007): 187–217.
+- Cicero. *De inventione*. Translated by H. M. Hubbell. Loeb Classical Library 386. Cambridge, MA: Harvard University Press, 1949.
+- Cicero. *Tusculan Disputations*. Translated by J. E. King. Loeb Classical Library 141. Cambridge, MA: Harvard University Press, 1927.
+- Coser, Lewis A. *The Functions of Social Conflict*. Glencoe, IL: Free Press, 1956.
+- Cowen, Tyler, and Robin Hanson. “Are Disagreements Honest?” Working paper, George Mason University, 2004. https://mason.gmu.edu/~rhanson/deceive.pdf
+- Dasti, Matthew, and Stephen H. Phillips, trans. *The Nyāya-sūtra: Selections with Early Commentaries*. Indianapolis: Hackett, 2017.
+- Dennett, Daniel C. *Intuition Pumps and Other Tools for Thinking*. New York: Norton, 2013. (“Rapoport’s Rules.”)
+- Diogenes Laertius. *Lives of Eminent Philosophers*. Edited by Tiziano Dorandi. Cambridge: Cambridge University Press, 2013.
+- Dreyfus, Georges B. J. *The Sound of Two Hands Clapping: The Education of a Tibetan Buddhist Monk*. Berkeley: University of California Press, 2003.
+- Dutilh Novaes, Catarina. *Formalizing Medieval Logical Theories: Suppositio, Consequentiae and Obligationes*. Dordrecht: Springer, 2007.
+- Elga, Adam. “Reflection and Disagreement.” *Noûs* 41, no. 3 (2007): 478–502.
+- Ellis, Markman. *The Coffee-House: A Cultural History*. London: Weidenfeld & Nicolson, 2004.
+- Feinberg, Matthew, and Robb Willer. “From Gulf to Bridge: When Do Moral Arguments Facilitate Political Influence?” *Personality and Social Psychology Bulletin* 41, no. 12 (2015): 1665–1681.
+- Fisher, Roger, and William Ury. *Getting to Yes: Negotiating Agreement Without Giving In*. Boston: Houghton Mifflin, 1981.
+- Fishkin, James S. *Democracy and Deliberation: New Directions for Democratic Reform*. New Haven: Yale University Press, 1991.
+- Fishkin, James S. *When the People Speak: Deliberative Democracy and Public Consultation*. Oxford: Oxford University Press, 2009.
+- Follett, Mary Parker. “Constructive Conflict” (1925). In *Dynamic Administration: The Collected Papers of Mary Parker Follett*, edited by Henry C. Metcalf and L. Urwick. New York: Harper, 1940.
+- Foucault, Michel. “Truth and Power.” In *Power/Knowledge: Selected Interviews and Other Writings, 1972–1977*, edited by Colin Gordon. New York: Pantheon, 1980.
+- Fraser, Chris. “Mohist Canons.” *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/mohist-canons/
+- Freud, Sigmund. *Civilization and Its Discontents* (1930). Translated by James Strachey. New York: Norton, 1961.
+- Galtung, Johan. “Violence, Peace, and Peace Research.” *Journal of Peace Research* 6, no. 3 (1969): 167–191.
+- Galtung, Johan. *Peace by Peaceful Means: Peace and Conflict, Development and Civilization*. London: Sage, 1996.
+- Girard, René. *Violence and the Sacred* (1972). Translated by Patrick Gregory. Baltimore: Johns Hopkins University Press, 1977.
+- Gómez, Luis O. “Proto-Mādhyamika in the Pāli Canon.” *Philosophy East and West* 26, no. 2 (1976): 137–165.
+- Graham, A. C. *Later Mohist Logic, Ethics and Science*. Hong Kong: Chinese University Press; London: SOAS, 1978.
+- Graham, Jesse, Jonathan Haidt, and Brian A. Nosek. “Liberals and Conservatives Rely on Different Sets of Moral Foundations.” *Journal of Personality and Social Psychology* 96, no. 5 (2009): 1029–1046.
+- Gutmann, Amy, and Dennis Thompson. *Democracy and Disagreement*. Cambridge, MA: Harvard University Press, 1996.
+- Habermas, Jürgen. *The Structural Transformation of the Public Sphere* (1962). Translated by Thomas Burger. Cambridge, MA: MIT Press, 1989.
+- Habermas, Jürgen. *The Theory of Communicative Action* (1981). Translated by Thomas McCarthy. 2 vols. Boston: Beacon Press, 1984–87.
+- Haidt, Jonathan. *The Righteous Mind: Why Good People Are Divided by Politics and Religion*. New York: Pantheon, 2012.
+- Halbertal, Moshe. *People of the Book: Canon, Meaning, and Authority*. Cambridge, MA: Harvard University Press, 1997.
+- Hamblin, C. L. *Fallacies*. London: Methuen, 1970.
+- Heath, Malcolm, trans. *Hermogenes, On Issues: Strategies of Argument in Later Greek Rhetoric*. Oxford: Clarendon Press, 1995.
+- Hegel, G. W. F. *Phenomenology of Spirit* (1807). Translated by Terry Pinkard. Cambridge: Cambridge University Press, 2018.
+- Hidary, Richard. *Dispute for the Sake of Heaven: Legal Pluralism in the Talmud*. Providence: Brown Judaic Studies, 2010.
+- Hobbes, Thomas. *Leviathan* (1651). Edited by Richard Tuck. Cambridge: Cambridge University Press, 1996.
+- Holzer, Elie, with Orit Kent. *A Philosophy of Havruta: Understanding and Teaching the Art of Text Study in Pairs*. Boston: Academic Studies Press, 2013.
+- Honneth, Axel. *The Struggle for Recognition* (1992). Translated by Joel Anderson. Cambridge, MA: MIT Press, 1995.
+- Huan Kuan. *Discourses on Salt and Iron*. Translated by Esson M. Gale. Leiden: Brill, 1931.
+- Hume, David. “Of Parties in General” (1741). In *Essays, Moral, Political, and Literary*, edited by Eugene F. Miller. Indianapolis: Liberty Fund, 1985.
+- Hutton, Eric L., trans. *Xunzi: The Complete Text*. Princeton: Princeton University Press, 2014.
+- Ibn Rushd (Averroes). *The Distinguished Jurist’s Primer* (*Bidāyat al-mujtahid*). Translated by Imran Ahsan Khan Nyazee. 2 vols. Reading: Garnet, 1994–96.
+- Ireland, John D., trans. *The Udāna and the Itivuttaka*. Kandy: Buddhist Publication Society, 1997. (Udāna 6.4, the blind men and the elephant.)
+- Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. “Affect, Not Ideology: A Social Identity Perspective on Polarization.” *Public Opinion Quarterly* 76, no. 3 (2012): 405–431.
+- James, William. *Pragmatism: A New Name for Some Old Ways of Thinking*. New York: Longmans, Green, 1907. (Lecture II, the squirrel.)
+- Jefferson, Thomas. *A Manual of Parliamentary Practice for the Use of the Senate of the United States*. Washington, 1801.
+- Kahan, Dan M., et al. “The Polarizing Impact of Science Literacy and Numeracy on Perceived Climate Change Risks.” *Nature Climate Change* 2 (2012): 732–735.
+- Kahn, Charles H. *The Art and Thought of Heraclitus*. Cambridge: Cambridge University Press, 1979. (Fragments cited by Diels–Kranz number.)
+- Kalla, Joshua L., and David E. Broockman. “Reducing Exclusionary Attitudes through Interpersonal Conversation: Evidence from Three Field Experiments.” *American Political Science Review* 114, no. 2 (2020): 410–425.
+- Kamali, Mohammad Hashim. *Principles of Islamic Jurisprudence*. 3rd ed. Cambridge: Islamic Texts Society, 2003.
+- Kant, Immanuel. *Critique of Pure Reason* (1781/1787). Translated by Paul Guyer and Allen W. Wood. Cambridge: Cambridge University Press, 1998.
+- Kegan, Robert. *In Over Our Heads: The Mental Demands of Modern Life*. Cambridge, MA: Harvard University Press, 1994.
+- Kelly, Thomas. “The Epistemic Significance of Disagreement.” *Oxford Studies in Epistemology* 1 (2005): 167–196.
+- Kelman, Herbert C. “Interactive Problem Solving: An Approach to Conflict Resolution and Its Application in the Middle East.” *PS: Political Science & Politics* 31, no. 2 (1998): 190–198.
+- Kerferd, G. B. *The Sophistic Movement*. Cambridge: Cambridge University Press, 1981.
+- Kuhn, Thomas S. *The Structure of Scientific Revolutions*. Chicago: University of Chicago Press, 1962.
+- Lactantius. *Divine Institutes*. Translated by Anthony Bowen and Peter Garnsey. Liverpool: Liverpool University Press, 2003.
+- Langbein, John H. *The Origins of Adversary Criminal Trial*. Oxford: Oxford University Press, 2003.
+- Lederach, John Paul. *The Little Book of Conflict Transformation*. Intercourse, PA: Good Books, 2003.
+- Leibniz, G. W. “The Art of Discovery” (1685). In *Leibniz: Selections*, edited by Philip P. Wiener, 50–58. New York: Scribner, 1951.
+- Lyotard, Jean-François. *The Differend: Phrases in Dispute* (1983). Translated by Georges Van Den Abbeele. Minneapolis: University of Minnesota Press, 1988.
+- Maccoby, Hyam. *Judaism on Trial: Jewish–Christian Disputations in the Middle Ages*. London: Littman Library, 1982.
+- Madison, James. “The Federalist No. 10” (1787). In *The Federalist*, edited by Jacob E. Cooke. Middletown, CT: Wesleyan University Press, 1961.
+- Makdisi, George. *The Rise of Colleges: Institutions of Learning in Islam and the West*. Edinburgh: Edinburgh University Press, 1981.
+- Margoliouth, D. S. “The Discussion between Abu Bishr Matta and Abu Sa‘id al-Sirafi on the Merits of Logic and Grammar.” *Journal of the Royal Asiatic Society* (1905): 79–129.
+- Marx, Karl, and Friedrich Engels. *Manifesto of the Communist Party*. London, 1848.
+- Matilal, Bimal Krishna. *The Central Philosophy of Jainism (Anekānta-vāda)*. Ahmedabad: L. D. Institute of Indology, 1981.
+- Matilal, Bimal Krishna. *The Character of Logic in India*. Edited by Jonardon Ganeri and Heeraman Tiwari. Albany: SUNY Press, 1998.
+- May, Thomas Erskine. *A Treatise upon the Law, Privileges, Proceedings and Usage of Parliament*. London: Charles Knight, 1844.
+- Mellers, Barbara, Ralph Hertwig, and Daniel Kahneman. “Do Frequency Representations Eliminate Conjunction Effects? An Exercise in Adversarial Collaboration.” *Psychological Science* 12, no. 4 (2001): 269–275.
+- Mercier, Hugo, and Dan Sperber. “Why Do Humans Reason? Arguments for an Argumentative Theory.” *Behavioral and Brain Sciences* 34, no. 2 (2011): 57–74.
+- Mercier, Hugo, and Dan Sperber. *The Enigma of Reason*. Cambridge, MA: Harvard University Press, 2017.
+- Mill, John Stuart. *On Liberty*. London: John W. Parker and Son, 1859.
+- Miller, Larry Benjamin. *Islamic Disputation Theory: The Uses & Rules of Argument in Medieval Islam*. Cham: Springer, 2020.
+- Miller, William R., and Stephen Rollnick. *Motivational Interviewing: Preparing People to Change Addictive Behavior*. New York: Guilford, 1991.
+- Milton, John. *Areopagitica*. London, 1644.
+- Mishnah (Avot 5:17; Eduyot 1:4–6). Cited by tractate, chapter and mishnah. Hebrew text and translation: Sefaria, https://www.sefaria.org
+- Montaigne, Michel de. “Of the Art of Discussion” (*Essais* III.8, “De l’art de conférer”). In *The Complete Essays of Montaigne*, translated by Donald M. Frame. Stanford: Stanford University Press, 1958.
+- Mouffe, Chantal. *On the Political*. London: Routledge, 2005.
+- Mouffe, Chantal. *The Democratic Paradox*. London: Verso, 2000.
+- Mueller, Gustav E. “The Hegel Legend of ‘Thesis–Antithesis–Synthesis.’” *Journal of the History of Ideas* 19, no. 3 (1958): 411–414.
+- Nash, John F. “The Bargaining Problem.” *Econometrica* 18, no. 2 (1950): 155–162.
+- Nietzsche, Friedrich. *On the Genealogy of Morality* (1887). Translated by Carol Diethe. Cambridge: Cambridge University Press, 2007.
+- Novikoff, Alex J. *The Medieval Culture of Disputation: Pedagogy, Practice, and Performance*. Philadelphia: University of Pennsylvania Press, 2013.
+- Ovadya, Aviv, and Luke Thorburn. “Bridging Systems: Open Problems for Countering Destructive Divisiveness across Ranking, Recommenders, and Governance.” arXiv:2301.09976 (2023).
+- Peirce, Charles S. “How to Make Our Ideas Clear.” *Popular Science Monthly* 12 (January 1878): 286–302.
+- Peirce, Charles S. “The Fixation of Belief.” *Popular Science Monthly* 12 (November 1877): 1–15.
+- Perdue, Daniel E. *Debate in Tibetan Buddhism*. Ithaca, NY: Snow Lion, 1992.
+- Plato. *Complete Works*. Edited by John M. Cooper. Indianapolis: Hackett, 1997. (Cited by Stephanus pagination.)
+- Plunkett, David, and Tim Sundell. “Disagreement and the Semantics of Normative and Evaluative Terms.” *Philosophers’ Imprint* 13, no. 23 (2013): 1–37.
+- Pranis, Kay, Barry Stuart, and Mark Wedge. *Peacemaking Circles: From Crime to Community*. St. Paul, MN: Living Justice Press, 2003.
+- Quintilian. *The Orator’s Education*. Edited and translated by Donald A. Russell. 5 vols. Loeb Classical Library. Cambridge, MA: Harvard University Press, 2001.
+- Raiffa, Howard. *The Art and Science of Negotiation*. Cambridge, MA: Harvard University Press, 1982.
+- Rapoport, Anatol. *Fights, Games, and Debates*. Ann Arbor: University of Michigan Press, 1960.
+- Rawls, John. *Political Liberalism*. New York: Columbia University Press, 1993. (Lecture II, §2, “The Burdens of Judgment.”)
+- Robert, Henry M. *Pocket Manual of Rules of Order for Deliberative Assemblies*. Chicago: S. C. Griggs, 1876.
+- Robinson, T. M. *Contrasting Arguments: An Edition of the Dissoi Logoi*. New York: Arno Press, 1979.
+- Rogers, Carl R. “Communication: Its Blocking and Its Facilitation.” *ETC: A Review of General Semantics* 9 (1952): 83–88. (Delivered at Northwestern University, 1951.)
+- Rorty, Richard. *Contingency, Irony, and Solidarity*. Cambridge: Cambridge University Press, 1989.
+- Rorty, Richard. *Philosophy and the Mirror of Nature*. Princeton: Princeton University Press, 1979.
+- Rosenberg, Marshall B. *Nonviolent Communication: A Language of Life*. 2nd ed. Encinitas, CA: PuddleDancer Press, 2003.
+- Sabien, Duncan. “Double Crux — A Strategy for Resolving Disagreement.” *LessWrong*, January 2017. https://www.lesswrong.com/posts/exa5kmvopeRyfJgCy/double-crux-a-strategy-for-resolving-disagreement
+- Sander, Frank E. A. “Varieties of Dispute Processing.” 70 *Federal Rules Decisions* 111 (1976).
+- Schelling, Thomas C. *The Strategy of Conflict*. Cambridge, MA: Harvard University Press, 1960.
+- Schmitt, Carl. *The Concept of the Political* (1932). Translated by George Schwab. New Brunswick, NJ: Rutgers University Press, 1976.
+- Schopenhauer, Arthur. *The Art of Controversy* (*Eristische Dialektik*, written c. 1830–31, publ. 1864). Translated by T. Bailey Saunders. London: Swan Sonnenschein, 1896.
+- Sextus Empiricus. *Outlines of Scepticism*. Translated by Julia Annas and Jonathan Barnes. 2nd ed. Cambridge: Cambridge University Press, 2000.
+- Shapin, Steven, and Simon Schaffer. *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life*. Princeton: Princeton University Press, 1985.
+- Sheeran, Michael J. *Beyond Majority Rule: Voteless Decisions in the Religious Society of Friends*. Philadelphia: Philadelphia Yearly Meeting, 1983.
+- Simmel, Georg. *Conflict and the Web of Group-Affiliations*. Translated by Kurt H. Wolff and Reinhard Bendix. Glencoe, IL: Free Press, 1955. (From *Soziologie*, 1908, ch. 4, “Der Streit.”)
+- Slingerland, Edward, trans. *Confucius: Analects*. Indianapolis: Hackett, 2003.
+- Small, Christopher, Michael Bjorkegren, Timo Erkkilä, Lynette Shaw, and Colin Megill. “Polis: Scaling Deliberation by Mapping High Dimensional Opinion Spaces.” *Recerca: Revista de Pensament i Anàlisi* 26, no. 2 (2021).
+- Solomon, Esther A. *Indian Dialectics: Methods of Philosophical Discussion*. 2 vols. Ahmedabad: B. J. Institute of Learning and Research, 1976–78.
+- Stevenson, Charles L. “The Nature of Ethical Disagreement” (1948). In *Facts and Values*. New Haven: Yale University Press, 1963.
+- Stevenson, Charles L. *Ethics and Language*. New Haven: Yale University Press, 1944.
+- Stone, Douglas, Bruce Patton, and Sheila Heen. *Difficult Conversations: How to Discuss What Matters Most*. New York: Viking, 1999.
+- Tajfel, Henri, and John C. Turner. “An Integrative Theory of Intergroup Conflict.” In *The Social Psychology of Intergroup Relations*, edited by William G. Austin and Stephen Worchel, 33–47. Monterey, CA: Brooks/Cole, 1979.
+- Tessler, Michael Henry, et al. “AI Can Help Humans Find Common Ground in Democratic Deliberation.” *Science* 386, no. 6719 (2024).
+- Tetlock, Philip E. “Thinking the Unthinkable: Sacred Values and Taboo Cognitions.” *Trends in Cognitive Sciences* 7, no. 7 (2003): 320–324.
+- Thomas Aquinas. *Summa Theologiae*. Cited by part, question and article.
+- Thomas, Kenneth W., and Ralph H. Kilmann. *Thomas–Kilmann Conflict Mode Instrument*. Tuxedo, NY: Xicom, 1974.
+- Toulmin, Stephen. *The Uses of Argument*. Cambridge: Cambridge University Press, 1958.
+- Uckelman, Sara L., and Catarina Dutilh Novaes. “Medieval Theories of Obligationes.” *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/obligationes/
+- van Eemeren, Frans H., and Rob Grootendorst. *A Systematic Theory of Argumentation: The Pragma-Dialectical Approach*. Cambridge: Cambridge University Press, 2004.
+- van Eemeren, Frans H., and Rob Grootendorst. *Speech Acts in Argumentative Discussions*. Dordrecht: Foris, 1984.
+- Van Norden, Bryan W., trans. *Mengzi: With Selections from Traditional Commentaries*. Indianapolis: Hackett, 2008.
+- Vlastos, Gregory. “The Socratic Elenchus.” *Oxford Studies in Ancient Philosophy* 1 (1983): 27–58.
+- Walton, Douglas N., and Erik C. W. Krabbe. *Commitment in Dialogue: Basic Concepts of Interpersonal Reasoning*. Albany: SUNY Press, 1995.
+- Watzlawick, Paul, Janet Beavin Bavelas, and Don D. Jackson. *Pragmatics of Human Communication*. New York: Norton, 1967.
+- Weber, Max. “Science as a Vocation” (lecture 1917, publ. 1919). In *From Max Weber: Essays in Sociology*, edited by H. H. Gerth and C. Wright Mills. New York: Oxford University Press, 1946.
+- Westerhoff, Jan, trans. *The Dispeller of Disputes: Nāgārjuna’s Vigrahavyāvartanī*. New York: Oxford University Press, 2010.
+- Wigmore, John Henry. *A Treatise on the System of Evidence in Trials at Common Law*. Vol. 2, §1367. Boston: Little, Brown, 1904.
+- Winslade, John, and Gerald Monk. *Narrative Mediation: A New Approach to Conflict Resolution*. San Francisco: Jossey-Bass, 2000.
+- Wiredu, Kwasi. “Democracy and Consensus in African Traditional Politics: A Plea for a Non-party Polity.” In *Cultural Universals and Particulars: An African Perspective*. Bloomington: Indiana University Press, 1996.
+- Wittgenstein, Ludwig. *On Certainty*. Edited by G. E. M. Anscombe and G. H. von Wright. Oxford: Blackwell, 1969.
+- Wojcik, Stefan, et al. “Birdwatch: Crowd Wisdom and Bridging Algorithms Can Inform Understanding and Reduce the Spread of Misinformation.” arXiv:2210.15723 (2022).
+- Young, Richard E., Alton L. Becker, and Kenneth L. Pike. *Rhetoric: Discovery and Change*. New York: Harcourt, Brace & World, 1970.
+- Young, Walter Edward. *The Dialectical Forge: Juridical Disputation and the Evolution of Islamic Law*. Cham: Springer, 2017.
+- Zehr, Howard. *Changing Lenses: A New Focus for Crime and Justice*. Scottdale, PA: Herald Press, 1990.
+- Ziporyn, Brook, trans. *Zhuangzi: The Essential Writings*. Indianapolis: Hackett, 2009.
