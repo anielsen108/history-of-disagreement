@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md), [Aristotelian dialectic](aristotelian_dialectic.md)
 - **Gave rise to:** [Formal dialectic & dialogue types](formal_dialectic.md)
 
-The respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.
+A respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. An opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.
 
 ## Procedure
 1. Positum accepted

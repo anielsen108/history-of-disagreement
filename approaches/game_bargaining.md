@@ -10,7 +10,7 @@
 
 - **Gave rise to:** [Interactive problem-solving workshop](problem_solving.md), [Principled negotiation](principled.md), [Rapoport’s rules & region of validity](rapoport.md)
 
-Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.
+Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of reservation prices and zones of agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.
 
 ## Procedure
 1. Map payoffs and alternatives

@@ -10,7 +10,7 @@
 
 
 
-Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. This is the elephant parable formalised as a logic.
+Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. Jain authors used the parable of the blind men and the elephant to teach the point. The earliest surviving version is Buddhist (Udāna 6.4), where it mocks disputing sectarians.
 
 ## Procedure
 1. Index each claim to a standpoint

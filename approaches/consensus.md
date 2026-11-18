@@ -29,4 +29,5 @@ Activist movements secularised Quaker practice. Their consensus process uses fac
 
 
 ## Sources
+- Polletta, Francesca. *Freedom Is an Endless Meeting: Democracy in American Social Movements*. Chicago: University of Chicago Press, 2002.
 - Sheeran, Michael J. *Beyond Majority Rule: Voteless Decisions in the Religious Society of Friends*. Philadelphia: Philadelphia Yearly Meeting, 1983.

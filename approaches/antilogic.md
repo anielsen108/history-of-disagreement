@@ -25,7 +25,7 @@ Protagoras was reported to be the first to say that on every matter there are tw
 - **Ends well when:** The stronger speech wins the room.
 - **How it fails:** Cleverness detached from any care for truth.
 
-**Strongest critique** (Plato, Gorgias 462b–465d): Rhetoric of this kind is a knack of flattery. It is no art, and it produces conviction without knowledge.
+**Strongest critique** (Plato, Phaedo 89d–90c): Those who spend their time on arguments for and against end by believing that no argument is sound. They come to hate argument as a misanthrope hates people.
 
 
 ## Whose reading?

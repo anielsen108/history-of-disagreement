@@ -1,5 +1,6 @@
 // Prose linter for the site's text. Run: node scripts/lint-prose.mjs
 // Checks data prose and page text against the style sheet on about.html#style.
+// It also runs two read-aloud checks: repeated sentence openings and runs of very short sentences.
 // Exits 1 on any error, so new text cannot reintroduce the patterns below.
 // To accept a flagged sentence on purpose, add `path|fragment` to scripts/lint-allow.txt.
 import fs from "node:fs";
@@ -57,7 +58,16 @@ for (const [p, s] of items) {
     if (hedgeRe.test(q)) out("warn", p, "stacked hedges", sent);
     if (n > 40) out("warn", p, `sentence of ${n} words`, sent);
     if (/\b(which|that)\b[^,.;]{0,60}\b(which|that)\b[^,.;]{0,60}\b(which|that)\b/.test(q)) out("warn", p, "relative-clause chain", sent);
+    if (/\bnot\s+(just|only|simply|merely|so much)?\s*[^.,;]{2,40},?\s+but\b(?!\s+(also\s+)?(not|no)\b)/i.test(q) && !/\bnot\b[^.]*\bbut\s+(it|they|he|she|the|this|that|nothing|nobody)\b/i.test(q)) out("warn", p, "‘not X but Y’ construction", sent);
   }
+  // Read-aloud checks: runs of sentences that open on the same word, and long runs of very short sentences.
+  const sents = plain.split(/(?<=[.!?’”])\s+(?=[A-Z‘“(])/).filter((x) => !/^[‘“]/.test(x));
+  const first = sents.map((x) => (x.match(/^[A-Za-z’]+/) || [""])[0]);
+  for (let i = 2; i < first.length; i++)
+    if (first[i] && first[i] === first[i - 1] && first[i] === first[i - 2] && !/\.moves\.|sketch/.test(p)) { out("warn", p, `three sentences in a row open with “${first[i]}”`, sents.slice(i - 2, i + 1).join(" ")); break; }
+  const short = sents.map((x) => x.split(/\s+/).length <= 6);
+  for (let i = 3; i < short.length; i++)
+    if (short[i] && short[i - 1] && short[i - 2] && short[i - 3]) { out("warn", p, "four very short sentences in a row", sents.slice(i - 3, i + 1).join(" ")); break; }
 }
 console.log(`\n${items.length} passages checked: ${errors} errors, ${warns} warnings.`);
 process.exit(errors ? 1 : 0);

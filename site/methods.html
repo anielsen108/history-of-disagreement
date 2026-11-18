@@ -15,11 +15,13 @@
 <main>
   <div class="kicker">Part one</div>
   <h1>Methods</h1>
-  <p class="lede">These are ways of conducting a conversation with someone who disagrees. Each entry gives the steps, its telos, its lineage, the views of disagreement it presupposes (★ marks the primary one), and sources.</p>
+  <p class="lede">These are ways of conducting a conversation with someone who disagrees. Each entry is folded to one line. Open it for the procedure, the views of disagreement it presupposes (★ marks the primary one), how it fails, its strongest critic, its lineage and its sources.</p>
   <p class="page-thesis">How this bears on the thesis: each entry names the view its method assumes, under “What it assumes”. <a href="index.html">The thesis</a></p>
   <div class="filterbar"><label for="groupby">Group by</label>
     <select id="groupby" class="search"><option value="telos">telos</option><option value="family">family</option><option value="date">date only</option></select>
-    <input id="q" class="search" type="search" placeholder="Filter (e.g. ‘debate’, ‘Talmud’, ‘needs’)" aria-label="Filter methods"></div>
+    <input id="q" class="search" type="search" placeholder="Filter (e.g. ‘debate’, ‘Talmud’, ‘needs’)" aria-label="Filter methods">
+    <button type="button" class="btn" data-fold="open">Open all</button> <button type="button" class="btn" data-fold="shut">Close all</button></div>
+  <div class="legend jump" id="jump"></div>
   <div id="list"></div>
 </main>
 <script src="vendor/d3.min.js"></script>

@@ -72,6 +72,7 @@
       <nav class="nav">${primary.map(a).join("")}
         <details class="more"><summary${more.some(([h]) => h === here) ? ' aria-current="page"' : ""}>More</summary><div class="more-menu">${more.map(a).join("")}</div></details></nav>
       <div class="search-wrap"><input class="site-search" type="search" placeholder="Search methods, views, people, terms" aria-label="Search the site" autocomplete="off"><div class="search-results" role="listbox" hidden></div></div>
+      <button class="help-btn" type="button" aria-label="Help: how to use this site">? Help</button>
       <button class="theme-toggle" type="button" aria-label="Toggle colour theme">◐ theme</button></div>`;
     document.body.prepend(hdr);
     const ftr = document.createElement("footer");
@@ -87,6 +88,96 @@
     };
     document.addEventListener("click", (e) => { const d = hdr.querySelector("details.more"); if (d && !d.contains(e.target)) d.open = false; });
     initSearch(hdr.querySelector(".site-search"), hdr.querySelector(".search-results"));
+    hdr.querySelector(".help-btn").onclick = () => H.help();
+  }
+
+  /* ── help and first-visit welcome ─────────────────────── */
+  // A small picture of the diagram, with upright labels, for the welcome and help panels.
+  const miniDiagram = () => {
+    const c = H.domainColor, t = H.teloColor;
+    return `<svg class="mini" viewBox="0 0 520 132" role="img" aria-label="A view on the left joined by threads to the methods that presuppose it on the right">
+      <text x="150" y="14" text-anchor="end" class="mh">VIEWS</text><text x="370" y="14" class="mh">METHODS</text>
+      <path d="M160,44 C265,44 265,38 360,38" stroke="${c.interest}" stroke-width="2.4" fill="none"/>
+      <path d="M160,44 C265,44 265,64 360,64" stroke="${c.interest}" stroke-width="2.4" fill="none"/>
+      <path d="M160,84 C265,84 265,64 360,64" stroke="${c.relational}" stroke-width="1" fill="none" opacity=".7"/>
+      <path d="M160,84 C265,84 265,104 360,104" stroke="${c.relational}" stroke-width="2.4" fill="none"/>
+      <circle cx="160" cy="44" r="4" fill="${c.interest}"/><text x="150" y="48" text-anchor="end">Interests beneath positions</text>
+      <circle cx="160" cy="84" r="4" fill="${c.relational}"/><text x="150" y="88" text-anchor="end">Relationship-level message</text>
+      <circle cx="360" cy="38" r="4" fill="${t.settlement}"/><text x="370" y="42">Principled negotiation</text>
+      <circle cx="360" cy="64" r="4" fill="${t.settlement}"/><text x="370" y="68">Mediation</text>
+      <circle cx="360" cy="104" r="4" fill="${t.understanding}"/><text x="370" y="108">Difficult conversations</text>
+      <text x="260" y="126" text-anchor="middle" class="mh">heavy thread = the method’s primary view</text></svg>`;
+  };
+  const welcomeSteps = () => [
+    { h: "Two questions, one map", b: `<p>This site surveys ${H.methods.length} <b>methods</b> of conducting a disagreement, from Socratic questioning to AI-mediated deliberation. It also surveys ${H.views.length} <b>views</b> of what a disagreement is really about: error, words, values, interests, power, the psyche, the relationship.</p>
+      <p>The two are linked. Every method assumes one of the views, so choosing a method is already a diagnosis.</p>` },
+    { h: "Read the diagram from left to right", b: `${miniDiagram()}<p>Views sit on the left and methods on the right. A thread joins a view to a method that presupposes it. Hover a name to trace its threads, and click it to hold the focus. A hollow dot marks a view that no method here is built on.</p>` },
+    { h: "Open any entry", b: `<p>Click a focused name again, or press “Read entry”. Each method gives its procedure, the view it assumes, how it fails and its strongest critic.</p>
+      <p>Each entry also says how far to trust it. Flags mark uncertain dates and interpretive pairings, and a “Whose reading?” box names the scholar behind a contested claim.</p>` },
+    { h: "Bring a dispute of your own", b: `<p><a href="diagnose.html">Diagnose</a> asks a few questions about a dispute and suggests methods that fit it. Its mismatch finder shows what happens when two parties hold different views of the same quarrel.</p>
+      <p><a href="compare.html">Compare</a> sets two methods side by side. The <a href="example.html">worked example</a> runs one family dispute through five methods.</p>` },
+    { h: "Find your way back", b: `<p>Press <kbd>/</kbd> to search methods, views, people and terms. <a href="paths.html">Paths</a> offers seven guided tours through the entries. Dotted underlines in the text open glossary cards.</p>
+      <p>The <b>? Help</b> button in the header reopens this guide on any page.</p>` }
+  ];
+  let dlg;
+  function dialog(cls, html) {
+    if (!dlg) {
+      dlg = document.createElement("dialog"); document.body.append(dlg);
+      dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("close", () => { try { localStorage.setItem("hod-welcomed", "1"); } catch (e) {} });
+    }
+    dlg.className = "modal " + cls; dlg.innerHTML = html;
+    if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); }
+    return dlg;
+  }
+  H.welcome = (i = 0) => {
+    try { localStorage.setItem("hod-welcomed", "1"); } catch (e) {}
+    const steps = welcomeSteps(), n = steps.length; i = Math.max(0, Math.min(n - 1, i));
+    const st = steps[i], last = i === n - 1;
+    const d = dialog("welcome", `<button class="close" aria-label="Close" data-a="x">×</button>
+      <div class="kicker">Welcome · ${i + 1} of ${n}</div><h2>${st.h}</h2><div class="modal-body">${st.b}</div>
+      <div class="modal-foot"><span class="pips">${steps.map((_, j) => `<i class="${j === i ? "on" : ""}"></i>`).join("")}</span>
+        <span>${i ? `<button type="button" class="btn" data-a="back">Back</button>` : `<button type="button" class="btn" data-a="x">Skip</button>`}
+        ${last ? `<a class="btn" href="diagnose.html">Diagnose a dispute</a> <a class="btn primary" href="taxonomy.html">Explore the diagram</a>` : `<button type="button" class="btn primary" data-a="next">Next</button>`}</span></div>`);
+    d.querySelectorAll("[data-a]").forEach((b) => (b.onclick = () => (b.dataset.a === "x" ? d.close() : H.welcome(i + (b.dataset.a === "next" ? 1 : -1)))));
+    const f = d.querySelector(".btn.primary"); if (f) f.focus();
+  };
+  H.help = () => {
+    const d = dialog("help", `<button class="close" aria-label="Close" data-a="x">×</button>
+      <div class="kicker">Help</div><h2>How to use this site</h2>
+      <div class="modal-body">
+        <h3>What it is</h3>
+        <p>A survey of methods of conducting disagreement and of views of what disagreement is about. Each method is linked to the views it presupposes.</p>
+        <h3>The diagram</h3>${miniDiagram()}
+        <dl class="helpdl">
+          <dt>Left and right</dt><dd>Views on the left, grouped by domain. Methods on the right, grouped by telos, meaning what the exchange is for.</dd>
+          <dt>Threads</dt><dd>A heavy thread marks a method’s primary view. A dashed thread marks a pairing that scholars contest. “Primary threads only” leaves one thread per method.</dd>
+          <dt>Focus</dt><dd>Hover a name to trace it. Click to hold the focus, and click again to open the entry. Hover a group heading to light the whole group.</dd>
+          <dt>Filters</dt><dd>On the Taxonomy page, chips hide a telos, domain or culture, and the slider rebuilds the field century by century. The address bar keeps the filter state, so a copied link reopens the same view.</dd>
+        </dl>
+        <h3>Entries</h3>
+        <dl class="helpdl">
+          <dt>Flags</dt><dd>● firm, ◐ approximate or interpretive, ○ contested. One flag covers the date. The other covers the pairing of a method with its primary view.</dd>
+          <dt>Whose reading?</dt><dd>Lists the disputed claims in an entry and says whether each is attested in the source, a specialist consensus, one scholar’s reading, or this site’s own.</dd>
+          <dt>Notes</dt><dd>“Your notes” saves private notes in this browser. Export them from <a href="data.html">Open data &amp; notes</a>.</dd>
+        </dl>
+        <h3>Tools</h3>
+        <dl class="helpdl">
+          <dt><a href="diagnose.html">Diagnose</a></dt><dd>Answer a few questions about a dispute and get the domains in play and the methods that fit. The mismatch finder takes two views and shows how each party’s method looks to the other.</dd>
+          <dt><a href="compare.html">Compare</a></dt><dd>Two methods side by side.</dd>
+          <dt><a href="paths.html">Paths</a></dt><dd>Seven guided tours. Use ← and → to step through one.</dd>
+          <dt><a href="gaps.html">Gap gallery</a></dt><dd>The views no method is built on, with a sketch of a method for each.</dd>
+        </dl>
+        <h3>Keys</h3>
+        <p><kbd>/</kbd> search · <kbd>Esc</kbd> close a panel · <kbd>←</kbd> <kbd>→</kbd> previous and next stop on a path</p>
+      </div>
+      <div class="modal-foot"><span></span><span><button type="button" class="btn" data-a="tour">Replay the welcome tour</button> <button type="button" class="btn primary" data-a="x">Close</button></span></div>`);
+    d.querySelectorAll("[data-a]").forEach((b) => (b.onclick = () => (b.dataset.a === "tour" ? H.welcome(0) : d.close())));
+  };
+  function firstVisit() {
+    if (document.body.dataset.page === "print" || /^#(e|p|g|tour)=/.test(location.hash) || location.search) return;
+    try { if (localStorage.getItem("hod-welcomed")) return; } catch (e) { return; }
+    H.welcome(0);
   }
 
   /* ── search ───────────────────────────────────────────── */
@@ -125,7 +216,9 @@
     });
     box.addEventListener("mousedown", (e) => { const d = e.target.closest(".sr[data-i]"); if (d) { e.preventDefault(); go(res[+d.dataset.i]); } });
     input.addEventListener("blur", () => setTimeout(() => (box.hidden = true), 150));
-    document.addEventListener("keydown", (e) => { if (e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); } });
+    document.addEventListener("keydown", (e) => { const typing = /input|textarea|select/i.test(document.activeElement.tagName);
+      if (e.key === "/" && !typing) { e.preventDefault(); input.focus(); }
+      if (e.key === "?" && !typing) { e.preventDefault(); H.help(); } });
   }
   // Route an id ("elenchus", "p:plato", "g:stasis", "t:therapeutic") to the right drawer.
   H.goto = (id) => {
@@ -207,25 +300,24 @@
   H.peopleFor = (id) => (H.people || []).filter((p) => p.methods.includes(id) || p.views.includes(id));
   H.firstSentence = (s) => H.strip(s).split(/(?<=[.!?’])\s+(?=[A-Z‘“])/)[0];
   // Every method uses one skeleton: who and when; in brief; procedure; what it assumes; in practice and how it fails; critique.
-  H.renderMethod = (m, tag = "h3") => {
+  H.renderMethod = (m, tag = "h3", bare = false) => {
     const ppl = H.peopleFor(m.id), pv = H.V[m.views[0]];
     return `
-    <${tag}>${m.name}</${tag}>
+    ${bare ? "" : `<${tag}>${m.name}</${tag}>`}
     ${m.native ? `<div class="native">${m.native}</div>` : ""}
-    <div class="when">${m.when}${m.who ? ` · ${m.who}` : ""}</div>
+    ${bare ? "" : `<div class="when">${m.when}${m.who ? ` · ${m.who}` : ""}</div>`}
     <div class="chips">${H.chip("Telos: " + H.T[m.telos].name, H.teloColor[m.telos])}${H.chip(H.F[m.family].name, "var(--ink-3)")}</div>
     <p>${H.glossify(m.summary, null)}</p>
     <h4 class="sk">Procedure</h4>
     <ol class="moves">${(m.moves || []).map((x) => `<li>${x}</li>`).join("")}</ol>
     <h4 class="sk">What it assumes</h4>
-    <p class="assumes">${H.link(pv.id)}: ${H.firstSentence(pv.summary)}${m.views.length > 1 ? ` <span class="meta">Also presupposes ${m.views.slice(1).map((v) => H.link(v)).join(", ")}.</span>` : ""}</p>
+    <p class="assumes">${H.link(pv.id, { star: true })}: ${H.firstSentence(pv.summary)}${m.views.length > 1 ? ` <span class="meta">It also presupposes ${m.views.slice(1).map((v) => H.link(v)).join(", ")}.</span>` : ""}</p>
     ${m.third ? `<h4 class="sk">In practice</h4><dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>How it fails</dt><dd>${m.failure}</dd></dl>` : ""}
     ${m.critic ? `<div class="critique"><b>Strongest critique</b> <span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : ""}
     ${m.note ? `<p class="note">${m.note}</p>` : ""}
     ${H.excerptsFor(m.id)}
     ${H.readingFor(m)}
     ${H.confBadges(m)}
-    <p class="rel"><b>Presupposes</b>${m.views.map((v, i) => H.link(v, { star: i === 0 })).join(", ")}</p>
     ${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
     ${m.children.length ? `<p class="rel"><b>Gave rise to</b>${m.children.map((p) => H.link(p)).join(", ")}</p>` : ""}
     ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}
@@ -233,18 +325,39 @@
     ${H.citeList(m.cite)}
     ${H.notesBox(m.id, m.name)}`;
   };
+  // List pages show each entry folded to a heading and one line; it opens on click, on a link to it, or on find-in-page.
+  H.foldEntry = (x) => {
+    const isM = !!H.M[x.id];
+    // The chip carries the other half of the pairing: a method shows its primary view, a view its count of methods.
+    const n = isM ? 0 : x.methods.length;
+    const tagc = isM ? H.chip("assumes: " + H.V[x.views[0]].name, H.domainColor[H.V[x.views[0]].domain])
+      : H.chip(n ? `${n} method${n === 1 ? "" : "s"}` : "no method", n ? H.domainColor[x.domain] : "transparent");
+    return `<details class="entry fold" id="${x.id}"><summary><span class="f-name">${x.name}</span>${tagc}
+      <span class="f-when">${x.when}${x.who ? ` · ${x.who}` : ""}</span>
+      <span class="f-line">${H.firstSentence(x.summary)}</span></summary>
+      ${isM ? H.renderMethod(x, "h3", true) : H.renderView(x, "h3", true)}</details>`;
+  };
+  H.wireFolds = (host) => {
+    const openHash = () => {
+      const id = decodeURIComponent(location.hash.slice(1)), el = id && !id.includes("=") && document.getElementById(id);
+      if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }
+    };
+    window.addEventListener("hashchange", openHash); setTimeout(openHash, 30);
+    document.querySelectorAll("[data-fold]").forEach((b) => (b.onclick = () => host.querySelectorAll("details.fold").forEach((d) => (d.open = b.dataset.fold === "open"))));
+  };
+
   // Named readings for contested entries: what is claimed, its status, and whose reading it is.
   H.statusLabel = { attested: "Attested in the source", consensus: "Scholarly consensus", reading: "A named scholar’s reading", site: "This site’s reading" };
   H.readingFor = (x) => {
     const r = (H.readings || {})[x.id]; if (!r) return "";
     return `<div class="reading"><b>Whose reading?</b>${r.map((c) => `<p><span class="st st-${c.status}">${H.statusLabel[c.status]}</span> ${c.claim}${c.by ? ` <span class="meta">${c.by}.</span>` : ""}</p>`).join("")}</div>`;
   };
-  H.renderView = (v, tag = "h3") => {
+  H.renderView = (v, tag = "h3", bare = false) => {
     const ppl = H.peopleFor(v.id);
     const gap = (H.gaps || {})[v.id];
     return `
-    <${tag}>${v.name}</${tag}>
-    <div class="when">${v.when}${v.who ? ` · ${v.who}` : ""}</div>
+    ${bare ? "" : `<${tag}>${v.name}</${tag}>
+    <div class="when">${v.when}${v.who ? ` · ${v.who}` : ""}</div>`}
     <div class="chips">${H.chip("Domain: " + H.D[v.domain].name, H.domainColor[v.domain])}</div>
     <p>${H.glossify(v.summary, null)}</p>
     ${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}
@@ -371,5 +484,5 @@
     return div;
   };
 
-  document.addEventListener("DOMContentLoaded", () => { chrome(); setTimeout(fromHash, 0); });
+  document.addEventListener("DOMContentLoaded", () => { chrome(); setTimeout(fromHash, 0); setTimeout(firstVisit, 250); });
 })();

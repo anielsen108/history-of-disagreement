@@ -15,7 +15,7 @@
   H.drawDrift = function (host, mode = "primary", periods) {
     host.innerHTML = "";
     const rows = H.driftRows(mode, periods).filter((r) => r.total);
-    const W = 880, L = 112, R = 92, rh = 30;
+    const W = 760, L = 104, R = 86, rh = 30;
     const svg = d3.select(host).append("svg").attr("class", "drift").attr("viewBox", [0, 0, W, rows.length * rh + 8])
       .attr("role", "img").attr("aria-label", "Share of methods by domain of their primary view, per period")
       .style("width", "100%").style("height", "auto").style("display", "block");
@@ -29,7 +29,8 @@
         svg.append("rect").attr("class", "seg").attr("x", x).attr("y", i * rh + 4).attr("width", Math.max(w, 0.5)).attr("height", rh - 8).attr("fill", H.domainColor[d.id])
           .on("mousemove", (ev) => H.tip(`<b>${r.n}</b><br>${d.name}: ${k} of ${r.total} ${unit} (${Math.round(100 * k / r.total)}%)`, ev))
           .on("mouseleave", () => H.tip(null));
-        if (w > 32) svg.append("text").attr("x", x + 4).attr("y", i * rh + 19).style("font-size", "10px").style("fill", "#fff").style("pointer-events", "none").text(Math.round(100 * k / r.total) + "%");
+        const pct = Math.round(100 * k / r.total) + "%";
+        if (w > 30) svg.append("text").attr("x", x + 4).attr("y", i * rh + 19).style("font-size", "11px").style("fill", "#fff").style("pointer-events", "none").text(w > d.name.length * 6.6 + 40 ? `${d.name} ${pct}` : pct);
         x += w;
       });
       svg.append("text").attr("x", W - R + 8).attr("y", i * rh + 19).style("fill", "var(--ink-3)").text(`${r.methods} method${r.methods === 1 ? "" : "s"}`);

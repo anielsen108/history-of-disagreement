@@ -4,11 +4,15 @@
   const H = window.HOD;
 
   H.drawLineage = function (host) {
-    const W = 1500, left = 175, right = 30, top = 34, CH = 6.1; // CH ≈ px per character at 10.5px
-    // piecewise time scale: antiquity compressed, modernity stretched
+    // Drawn at the width of the page, so the whole span from 500 BCE to now is visible without sideways scrolling
+    // on a desktop. `right` leaves room for the labels of the newest methods. CH ≈ px per character at 10.5px.
+    host.innerHTML = "";
+    const avail = (host.closest("main") || document.body).clientWidth - 58;
+    const W = Math.max(1040, Math.min(1500, avail)), left = 150, right = 200, top = 34, CH = 6.1;
+    // Piecewise time scale. Half the methods date from after 1900, so that span gets half the width.
     const x = d3.scaleLinear()
-      .domain([-520, 0, 1000, 1500, 1800, 1900, 1950, 2030])
-      .range([0, .14, .27, .38, .52, .62, .74, 1].map((t) => left + t * (W - left - right)));
+      .domain([-520, 0, 1000, 1500, 1800, 1900, 1950, 1980, 2030])
+      .range([0, .09, .17, .25, .37, .47, .58, .78, 1].map((t) => left + t * (W - left - right)));
 
     // pack nodes into sub-rows within each lane so labels do not collide
     const lanes = [];
@@ -32,6 +36,7 @@
     const svg = d3.select(host).append("svg")
       .attr("viewBox", [0, 0, W, Ht]).attr("class", "lineage")
       .attr("width", W).attr("height", Ht).style("max-width", "none").style("display", "block");
+    host.dataset.w = avail;
 
     // lanes
     const lane = svg.append("g").selectAll("g").data(lanes).join("g");
@@ -41,14 +46,14 @@
       .call((t) => t.each(function () { wrap(d3.select(this), left - 16); }));
 
     // grid & axis
-    const ticks = [-500, -250, 0, 250, 500, 750, 1000, 1250, 1500, 1600, 1700, 1800, 1850, 1900, 1925, 1950, 1975, 2000, 2025];
+    const ticks = [-500, 0, 500, 1000, 1500, 1650, 1800, 1900, 1950, 1965, 1980, 2000, 2020];
     const grid = svg.append("g").attr("class", "grid");
     grid.selectAll("line").data(ticks).join("line").attr("x1", x).attr("x2", x).attr("y1", top - 4).attr("y2", Ht - 22).attr("stroke-dasharray", "2,4");
     const ax = svg.append("g").attr("class", "axis");
     [top - 12, Ht - 8].forEach((yy) => ax.append("g").selectAll("text").data(ticks).join("text")
       .attr("x", x).attr("y", yy).attr("text-anchor", "middle").text((t) => (t < 0 ? `${-t} BCE` : t === 0 ? "1 CE" : t)));
-    svg.append("text").attr("x", W - right).attr("y", Ht - 8 - 14).attr("text-anchor", "end")
-      .style("font-size", "10px").style("fill", "var(--ink-3)").text("time axis compressed before 1500 and stretched after 1900");
+    svg.append("text").attr("x", W - 8).attr("y", Ht - 8 - 14).attr("text-anchor", "end")
+      .style("font-size", "10px").style("fill", "var(--ink-3)").text("time axis compressed before 1800 and stretched after 1900");
 
     // links
     const links = [];
@@ -57,7 +62,7 @@
       .attr("d", ({ s, t }) => {
         const mx = (s._x + t._x) / 2;
         return `M${s._x},${s._y} C${mx},${s._y} ${mx},${t._y} ${t._x},${t._y}`;
-      });
+      }).style("--c", ({ t }) => H.teloColor[t.telos]);
 
     // nodes
     const node = svg.append("g").selectAll("g").data(H.methods).join("g").attr("class", "node")
@@ -90,7 +95,7 @@
     const prevOpen = H.onOpen; H.onOpen = (id) => { if (H.M[id]) { pinned = id; focus(id); } if (prevOpen) prevOpen(id); };
 
     return {
-      filter(on) { node.classed("dim", (m) => !on.has(m.telos)); }
+      filter(on) { node.classed("dim", (m) => !on.has(m.telos)); link.classed("dim", (l) => !on.has(l.t.telos) || !on.has(l.s.telos)); }
     };
 
     function wrap(text, width) {

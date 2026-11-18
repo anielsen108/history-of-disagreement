@@ -10,7 +10,7 @@
 - **Descends from:** [Integration](follett.md)
 
 
-Sander’s ‘multi-door courthouse’ launched modern alternative dispute resolution: send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.
+Sander’s 1976 address launched modern alternative dispute resolution. Its idea, soon named the ‘multi-door courthouse’, was to send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.
 
 ## Procedure
 1. Neutral third party controls process, not outcome

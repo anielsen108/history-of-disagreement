@@ -1,16 +1,18 @@
 /* The two classifying axes.
    Methods are sorted by TELOS (what a disputation is for) and by FAMILY (whose lineage it belongs to).
-   Views are sorted by DOMAIN (where the disagreement is said to live). */
+   Views are sorted by DOMAIN (where the disagreement is said to live).
+   The ORDER of teloi and of domains is chosen to minimise thread crossings in the two-column
+   diagram (found by exhaustive search over group orders); it carries no ranking. */
 var HOD = window.HOD = window.HOD || {};
 
 HOD.teloi = [
   { id: "truth",       name: "Truth",        gloss: "The parties treat disagreement as a sign that someone is wrong. They talk to remove the error, and winning is incidental." },
-  { id: "victory",     name: "Victory",      gloss: "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded." },
   { id: "formation",   name: "Formation",    gloss: "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open." },
   { id: "decision",    name: "Decision",     gloss: "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place." },
+  { id: "victory",     name: "Victory",      gloss: "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded." },
+  { id: "plurality",   name: "Plurality",    gloss: "The parties keep the disagreement on record and honour it. Ending it would be a loss." },
   { id: "settlement",  name: "Settlement",   gloss: "Parties want different things; the exchange seeks terms both can accept." },
   { id: "understanding", name: "Understanding", gloss: "Each party tries to understand the other accurately and to repair the relationship. Agreement is optional." },
-  { id: "plurality",   name: "Plurality",    gloss: "The parties keep the disagreement on record and honour it. Ending it would be a loss." },
   { id: "release",     name: "Release",      gloss: "The parties seek freedom from the grip of positions, through suspension of judgment, emptiness, or the hinge of the Way." }
 ];
 
@@ -34,11 +36,11 @@ HOD.families = [
 HOD.domains = [
   { id: "epistemic",  name: "Epistemic",     gloss: "It is really about what is true: evidence, inference, priors, perspective." },
   { id: "linguistic", name: "Linguistic",    gloss: "It is really about words: names, equivocation, attitudes dressed as beliefs, idioms with no common measure." },
+  { id: "generative", name: "Generative",    gloss: "It is no problem at all. Disagreement drives the growth of truth, history, social life or law." },
   { id: "axiological", name: "Axiological",  gloss: "It is really about values: rival goods, sacred commitments, incommensurable gods." },
-  { id: "interest",   name: "Interest",      gloss: "It is really about what people want: stakes, resources, bargaining positions." },
   { id: "power",      name: "Power",         gloss: "It is really about who rules: domination, hegemony, sovereignty, the friend and the enemy." },
-  { id: "psyche",     name: "Psyche",        gloss: "It is really about what is happening inside: needs, fear, vanity, envy, motivated cognition, developmental form." },
+  { id: "interest",   name: "Interest",      gloss: "It is really about what people want: stakes, resources, bargaining positions." },
   { id: "relational", name: "Relational",    gloss: "It is really about us: identity, recognition, the relationship-level message beneath the content." },
-  { id: "contemplative", name: "Contemplative", gloss: "It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole." },
-  { id: "generative", name: "Generative",    gloss: "It is no problem at all. Disagreement drives the growth of truth, history, social life or law." }
+  { id: "psyche",     name: "Psyche",        gloss: "It is really about what is happening inside: needs, fear, vanity, envy, motivated cognition, developmental form." },
+  { id: "contemplative", name: "Contemplative", gloss: "It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole." }
 ];

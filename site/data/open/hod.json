@@ -9,11 +9,6 @@
    "gloss": "The parties treat disagreement as a sign that someone is wrong. They talk to remove the error, and winning is incidental."
   },
   {
-   "id": "victory",
-   "name": "Victory",
-   "gloss": "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded."
-  },
-  {
    "id": "formation",
    "name": "Formation",
    "gloss": "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open."
@@ -24,6 +19,16 @@
    "gloss": "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place."
   },
   {
+   "id": "victory",
+   "name": "Victory",
+   "gloss": "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded."
+  },
+  {
+   "id": "plurality",
+   "name": "Plurality",
+   "gloss": "The parties keep the disagreement on record and honour it. Ending it would be a loss."
+  },
+  {
    "id": "settlement",
    "name": "Settlement",
    "gloss": "Parties want different things; the exchange seeks terms both can accept."
@@ -32,11 +37,6 @@
    "id": "understanding",
    "name": "Understanding",
    "gloss": "Each party tries to understand the other accurately and to repair the relationship. Agreement is optional."
-  },
-  {
-   "id": "plurality",
-   "name": "Plurality",
-   "gloss": "The parties keep the disagreement on record and honour it. Ending it would be a loss."
   },
   {
    "id": "release",
@@ -114,14 +114,14 @@
    "gloss": "It is really about words: names, equivocation, attitudes dressed as beliefs, idioms with no common measure."
   },
   {
+   "id": "generative",
+   "name": "Generative",
+   "gloss": "It is no problem at all. Disagreement drives the growth of truth, history, social life or law."
+  },
+  {
    "id": "axiological",
    "name": "Axiological",
    "gloss": "It is really about values: rival goods, sacred commitments, incommensurable gods."
-  },
-  {
-   "id": "interest",
-   "name": "Interest",
-   "gloss": "It is really about what people want: stakes, resources, bargaining positions."
   },
   {
    "id": "power",
@@ -129,9 +129,9 @@
    "gloss": "It is really about who rules: domination, hegemony, sovereignty, the friend and the enemy."
   },
   {
-   "id": "psyche",
-   "name": "Psyche",
-   "gloss": "It is really about what is happening inside: needs, fear, vanity, envy, motivated cognition, developmental form."
+   "id": "interest",
+   "name": "Interest",
+   "gloss": "It is really about what people want: stakes, resources, bargaining positions."
   },
   {
    "id": "relational",
@@ -139,14 +139,14 @@
    "gloss": "It is really about us: identity, recognition, the relationship-level message beneath the content."
   },
   {
+   "id": "psyche",
+   "name": "Psyche",
+   "gloss": "It is really about what is happening inside: needs, fear, vanity, envy, motivated cognition, developmental form."
+  },
+  {
    "id": "contemplative",
    "name": "Contemplative",
    "gloss": "It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole."
-  },
-  {
-   "id": "generative",
-   "name": "Generative",
-   "gloss": "It is no problem at all. Disagreement drives the growth of truth, history, social life or law."
   }
  ],
  "regions": [
@@ -216,9 +216,9 @@
    "ends_well_when": "The stronger speech wins the room.",
    "typical_failure": "Cleverness detached from any care for truth.",
    "critique": {
-    "who": "Plato, Gorgias 462b–465d",
+    "who": "Plato, Phaedo 89d–90c",
     "from_view": "error",
-    "text": "Rhetoric of this kind is a knack of flattery. It is no art, and it produces conviction without knowledge."
+    "text": "Those who spend their time on arguments for and against end by believing that no argument is sound. They come to hate argument as a misanthrope hates people."
    },
    "sources": [
     {
@@ -481,7 +481,7 @@
    "parents": [
     "rhetoric"
    ],
-   "summary": "Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. It asks four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
+   "summary": "Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. The theory sets four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
    "moves": [
     "Identify the stasis before arguing",
     "Concede earlier stases to contest later ones",
@@ -603,7 +603,7 @@
   {
    "id": "atthaka",
    "name": "Refusing dispute",
-   "native": "vivāda-pahāna (Aṭṭhakavagga)",
+   "native": "Aṭṭhakavagga; kalaha-vivāda (quarrels and disputes)",
    "date": -400,
    "when": "among the oldest strata of the Pāli canon",
    "who": "The Buddha of the Aṭṭhakavagga (Sutta Nipāta, ch. 4)",
@@ -837,7 +837,7 @@
     "perspectival"
    ],
    "parents": [],
-   "summary": "Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. This is the elephant parable formalised as a logic.",
+   "summary": "Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. Jain authors used the parable of the blind men and the elephant to teach the point. The earliest surviving version is Buddhist (Udāna 6.4), where it mocks disputing sectarians.",
    "moves": [
     "Index each claim to a standpoint",
     "Map rival claims onto the seven predications",
@@ -883,7 +883,7 @@
     "prasanga",
     "vada"
    ],
-   "summary": "A standing defender sits, and a challenger stands, claps and stamps on each point. The challenger presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. Dreyfus calls it hermeneutics through combat. Monks learn the canon by being forced to defend it in public.",
+   "summary": "The defender sits. Standing over him, the challenger claps and stamps as he puts each point. He presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. On Dreyfus’s account, monks come to understand the texts they have memorised by being forced to defend them in public.",
    "moves": [
     "State a consequence",
     "Defender answers with one of three replies",
@@ -926,7 +926,7 @@
     "error"
    ],
    "parents": [],
-   "summary": "Canon A74: ‘disputation is contending over converse claims’. One party says ‘it is an ox’ and the other ‘it is not’, and only one can fit (dang). Bian is a practice of distinguishing (bian 辨). It asks whether a name fits a thing, and it uses analogical procedures such as ‘parallelising’ (mou) and ‘inferring’ (tui). The Mohists rejected Zhuangzi-style relativism: someone wins every genuine dispute.",
+   "summary": "Canon A74: ‘disputation is contending over converse claims’. One party says ‘it is an ox’ and the other ‘it is not’, and only one can fit (dang). Bian is a practice of distinguishing (bian 辨). It asks whether a name fits a thing, and it uses analogical procedures such as ‘parallelising’ (mou) and ‘inferring’ (tui). The Mohists denied that a disputation can have no winner (Canon B35): of two converse claims, one must fit.",
    "moves": [
     "Fix the predicate under dispute",
     "Draw parallels between cases (mou, tui)",
@@ -946,7 +946,7 @@
    "sources": [
     {
      "key": "graham1978",
-     "loc": "A74"
+     "loc": "A74, B35"
     },
     {
      "key": "fraser_mohist",
@@ -1154,7 +1154,7 @@
     "Alternate support and challenge"
    ],
    "note": "",
-   "date_confidence": "approx",
+   "date_confidence": "contested",
    "pairing_confidence": "interpretive",
    "third_party": "The text, and behind it the teacher.",
    "ends_well_when": "A reading both partners can defend.",
@@ -1346,7 +1346,7 @@
     "disputatio",
     "aristotelian_dialectic"
    ],
-   "summary": "The respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.",
+   "summary": "A respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. An opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.",
    "moves": [
     "Positum accepted",
     "Grant what follows; deny what is incompatible; answer irrelevant sentences by their truth",
@@ -1391,14 +1391,14 @@
    "parents": [
     "disputatio"
    ],
-   "summary": "Before a king, Jewish scholars were compelled to debate Christian (often convert) disputants on whether the Talmud attests the Messiah’s advent. The outcome was politically fixed before it began. Nahmanides was granted freedom of speech and was later prosecuted for publishing his account. The disputation kept its form, but power had settled the result in advance.",
+   "summary": "Christian authorities compelled Jewish scholars to debate Christian disputants, often converts, before a king or pope. At Paris in 1240 the Talmud itself stood accused, and copies were burned afterwards. At Barcelona in 1263 the question was whether the Talmud attests that the Messiah has come. The king granted Nahmanides freedom of speech, and the Dominicans later prosecuted him for publishing his account. The Christian side set the question and the limits of reply, so the Jewish disputant was allowed to defend and forbidden to attack.",
    "moves": [
     "Sovereign sets the question and the limits of speech",
     "Victory declared by the stronger party"
    ],
    "note": "",
    "date_confidence": "firm",
-   "pairing_confidence": "interpretive",
+   "pairing_confidence": "contested",
    "third_party": "The sovereign, who sets terms and declares the winner.",
    "ends_well_when": "Victory declared by power.",
    "typical_failure": "It is not a disputation at all.",
@@ -1916,6 +1916,10 @@
    },
    "sources": [
     {
+     "key": "polletta2002",
+     "loc": ""
+    },
+    {
      "key": "sheeran1983",
      "loc": ""
     }
@@ -2109,7 +2113,7 @@
     "interests"
    ],
    "parents": [],
-   "summary": "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
+   "summary": "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of reservation prices and zones of agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
    "moves": [
     "Map payoffs and alternatives",
     "Find focal points",
@@ -2259,7 +2263,7 @@
    "parents": [
     "follett"
    ],
-   "summary": "Sander’s ‘multi-door courthouse’ launched modern alternative dispute resolution: send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.",
+   "summary": "Sander’s 1976 address launched modern alternative dispute resolution. Its idea, soon named the ‘multi-door courthouse’, was to send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.",
    "moves": [
     "Neutral third party controls process, not outcome",
     "Separate positions from interests (facilitative)",
@@ -2309,7 +2313,7 @@
     "follett",
     "game_bargaining"
    ],
-   "summary": "The method has four rules. Separate the people from the problem. Focus on interests, not positions. Invent options for mutual gain. Insist on objective criteria. A fifth instruction follows: know your BATNA. The central claim is that a position encodes interests with loss, and that interests are compatible more often than positions are.",
+   "summary": "The method has four rules: separate the people from the problem; focus on interests, not positions; invent options for mutual gain; insist on objective criteria. A fifth instruction follows: know your BATNA. The central claim is that a position encodes interests with loss, and that interests are compatible more often than positions are.",
    "moves": [
     "Ask ‘why?’ behind each position",
     "Brainstorm before evaluating",
@@ -2520,7 +2524,7 @@
    "parents": [
     "rogerian"
    ],
-   "summary": "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology and deep canvassing descend from it.",
+   "summary": "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology borrows from it, and deep canvassing resembles it.",
    "moves": [
     "Open questions; affirmations; reflections; summaries (OARS)",
     "Elicit their reasons, not yours",
@@ -3395,7 +3399,7 @@
    "when": "Protagoras; Jain anekānta; Mill; Nietzsche",
    "who": "Protagoras; Jain logicians; J. S. Mill; Nietzsche",
    "domain": "epistemic",
-   "summary": "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
+   "summary": "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. Protagoras holds a stronger thesis, on which each person is the measure and no larger whole stands behind the appearances. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
    "implies": "Standpoint indexing, both-sides argument, synthesis.",
    "quote": {
     "text": "There is only a perspective seeing, only a perspective ‘knowing’.",
@@ -3512,7 +3516,7 @@
    "when": "Rawls 1993 (anticipated by ʿilm al-khilāf)",
    "who": "John Rawls",
    "domain": "epistemic",
-   "summary": "Reasonable people disagree without any of them being irrational or ill-willed. Evidence is complex and conflicting. People weigh considerations differently. Concepts are vague at the edges. Total life experience shapes judgment. Normative considerations pull both ways, and every institution must select among values. Rawls calls reasonable pluralism the normal result of human reason exercised under free institutions.",
+   "summary": "Reasonable people disagree without any of them being irrational or ill-willed. Evidence is complex and conflicting, and people weigh the same considerations differently. Concepts are vague at the edges. A person’s whole experience of life shapes their judgment. Normative considerations pull both ways, and every institution must select among values. Rawls calls reasonable pluralism the normal result of human reason exercised under free institutions.",
    "implies": "Toleration; public reason; deliberation without expectation of convergence.",
    "quote": null,
    "date_confidence": "firm",
@@ -5027,7 +5031,7 @@
    "method": "staged",
    "view": "sovereign",
    "primary": true,
-   "contested": false
+   "contested": true
   },
   {
    "method": "staged",
@@ -6955,7 +6959,8 @@
     "Both update by an agreed rule (equal weight, or weighted by record)",
     "Record the result and score it later"
    ],
-   "why": "The epistemology of peer disagreement says what one should do on learning of disagreement, but no conversational method enacts it."
+   "why": "The epistemology of peer disagreement says how far to revise a belief on learning that a peer disagrees. It prescribes a revision and describes no conversation.",
+   "near": "The Delphi method (Dalkey and Helmer, 1963) has experts revise anonymous estimates after seeing the group’s. Forecasting tournaments score such revisions. Neither has an entry in this survey."
   },
   "paradigm": {
    "method": "Exemplar exchange",
@@ -6965,7 +6970,8 @@
     "Map where the attempt breaks down",
     "Treat the break as the boundary of translation, not as the opponent’s error"
    ],
-   "why": "Kuhn says persuasion across paradigms works through exemplars and conversion. No method trains people in it."
+   "why": "Kuhn says persuasion across paradigms works through exemplars and conversion. No method trains people in it.",
+   "near": "Kuhn’s later answer was translation. A scientist learns the rival theory as a second language (Postscript, 1969)."
   },
   "attitude": {
    "method": "Belief/attitude sorting",
@@ -6975,7 +6981,8 @@
     "Settle the belief claims by evidence",
     "Negotiate or vote on the attitude claims, openly as such"
    ],
-   "why": "Stevenson’s distinction is widely cited but rarely used as a procedure."
+   "why": "Stevenson’s distinction is widely cited but rarely used as a procedure.",
+   "near": "Stevenson himself separates rational methods, which change attitude by changing belief, from persuasive methods, which change attitude directly (Ethics and Language, 1944)."
   },
   "metaling": {
    "method": "Usage negotiation",
@@ -6984,7 +6991,8 @@
     "Ask what follows practically from each usage",
     "Choose the usage whose consequences both can live with, or coin a new term"
    ],
-   "why": "Conceptual engineering is a research programme but not yet a conversational method."
+   "why": "Conceptual engineering is a research programme but not yet a conversational method.",
+   "near": "Chalmers’s elimination test, filed in this survey under equivocation, removes the contested word. It does not settle how the word should be used."
   },
   "vocabularies": {
    "method": "Redescription swap",
@@ -7004,7 +7012,8 @@
     "Record what could not be said",
     "Ask what idiom would be needed to judge it"
    ],
-   "why": "Lyotard’s remedy is to bear witness and to seek new idioms. Truth commissions came closest, but no general method exists."
+   "why": "Lyotard’s remedy is to bear witness and to seek new idioms. Truth commissions came closest, but no general method exists.",
+   "near": "Truth and reconciliation commissions admit testimony that courts exclude. They have no entry in this survey yet."
   },
   "sacred": {
    "method": "Symbolic-concession mapping",
@@ -7013,7 +7022,8 @@
     "Ask what gesture, such as apology, acknowledgement or ritual, would honour it",
     "Exchange gestures before discussing material terms"
    ],
-   "why": "Atran and Axelrod show that symbolic concessions move sacred-value conflicts. They report cases and offer no protocol."
+   "why": "Atran and Axelrod show that symbolic concessions move sacred-value conflicts. They report cases and offer no protocol.",
+   "near": "Ginges, Atran, Medin and Shikaki (2007) tested symbolic concessions in surveys of Israelis and Palestinians."
   },
   "class": {
    "method": "Interest audit",
@@ -7022,7 +7032,8 @@
     "Make the gains visible to both sides",
     "Separate the material question from the ideological one and bargain over the first"
    ],
-   "why": "Ideology critique analyses a conflict from outside. It gives the parties no way to talk it through."
+   "why": "Ideology critique analyses a conflict from outside. It gives the parties no way to talk it through.",
+   "near": "Consciousness-raising groups and Paulo Freire’s culture circles teach participants to read their own situation in class terms. They work within one side of a conflict."
   },
   "small_diff": {
    "method": "Distance check",
@@ -7050,7 +7061,8 @@
     "Each produces arguments; each evaluates the others’",
     "Pool the evaluations, not the productions"
    ],
-   "why": "Mercier and Sperber show groups reason well under these conditions. The conditions are known; a named method is not."
+   "why": "Mercier and Sperber argue that groups reason well when members disagree and judge one another’s arguments. They state the conditions and name no method.",
+   "near": "Devil’s advocacy and red teams assign someone to argue the other side. The Catholic Church kept such an office for canonisations from 1587 to 1983."
   },
   "developmental": {
    "method": "Subject–object interview for two",
@@ -7059,7 +7071,8 @@
     "Each identifies the system they are defending",
     "Each tries to hold that system as an object for a while"
    ],
-   "why": "Kegan’s developmental account explains why some conflicts cannot be resolved at a given order of mind, but it offers no method for two people at different orders."
+   "why": "Kegan’s developmental account explains why some conflicts cannot be resolved at a given order of mind, but it offers no method for two people at different orders.",
+   "near": "Kegan and Lahey’s ‘immunity to change’ exercise (2009) has one person surface the commitment that blocks a change. It was not designed for two parties in a dispute."
   },
   "sociation": {
    "method": "Cross-cutting design",
@@ -7068,7 +7081,8 @@
     "Deliberately build teams across them",
     "Let conflict on one axis bind people allied on another"
    ],
-   "why": "Simmel and Coser describe how conflicts that cut across one another hold a society together. Their account is about institutional design and offers no method for conversation."
+   "why": "Simmel and Coser describe how conflicts that cut across one another hold a society together. Their account is about institutional design and offers no method for conversation.",
+   "near": "Political scientists since Lipset (Political Man, 1960) have studied cross-cutting cleavages as a condition of stable democracy."
   }
  },
  "sources": {
@@ -7115,6 +7129,7 @@
   "margoliouth1905": "Margoliouth, D. S. “The Discussion between Abu Bishr Matta and Abu Sa‘id al-Sirafi on the Merits of Logic and Grammar.” Journal of the Royal Asiatic Society (1905): 79–129.",
   "bukhari": "al-Bukhārī. Ṣaḥīḥ al-Bukhārī, Kitāb al-Iʿtiṣām, no. 7352 (the ijtihād hadith). https://sunnah.com/bukhari:7352",
   "kamali2003": "Kamali, Mohammad Hashim. Principles of Islamic Jurisprudence. 3rd ed. Cambridge: Islamic Texts Society, 2003.",
+  "polletta2002": "Polletta, Francesca. Freedom Is an Endless Meeting: Democracy in American Social Movements. Chicago: University of Chicago Press, 2002.",
   "novikoff2013": "Novikoff, Alex J. The Medieval Culture of Disputation: Pedagogy, Practice, and Performance. Philadelphia: University of Pennsylvania Press, 2013.",
   "abelard": "Abelard, Peter. Sic et Non: A Critical Edition. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77.",
   "aquinas": "Thomas Aquinas. Summa Theologiae. Cited by part, question and article.",

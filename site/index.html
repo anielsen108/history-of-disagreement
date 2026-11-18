@@ -20,7 +20,7 @@
 
   <div class="prose">
     <p>The questions are linked because every method assumes a diagnosis. The Socratic elenchus presupposes that the interlocutor’s beliefs are mutually inconsistent. Principled negotiation presupposes that positions hide compatible interests. Nonviolent Communication presupposes that needs never conflict and that only strategies do. The double crux presupposes that the dispute lives in a world-model with a testable node. Whoever adopts the method accepts its diagnosis, usually without noticing.</p>
-    <p>The diagram below makes that commitment visible. Methods sit on the left, grouped by <em>telos</em>, meaning what the exchange is for. Views sit on the right, grouped by <em>domain</em>, meaning where the trouble is said to live. Each thread joins a method to a view it presupposes; the heavier thread marks the primary one. Hover to trace a method. Click a name to focus it, so that only its threads remain; click again or press “Read entry” to open it. Dashed threads mark pairings that scholars contest. Views marked “no method”, with a hollow dot, are diagnoses that no method in this survey takes as its premise.</p>
+    <p>The diagram below makes that commitment visible. Views sit on the left, grouped by <em>domain</em>, meaning where the trouble is said to live. Methods sit on the right, grouped by <em>telos</em>, meaning what the exchange is for. Each thread joins a view to a method that presupposes it, and the heavier thread marks the method’s primary view. Hover a name to trace its threads. Click a name to focus it, so that only its threads remain; click again or press “Read entry” to open it. Dashed threads mark pairings that scholars contest. Views marked “no method”, with a hollow dot, are diagnoses that no method in this survey takes as its premise.</p>
   </div>
 
   <div class="viz-frame">
@@ -29,18 +29,20 @@
     <div id="wheel"></div>
   </div>
 
-  <h2>Three findings the data supports</h2>
+  <h2>Three findings from the data</h2>
   <div class="prose">
     <p><b>1. The oldest taxonomy is still the best triage.</b> Hermagoras’ stasis theory (2nd c. BCE) told an advocate to locate a dispute before arguing it. The advocate asked whether something happened (fact), what to call it (definition), whether it was justified (quality), and who gets to decide (jurisdiction). These four map almost exactly onto four of the nine domains used here: epistemic, linguistic, axiological and power. Much modern advice, such as Chalmers’ elimination test or the search for a crux, reinvents stasis theory. The fit has limits. Stasis theory has no question for the other five domains, so it cannot place a quarrel driven by fear, pride, a damaged relationship, competing interests or attachment to being right.</p>
     <p><b>2. There was a therapeutic turn, then a partial epistemic counter-revolution.</b> Classify each method by its <em>primary</em> presupposition and count by era. Before 1500, 13 of 27 methods (48%) locate disagreement in belief, and none puts the psyche or the relationship first. Between 1900 and 1975, 5 of 10 new methods do (Rogers, Rapoport, Burton, restorative justice and NVC). After 1975 the epistemic share rises from 2 in 10 to 7 in 19 (37%), carried by argumentation theory, deliberative polling and rationalist methods such as adversarial collaboration and the double crux.</p>
     <p>The older traditions were not blind to the psyche. Five methods before 1500 name it as a secondary concern: eristic and the Aṭṭhakavagga treat vanity, and the elenchus, vāda and machloket judge the disputants’ character. What changed after 1900 is that the psyche became the primary diagnosis. The sample is curated, so the numbers give a rough orientation and do not measure the field.</p>
-    <div class="viz-frame" style="max-width:860px"><div id="drift"></div>
-      <p class="viz-caption">Share of methods founded in each era, by the domain of their primary presupposition. n = number of methods in the era.</p></div>
+    </div>
+  <div class="viz-frame" style="max-width:900px"><div id="drift"></div>
+      <p class="viz-caption">Share of the methods founded in each era, by the domain of their primary view. Hover a segment for its count.</p></div>
+  <div class="prose">
     <p><b>3. Some diagnoses have no method.</b> Thirteen of the views here are presupposed by no method in this survey. They include incommensurable paradigms, the differend, mimetic rivalry, the narcissism of small differences, sacred values, class interest and Kegan’s developmental account. Each either awaits its method or implies that no conversational method can reach it. Two come close to having one: truth commissions approach Lyotard’s remedy for the differend, and Atran and Axelrod’s symbolic concessions approach a method for sacred values. Kuhn, Lyotard and Girard each say that argument stops at some limit. There Kuhn’s scientist converts, Lyotard’s wronged party bears witness, and Girard’s rivals must refuse the scapegoat. Past that limit this map has nothing to offer.</p>
   </div>
 
   <div class="cards">
-    <a class="card" href="taxonomy.html"><h3>Taxonomy</h3><p>The method ↔ view diagram, a lineage map across 2,500 years, and a full table of links.</p></a>
+    <a class="card" href="taxonomy.html"><h3>Taxonomy</h3><p>The view ↔ method diagram, a lineage map across 2,500 years, and a full table of links.</p></a>
     <a class="card" href="methods.html"><h3>Methods</h3><p>Seventy ways of conducting disagreement, from antilogic to AI-mediated deliberation, with their steps and sources.</p></a>
     <a class="card" href="views.html"><h3>Views</h3><p>Fifty-four accounts of what disagreement is “really about”, grouped into nine domains.</p></a>
     <a class="card" href="timeline.html"><h3>Timeline</h3><p>Methods and views interleaved chronologically.</p></a>
@@ -58,6 +60,7 @@
 <script src="data/readings.js"></script>
 <script src="js/common.js"></script>
 <script src="js/bipartite.js"></script>
+<script src="js/drift.js"></script>
 <script src="js/pages.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -66,27 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("legend-d").append(H.legend("Domain", H.domains, H.domainColor));
   document.querySelectorAll(".legend button").forEach(b => b.disabled = true);
   H.drawBipartite(document.getElementById("wheel"));
-  // drift chart
-  const eras = [[-1e4, 500, "to 500 CE"], [500, 1500, "500–1500"], [1500, 1900, "1500–1900"], [1900, 1975, "1900–1975"], [1975, 3000, "1975–present"]];
-  const rows = eras.map(([a, b, n]) => {
-    const ms = H.methods.filter(m => m.date >= a && m.date < b);
-    const c = {}; ms.forEach(m => { const d = H.V[m.views[0]].domain; c[d] = (c[d] || 0) + 1; });
-    return { n, total: ms.length, c };
-  });
-  const W = 820, L = 110, rh = 30, svg = d3.select("#drift").append("svg").attr("viewBox", [0, 0, W, rows.length * rh + 10]).style("width", "100%").style("height", "auto");
-  rows.forEach((r, i) => {
-    let x = L;
-    svg.append("text").attr("x", L - 8).attr("y", i * rh + 18).attr("text-anchor", "end").style("font-size", "12px").text(r.n);
-    H.domains.forEach(d => {
-      const k = r.c[d.id] || 0; if (!k) return;
-      const w = (W - L - 50) * k / r.total;
-      svg.append("rect").attr("x", x).attr("y", i * rh + 4).attr("width", w - 1).attr("height", rh - 8).attr("fill", H.domainColor[d.id])
-        .on("mousemove", ev => H.tip(`<b>${r.n}</b>: ${k} of ${r.total} methods primarily ${d.name.toLowerCase()}`, ev)).on("mouseleave", () => H.tip(null));
-      if (w > 34) svg.append("text").attr("x", x + 4).attr("y", i * rh + 19).style("font-size", "10px").style("fill", "#fff").style("pointer-events", "none").text(Math.round(100 * k / r.total) + "%");
-      x += w;
-    });
-    svg.append("text").attr("x", W - 44).attr("y", i * rh + 18).style("font-size", "11px").style("fill", "var(--ink-3)").text("n = " + r.total);
-  });
+  // Over-time chart, in the five eras the text uses.
+  const dl = H.legend("Domain", H.domains, H.domainColor); dl.querySelectorAll("button").forEach((b) => (b.disabled = true));
+  document.getElementById("drift").before(dl);
+  H.drawDrift(document.getElementById("drift"), "primary", [[-1e4, 500, "to 500 CE"], [500, 1500, "500–1500"], [1500, 1900, "1500–1900"], [1900, 1975, "1900–1975"], [1975, 3000, "1975–present"]]);
 });
 </script>
 </body>

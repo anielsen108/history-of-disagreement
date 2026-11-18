@@ -59,6 +59,7 @@ HOD.readings = {
     { claim: "The khilāf genre anticipates Rawls’s burdens of judgment.", status: "site" }
   ],
   staged: [
+    { claim: "Nahmanides spoke freely at Barcelona and had the better of the argument.", status: "reading", by: "Hyam Maccoby, Judaism on Trial (1982); Robert Chazan, Barcelona and Beyond (1992), treats Nahmanides’ narrative as a literary work written for Jewish readers" },
     { claim: "Nahmanides’ Hebrew account and the Latin protocol of Barcelona (1263) each claim the debate went their way.", status: "consensus", by: "Robert Chazan, Barcelona and Beyond (1992)" }
   ],
   experimental: [
@@ -85,6 +86,16 @@ HOD.readings = {
   hegel: [
     { claim: "‘Thesis–antithesis–synthesis’ is not Hegel’s formula.", status: "reading", by: "Gustav E. Mueller, ‘The Hegel Legend of “Thesis-Antithesis-Synthesis”’, Journal of the History of Ideas 19 (1958)" }
   ],
+  tibetan: [
+    { claim: "Debate is how monks interpret and absorb the texts they have memorised; it does more than rehearse fixed answers.", status: "reading", by: "Georges Dreyfus, The Sound of Two Hands Clapping (2003)" }
+  ],
+  havruta: [
+    { claim: "The Talmud praises study with a companion.", status: "attested", by: "Babylonian Talmud, Taanit 7a" },
+    { claim: "When paired study became the standard yeshiva format is uncertain. Shaul Stampfer’s Lithuanian Yeshivas of the Nineteenth Century (2012) is the usual authority for a late date; this site has not checked the claim against his text.", status: "site" }
+  ],
+  disputatio: [
+    { claim: "The scholastic method descends in part from Islamic juridical disputation.", status: "reading", by: "George Makdisi, The Rise of Colleges (1981); most historians of the Latin schools, such as Alex Novikoff (2013), derive it from Latin sources" }
+  ],
   follett: [
     { claim: "Getting to Yes restates Follett’s integration with new cases.", status: "site" }
   ],
@@ -98,7 +109,8 @@ HOD.readings = {
   /* views */
   perspectival: [
     { claim: "The parable of the blind men and the elephant appears in the Pāli canon.", status: "attested", by: "Udāna 6.4" },
-    { claim: "Grouping Mill and Nietzsche with Jain many-sidedness is this site’s choice.", status: "site" }
+    { claim: "Grouping Mill and Nietzsche with Jain many-sidedness is this site’s choice.", status: "site" },
+    { claim: "Protagoras’s measure doctrine is a relativism about truth, and it posits no whole of which each view is a part.", status: "reading", by: "Plato, Theaetetus 152a–c, 166d–167d; M. F. Burnyeat, ‘Protagoras and Self-Refutation in Plato’s Theaetetus’ (1976)" }
   ],
   dialectical: [
     { claim: "‘War is father of all’ and ‘justice is strife’.", status: "attested", by: "Heraclitus, DK B53 and B80" },

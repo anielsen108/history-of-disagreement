@@ -114,6 +114,7 @@ Generated from `site/data/sources.js`.
 - Perdue, Daniel E. *Debate in Tibetan Buddhism*. Ithaca, NY: Snow Lion, 1992.
 - Plato. *Complete Works*. Edited by John M. Cooper. Indianapolis: Hackett, 1997. (Cited by Stephanus pagination.)
 - Plunkett, David, and Tim Sundell. “Disagreement and the Semantics of Normative and Evaluative Terms.” *Philosophers’ Imprint* 13, no. 23 (2013): 1–37.
+- Polletta, Francesca. *Freedom Is an Endless Meeting: Democracy in American Social Movements*. Chicago: University of Chicago Press, 2002.
 - Pranis, Kay, Barry Stuart, and Mark Wedge. *Peacemaking Circles: From Crime to Community*. St. Paul, MN: Living Justice Press, 2003.
 - Quintilian. *The Orator’s Education*. Edited and translated by Donald A. Russell. 5 vols. Loeb Classical Library. Cambridge, MA: Harvard University Press, 2001.
 - Raiffa, Howard. *The Art and Science of Negotiation*. Cambridge, MA: Harvard University Press, 1982.

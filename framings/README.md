@@ -31,6 +31,15 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Clash of final vocabularies](vocabularies.md) — Rorty 1979, 1989
 - [Metalinguistic negotiation](metaling.md) — Plunkett & Sundell 2013
 
+## Generative
+
+*It is no problem at all. Disagreement drives the growth of truth, history, social life or law.*
+
+- [Strife as engine](dialectical.md) — Heraclitus c. 500 BCE; Hegel 1807; Marx
+- [Collision with error](collision.md) — Milton 1644; Mill 1859
+- [Conflict as sociation](sociation.md) — Simmel 1908; Coser 1956
+- [Constructive difference](constructive.md) — Follett 1925
+
 ## Axiological
 
 *It is really about values: rival goods, sacred commitments, incommensurable gods.*
@@ -39,15 +48,6 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Value pluralism](warring_gods.md) — Weber 1917/19; Berlin 1958
 - [Sacred values](sacred.md) — Tetlock 2003; Atran & Axelrod 2008
 - [Moral foundations](foundations.md) — Graham, Haidt & Nosek 2009; Haidt 2012
-
-## Interest
-
-*It is really about what people want: stakes, resources, bargaining positions.*
-
-- [Faction & party](faction.md) — Hume 1741; Madison 1787
-- [Class interest & ideology](class.md) — Marx & Engels 1848
-- [Interests beneath positions](interests.md) — Follett 1925; Fisher & Ury 1981
-- [Mixed-motive game](strategic.md) — Nash 1950; Schelling 1960
 
 ## Power
 
@@ -58,6 +58,26 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Friend & enemy](friend_enemy.md) — Schmitt 1932
 - [Power / knowledge](powerknow.md) — Nietzsche 1887; Foucault 1976–80
 - [Hegemony](hegemony.md) — Gramsci; Laclau & Mouffe; Mouffe 2000
+
+## Interest
+
+*It is really about what people want: stakes, resources, bargaining positions.*
+
+- [Faction & party](faction.md) — Hume 1741; Madison 1787
+- [Class interest & ideology](class.md) — Marx & Engels 1848
+- [Interests beneath positions](interests.md) — Follett 1925; Fisher & Ury 1981
+- [Mixed-motive game](strategic.md) — Nash 1950; Schelling 1960
+
+## Relational
+
+*It is really about us: identity, recognition, the relationship-level message beneath the content.*
+
+- [Character & motive](character.md) — Plato; Avot 5:17; Nyāya
+- [Struggle for recognition](recognition.md) — Hegel 1807; Honneth 1992
+- [Relationship-level message](relationship_level.md) — Watzlawick et al. 1967
+- [Identity](identity.md) — Tajfel & Turner 1979; Stone et al. 1999
+- [Harm to relationship](harm.md) — Zehr 1990
+- [Affective polarisation](polarization.md) — Iyengar et al. 2012; bridging systems 2015–
 
 ## Psyche
 
@@ -71,17 +91,6 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Developmental form](developmental.md) — Kegan 1994; Chapman
 - [Argumentative reasoning](argumentative.md) — Mercier & Sperber 2011; Kahan 2012
 
-## Relational
-
-*It is really about us: identity, recognition, the relationship-level message beneath the content.*
-
-- [Character & motive](character.md) — Plato; Avot 5:17; Nyāya
-- [Struggle for recognition](recognition.md) — Hegel 1807; Honneth 1992
-- [Relationship-level message](relationship_level.md) — Watzlawick et al. 1967
-- [Identity](identity.md) — Tajfel & Turner 1979; Stone et al. 1999
-- [Harm to relationship](harm.md) — Zehr 1990
-- [Affective polarisation](polarization.md) — Iyengar et al. 2012; bridging systems 2015–
-
 ## Contemplative
 
 *It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole.*
@@ -91,12 +100,3 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Plurality willed from above](divine_plurality.md) — Eruvin 13b; Talmud
 - [Disagreement as mercy](ikhtilaf.md) — classical fiqh, 8th c. onward
 - [Incomplete discernment](discernment.md) — Quakers, 1650s–
-
-## Generative
-
-*It is no problem at all. Disagreement drives the growth of truth, history, social life or law.*
-
-- [Strife as engine](dialectical.md) — Heraclitus c. 500 BCE; Hegel 1807; Marx
-- [Collision with error](collision.md) — Milton 1644; Mill 1859
-- [Conflict as sociation](sociation.md) — Simmel 1908; Coser 1956
-- [Constructive difference](constructive.md) — Follett 1925

@@ -15,9 +15,11 @@
 <main>
   <div class="kicker">Part two</div>
   <h1>Views: what disagreement is “really about”</h1>
-  <p class="lede">These are diagnoses. Each tells you where a disagreement lives, and so what would end it, contain it or honour it. Each lists the methods that presuppose it. Where there are none, the entry says so and links to a sketch in the gap gallery.</p>
+  <p class="lede">These are diagnoses. Each tells you where a disagreement lives, and so what would end it, contain it or honour it. Each entry is folded to one line. Open it for the methods that presuppose the view. Where there are none, the entry says so and links to a sketch in the gap gallery.</p>
   <p class="page-thesis">How this bears on the thesis: each view lists the methods that assume it, so you can see which diagnoses have a method and which do not. <a href="index.html">The thesis</a></p>
-  <div class="filterbar"><input id="q" class="search" type="search" placeholder="Filter (e.g. ‘identity’, ‘Wittgenstein’)" aria-label="Filter views"></div>
+  <div class="filterbar"><input id="q" class="search" type="search" placeholder="Filter (e.g. ‘identity’, ‘Wittgenstein’)" aria-label="Filter views">
+    <button type="button" class="btn" data-fold="open">Open all</button> <button type="button" class="btn" data-fold="shut">Close all</button></div>
+  <div class="legend jump" id="jump"></div>
   <div id="list"></div>
 </main>
 <script src="vendor/d3.min.js"></script>

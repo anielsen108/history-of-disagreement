@@ -54,7 +54,7 @@ disputatio,equivocation,true,false
 disputatio,aporia,false,false
 disputatio,error,false,false
 obligationes,aporia,true,false
-staged,sovereign,true,false
+staged,sovereign,true,true
 staged,powerknow,false,false
 conference,perspectival,true,false
 conference,vanity,false,false

@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md)
 - **Gave rise to:** [Sovereign arbitration](arbitration.md)
 
-Before a king, Jewish scholars were compelled to debate Christian (often convert) disputants on whether the Talmud attests the Messiah’s advent. The outcome was politically fixed before it began. Nahmanides was granted freedom of speech and was later prosecuted for publishing his account. The disputation kept its form, but power had settled the result in advance.
+Christian authorities compelled Jewish scholars to debate Christian disputants, often converts, before a king or pope. At Paris in 1240 the Talmud itself stood accused, and copies were burned afterwards. At Barcelona in 1263 the question was whether the Talmud attests that the Messiah has come. The king granted Nahmanides freedom of speech, and the Dominicans later prosecuted him for publishing his account. The Christian side set the question and the limits of reply, so the Jewish disputant was allowed to defend and forbidden to attack.
 
 ## Procedure
 1. Sovereign sets the question and the limits of speech
@@ -28,6 +28,7 @@ Before a king, Jewish scholars were compelled to debate Christian (often convert
 
 
 ## Whose reading?
+- *reading*: Nahmanides spoke freely at Barcelona and had the better of the argument. Hyam Maccoby, Judaism on Trial (1982); Robert Chazan, Barcelona and Beyond (1992), treats Nahmanides’ narrative as a literary work written for Jewish readers.
 - *consensus*: Nahmanides’ Hebrew account and the Latin protocol of Barcelona (1263) each claim the debate went their way. Robert Chazan, Barcelona and Beyond (1992).
 
 

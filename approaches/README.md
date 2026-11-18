@@ -27,17 +27,6 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Street epistemology](street_epist.md) — Boghossian 2013; Magnabosco et al.
 - [Double crux](double_crux.md) — CFAR; Sabien 2017
 
-## Victory
-
-*The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded.*
-
-- [Antilogic](antilogic.md) — c. 450–400 BCE
-- [Eristic](eristic.md) — late 5th c. BCE; satirised c. 380 BCE
-- [Jalpa & vitaṇḍā](jalpa.md) — Nyāya-sūtra c. 2nd c. CE
-- [Staged religious disputation](staged.md) — Paris 1240; Barcelona 1263; Tortosa 1413–14
-- [Eristic dialectic](schopenhauer.md) — written c. 1830–31; published 1864
-- [Moral reframing](moral_reframing.md) — Feinberg & Willer 2015
-
 ## Formation
 
 *Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open.*
@@ -66,6 +55,26 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Bridging systems](polis.md) — vTaiwan 2015–; Birdwatch/Community Notes 2021–
 - [AI-mediated deliberation](ai_mediated.md) — Tessler et al. 2024
 
+## Victory
+
+*The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded.*
+
+- [Antilogic](antilogic.md) — c. 450–400 BCE
+- [Eristic](eristic.md) — late 5th c. BCE; satirised c. 380 BCE
+- [Jalpa & vitaṇḍā](jalpa.md) — Nyāya-sūtra c. 2nd c. CE
+- [Staged religious disputation](staged.md) — Paris 1240; Barcelona 1263; Tortosa 1413–14
+- [Eristic dialectic](schopenhauer.md) — written c. 1830–31; published 1864
+- [Moral reframing](moral_reframing.md) — Feinberg & Willer 2015
+
+## Plurality
+
+*The parties keep the disagreement on record and honour it. Ending it would be a loss.*
+
+- [Dispute for the sake of Heaven](machloket.md) — Hillel & Shammai 1st c. BCE; Mishnah c. 200 CE; Bavli c. 500–600
+- [Syādvāda (sevenfold predication)](syadvada.md) — anekānta early; saptabhaṅgī systematised c. 5th–8th c. CE
+- [Science of juristic disagreement](khilaf.md) — Ibn Rushd’s *Bidāyat al-mujtahid*, c. 1168–88
+- [Agonistic pluralism](agonism.md) — Mouffe 2000, 2005
+
 ## Settlement
 
 *Parties want different things; the exchange seeks terms both can accept.*
@@ -93,15 +102,6 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Difficult conversations](difficult.md) — Stone, Patton & Heen, 1999
 - [Ideological Turing test & steelmanning](itt.md) — Caplan 2011
 - [Deep canvassing](deep_canvass.md) — Broockman & Kalla 2016; 2020
-
-## Plurality
-
-*The parties keep the disagreement on record and honour it. Ending it would be a loss.*
-
-- [Dispute for the sake of Heaven](machloket.md) — Hillel & Shammai 1st c. BCE; Mishnah c. 200 CE; Bavli c. 500–600
-- [Syādvāda (sevenfold predication)](syadvada.md) — anekānta early; saptabhaṅgī systematised c. 5th–8th c. CE
-- [Science of juristic disagreement](khilaf.md) — Ibn Rushd’s *Bidāyat al-mujtahid*, c. 1168–88
-- [Agonistic pluralism](agonism.md) — Mouffe 2000, 2005
 
 ## Release
 

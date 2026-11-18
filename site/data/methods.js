@@ -55,7 +55,7 @@ HOD.methods = [
 { id: "stasis", name: "Stasis theory", native: "stasis / status / constitutio", date: -150, when: "Hermagoras of Temnos, mid-2nd c. BCE",
   family: "greek", telos: "decision", parents: ["rhetoric"], views: ["equivocation", "error", "unmeasurable", "sovereign"],
   who: "Hermagoras; Cicero; Quintilian; Hermogenes",
-  summary: "Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. It asks four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
+  summary: "Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. The theory sets four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
   moves: ["Identify the stasis before arguing", "Concede earlier stases to contest later ones", "Shift the issue (translatio) when the forum is wrong"],
   note: "Most quarrels are carried on at two different stases at once. One party argues fact while the other argues definition.",
   cite: [["cicero_inv", "1.10–16"], ["quintilian", "3.6"], ["heath1995"]] },
@@ -75,7 +75,7 @@ HOD.methods = [
   cite: [["sextus", "PH 1.8–10, 1.25–29, 1.164–177"]] },
 
 // ───────────────────────────── South Asian ─────────────────────────────
-{ id: "atthaka", name: "Refusing dispute", native: "vivāda-pahāna (Aṭṭhakavagga)", date: -400, when: "among the oldest strata of the Pāli canon",
+{ id: "atthaka", name: "Refusing dispute", native: "Aṭṭhakavagga; kalaha-vivāda (quarrels and disputes)", date: -400, when: "among the oldest strata of the Pāli canon",
   family: "indic", telos: "release", parents: [], views: ["attachment", "vanity"],
   who: "The Buddha of the Aṭṭhakavagga (Sutta Nipāta, ch. 4)",
   summary: "The sage does not enter disputes. Those who say ‘only this is pure’ and call the other a fool are bound by their views (diṭṭhi), and their debates yield only praise or blame and the anxiety of losing. Quarrels arise from what is held dear, and what is held dear from desire. Gómez reads this as an early form of the Madhyamaka stance, which treats holding a view as the illness and offers no better view as a cure.",
@@ -113,14 +113,14 @@ HOD.methods = [
 { id: "syadvada", name: "Syādvāda (sevenfold predication)", native: "anekāntavāda; saptabhaṅgī", date: 550, when: "anekānta early; saptabhaṅgī systematised c. 5th–8th c. CE",
   family: "indic", telos: "plurality", parents: [], views: ["perspectival"],
   who: "Jain logicians: Siddhasena, Samantabhadra, Akalaṅka",
-  summary: "Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. This is the elephant parable formalised as a logic.",
+  summary: "Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. Jain authors used the parable of the blind men and the elephant to teach the point. The earliest surviving version is Buddhist (Udāna 6.4), where it mocks disputing sectarians.",
   moves: ["Index each claim to a standpoint", "Map rival claims onto the seven predications", "Reject only the absolutising ‘only’"],
   cite: [["matilal1981"], ["udana", "6.4"]] },
 
 { id: "tibetan", name: "Tibetan monastic debate", native: "rtsod pa; bsdus grwa", date: 1150, when: "Sangphu, 12th c.; Geluk curriculum to the present",
   family: "indic", telos: "formation", parents: ["prasanga", "vada"], views: ["error", "aporia"],
   who: "Chapa Chökyi Senge; Geluk monasteries (Sera, Drepung, Ganden)",
-  summary: "A standing defender sits, and a challenger stands, claps and stamps on each point. The challenger presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. Dreyfus calls it hermeneutics through combat. Monks learn the canon by being forced to defend it in public.",
+  summary: "The defender sits. Standing over him, the challenger claps and stamps as he puts each point. He presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. On Dreyfus’s account, monks come to understand the texts they have memorised by being forced to defend them in public.",
   moves: ["State a consequence", "Defender answers with one of three replies", "Clap on each point; lineage-specific gestures mark defeat"],
   cite: [["dreyfus2003"], ["perdue1992"]] },
 
@@ -128,9 +128,9 @@ HOD.methods = [
 { id: "bian", name: "Mohist disputation", native: "辯 biàn", date: -300, when: "Later Mohist Canons, c. 300 BCE",
   family: "sinitic", telos: "truth", parents: [], views: ["names", "error"],
   who: "The Later Mohists",
-  summary: "Canon A74: ‘disputation is contending over converse claims’. One party says ‘it is an ox’ and the other ‘it is not’, and only one can fit (dang). Bian is a practice of distinguishing (bian 辨). It asks whether a name fits a thing, and it uses analogical procedures such as ‘parallelising’ (mou) and ‘inferring’ (tui). The Mohists rejected Zhuangzi-style relativism: someone wins every genuine dispute.",
+  summary: "Canon A74: ‘disputation is contending over converse claims’. One party says ‘it is an ox’ and the other ‘it is not’, and only one can fit (dang). Bian is a practice of distinguishing (bian 辨). It asks whether a name fits a thing, and it uses analogical procedures such as ‘parallelising’ (mou) and ‘inferring’ (tui). The Mohists denied that a disputation can have no winner (Canon B35): of two converse claims, one must fit.",
   moves: ["Fix the predicate under dispute", "Draw parallels between cases (mou, tui)", "Judge which side fits (dang)"],
-  cite: [["graham1978", "A74"], ["fraser_mohist"]] },
+  cite: [["graham1978", "A74, B35"], ["fraser_mohist"]] },
 
 { id: "zhengming", name: "Rectification of names", native: "正名 zhèngmíng", date: -250, when: "Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE)",
   family: "sinitic", telos: "decision", parents: [], views: ["names", "sovereign"],
@@ -194,14 +194,14 @@ HOD.methods = [
 { id: "obligationes", name: "Obligational disputation", native: "obligationes", date: 1300, when: "c. 1200–1400; Walter Burley c. 1302",
   family: "latin", telos: "formation", parents: ["disputatio", "aristotelian_dialectic"], views: ["aporia"],
   who: "Walter Burley; Roger Swyneshed; William of Ockham",
-  summary: "The respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.",
+  summary: "A respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. An opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.",
   moves: ["Positum accepted", "Grant what follows; deny what is incompatible; answer irrelevant sentences by their truth", "Lose on inconsistency"],
   cite: [["dutilh2007"], ["sep_obligationes"]] },
 
 { id: "staged", name: "Staged religious disputation", native: "disputatio coram rege", date: 1263, when: "Paris 1240; Barcelona 1263; Tortosa 1413–14",
   family: "latin", telos: "victory", parents: ["disputatio"], views: ["sovereign", "powerknow"],
   who: "Nahmanides vs. Pablo Christiani (Barcelona)",
-  summary: "Before a king, Jewish scholars were compelled to debate Christian (often convert) disputants on whether the Talmud attests the Messiah’s advent. The outcome was politically fixed before it began. Nahmanides was granted freedom of speech and was later prosecuted for publishing his account. The disputation kept its form, but power had settled the result in advance.",
+  summary: "Christian authorities compelled Jewish scholars to debate Christian disputants, often converts, before a king or pope. At Paris in 1240 the Talmud itself stood accused, and copies were burned afterwards. At Barcelona in 1263 the question was whether the Talmud attests that the Messiah has come. The king granted Nahmanides freedom of speech, and the Dominicans later prosecuted him for publishing his account. The Christian side set the question and the limits of reply, so the Jewish disputant was allowed to defend and forbidden to attack.",
   moves: ["Sovereign sets the question and the limits of speech", "Victory declared by the stronger party"],
   cite: [["chazan1992"], ["maccoby1982"]] },
 
@@ -290,7 +290,7 @@ HOD.methods = [
   who: "Movement for a New Society; Clamshell Alliance; Occupy",
   summary: "Activist movements secularised Quaker practice. Their consensus process uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
   moves: ["Proposal → clarifying questions → concerns → amendments", "Test for consensus; record stand-asides; honour blocks"],
-  cite: [["sheeran1983"]] },
+  cite: [["polletta2002"], ["sheeran1983"]] },
 
 // ───────────────────────────── German speculative philosophy (placed in civic lane) ─────────────────────────────
 { id: "hegel", name: "Speculative dialectic", native: "Aufhebung", date: 1807, when: "Hegel, <i>Phenomenology</i>, 1807",
@@ -325,7 +325,7 @@ HOD.methods = [
 { id: "game_bargaining", name: "Strategic bargaining", native: "game theory of conflict", date: 1950, when: "Nash 1950; Schelling 1960; Raiffa 1982",
   family: "negotiation", telos: "settlement", parents: [], views: ["strategic", "interests"],
   who: "John Nash; Thomas Schelling; Howard Raiffa",
-  summary: "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
+  summary: "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of reservation prices and zones of agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
   moves: ["Map payoffs and alternatives", "Find focal points", "Manage commitments and credible threats"],
   cite: [["nash1950"], ["schelling1960"], ["raiffa1982"]] },
 
@@ -346,14 +346,14 @@ HOD.methods = [
 { id: "mediation", name: "Mediation", native: "facilitative, transformative & narrative mediation", date: 1976, when: "Pound Conference 1976; Bush & Folger 1994; Winslade & Monk 2000",
   family: "negotiation", telos: "settlement", parents: ["follett"], views: ["interests", "relationship_level", "harm"],
   who: "Frank Sander; Robert Baruch Bush & Joseph Folger; John Winslade & Gerald Monk",
-  summary: "Sander’s ‘multi-door courthouse’ launched modern alternative dispute resolution: send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.",
+  summary: "Sander’s 1976 address launched modern alternative dispute resolution. Its idea, soon named the ‘multi-door courthouse’, was to send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.",
   moves: ["Neutral third party controls process, not outcome", "Separate positions from interests (facilitative)", "Follow the parties’ shifts in empowerment and recognition (transformative)", "Externalise the conflict story (narrative)"],
   cite: [["sander1976"], ["bush1994"], ["winslade2000"]] },
 
 { id: "principled", name: "Principled negotiation", native: "Harvard Negotiation Project", date: 1981, when: "Fisher & Ury, 1981",
   family: "negotiation", telos: "settlement", parents: ["follett", "game_bargaining"], views: ["interests"],
   who: "Roger Fisher; William Ury",
-  summary: "The method has four rules. Separate the people from the problem. Focus on interests, not positions. Invent options for mutual gain. Insist on objective criteria. A fifth instruction follows: know your BATNA. The central claim is that a position encodes interests with loss, and that interests are compatible more often than positions are.",
+  summary: "The method has four rules: separate the people from the problem; focus on interests, not positions; invent options for mutual gain; insist on objective criteria. A fifth instruction follows: know your BATNA. The central claim is that a position encodes interests with loss, and that interests are compatible more often than positions are.",
   moves: ["Ask ‘why?’ behind each position", "Brainstorm before evaluating", "Agree on standards before applying them"],
   cite: [["fisher1981"]] },
 
@@ -389,7 +389,7 @@ HOD.methods = [
 { id: "mi", name: "Motivational interviewing", native: "evoking change talk", date: 1983, when: "Miller 1983; Miller & Rollnick 1991",
   family: "dialogic", telos: "understanding", parents: ["rogerian"], views: ["threat"],
   who: "William R. Miller; Stephen Rollnick",
-  summary: "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology and deep canvassing descend from it.",
+  summary: "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology borrows from it, and deep canvassing resembles it.",
   moves: ["Open questions; affirmations; reflections; summaries (OARS)", "Elicit their reasons, not yours", "Avoid the righting reflex"],
   cite: [["miller1991"]] },
 

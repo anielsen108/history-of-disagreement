@@ -10,7 +10,7 @@
 - **Descends from:** [Deliberative rhetoric](rhetoric.md)
 - **Gave rise to:** [Adversarial trial & cross-examination](adversarial.md)
 
-Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. It asks four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.
+Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. The theory sets four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.
 
 ## Procedure
 1. Identify the stasis before arguing

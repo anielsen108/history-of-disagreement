@@ -8,3 +8,5 @@ taxonomy.html|Method ↔ view Lineage of methods
 methods.36.summary|may ‘stand aside’ or may block
 about.html|Sources: Heath 1995
 about.html|Practices not yet entered include
+methods.48.summary|The ‘what happened’ conversation
+methods.50.summary|In fights the aim

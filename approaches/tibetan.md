@@ -10,7 +10,7 @@
 - **Descends from:** [Prasaṅga (reductio without thesis)](prasanga.md), [Vāda (good-faith debate)](vada.md)
 
 
-A standing defender sits, and a challenger stands, claps and stamps on each point. The challenger presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. Dreyfus calls it hermeneutics through combat. Monks learn the canon by being forced to defend it in public.
+The defender sits. Standing over him, the challenger claps and stamps as he puts each point. He presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. On Dreyfus’s account, monks come to understand the texts they have memorised by being forced to defend them in public.
 
 ## Procedure
 1. State a consequence
@@ -27,6 +27,9 @@ A standing defender sits, and a challenger stands, claps and stamps on each poin
 
 **Strongest critique** (Critics of scholastic monasticism (cf. Dreyfus 2003)): The courtyard trains the defence of orthodoxy, and nobody questions the canon.
 
+
+## Whose reading?
+- *reading*: Debate is how monks interpret and absorb the texts they have memorised; it does more than rehearse fixed answers. Georges Dreyfus, The Sound of Two Hands Clapping (2003).
 
 
 ## Sources

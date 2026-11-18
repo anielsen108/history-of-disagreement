@@ -26,7 +26,7 @@ HOD.views = [
 
 { id: "perspectival", name: "Partial perspectives", domain: "epistemic", date: -450, when: "Protagoras; Jain anekānta; Mill; Nietzsche",
   who: "Protagoras; Jain logicians; J. S. Mill; Nietzsche",
-  summary: "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
+  summary: "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. Protagoras holds a stronger thesis, on which each person is the measure and no larger whole stands behind the appearances. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
   implies: "Standpoint indexing, both-sides argument, synthesis.",
   quote: { t: "There is only a perspective seeing, only a perspective ‘knowing’.", src: "Nietzsche, Genealogy III.12" },
   cite: [["matilal1981"], ["udana", "6.4"], ["mill1859", "ch. 2"], ["nietzsche1887", "III.12"]] },
@@ -52,7 +52,7 @@ HOD.views = [
 
 { id: "burdens", name: "Burdens of judgment", domain: "epistemic", date: 1993, when: "Rawls 1993 (anticipated by ʿilm al-khilāf)",
   who: "John Rawls",
-  summary: "Reasonable people disagree without any of them being irrational or ill-willed. Evidence is complex and conflicting. People weigh considerations differently. Concepts are vague at the edges. Total life experience shapes judgment. Normative considerations pull both ways, and every institution must select among values. Rawls calls reasonable pluralism the normal result of human reason exercised under free institutions.",
+  summary: "Reasonable people disagree without any of them being irrational or ill-willed. Evidence is complex and conflicting, and people weigh the same considerations differently. Concepts are vague at the edges. A person’s whole experience of life shapes their judgment. Normative considerations pull both ways, and every institution must select among values. Rawls calls reasonable pluralism the normal result of human reason exercised under free institutions.",
   implies: "Toleration; public reason; deliberation without expectation of convergence.",
   cite: [["rawls1993", "Lecture II §2"]] },
 

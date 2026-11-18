@@ -15,13 +15,15 @@
       host.innerHTML = groups.map((g) => {
         const items = g.items.filter(match).sort((a, b) => a.date - b.date);
         if (!items.length) return "";
-        return `<div class="group-head">${g.color ? `<span class="dot" style="background:${g.color}"></span>` : ""}<h2 style="margin:0">${g.name}</h2><span class="meta">${items.length}</span></div>
+        return `<div class="group-head" id="g-${g.id}">${g.color ? `<span class="dot" style="background:${g.color}"></span>` : ""}<h2 style="margin:0">${g.name}</h2><span class="meta">${items.length}</span></div>
           ${g.gloss ? `<p class="group-gloss">${g.gloss}</p>` : ""}
-          ${items.map((m) => `<article class="entry" id="${m.id}">${H.renderMethod(m)}</article>`).join("")}`;
+          ${items.map(H.foldEntry).join("")}`;
       }).join("") || "<p>No match.</p>";
+      document.getElementById("jump").innerHTML = key === "date" ? "" : `<span class="legend-title">Jump to</span>` + groups.filter((g) => g.items.some(match)).map((g) =>
+        `<a class="chip" href="#g-${g.id}">${g.color ? `<span class="dot" style="background:${g.color}"></span>` : ""}${g.name} <span class="meta">${g.items.filter(match).length}</span></a>`).join("");
     }
     sel.onchange = render; q.oninput = render; render();
-    if (location.hash) setTimeout(() => { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }, 30);
+    H.wireFolds(host);
   }
 
   function viewsPage() {
@@ -33,13 +35,15 @@
       host.innerHTML = H.domains.map((d) => {
         const items = H.views.filter((v) => v.domain === d.id && match(v)).sort((a, b) => a.date - b.date);
         if (!items.length) return "";
-        return `<div class="group-head"><span class="dot" style="background:${H.domainColor[d.id]}"></span><h2 style="margin:0">${d.name}</h2><span class="meta">${items.length}</span></div>
+        return `<div class="group-head" id="g-${d.id}"><span class="dot" style="background:${H.domainColor[d.id]}"></span><h2 style="margin:0">${d.name}</h2><span class="meta">${items.length}</span></div>
           <p class="group-gloss">${d.gloss}</p>
-          ${items.map((v) => `<article class="entry" id="${v.id}">${H.renderView(v)}</article>`).join("")}`;
+          ${items.map(H.foldEntry).join("")}`;
       }).join("") || "<p>No match.</p>";
+      document.getElementById("jump").innerHTML = `<span class="legend-title">Jump to</span>` + H.domains.filter((d) => H.views.some((v) => v.domain === d.id && match(v))).map((d) =>
+        `<a class="chip" href="#g-${d.id}"><span class="dot" style="background:${H.domainColor[d.id]}"></span>${d.name} <span class="meta">${H.views.filter((v) => v.domain === d.id && match(v)).length}</span></a>`).join("");
     }
     q.oninput = render; render();
-    if (location.hash) setTimeout(() => { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }, 30);
+    H.wireFolds(host);
   }
 
   function timelinePage() {

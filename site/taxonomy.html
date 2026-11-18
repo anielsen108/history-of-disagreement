@@ -15,11 +15,11 @@
 <main>
   <div class="kicker">Graphic taxonomy</div>
   <h1>Taxonomy</h1>
-  <p class="lede">The same corpus is drawn four ways. The two-column diagram shows which diagnosis each method presupposes. The lineage map shows who descends from whom. The table spells out every link by name. The last tab shows how the mix of diagnoses shifted over time.</p>
+  <p class="lede">The same corpus is drawn four ways. The two-column diagram puts each diagnosis on the left and the methods that presuppose it on the right. A lineage map shows who descends from whom. The table names every link. The last tab shows how the mix of diagnoses shifted over time.</p>
   <p class="page-thesis">How this bears on the thesis: every thread in the first diagram is one method’s assumption about what disagreement is. <a href="index.html">The thesis</a></p>
 
   <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-tab="t-wheel">Method ↔ view</button>
+    <button role="tab" aria-selected="true" data-tab="t-wheel">View ↔ method</button>
     <button role="tab" aria-selected="false" data-tab="t-lineage">Lineage of methods</button>
     <button role="tab" aria-selected="false" data-tab="t-matrix">Table</button>
     <button role="tab" aria-selected="false" data-tab="t-drift">Over time</button>
@@ -36,7 +36,8 @@
       </div>
       <div id="wheel"></div>
     </div>
-    <p class="viz-caption">Threads are coloured by the method’s telos. Within each domain, views are ordered by the average height of the methods that use them, which cuts down crossings. Dashed threads mark primary pairings that scholars contest. Hover a group heading to light a whole telos or domain. Click a name to focus it; click again, or press “Read entry”, to open it. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
+    <p class="viz-caption">Read from left to right: a view of what disagreement is about, then the methods built on it. Threads take the colour of the view’s domain. A heavy thread marks a method’s primary view, and a dashed thread marks a primary pairing that scholars contest. Tick “Primary threads only” to leave one thread per method. </p>
+    <p class="viz-caption">Inside each group, rows are ordered by the average height of their partners, which removes most crossings; the order of the groups was chosen the same way. Hover a group heading to light a whole domain or telos. Click a name to focus it; click again, or press “Read entry”, to open it. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
   </section>
 
   <section class="tabpanel" id="t-lineage" hidden>
@@ -44,15 +45,15 @@
       <div id="legend-t2"></div>
       <div class="viz-scroll" id="lineage"></div>
     </div>
-    <p class="viz-caption">One lane per family of methods. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Hover to light a method’s full ancestry and descent. Click the legend to hide teloi. Scroll sideways on small screens.</p>
+    <p class="viz-caption">One lane per family of methods. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Each edge takes the colour of the later method’s telos. Hover a method to light its full ancestry and descent, and click it to open the entry. Click the legend to dim a telos. The axis gives half its width to the years since 1900, where half the methods fall. Scroll sideways on small screens.</p>
   </section>
 
   <section class="tabpanel" id="t-matrix" hidden>
-    <div class="viz-toolbar"><label for="sort">Group rows by</label>
-      <select id="sort"><option value="telos">telos</option><option value="family">family</option><option value="date">date</option></select>
-      <span class="meta">Each cell names the views a method presupposes in that domain. ★ marks the primary one.</span></div>
+    <div class="viz-toolbar"><label for="sort">Order rows by</label>
+      <select id="sort"><option value="domain">domain</option><option value="count">number of methods</option><option value="date">date</option></select>
+      <span class="meta">Views run down the side. Each cell names the methods with that telos that presuppose the view. ★ marks a method’s primary view.</span></div>
     <div class="viz-frame"><div id="matrix"></div></div>
-    <h2>Telos × domain</h2>
+    <h2>Domain × telos</h2>
     <div id="tdt"></div>
   </section>
 
@@ -135,8 +136,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   draw();
 
-  const lin = H.drawLineage(document.getElementById("lineage"));
-  document.getElementById("legend-t2").append(H.legend("Telos (click to filter)", H.teloi, H.teloColor, (on) => lin.filter(on)));
+  // The lineage map is drawn to the page width, so it is drawn when its tab is first shown and redrawn on resize.
+  const linHost = document.getElementById("lineage");
+  let lin = null, linOn = null;
+  const drawLin = () => { lin = H.drawLineage(linHost); if (linOn) lin.filter(linOn); };
+  document.getElementById("legend-t2").append(H.legend("Telos (click to filter)", H.teloi, H.teloColor, (on) => { linOn = on; if (lin) lin.filter(on); }));
+  let rz = null;
+  window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (tab === "lineage") drawLin(); else lin = null; }, 200); });
   const sort = document.getElementById("sort");
   const drawM = () => H.drawMatrix(document.getElementById("matrix"), sort.value);
   sort.onchange = drawM; drawM();
@@ -156,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tab = id;
     tabs.forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === "t-" + id));
     document.querySelectorAll(".tabpanel").forEach((p) => (p.hidden = p.id !== "t-" + id));
+    if (id === "lineage" && !lin) drawLin();
     writeURL();
   }
   tabs.forEach((t) => (t.onclick = () => show(t.dataset.tab.slice(2))));

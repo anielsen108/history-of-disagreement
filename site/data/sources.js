@@ -55,6 +55,7 @@ HOD.sources = {
   kamali2003: "Kamali, Mohammad Hashim. <i>Principles of Islamic Jurisprudence</i>. 3rd ed. Cambridge: Islamic Texts Society, 2003.",
 
   // ── Latin scholastic ──────────────────────────────────────────
+  polletta2002: "Polletta, Francesca. <i>Freedom Is an Endless Meeting: Democracy in American Social Movements</i>. Chicago: University of Chicago Press, 2002.",
   novikoff2013: "Novikoff, Alex J. <i>The Medieval Culture of Disputation: Pedagogy, Practice, and Performance</i>. Philadelphia: University of Pennsylvania Press, 2013.",
   abelard: "Abelard, Peter. <i>Sic et Non: A Critical Edition</i>. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77.",
   aquinas: "Thomas Aquinas. <i>Summa Theologiae</i>. Cited by part, question and article.",

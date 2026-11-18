@@ -4,10 +4,12 @@
 (function () {
   const H = window.HOD;
   H.drawPeople = function (host) {
-    const W = 1500, left = 165, right = 30, top = 34, CH = 6.4, NOW = 2026;
+    // Drawn at the page width so the whole span is visible without sideways scrolling on a desktop.
+    const avail = (host.closest("main") || document.body).clientWidth - 58;
+    const W = Math.max(1040, Math.min(1500, avail)), left = 150, right = 150, top = 34, CH = 6.4, NOW = 2026;
     const x = d3.scaleLinear()
       .domain([-560, 0, 1000, 1500, 1800, 1900, 1950, 2030])
-      .range([0, .14, .27, .38, .52, .64, .78, 1].map((t) => left + t * (W - left - right)));
+      .range([0, .11, .21, .31, .47, .62, .80, 1].map((t) => left + t * (W - left - right)));
     const lanes = []; let y = top;
     H.regions.forEach((r) => {
       const ps = H.people.filter((p) => p.region === r.id).sort((a, b) => a.born - b.born);
@@ -33,11 +35,11 @@
       .attr("x", 0).attr("y", (l) => l.y).attr("width", W).attr("height", (l) => l.h - 2).attr("opacity", (l, i) => (i % 2 ? 0.035 : 0.012));
     svg.append("g").selectAll("text").data(lanes).join("text").attr("class", "lane-label")
       .attr("x", 8).attr("y", (l) => l.y + 18).text((l) => l.r.name.toUpperCase());
-    const ticks = [-500, -250, 0, 500, 1000, 1250, 1500, 1650, 1800, 1850, 1900, 1950, 2000];
+    const ticks = [-500, 0, 500, 1000, 1500, 1650, 1800, 1850, 1900, 1950, 2000];
     const ax = svg.append("g").attr("class", "axis");
     ticks.forEach((t) => {
       ax.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", top - 4).attr("y2", Ht - 20).attr("stroke-dasharray", "2,4");
-      ax.append("text").attr("x", x(t)).attr("y", top - 10).attr("text-anchor", "middle").text(H.year(t));
+      ax.append("text").attr("x", x(t)).attr("y", top - 10).attr("text-anchor", "middle").text(t === 0 ? "1 CE" : H.year(t));
     });
 
     const edges = [];

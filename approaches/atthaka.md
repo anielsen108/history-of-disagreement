@@ -1,6 +1,6 @@
 # Refusing dispute
 
-*vivāda-pahāna (Aṭṭhakavagga)*
+*Aṭṭhakavagga; kalaha-vivāda (quarrels and disputes)*
 
 - **When:** among the oldest strata of the Pāli canon
 - **Who:** The Buddha of the Aṭṭhakavagga (Sutta Nipāta, ch. 4)
