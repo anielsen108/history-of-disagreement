@@ -304,7 +304,11 @@ table.simple th { background: var(--chip); }
 .cmp th { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); width: 10rem; font-weight: 600; }
 .cmp thead th { font-family: var(--serif); text-transform: none; letter-spacing: 0; font-size: 1.4rem; color: var(--ink); }
 .cmp td.same { background: color-mix(in srgb, var(--accent-2) 7%, transparent); }
-.cmp-pick { display: flex; flex-wrap: wrap; gap: .8rem 2rem; font-family: var(--sans); font-size: .9rem; margin: 1rem 0; }
+.cmp-pick { display: flex; flex-wrap: wrap; align-items: flex-end; gap: .8rem 2rem; font-family: var(--sans); font-size: .9rem; margin: 1rem 0; }
+.cmp-side { flex: 1 1 20rem; min-width: 0; }
+.cmp-chips { display: flex; flex-wrap: wrap; gap: .25rem; margin-bottom: .4rem; }
+.cmp-chips .chip[aria-pressed="true"] { border-color: var(--ink-3); color: var(--ink); font-weight: 600; }
+.cmp-chips .chip[aria-pressed="false"] { opacity: .65; }
 .cmp-pick select { font: inherit; padding: .25rem .45rem; border-radius: 6px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); max-width: 100%; }
 @media (max-width: 640px) { .cmp th { width: auto; } .cmp, .cmp tbody, .cmp tr, .cmp td, .cmp th { display: block; } .cmp thead { display: none; } .cmp td::before { content: attr(data-l); display: block; font-family: var(--sans); font-size: .7rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; } }
 

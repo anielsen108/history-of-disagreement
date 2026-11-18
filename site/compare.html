@@ -15,11 +15,11 @@
 <main>
   <div class="kicker">Side by side</div>
   <h1>Compare two methods</h1>
-  <p class="lede">Pick two methods. Rows where they agree are shaded, so the differences stand out. The address bar keeps your choice, so the comparison can be shared.</p>
+  <p class="lede">Pick two methods. The chips above each list choose which aim it shows. Rows where they agree are shaded, so the differences stand out. The address bar keeps your choice, so the comparison can be shared.</p>
   <p class="page-thesis">How this bears on the thesis: two methods with different diagnoses will each look like evasion from the other’s side. <a href="index.html">The thesis</a></p>
   <form class="cmp-pick" id="pick" onsubmit="return false">
-    <label>First method <select name="a"></select></label>
-    <label>Second method <select name="b"></select></label>
+    <div class="cmp-side"><div class="cmp-chips" data-for="a"></div><label>First method <select name="a"></select></label></div>
+    <div class="cmp-side"><div class="cmp-chips" data-for="b"></div><label>Second method <select name="b"></select></label></div>
     <button type="button" class="btn" id="swap">Swap</button>
   </form>
   <div id="verdict" class="prose"></div>
@@ -41,11 +41,22 @@
 document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
   const f = document.getElementById("pick"), A = f.a, B = f.b;
-  const opts = H.teloi.map((t) => `<optgroup label="${t.name}">${H.methods.filter((m) => m.telos === t.id).sort((a, b) => a.date - b.date).map((m) => `<option value="${m.id}">${H.strip(m.name)}</option>`).join("")}</optgroup>`).join("");
-  A.innerHTML = B.innerHTML = opts;
+  /* Each picker lists one telos at a time. The chips above it choose which. */
+  const filt = {};
+  function fill(sel, id, telos) {
+    const key = sel.name;
+    filt[key] = telos || H.M[id].telos;
+    const list = H.methods.filter((m) => m.telos === filt[key]).sort((a, b) => a.date - b.date);
+    const cur = list.some((m) => m.id === id) ? "" : `<option value="${id}">${H.strip(H.M[id].name)} (${H.T[H.M[id].telos].name})</option>`;
+    sel.innerHTML = cur + list.map((m) => `<option value="${m.id}">${H.strip(m.name)}</option>`).join("");
+    sel.value = id;
+    const box = f.querySelector(`.cmp-chips[data-for=${key}]`);
+    box.innerHTML = H.teloi.map((t) => `<button type="button" class="chip" data-t="${t.id}" aria-pressed="${t.id === filt[key]}">${H.dot(H.teloColor[t.id])}${t.name}</button>`).join("");
+    box.querySelectorAll("button").forEach((b) => { b.onclick = () => { fill(sel, sel.value, b.dataset.t); sel.focus(); }; });
+  }
   const q = new URLSearchParams(location.search);
-  A.value = H.M[q.get("a")] ? q.get("a") : "elenchus";
-  B.value = H.M[q.get("b")] ? q.get("b") : (A.value === "vada" ? "elenchus" : "vada");
+  const a0 = H.M[q.get("a")] ? q.get("a") : "elenchus";
+  fill(A, a0); fill(B, H.M[q.get("b")] ? q.get("b") : (a0 === "vada" ? "elenchus" : "vada"));
   const views = (m) => m.views.map((v, i) => H.link(v, { star: i === 0 })).join(", ");
   const rows = [
     ["Native name", (m) => m.native || "", (a, b) => false],
@@ -80,8 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
       : "Different ends and different diagnoses. Using one where the other is expected will feel like a category mistake.";
     document.getElementById("verdict").innerHTML = `<p><b>${gist}</b> ${shared.length ? `Both presuppose ${shared.map((v) => H.link(v)).join(", ")}.` : "They share no presupposed view."} ${kin}</p>`;
   }
-  A.onchange = B.onchange = render;
-  document.getElementById("swap").onclick = () => { [A.value, B.value] = [B.value, A.value]; render(); };
+  A.onchange = () => { fill(A, A.value); render(); };
+  B.onchange = () => { fill(B, B.value); render(); };
+  document.getElementById("swap").onclick = () => { const a = A.value, b = B.value; fill(A, b); fill(B, a); render(); };
   render();
 });
 </script>
