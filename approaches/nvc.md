@@ -10,7 +10,7 @@
 - **Descends from:** [Rogerian exchange](rogerian.md)
 
 
-Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC thus redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.
+Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.
 
 ## Moves
 - Observe without evaluating

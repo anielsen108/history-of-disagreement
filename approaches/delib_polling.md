@@ -8,7 +8,7 @@
 - **Descends from:** [Discourse ethics](discourse_ethics.md), [Parliamentary debate](parliament.md)
 - **Gave rise to:** [Citizens’ assemblies](citizens.md), [Bridging systems](polis.md), [AI-mediated deliberation](ai_mediated.md)
 
-A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Disagreement is treated as partly a product of inattention and misinformation, which deliberation reduces, and partly as real and reportable.
+A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Fishkin treats some disagreement as a product of inattention and misinformation, which deliberation reduces. The rest is real, and the second poll reports it.
 
 ## Moves
 - Random sample

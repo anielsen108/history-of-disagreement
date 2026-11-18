@@ -94,7 +94,7 @@ Generated from `site/data/views.js`. Grouped by domain.
 
 ## Generative
 
-*It is not a problem at all: disagreement is the engine of truth, history, sociation or law.*
+*It is no problem at all. Disagreement drives the growth of truth, history, social life or law.*
 
 - [Strife as engine](dialectical.md) — Heraclitus c. 500 BCE; Hegel 1807; Marx
 - [Collision with error](collision.md) — Milton 1644; Mill 1859

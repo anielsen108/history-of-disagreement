@@ -10,7 +10,7 @@
 - **Descends from:** [Sense of the meeting](quaker.md)
 
 
-Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. Disagreement is treated as information about a proposal’s weakness. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).
+Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).
 
 ## Moves
 - Proposal → clarifying questions → concerns → amendments

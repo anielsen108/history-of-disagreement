@@ -10,7 +10,7 @@
 - **Descends from:** [Rogerian exchange](rogerian.md)
 
 
-Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. The aim is to break the ‘old conversation’ of stereotyped positions and to make each side’s complexity visible.
+Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. Facilitators aim to break the ‘old conversation’ of stereotyped positions and to show the complexity on each side.
 
 ## Moves
 - Agreements in advance

@@ -10,7 +10,7 @@
 - **Descends from:** [Deliberative polling](delib_polling.md)
 - **Gave rise to:** [AI-mediated deliberation](ai_mediated.md)
 
-Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. Disagreement is modelled as geometry, and the target is the bridging statement, not the median.
+Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. The system models disagreement as geometry and looks for the bridging statement, not the median.
 
 ## Moves
 - Crowd-written statements

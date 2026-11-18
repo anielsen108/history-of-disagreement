@@ -10,7 +10,7 @@
 - **Descends from:** [Coffeehouse & public sphere](coffeehouse.md), [Community of inquiry](peirce.md)
 - **Gave rise to:** [Deliberative polling](delib_polling.md)
 
-Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Disagreement is a breakdown in mutual understanding that discourse is designed to repair.
+Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Habermas treats disagreement as a breakdown of mutual understanding, which discourse is designed to repair.
 
 ## Moves
 - Identify the validity claim at issue

@@ -6,7 +6,7 @@
   {
    "id": "truth",
    "name": "Truth",
-   "gloss": "Disagreement is a symptom of error; the exchange exists to remove it. Winning is incidental."
+   "gloss": "The parties treat disagreement as a sign that someone is wrong. They talk in order to remove the error, and winning is incidental."
   },
   {
    "id": "victory",
@@ -21,7 +21,7 @@
   {
    "id": "decision",
    "name": "Decision",
-   "gloss": "A collective must act; disagreement is processed into a binding choice without being dissolved."
+   "gloss": "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place."
   },
   {
    "id": "settlement",
@@ -31,17 +31,17 @@
   {
    "id": "understanding",
    "name": "Understanding",
-   "gloss": "The exchange aims at accurate mutual comprehension and repaired relation; agreement is optional."
+   "gloss": "Each party tries to understand the other accurately and to repair the relationship. Agreement is optional."
   },
   {
    "id": "plurality",
    "name": "Plurality",
-   "gloss": "Disagreement is to be preserved, recorded and honoured; closure is a loss."
+   "gloss": "The parties keep the disagreement on record and honour it. Ending it would be a loss."
   },
   {
    "id": "release",
    "name": "Release",
-   "gloss": "The goal is to be freed from the grip of positions: suspension, emptiness, the hinge of the Way."
+   "gloss": "The parties seek freedom from the grip of positions, through suspension of judgment, emptiness, or the hinge of the Way."
   }
  ],
  "families": [
@@ -146,7 +146,7 @@
   {
    "id": "generative",
    "name": "Generative",
-   "gloss": "It is not a problem at all: disagreement is the engine of truth, history, sociation or law."
+   "gloss": "It is no problem at all. Disagreement drives the growth of truth, history, social life or law."
   }
  ],
  "regions": [
@@ -209,7 +209,7 @@
     "Treat the audience as the measure of success",
     "Exploit the reversibility of commonplaces (good/bad, just/unjust)"
    ],
-   "note": "Plato’s whole project can be read as a refusal of antilogic that keeps borrowing its tools.",
+   "note": "One can read Plato’s project as a refusal of antilogic that keeps borrowing its tools.",
    "date_confidence": "approx",
    "pairing_confidence": "contested",
    "third_party": "The audience, who judge which logos prevails.",
@@ -256,7 +256,7 @@
    "parents": [
     "antilogic"
    ],
-   "summary": "Argument for the sake of winning. Any answer the respondent gives is turned into a refutation by equivocation, ambiguity or sheer pace. In the Euthydemus the brothers show that a learner both knows and does not know. Aristotle wrote the Sophistical Refutations as a field guide to eristic, so that a dialectician could detect and defuse it.",
+   "summary": "Argument for the sake of winning. The eristic turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the Euthydemus the brothers show that a learner both knows and does not know. Aristotle wrote the Sophistical Refutations as a field guide to eristic, so that a dialectician could detect and defuse it.",
    "moves": [
     "Ask questions whose every answer is a trap",
     "Trade on homonymy and amphiboly",
@@ -576,7 +576,7 @@
     "utramque",
     "antilogic"
    ],
-   "summary": "Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement itself (diaphōnia) is the first of Agrippa’s five modes. When philosophers and ordinary people dispute with no way to decide, the sceptic suspends judgment and picks no side.",
+   "summary": "Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement (diaphōnia) is the first of Agrippa’s five modes. When philosophers and ordinary people dispute with no way to decide, the sceptic suspends judgment and picks no side.",
    "moves": [
     "Oppose appearance to appearance, thought to thought",
     "Invoke the modes (dispute, regress, relativity, hypothesis, circularity)",
@@ -587,7 +587,7 @@
    "pairing_confidence": "explicit",
    "third_party": "None.",
    "ends_well_when": "Suspension of judgment, and with it tranquillity.",
-   "typical_failure": "Practical paralysis, or covert dogmatism about suspension itself.",
+   "typical_failure": "Practical paralysis, or covert dogmatism about suspension.",
    "critique": {
     "who": "Hume, Enquiry concerning Human Understanding XII (1748)",
     "from_view": "hinges",
@@ -750,7 +750,7 @@
    "parents": [
     "vada"
    ],
-   "summary": "Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis: pure refutation. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school thus admits that good-faith debate needs a defence against bad faith.",
+   "summary": "Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis, in which the debater only refutes. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school admits that good-faith debate needs a defence against bad faith.",
    "moves": [
     "Exploit chala and jāti",
     "In vitaṇḍā, refute without asserting"
@@ -806,7 +806,7 @@
    "pairing_confidence": "explicit",
    "third_party": "None.",
    "ends_well_when": "Every view is shown untenable; grasping ceases.",
-   "typical_failure": "Looks like nihilism or pure destructive cavil.",
+   "typical_failure": "It can look like nihilism or mere destructive cavil.",
    "critique": {
     "who": "Naiyāyika objectors (Vigrahavyāvartanī vv. 1–20)",
     "from_view": "error",
@@ -969,7 +969,7 @@
     "sovereign"
    ],
    "parents": [],
-   "summary": "‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi thus treats disagreement as a disorder of language and prescribes a political cure.",
+   "summary": "‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi treats disagreement as a disorder of language and prescribes a political cure.",
    "moves": [
     "Settle terminology by authority and convention",
     "Treat clever disputation that confuses names as subversion"
@@ -1147,7 +1147,7 @@
    "parents": [
     "machloket"
    ],
-   "summary": "Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The disagreement is aimed at the text more than at the partner.",
+   "summary": "Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The partners argue with the text more than with each other.",
    "moves": [
     "Read aloud; propose a reading",
     "Partner challenges from the text",
@@ -1488,7 +1488,7 @@
    "pairing_confidence": "interpretive",
    "third_party": "Witnesses, and the machine.",
    "ends_well_when": "An attested matter of fact.",
-   "typical_failure": "Facts are made by instruments and witnesses that can themselves be disputed.",
+   "typical_failure": "Instruments and witnesses make the facts, and both are open to dispute.",
    "critique": {
     "who": "Hobbes, Dialogus physicus (1661)",
     "from_view": "sovereign",
@@ -1607,7 +1607,7 @@
    "parents": [
     "disputatio"
    ],
-   "summary": "Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ Disagreement would become an arithmetic error, detectable on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.",
+   "summary": "Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ A disagreement would become an error in arithmetic that anyone could find on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.",
    "moves": [
     "Formalise terms",
     "Compute",
@@ -1830,7 +1830,7 @@
    "pairing_confidence": "explicit",
    "third_party": "The clerk, who discerns and minutes the sense of the meeting.",
    "ends_well_when": "Unity, or a recorded stand-aside.",
-   "typical_failure": "Fails when interests genuinely conflict or shared faith is absent.",
+   "typical_failure": "Fails when interests conflict or shared faith is absent.",
    "critique": {
     "who": "Jane Mansbridge, Beyond Adversary Democracy (1980)",
     "from_view": "interests",
@@ -1898,7 +1898,7 @@
    "parents": [
     "quaker"
    ],
-   "summary": "Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. Disagreement is treated as information about a proposal’s weakness. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
+   "summary": "Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
    "moves": [
     "Proposal → clarifying questions → concerns → amendments",
     "Test for consensus; record stand-asides; honour blocks"
@@ -1938,7 +1938,7 @@
    "parents": [
     "platonic_dialectic"
    ],
-   "summary": "Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. Disagreement is the motor of thought and of history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.",
+   "summary": "Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. For Hegel, contradiction drives both thought and history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.",
    "moves": [
     "Take the position at its word",
     "Find its internal contradiction",
@@ -2025,7 +2025,7 @@
    "parents": [
     "experimental"
    ],
-   "summary": "Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. Disagreement is a temporary state of an unfinished inquiry, and the remedy is more and better-designed inquiry.",
+   "summary": "Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. For Peirce, disagreement marks an inquiry that is not yet finished. The remedy is more inquiry, better designed.",
    "moves": [
     "Convert dispute into a question with an investigable answer",
     "Design the test",
@@ -2070,7 +2070,7 @@
    "parents": [
     "hegel"
    ],
-   "summary": "Conflict is ‘the appearance of difference, difference of opinions, of interests’, and Follett says we should use it. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.",
+   "summary": "Follett defines conflict as ‘the appearance of difference, difference of opinions, of interests’, and she says we should use it. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.",
    "moves": [
     "Bring the difference into the open",
     "Break each demand into its constituent desires",
@@ -2109,7 +2109,7 @@
     "interests"
    ],
    "parents": [],
-   "summary": "Conflict is a mixed-motive game: the parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
+   "summary": "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
    "moves": [
     "Map payoffs and alternatives",
     "Find focal points",
@@ -2479,7 +2479,7 @@
    "parents": [
     "rogerian"
    ],
-   "summary": "Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC thus redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.",
+   "summary": "Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.",
    "moves": [
     "Observe without evaluating",
     "Name feelings",
@@ -2520,7 +2520,7 @@
    "parents": [
     "rogerian"
    ],
-   "summary": "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. It is a clinical method that has become a general template for persuasion without confrontation, and it is a direct ancestor of street epistemology and deep canvassing.",
+   "summary": "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology and deep canvassing descend from it.",
    "moves": [
     "Open questions; affirmations; reflections; summaries (OARS)",
     "Elicit their reasons, not yours",
@@ -2559,7 +2559,7 @@
     "attachment"
    ],
    "parents": [],
-   "summary": "A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. Disagreement shows where unexamined assumptions defend themselves as if they were the self.",
+   "summary": "A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. In a disagreement, participants can watch unexamined assumptions defend themselves as if they were the self.",
    "moves": [
     "No agenda, no leader, no decision",
     "Suspend reactions; observe them",
@@ -2600,7 +2600,7 @@
    "parents": [
     "rogerian"
    ],
-   "summary": "Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. The aim is to break the ‘old conversation’ of stereotyped positions and to make each side’s complexity visible.",
+   "summary": "Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. Facilitators aim to break the ‘old conversation’ of stereotyped positions and to show the complexity on each side.",
    "moves": [
     "Agreements in advance",
     "Go-rounds with timed, uninterrupted speech",
@@ -2728,7 +2728,7 @@
     "mi",
     "rogerian"
    ],
-   "summary": "Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier study of the method was fabricated (LaCour & Green, 2014, retracted 2015). The genuine replication that followed therefore carries extra weight.",
+   "summary": "Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier study of the method was fabricated (LaCour & Green, 2014, retracted 2015). The genuine replication that followed carries extra weight.",
    "moves": [
     "Elicit their view and rating",
     "Exchange stories instead of arguments",
@@ -2824,7 +2824,7 @@
    "note": "",
    "date_confidence": "firm",
    "pairing_confidence": "interpretive",
-   "third_party": "None; the rules themselves.",
+   "third_party": "None; the rules decide.",
    "ends_well_when": "Commitments made explicit; fallacies flagged.",
    "typical_failure": "Idealises away emotion and power.",
    "critique": {
@@ -2860,7 +2860,7 @@
     "coffeehouse",
     "peirce"
    ],
-   "summary": "Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Disagreement is a breakdown in mutual understanding that discourse is designed to repair.",
+   "summary": "Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Habermas treats disagreement as a breakdown of mutual understanding, which discourse is designed to repair.",
    "moves": [
     "Identify the validity claim at issue",
     "Admit all affected; no coercion",
@@ -2948,7 +2948,7 @@
     "discourse_ethics",
     "parliament"
    ],
-   "summary": "A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Disagreement is treated as partly a product of inattention and misinformation, which deliberation reduces, and partly as real and reportable.",
+   "summary": "A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Fishkin treats some disagreement as a product of inattention and misinformation, which deliberation reduces. The rest is real, and the second poll reports it.",
    "moves": [
     "Random sample",
     "Balanced briefing",
@@ -3083,7 +3083,7 @@
    "parents": [
     "delib_polling"
    ],
-   "summary": "Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. Disagreement is modelled as geometry, and the target is the bridging statement, not the median.",
+   "summary": "Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. The system models disagreement as geometry and looks for the bridging statement, not the median.",
    "moves": [
     "Crowd-written statements",
     "Agree/disagree/pass voting; no replies",
@@ -3261,7 +3261,7 @@
     "calculemus",
     "itt"
    ],
-   "summary": "Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The dispute is moved down the belief-graph until it reaches something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.",
+   "summary": "Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The parties move the dispute down the graph of their beliefs until they reach something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.",
    "moves": [
     "State your conclusion and confidence",
     "Find your crux: ‘if B were false, would I change my mind?’",
@@ -3299,7 +3299,7 @@
    "when": "Socrates onward",
    "who": "Plato; Aquinas; most of the rationalist tradition",
    "domain": "epistemic",
-   "summary": "Two contradictory claims cannot both be true, so at least one party is wrong. Disagreement is a symptom of error, and error is a privation, a lack of knowledge. Socratic intellectualism adds that no one errs willingly. Correct the belief and the dispute dissolves. Most people assume this account without ever stating it.",
+   "summary": "Two contradictory claims cannot both be true, so at least one party is wrong. On this view, disagreement is a symptom of error, and error is a lack of knowledge. Socratic intellectualism adds that no one errs willingly. Correct the belief and the dispute dissolves. Most people assume this account without stating it.",
    "implies": "Inquiry, refutation, instruction.",
    "quote": {
     "text": "No one goes willingly toward the bad.",
@@ -3436,7 +3436,7 @@
    "when": "Pyrrhonism; Kant’s antinomies",
    "who": "Sextus Empiricus; Immanuel Kant",
    "domain": "epistemic",
-   "summary": "Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The deadlock comes from the question itself, so neither disputant is at fault.",
+   "summary": "Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The deadlock comes from the question, so neither disputant is at fault.",
    "implies": "Suspension; critique of the question; demarcation.",
    "quote": null,
    "date_confidence": "approx",
@@ -3487,7 +3487,7 @@
    "when": "Peirce; Dewey",
    "who": "C. S. Peirce",
    "domain": "epistemic",
-   "summary": "Disagreement is the state of a community whose inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is therefore a stage that inquiry will pass through.",
+   "summary": "On this view, a community disagrees because its inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is a stage that inquiry will pass through.",
    "implies": "Better experiments; patience; fallibilism.",
    "quote": null,
    "date_confidence": "firm",
@@ -3536,7 +3536,7 @@
    "when": "Aumann 1976; Cowen & Hanson 2004",
    "who": "Robert Aumann; Robin Hanson; Tyler Cowen; CFAR",
    "domain": "epistemic",
-   "summary": "Bayesian agents with common priors whose posteriors are common knowledge cannot agree to disagree. Persistent disagreement therefore implies different priors, private information that has not been shared, or something other than honest truth-seeking. Cowen and Hanson conclude that most disagreements are dishonest, because each party gives its own judgment more weight than it should. The practical version breaks the dispute down into world-models and finds the crux.",
+   "summary": "Bayesian agents with common priors whose posteriors are common knowledge cannot agree to disagree. Persistent disagreement implies different priors, private information that has not been shared, or something other than honest truth-seeking. Cowen and Hanson conclude that most disagreements are dishonest, because each party gives its own judgment more weight than it should. The practical version breaks the dispute down into world-models and finds the crux.",
    "implies": "Share evidence; locate cruxes; bet; update.",
    "quote": null,
    "date_confidence": "firm",
@@ -3567,7 +3567,7 @@
    "when": "Kelly 2005; Christensen 2007; Elga 2007",
    "who": "Thomas Kelly; David Christensen; Adam Elga",
    "domain": "epistemic",
-   "summary": "Suppose you learn that an epistemic peer, someone as informed and as able as you, disagrees with you. The question is whether you should move toward their view. Conciliationists (Christensen, Elga) say yes: ‘equal weight’. Steadfast views (Kelly) say the first-order evidence still counts. On this view, the disagreement counts as evidence, including evidence about your own reliability.",
+   "summary": "Suppose you learn that an epistemic peer, someone as informed and as able as you, disagrees with you. Epistemologists ask whether you should then move toward their view. Conciliationists (Christensen, Elga) say yes: ‘equal weight’. Steadfast views (Kelly) say the first-order evidence still counts. On this view, the disagreement counts as evidence, including evidence about your own reliability.",
    "implies": "Calibrated humility; or principled steadfastness.",
    "quote": null,
    "date_confidence": "firm",
@@ -3646,7 +3646,7 @@
    "when": "Aristotle; Abelard; James 1907; Chalmers 2011",
    "who": "Aristotle; Peter Abelard; William James; David Chalmers",
    "domain": "linguistic",
-   "summary": "The parties use one word in two senses and so do not really contradict each other. Aristotle classes homonymy first among the fallacies dependent on language. Abelard reconciles authorities by distinguishing senses. In James’s squirrel case, whether a man ‘goes round’ a squirrel depends on what ‘round’ means. Chalmers proposes the ‘method of elimination’: ban the contested word and see whether a dispute remains.",
+   "summary": "The parties use one word in two senses and so do not contradict each other. Aristotle classes homonymy first among the fallacies dependent on language. Abelard reconciles authorities by distinguishing senses. In James’s squirrel case, whether a man ‘goes round’ a squirrel depends on what ‘round’ means. Chalmers proposes the ‘method of elimination’: ban the contested word and see whether a dispute remains.",
    "implies": "Distinguo; taboo the word; restate without the term.",
    "quote": null,
    "date_confidence": "firm",
@@ -3745,7 +3745,7 @@
    "when": "Rorty 1979, 1989",
    "who": "Richard Rorty",
    "domain": "linguistic",
-   "summary": "Everyone carries a ‘final vocabulary’, words beyond which they have only circular argument. Evidence cannot settle a dispute between vocabularies. One side redescribes the other’s vocabulary in its own terms, or the conversation simply continues. Rorty’s edifying philosophy aims to keep the conversation going and makes no attempt to end it with truth.",
+   "summary": "Everyone carries a ‘final vocabulary’, words beyond which they have only circular argument. Evidence cannot settle a dispute between vocabularies. One side redescribes the other’s vocabulary in its own terms, or the conversation continues. Rorty’s edifying philosophy aims to keep the conversation going and makes no attempt to end it with truth.",
    "implies": "Redescription; irony; keep the conversation going.",
    "quote": null,
    "date_confidence": "firm",
@@ -3966,7 +3966,7 @@
    "when": "Nash 1950; Schelling 1960",
    "who": "Thomas Schelling; John Nash",
    "domain": "interest",
-   "summary": "Conflict is rarely pure. The parties have a common interest in avoiding mutual loss and a conflicting interest over how to divide gains. What looks like argument is often signalling, commitment and the search for a focal point.",
+   "summary": "Schelling holds that few conflicts are pure. The parties have a common interest in avoiding mutual loss and a conflicting interest over how to divide gains. What looks like argument is often signalling, commitment and the search for a focal point.",
    "implies": "Bargaining analysis; credible commitments; focal points.",
    "quote": null,
    "date_confidence": "firm",
@@ -3992,7 +3992,7 @@
    "when": "Marx & Engels 1848",
    "who": "Karl Marx; Friedrich Engels",
    "domain": "interest",
-   "summary": "‘The history of all hitherto existing society is the history of class struggles.’ Ideas follow material positions, and the ruling ideas are the ideas of the ruling class. Many intellectual disagreements are class antagonisms that do not recognise themselves as such.",
+   "summary": "‘The history of all hitherto existing society is the history of class struggles.’ Ideas follow material positions, and the ruling ideas are the ideas of the ruling class. Many intellectual disagreements are class antagonisms in disguise.",
    "implies": "Ideology critique; organising; changing the material base.",
    "quote": null,
    "date_confidence": "firm",
@@ -4042,7 +4042,7 @@
    "when": "Hobbes 1651",
    "who": "Thomas Hobbes",
    "domain": "power",
-   "summary": "Private judgment about right and wrong is the seed of civil war. Dispute is a pre-political condition that only a sovereign arbiter can end. ‘Right reason’ is whatever reason the parties have agreed to treat as authoritative.",
+   "summary": "Private judgment about right and wrong is the seed of civil war. Hobbes treats dispute as a condition that precedes politics and that only a sovereign arbiter can end. ‘Right reason’ is whatever reason the parties have agreed to treat as authoritative.",
    "implies": "Arbitration; delegation of judgment.",
    "quote": null,
    "date_confidence": "firm",
@@ -4088,7 +4088,7 @@
    "when": "Gramsci; Laclau & Mouffe; Mouffe 2000",
    "who": "Chantal Mouffe",
    "domain": "power",
-   "summary": "Every social order is a contingent hegemonic articulation, and every consensus excludes. Disagreement is the trace of what the current settlement suppresses. Mouffe’s aim is to give it legitimate expression.",
+   "summary": "Every social order is a contingent hegemonic articulation, and every consensus excludes. Disagreement marks what the current settlement suppresses. Mouffe’s aim is to give it legitimate expression.",
    "implies": "Agonistic institutions; counter-hegemonic struggle.",
    "quote": null,
    "date_confidence": "firm",
@@ -4336,7 +4336,7 @@
    "when": "Hegel 1807; Honneth 1992",
    "who": "G. W. F. Hegel; Axel Honneth",
    "domain": "relational",
-   "summary": "Self-consciousness exists only in being acknowledged, so the first conflict is a life-and-death struggle for recognition. Honneth turns this into a moral grammar of social conflict. Disrespect in love, rights and esteem drives struggles that present themselves as being about other things.",
+   "summary": "Self-consciousness exists only in being acknowledged, so the first conflict is a life-and-death struggle for recognition. Honneth turns this into a moral grammar of social conflict. Disrespect in love, rights and esteem drives struggles that appear to be about other things.",
    "implies": "Recognition as remedy; attend to disrespect beneath the stated grievance.",
    "quote": null,
    "date_confidence": "firm",
@@ -4411,7 +4411,7 @@
    "when": "Plato; Avot 5:17; Nyāya",
    "who": "Socrates; the Mishnah; Nyāya debaters",
    "domain": "relational",
-   "summary": "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The worth of the exchange lies in the disputants’ intention and virtue more than in its outcome.",
+   "summary": "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The exchange is judged by the disputants’ intention and virtue more than by its outcome.",
    "implies": "Purify motive; judge disputes by their spirit.",
    "quote": null,
    "date_confidence": "approx",
@@ -4438,7 +4438,7 @@
    "when": "Iyengar et al. 2012; bridging systems 2015–",
    "who": "Shanto Iyengar; platform designers",
    "domain": "relational",
-   "summary": "Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement becomes a sorting of social identity, amplified by engagement-ranked media. Researchers measure it as hostility between groups, which can grow while policy views stay close.",
+   "summary": "Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement now sorts people by social identity, and media ranked by engagement amplify the sorting. Researchers measure it as hostility between groups, which can grow while policy views stay close.",
    "implies": "Bridging ranking; cross-cutting contact; de-sorting.",
    "quote": null,
    "date_confidence": "firm",
@@ -4541,7 +4541,7 @@
    "when": "Eruvin 13b; Talmud",
    "who": "The Rabbis",
    "domain": "contemplative",
-   "summary": "‘These and these are the words of the living God.’ Contradictory rulings can both belong to revelation. Halakhic decision is necessary for practice, but the rejected opinion stays Torah, is studied, and may be revived. Disagreement is part of how revelation unfolds.",
+   "summary": "‘These and these are the words of the living God.’ Contradictory rulings can both belong to revelation. Halakhic decision is necessary for practice, but the rejected opinion stays Torah, is studied, and may be revived. On this view, revelation unfolds through disagreement.",
    "implies": "Record minority views; decide without declaring falsehood.",
    "quote": null,
    "date_confidence": "approx",
@@ -4600,7 +4600,7 @@
    "when": "Heraclitus c. 500 BCE; Hegel 1807; Marx",
    "who": "Heraclitus; Hegel; Marx",
    "domain": "generative",
-   "summary": "‘War is father of all and king of all.’ ‘Justice is strife.’ Opposition is the motor of becoming. Hegel makes contradiction the self-movement of the concept, and Marx locates it in material relations. Disagreement is how history and thought advance.",
+   "summary": "‘War is father of all and king of all.’ ‘Justice is strife.’ Opposition is the motor of becoming. Hegel makes contradiction the self-movement of the concept, and Marx locates it in material relations. On this view, history and thought advance through disagreement.",
    "implies": "Sharpen, then sublate, the contradiction.",
    "quote": null,
    "date_confidence": "approx",
@@ -4625,7 +4625,7 @@
    "when": "Milton 1644; Mill 1859",
    "who": "John Milton; J. S. Mill",
    "domain": "generative",
-   "summary": "Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces truth to be re-earned and therefore understood. Disagreement is the immune system of belief.",
+   "summary": "Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces the defenders of a truth to earn it again, and so to understand it.",
    "implies": "Free discussion; devil’s advocacy; protect dissent.",
    "quote": null,
    "date_confidence": "firm",
@@ -4676,7 +4676,7 @@
    "when": "Follett 1925",
    "who": "Mary Parker Follett",
    "domain": "generative",
-   "summary": "Follett asks us to think of conflict as friction in an engine. It is neither good nor bad in itself; it is the appearance of difference, and difference is the raw material of invention. Integration produces something new that neither party brought.",
+   "summary": "Follett asks us to think of conflict as friction in an engine. In itself it is neither good nor bad. It is the appearance of difference, and invention starts from difference. Integration produces something new that neither party brought.",
    "implies": "Integration over compromise.",
    "quote": null,
    "date_confidence": "firm",

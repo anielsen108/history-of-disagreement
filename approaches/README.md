@@ -4,7 +4,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Truth
 
-*Disagreement is a symptom of error; the exchange exists to remove it. Winning is incidental.*
+*The parties treat disagreement as a sign that someone is wrong. They talk in order to remove the error, and winning is incidental.*
 
 - [Socratic elenchus](elenchus.md) — c. 430–399 BCE; Plato’s early dialogues
 - [Platonic dialectic](platonic_dialectic.md) — c. 380–350 BCE
@@ -50,7 +50,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Decision
 
-*A collective must act; disagreement is processed into a binding choice without being dissolved.*
+*A group must act. It turns disagreement into a binding choice and leaves the disagreement in place.*
 
 - [Deliberative rhetoric](rhetoric.md) — c. 340 BCE (systematised)
 - [Rectification of names](zhengming.md) — Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE)
@@ -78,7 +78,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Understanding
 
-*The exchange aims at accurate mutual comprehension and repaired relation; agreement is optional.*
+*Each party tries to understand the other accurately and to repair the relationship. Agreement is optional.*
 
 - [Free conversation](conference.md) — Montaigne, *Essais* III.8, 1588
 - [Coffeehouse & public sphere](coffeehouse.md) — first London coffeehouse 1652; peak c. 1680–1730
@@ -96,7 +96,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Plurality
 
-*Disagreement is to be preserved, recorded and honoured; closure is a loss.*
+*The parties keep the disagreement on record and honour it. Ending it would be a loss.*
 
 - [Dispute for the sake of Heaven](machloket.md) — Hillel & Shammai 1st c. BCE; Mishnah c. 200 CE; Bavli c. 500–600
 - [Syādvāda (sevenfold predication)](syadvada.md) — anekānta early; saptabhaṅgī systematised c. 5th–8th c. CE
@@ -105,7 +105,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Release
 
-*The goal is to be freed from the grip of positions: suspension, emptiness, the hinge of the Way.*
+*The parties seek freedom from the grip of positions, through suspension of judgment, emptiness, or the hinge of the Way.*
 
 - [Refusing dispute](atthaka.md) — among the oldest strata of the Pāli canon
 - [Walking two roads](liangxing.md) — Zhuangzi, Inner Chapters, 4th c. BCE

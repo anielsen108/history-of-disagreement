@@ -10,7 +10,7 @@
 - **Descends from:** [Antilogic](antilogic.md)
 - **Gave rise to:** [Aristotelian dialectic](aristotelian_dialectic.md), [Eristic dialectic](schopenhauer.md)
 
-Argument for the sake of winning. Any answer the respondent gives is turned into a refutation by equivocation, ambiguity or sheer pace. In the *Euthydemus* the brothers show that a learner both knows and does not know. Aristotle wrote the *Sophistical Refutations* as a field guide to eristic, so that a dialectician could detect and defuse it.
+Argument for the sake of winning. The eristic turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the *Euthydemus* the brothers show that a learner both knows and does not know. Aristotle wrote the *Sophistical Refutations* as a field guide to eristic, so that a dialectician could detect and defuse it.
 
 ## Moves
 - Ask questions whose every answer is a trap

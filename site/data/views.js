@@ -6,7 +6,7 @@ HOD.views = [
 // ───────────────────────────── Epistemic ─────────────────────────────
 { id: "error", name: "Error & ignorance", domain: "epistemic", date: -400, when: "Socrates onward",
   who: "Plato; Aquinas; most of the rationalist tradition",
-  summary: "Two contradictory claims cannot both be true, so at least one party is wrong. Disagreement is a symptom of error, and error is a privation, a lack of knowledge. Socratic intellectualism adds that no one errs willingly. Correct the belief and the dispute dissolves. Most people assume this account without ever stating it.",
+  summary: "Two contradictory claims cannot both be true, so at least one party is wrong. On this view, disagreement is a symptom of error, and error is a lack of knowledge. Socratic intellectualism adds that no one errs willingly. Correct the belief and the dispute dissolves. Most people assume this account without stating it.",
   implies: "Inquiry, refutation, instruction.",
   quote: { t: "No one goes willingly toward the bad.", src: "Plato, Protagoras 358c–d" },
   cite: [["plato", "Protagoras 358c–d"]] },
@@ -33,7 +33,7 @@ HOD.views = [
 
 { id: "equipollence", name: "Undecidability", domain: "epistemic", date: 180, when: "Pyrrhonism; Kant’s antinomies",
   who: "Sextus Empiricus; Immanuel Kant",
-  summary: "Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The deadlock comes from the question itself, so neither disputant is at fault.",
+  summary: "Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The deadlock comes from the question, so neither disputant is at fault.",
   implies: "Suspension; critique of the question; demarcation.",
   cite: [["sextus", "PH 1.8, 1.165"], ["kant1781", "A405–567/B432–595; A738/B766"]] },
 
@@ -46,7 +46,7 @@ HOD.views = [
 
 { id: "inquiry", name: "Unfinished inquiry", domain: "epistemic", date: 1877, when: "Peirce; Dewey",
   who: "C. S. Peirce",
-  summary: "Disagreement is the state of a community whose inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is therefore a stage that inquiry will pass through.",
+  summary: "On this view, a community disagrees because its inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is a stage that inquiry will pass through.",
   implies: "Better experiments; patience; fallibilism.",
   cite: [["peirce1877"], ["peirce1878"]] },
 
@@ -58,13 +58,13 @@ HOD.views = [
 
 { id: "priors", name: "Divergent priors & models", domain: "epistemic", date: 1976, when: "Aumann 1976; Cowen & Hanson 2004",
   who: "Robert Aumann; Robin Hanson; Tyler Cowen; CFAR",
-  summary: "Bayesian agents with common priors whose posteriors are common knowledge cannot agree to disagree. Persistent disagreement therefore implies different priors, private information that has not been shared, or something other than honest truth-seeking. Cowen and Hanson conclude that most disagreements are dishonest, because each party gives its own judgment more weight than it should. The practical version breaks the dispute down into world-models and finds the crux.",
+  summary: "Bayesian agents with common priors whose posteriors are common knowledge cannot agree to disagree. Persistent disagreement implies different priors, private information that has not been shared, or something other than honest truth-seeking. Cowen and Hanson conclude that most disagreements are dishonest, because each party gives its own judgment more weight than it should. The practical version breaks the dispute down into world-models and finds the crux.",
   implies: "Share evidence; locate cruxes; bet; update.",
   cite: [["aumann1976"], ["cowen2004"], ["sabien2017"]] },
 
 { id: "peer", name: "Higher-order evidence", domain: "epistemic", date: 2005, when: "Kelly 2005; Christensen 2007; Elga 2007",
   who: "Thomas Kelly; David Christensen; Adam Elga",
-  summary: "Suppose you learn that an epistemic peer, someone as informed and as able as you, disagrees with you. The question is whether you should move toward their view. Conciliationists (Christensen, Elga) say yes: ‘equal weight’. Steadfast views (Kelly) say the first-order evidence still counts. On this view, the disagreement counts as evidence, including evidence about your own reliability.",
+  summary: "Suppose you learn that an epistemic peer, someone as informed and as able as you, disagrees with you. Epistemologists ask whether you should then move toward their view. Conciliationists (Christensen, Elga) say yes: ‘equal weight’. Steadfast views (Kelly) say the first-order evidence still counts. On this view, the disagreement counts as evidence, including evidence about your own reliability.",
   implies: "Calibrated humility; or principled steadfastness.",
   cite: [["kelly2005"], ["christensen2007"], ["elga2007"]] },
 
@@ -84,7 +84,7 @@ HOD.views = [
 
 { id: "equivocation", name: "Equivocation & verbal dispute", domain: "linguistic", date: -350, when: "Aristotle; Abelard; James 1907; Chalmers 2011",
   who: "Aristotle; Peter Abelard; William James; David Chalmers",
-  summary: "The parties use one word in two senses and so do not really contradict each other. Aristotle classes homonymy first among the fallacies dependent on language. Abelard reconciles authorities by distinguishing senses. In James’s squirrel case, whether a man ‘goes round’ a squirrel depends on what ‘round’ means. Chalmers proposes the ‘method of elimination’: ban the contested word and see whether a dispute remains.",
+  summary: "The parties use one word in two senses and so do not contradict each other. Aristotle classes homonymy first among the fallacies dependent on language. Abelard reconciles authorities by distinguishing senses. In James’s squirrel case, whether a man ‘goes round’ a squirrel depends on what ‘round’ means. Chalmers proposes the ‘method of elimination’: ban the contested word and see whether a dispute remains.",
   implies: "Distinguo; taboo the word; restate without the term.",
   cite: [["aristotle", "Sophistical Refutations 165b23–166a7"], ["abelard", "Prologue"], ["james1907", "Lecture II"], ["chalmers2011"]] },
 
@@ -108,7 +108,7 @@ HOD.views = [
 
 { id: "vocabularies", name: "Clash of final vocabularies", domain: "linguistic", date: 1989, when: "Rorty 1979, 1989",
   who: "Richard Rorty",
-  summary: "Everyone carries a ‘final vocabulary’, words beyond which they have only circular argument. Evidence cannot settle a dispute between vocabularies. One side redescribes the other’s vocabulary in its own terms, or the conversation simply continues. Rorty’s edifying philosophy aims to keep the conversation going and makes no attempt to end it with truth.",
+  summary: "Everyone carries a ‘final vocabulary’, words beyond which they have only circular argument. Evidence cannot settle a dispute between vocabularies. One side redescribes the other’s vocabulary in its own terms, or the conversation continues. Rorty’s edifying philosophy aims to keep the conversation going and makes no attempt to end it with truth.",
   implies: "Redescription; irony; keep the conversation going.",
   cite: [["rorty1979", "ch. 8"], ["rorty1989", "ch. 4"]] },
 
@@ -165,13 +165,13 @@ HOD.views = [
 
 { id: "strategic", name: "Mixed-motive game", domain: "interest", date: 1960, when: "Nash 1950; Schelling 1960",
   who: "Thomas Schelling; John Nash",
-  summary: "Conflict is rarely pure. The parties have a common interest in avoiding mutual loss and a conflicting interest over how to divide gains. What looks like argument is often signalling, commitment and the search for a focal point.",
+  summary: "Schelling holds that few conflicts are pure. The parties have a common interest in avoiding mutual loss and a conflicting interest over how to divide gains. What looks like argument is often signalling, commitment and the search for a focal point.",
   implies: "Bargaining analysis; credible commitments; focal points.",
   cite: [["schelling1960"], ["nash1950"]] },
 
 { id: "class", name: "Class interest & ideology", domain: "interest", date: 1848, when: "Marx & Engels 1848",
   who: "Karl Marx; Friedrich Engels",
-  summary: "‘The history of all hitherto existing society is the history of class struggles.’ Ideas follow material positions, and the ruling ideas are the ideas of the ruling class. Many intellectual disagreements are class antagonisms that do not recognise themselves as such.",
+  summary: "‘The history of all hitherto existing society is the history of class struggles.’ Ideas follow material positions, and the ruling ideas are the ideas of the ruling class. Many intellectual disagreements are class antagonisms in disguise.",
   implies: "Ideology critique; organising; changing the material base.",
   cite: [["marx1848"]] },
 
@@ -184,7 +184,7 @@ HOD.views = [
 
 { id: "sovereign", name: "War & sovereignty", domain: "power", date: 1651, when: "Hobbes 1651",
   who: "Thomas Hobbes",
-  summary: "Private judgment about right and wrong is the seed of civil war. Dispute is a pre-political condition that only a sovereign arbiter can end. ‘Right reason’ is whatever reason the parties have agreed to treat as authoritative.",
+  summary: "Private judgment about right and wrong is the seed of civil war. Hobbes treats dispute as a condition that precedes politics and that only a sovereign arbiter can end. ‘Right reason’ is whatever reason the parties have agreed to treat as authoritative.",
   implies: "Arbitration; delegation of judgment.",
   cite: [["hobbes1651", "chs. 5, 13, 18"]] },
 
@@ -196,7 +196,7 @@ HOD.views = [
 
 { id: "hegemony", name: "Hegemony", domain: "power", date: 2000, when: "Gramsci; Laclau & Mouffe; Mouffe 2000",
   who: "Chantal Mouffe",
-  summary: "Every social order is a contingent hegemonic articulation, and every consensus excludes. Disagreement is the trace of what the current settlement suppresses. Mouffe’s aim is to give it legitimate expression.",
+  summary: "Every social order is a contingent hegemonic articulation, and every consensus excludes. Disagreement marks what the current settlement suppresses. Mouffe’s aim is to give it legitimate expression.",
   implies: "Agonistic institutions; counter-hegemonic struggle.",
   cite: [["mouffe2000"], ["mouffe2005"]] },
 
@@ -258,7 +258,7 @@ HOD.views = [
 
 { id: "recognition", name: "Struggle for recognition", domain: "relational", date: 1807, when: "Hegel 1807; Honneth 1992",
   who: "G. W. F. Hegel; Axel Honneth",
-  summary: "Self-consciousness exists only in being acknowledged, so the first conflict is a life-and-death struggle for recognition. Honneth turns this into a moral grammar of social conflict. Disrespect in love, rights and esteem drives struggles that present themselves as being about other things.",
+  summary: "Self-consciousness exists only in being acknowledged, so the first conflict is a life-and-death struggle for recognition. Honneth turns this into a moral grammar of social conflict. Disrespect in love, rights and esteem drives struggles that appear to be about other things.",
   implies: "Recognition as remedy; attend to disrespect beneath the stated grievance.",
   cite: [["hegel1807", "§§178–196"], ["honneth1992"]] },
 
@@ -276,13 +276,13 @@ HOD.views = [
 
 { id: "character", name: "Character & motive", domain: "relational", date: -430, when: "Plato; Avot 5:17; Nyāya",
   who: "Socrates; the Mishnah; Nyāya debaters",
-  summary: "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The worth of the exchange lies in the disputants’ intention and virtue more than in its outcome.",
+  summary: "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The exchange is judged by the disputants’ intention and virtue more than by its outcome.",
   implies: "Purify motive; judge disputes by their spirit.",
   cite: [["mishnah", "Avot 5:17"], ["plato", "Laches 187e–188a"]] },
 
 { id: "polarization", name: "Affective polarisation", domain: "relational", date: 2012, when: "Iyengar et al. 2012; bridging systems 2015–",
   who: "Shanto Iyengar; platform designers",
-  summary: "Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement becomes a sorting of social identity, amplified by engagement-ranked media. Researchers measure it as hostility between groups, which can grow while policy views stay close.",
+  summary: "Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement now sorts people by social identity, and media ranked by engagement amplify the sorting. Researchers measure it as hostility between groups, which can grow while policy views stay close.",
   implies: "Bridging ranking; cross-cutting contact; de-sorting.",
   cite: [["iyengar2012"], ["ovadya2023"]] },
 
@@ -307,7 +307,7 @@ HOD.views = [
 
 { id: "divine_plurality", name: "Plurality willed from above", domain: "contemplative", date: 200, when: "Eruvin 13b; Talmud",
   who: "The Rabbis",
-  summary: "‘These and these are the words of the living God.’ Contradictory rulings can both belong to revelation. Halakhic decision is necessary for practice, but the rejected opinion stays Torah, is studied, and may be revived. Disagreement is part of how revelation unfolds.",
+  summary: "‘These and these are the words of the living God.’ Contradictory rulings can both belong to revelation. Halakhic decision is necessary for practice, but the rejected opinion stays Torah, is studied, and may be revived. On this view, revelation unfolds through disagreement.",
   implies: "Record minority views; decide without declaring falsehood.",
   cite: [["bavli", "Eruvin 13b"], ["halbertal1997"], ["hidary2010"]] },
 
@@ -320,13 +320,13 @@ HOD.views = [
 // ───────────────────────────── Generative ─────────────────────────────
 { id: "dialectical", name: "Strife as engine", domain: "generative", date: -500, when: "Heraclitus c. 500 BCE; Hegel 1807; Marx",
   who: "Heraclitus; Hegel; Marx",
-  summary: "‘War is father of all and king of all.’ ‘Justice is strife.’ Opposition is the motor of becoming. Hegel makes contradiction the self-movement of the concept, and Marx locates it in material relations. Disagreement is how history and thought advance.",
+  summary: "‘War is father of all and king of all.’ ‘Justice is strife.’ Opposition is the motor of becoming. Hegel makes contradiction the self-movement of the concept, and Marx locates it in material relations. On this view, history and thought advance through disagreement.",
   implies: "Sharpen, then sublate, the contradiction.",
   cite: [["heraclitus", "DK B53, B80"], ["hegel1807"]] },
 
 { id: "collision", name: "Collision with error", domain: "generative", date: 1644, when: "Milton 1644; Mill 1859",
   who: "John Milton; J. S. Mill",
-  summary: "Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces truth to be re-earned and therefore understood. Disagreement is the immune system of belief.",
+  summary: "Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces the defenders of a truth to earn it again, and so to understand it.",
   implies: "Free discussion; devil’s advocacy; protect dissent.",
   cite: [["milton1644"], ["mill1859", "ch. 2"]] },
 
@@ -338,7 +338,7 @@ HOD.views = [
 
 { id: "constructive", name: "Constructive difference", domain: "generative", date: 1925, when: "Follett 1925",
   who: "Mary Parker Follett",
-  summary: "Follett asks us to think of conflict as friction in an engine. It is neither good nor bad in itself; it is the appearance of difference, and difference is the raw material of invention. Integration produces something new that neither party brought.",
+  summary: "Follett asks us to think of conflict as friction in an engine. In itself it is neither good nor bad. It is the appearance of difference, and invention starts from difference. Integration produces something new that neither party brought.",
   implies: "Integration over compromise.",
   cite: [["follett1925"]] }
 ];

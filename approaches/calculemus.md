@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md)
 - **Gave rise to:** [Double crux](double_crux.md)
 
-Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ Disagreement would become an arithmetic error, detectable on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.
+Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ A disagreement would become an error in arithmetic that anyone could find on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.
 
 ## Moves
 - Formalise terms

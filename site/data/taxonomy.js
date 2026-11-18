@@ -4,14 +4,14 @@
 var HOD = window.HOD = window.HOD || {};
 
 HOD.teloi = [
-  { id: "truth",       name: "Truth",        gloss: "Disagreement is a symptom of error; the exchange exists to remove it. Winning is incidental." },
+  { id: "truth",       name: "Truth",        gloss: "The parties treat disagreement as a sign that someone is wrong. They talk in order to remove the error, and winning is incidental." },
   { id: "victory",     name: "Victory",      gloss: "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded." },
   { id: "formation",   name: "Formation",    gloss: "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open." },
-  { id: "decision",    name: "Decision",     gloss: "A collective must act; disagreement is processed into a binding choice without being dissolved." },
+  { id: "decision",    name: "Decision",     gloss: "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place." },
   { id: "settlement",  name: "Settlement",   gloss: "Parties want different things; the exchange seeks terms both can accept." },
-  { id: "understanding", name: "Understanding", gloss: "The exchange aims at accurate mutual comprehension and repaired relation; agreement is optional." },
-  { id: "plurality",   name: "Plurality",    gloss: "Disagreement is to be preserved, recorded and honoured; closure is a loss." },
-  { id: "release",     name: "Release",      gloss: "The goal is to be freed from the grip of positions: suspension, emptiness, the hinge of the Way." }
+  { id: "understanding", name: "Understanding", gloss: "Each party tries to understand the other accurately and to repair the relationship. Agreement is optional." },
+  { id: "plurality",   name: "Plurality",    gloss: "The parties keep the disagreement on record and honour it. Ending it would be a loss." },
+  { id: "release",     name: "Release",      gloss: "The parties seek freedom from the grip of positions, through suspension of judgment, emptiness, or the hinge of the Way." }
 ];
 
 HOD.families = [
@@ -40,5 +40,5 @@ HOD.domains = [
   { id: "psyche",     name: "Psyche",        gloss: "It is really about what is happening inside: needs, fear, vanity, envy, motivated cognition, developmental form." },
   { id: "relational", name: "Relational",    gloss: "It is really about us: identity, recognition, the relationship-level message beneath the content." },
   { id: "contemplative", name: "Contemplative", gloss: "It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole." },
-  { id: "generative", name: "Generative",    gloss: "It is not a problem at all: disagreement is the engine of truth, history, sociation or law." }
+  { id: "generative", name: "Generative",    gloss: "It is no problem at all. Disagreement drives the growth of truth, history, social life or law." }
 ];

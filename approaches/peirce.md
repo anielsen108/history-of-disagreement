@@ -10,7 +10,7 @@
 - **Descends from:** [Experimental matter of fact](experimental.md)
 - **Gave rise to:** [Discourse ethics](discourse_ethics.md)
 
-Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. Disagreement is a temporary state of an unfinished inquiry, and the remedy is more and better-designed inquiry.
+Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. For Peirce, disagreement marks an inquiry that is not yet finished. The remedy is more inquiry, better designed.
 
 ## Moves
 - Convert dispute into a question with an investigable answer

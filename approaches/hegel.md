@@ -10,7 +10,7 @@
 - **Descends from:** [Platonic dialectic](platonic_dialectic.md)
 - **Gave rise to:** [Integration](follett.md)
 
-Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. Disagreement is the motor of thought and of history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.
+Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. For Hegel, contradiction drives both thought and history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.
 
 ## Moves
 - Take the position at its word

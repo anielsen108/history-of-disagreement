@@ -6,7 +6,7 @@
 - **Remedy implied:** Better experiments; patience; fallibilism.
 - **Methods presupposing it:** [Community of inquiry](../approaches/peirce.md)
 
-Disagreement is the state of a community whose inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is therefore a stage that inquiry will pass through.
+On this view, a community disagrees because its inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is a stage that inquiry will pass through.
 
 ## Sources
 - Peirce, Charles S. “The Fixation of Belief.” *Popular Science Monthly* 12 (November 1877): 1–15.

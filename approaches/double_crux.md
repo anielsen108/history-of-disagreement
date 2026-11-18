@@ -8,7 +8,7 @@
 - **Descends from:** [Calculemus](calculemus.md), [Ideological Turing test & steelmanning](itt.md)
 
 
-Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The dispute is moved down the belief-graph until it reaches something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.
+Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The parties move the dispute down the graph of their beliefs until they reach something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.
 
 ## Moves
 - State your conclusion and confidence

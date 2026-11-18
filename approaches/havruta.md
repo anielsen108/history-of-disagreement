@@ -10,7 +10,7 @@
 - **Descends from:** [Dispute for the sake of Heaven](machloket.md)
 
 
-Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The disagreement is aimed at the text more than at the partner.
+Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The partners argue with the text more than with each other.
 
 ## Moves
 - Read aloud; propose a reading

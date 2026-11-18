@@ -10,7 +10,7 @@
 
 
 
-A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. Disagreement shows where unexamined assumptions defend themselves as if they were the self.
+A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. In a disagreement, participants can watch unexamined assumptions defend themselves as if they were the self.
 
 ## Moves
 - No agenda, no leader, no decision

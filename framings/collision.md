@@ -6,7 +6,7 @@
 - **Remedy implied:** Free discussion; devil’s advocacy; protect dissent.
 - **Methods presupposing it:** [Havruta](../approaches/havruta.md), [Free and open encounter](../approaches/free_discussion.md), [Coffeehouse & public sphere](../approaches/coffeehouse.md), [Adversarial trial & cross-examination](../approaches/adversarial.md)
 
-Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces truth to be re-earned and therefore understood. Disagreement is the immune system of belief.
+Truth unchallenged becomes dead dogma. Even a false dissent is useful, because it forces the defenders of a truth to earn it again, and so to understand it.
 
 ## Sources
 - Milton, John. *Areopagitica*. London, 1644.

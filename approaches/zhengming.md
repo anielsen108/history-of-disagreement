@@ -10,7 +10,7 @@
 
 - **Gave rise to:** [Court policy debate](saltiron.md)
 
-‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi thus treats disagreement as a disorder of language and prescribes a political cure.
+‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi treats disagreement as a disorder of language and prescribes a political cure.
 
 ## Moves
 - Settle terminology by authority and convention

@@ -17,7 +17,7 @@ Protagoras was reported to be the first to say that on every matter there are tw
 - Treat the audience as the measure of success
 - Exploit the reversibility of commonplaces (good/bad, just/unjust)
 
-> Plato’s whole project can be read as a refusal of antilogic that keeps borrowing its tools.
+> One can read Plato’s project as a refusal of antilogic that keeps borrowing its tools.
 
 ## Sources
 - Diogenes Laertius. *Lives of Eminent Philosophers*. Edited by Tiziano Dorandi. Cambridge: Cambridge University Press, 2013. — 9.51

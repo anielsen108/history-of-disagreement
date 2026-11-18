@@ -11,13 +11,13 @@ HOD.methods = [
   who: "Protagoras; the anonymous <i>Dissoi Logoi</i>",
   summary: "Protagoras was reported to be the first to say that on every matter there are two logoi opposed to each other. Antilogic is the drill that follows: argue the case, then argue its contrary with equal force. Its premise is the homo-mensura doctrine. If each person is the measure, disagreement is the normal condition of speech. The trained speaker learns to make the weaker logos the stronger.",
   moves: ["Pair every speech with its counter-speech", "Treat the audience as the measure of success", "Exploit the reversibility of commonplaces (good/bad, just/unjust)"],
-  note: "Plato’s whole project can be read as a refusal of antilogic that keeps borrowing its tools.",
+  note: "One can read Plato’s project as a refusal of antilogic that keeps borrowing its tools.",
   cite: [["diogenes", "9.51"], ["plato", "Theaetetus 152a"], ["robinson1979"], ["kerferd1981", "ch. 6"]] },
 
 { id: "eristic", name: "Eristic", native: "eristikē", date: -420, when: "late 5th c. BCE; satirised c. 380 BCE",
   family: "greek", telos: "victory", parents: ["antilogic"], views: ["agon", "vanity"],
   who: "Euthydemus and Dionysodorus (as Plato portrays them)",
-  summary: "Argument for the sake of winning. Any answer the respondent gives is turned into a refutation by equivocation, ambiguity or sheer pace. In the <i>Euthydemus</i> the brothers show that a learner both knows and does not know. Aristotle wrote the <i>Sophistical Refutations</i> as a field guide to eristic, so that a dialectician could detect and defuse it.",
+  summary: "Argument for the sake of winning. The eristic turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the <i>Euthydemus</i> the brothers show that a learner both knows and does not know. Aristotle wrote the <i>Sophistical Refutations</i> as a field guide to eristic, so that a dialectician could detect and defuse it.",
   moves: ["Ask questions whose every answer is a trap", "Trade on homonymy and amphiboly", "Claim victory on any apparent contradiction"],
   note: "Walton and Krabbe keep ‘eristic’ as a formal dialogue type: the quarrel, whose real goal is to hit the other party.",
   cite: [["plato", "Euthydemus 275d–277c"], ["aristotle", "Sophistical Refutations 165b–166b"], ["walton1995", "ch. 3"]] },
@@ -70,7 +70,7 @@ HOD.methods = [
 { id: "pyrrhonian", name: "Pyrrhonian equipollence", native: "isostheneia → epochē → ataraxia", date: 180, when: "Pyrrho c. 300 BCE; Aenesidemus 1st c. BCE; Sextus c. 200 CE",
   family: "greek", telos: "release", parents: ["utramque", "antilogic"], views: ["equipollence", "attachment"],
   who: "Sextus Empiricus",
-  summary: "Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement itself (diaphōnia) is the first of Agrippa’s five modes. When philosophers and ordinary people dispute with no way to decide, the sceptic suspends judgment and picks no side.",
+  summary: "Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement (diaphōnia) is the first of Agrippa’s five modes. When philosophers and ordinary people dispute with no way to decide, the sceptic suspends judgment and picks no side.",
   moves: ["Oppose appearance to appearance, thought to thought", "Invoke the modes (dispute, regress, relativity, hypothesis, circularity)", "Suspend; live by appearances"],
   cite: [["sextus", "PH 1.8–10, 1.25–29, 1.164–177"]] },
 
@@ -99,7 +99,7 @@ HOD.methods = [
 { id: "jalpa", name: "Jalpa & vitaṇḍā", native: "jalpa (wrangling); vitaṇḍā (cavil)", date: 150, when: "Nyāya-sūtra c. 2nd c. CE",
   family: "indic", telos: "victory", parents: ["vada"], views: ["agon"],
   who: "Nyāya-sūtra 1.2.2–3",
-  summary: "Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis: pure refutation. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school thus admits that good-faith debate needs a defence against bad faith.",
+  summary: "Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis, in which the debater only refutes. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school admits that good-faith debate needs a defence against bad faith.",
   moves: ["Exploit chala and jāti", "In vitaṇḍā, refute without asserting"],
   cite: [["dasti2017", "NS 1.2.2–3, 4.2.50"], ["matilal1998"]] },
 
@@ -135,7 +135,7 @@ HOD.methods = [
 { id: "zhengming", name: "Rectification of names", native: "正名 zhèngmíng", date: -250, when: "Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE)",
   family: "sinitic", telos: "decision", parents: [], views: ["names", "sovereign"],
   who: "Confucius; Xunzi",
-  summary: "‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi thus treats disagreement as a disorder of language and prescribes a political cure.",
+  summary: "‘If names are not correct, speech will not accord with things’ (Analects 13.3). For Xunzi, disordered names breed disordered disputes. The cure is a sage-king who fixes names by convention, after which the people need not dispute. Xunzi treats disagreement as a disorder of language and prescribes a political cure.",
   moves: ["Settle terminology by authority and convention", "Treat clever disputation that confuses names as subversion"],
   cite: [["analects", "13.3"], ["hutton2014", "ch. 22"]] },
 
@@ -164,7 +164,7 @@ HOD.methods = [
 { id: "havruta", name: "Havruta", native: "חברותא", date: 500, when: "Talmudic ideal; modern yeshiva practice",
   family: "jewish", telos: "formation", parents: ["machloket"], views: ["collision", "divine_plurality"],
   who: "Paired Talmud study",
-  summary: "Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The disagreement is aimed at the text more than at the partner.",
+  summary: "Two learners argue their way through a text aloud. ‘As iron sharpens iron, so two scholars sharpen one another’ (Taanit 7a). ‘Either companionship or death’ (Taanit 23a). Holzer and Kent analyse it as three paired practices: listening and articulating, wondering and focusing, supporting and challenging. The partners argue with the text more than with each other.",
   moves: ["Read aloud; propose a reading", "Partner challenges from the text", "Alternate support and challenge"],
   cite: [["bavli", "Taanit 7a, 23a"], ["holzer2013"]] },
 
@@ -237,7 +237,7 @@ HOD.methods = [
 { id: "calculemus", name: "Calculemus", native: "characteristica universalis", date: 1685, when: "Leibniz, 1685 (after Llull’s <i>Ars</i>, c. 1305)",
   family: "rationalist", telos: "truth", parents: ["disputatio"], views: ["calculation"],
   who: "G. W. Leibniz",
-  summary: "Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ Disagreement would become an arithmetic error, detectable on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.",
+  summary: "Leibniz imagined a universal characteristic in which reasoning would be calculation. ‘When there are disputes among persons, we can simply say: let us calculate, without further ado, to see who is right.’ A disagreement would become an error in arithmetic that anyone could find on paper. No one has built the calculus. The hope survives in decision theory, Bayesian epistemology and the double crux.",
   moves: ["Formalise terms", "Compute", "Locate the error"],
   cite: [["leibniz1685"]] },
 
@@ -288,7 +288,7 @@ HOD.methods = [
 { id: "consensus", name: "Activist consensus process", native: "formal consensus", date: 1971, when: "Movement for a New Society 1971; anti-nuclear and Occupy movements",
   family: "spirit", telos: "decision", parents: ["quaker"], views: ["discernment", "constructive"],
   who: "Movement for a New Society; Clamshell Alliance; Occupy",
-  summary: "Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. Disagreement is treated as information about a proposal’s weakness. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
+  summary: "Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
   moves: ["Proposal → clarifying questions → concerns → amendments", "Test for consensus; record stand-asides; honour blocks"],
   cite: [["sheeran1983"]] },
 
@@ -296,7 +296,7 @@ HOD.methods = [
 { id: "hegel", name: "Speculative dialectic", native: "Aufhebung", date: 1807, when: "Hegel, <i>Phenomenology</i>, 1807",
   family: "civic", telos: "truth", parents: ["platonic_dialectic"], views: ["dialectical", "recognition"],
   who: "G. W. F. Hegel",
-  summary: "Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. Disagreement is the motor of thought and of history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.",
+  summary: "Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. For Hegel, contradiction drives both thought and history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.",
   moves: ["Take the position at its word", "Find its internal contradiction", "Determine the richer standpoint that contains both"],
   cite: [["hegel1807", "§§178–196"], ["mueller1958"]] },
 
@@ -310,7 +310,7 @@ HOD.methods = [
 { id: "peirce", name: "Community of inquiry", native: "fixation of belief", date: 1877, when: "Peirce 1877; Dewey 1938",
   family: "rationalist", telos: "truth", parents: ["experimental"], views: ["inquiry"],
   who: "C. S. Peirce; John Dewey",
-  summary: "Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. Disagreement is a temporary state of an unfinished inquiry, and the remedy is more and better-designed inquiry.",
+  summary: "Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing belief: tenacity, authority, the a priori method, and science. Only science lets ‘some external permanency’ settle opinion, so that all who investigate will in the long run converge. For Peirce, disagreement marks an inquiry that is not yet finished. The remedy is more inquiry, better designed.",
   moves: ["Convert dispute into a question with an investigable answer", "Design the test", "Defer final verdict to the community in the long run"],
   cite: [["peirce1877"], ["peirce1878"]] },
 
@@ -318,14 +318,14 @@ HOD.methods = [
 { id: "follett", name: "Integration", native: "constructive conflict", date: 1925, when: "Mary Parker Follett, 1925",
   family: "negotiation", telos: "settlement", parents: ["hegel"], views: ["constructive", "interests"],
   who: "Mary Parker Follett",
-  summary: "Conflict is ‘the appearance of difference, difference of opinions, of interests’, and Follett says we should use it. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.",
+  summary: "Follett defines conflict as ‘the appearance of difference, difference of opinions, of interests’, and she says we should use it. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.",
   moves: ["Bring the difference into the open", "Break each demand into its constituent desires", "Invent an option that satisfies both"],
   cite: [["follett1925"]] },
 
 { id: "game_bargaining", name: "Strategic bargaining", native: "game theory of conflict", date: 1950, when: "Nash 1950; Schelling 1960; Raiffa 1982",
   family: "negotiation", telos: "settlement", parents: [], views: ["strategic", "interests"],
   who: "John Nash; Thomas Schelling; Howard Raiffa",
-  summary: "Conflict is a mixed-motive game: the parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
+  summary: "Game theory treats conflict as a mixed-motive game. The parties share an interest in agreement and differ on its terms. Nash derives a unique bargaining solution from axioms. Schelling shows that commitment, focal points and threats shape outcomes more than arguments do. Raiffa turns this into practical analysis of BATNAs and zones of possible agreement. The model treats disagreement as a structure of payoffs, and beliefs play little part.",
   moves: ["Map payoffs and alternatives", "Find focal points", "Manage commitments and credible threats"],
   cite: [["nash1950"], ["schelling1960"], ["raiffa1982"]] },
 
@@ -382,28 +382,28 @@ HOD.methods = [
 { id: "nvc", name: "Nonviolent Communication", native: "OFNR", date: 1965, when: "Rosenberg, 1960s; CNVC 1984; book 1999",
   family: "dialogic", telos: "understanding", parents: ["rogerian"], views: ["needs"],
   who: "Marshall Rosenberg",
-  summary: "Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC thus redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.",
+  summary: "Every utterance can be heard as an expression of observation, feeling, need and request. Judgments, demands and diagnoses are ‘tragic expressions of unmet needs’. Needs are universal and never actually in conflict. Strategies are what collide. NVC redescribes disagreement at a level where, by its own hypothesis, conflict cannot exist.",
   moves: ["Observe without evaluating", "Name feelings", "Connect feelings to needs", "Make a doable request"],
   cite: [["rosenberg2003"]] },
 
 { id: "mi", name: "Motivational interviewing", native: "evoking change talk", date: 1983, when: "Miller 1983; Miller & Rollnick 1991",
   family: "dialogic", telos: "understanding", parents: ["rogerian"], views: ["threat"],
   who: "William R. Miller; Stephen Rollnick",
-  summary: "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. It is a clinical method that has become a general template for persuasion without confrontation, and it is a direct ancestor of street epistemology and deep canvassing.",
+  summary: "Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology and deep canvassing descend from it.",
   moves: ["Open questions; affirmations; reflections; summaries (OARS)", "Elicit their reasons, not yours", "Avoid the righting reflex"],
   cite: [["miller1991"]] },
 
 { id: "bohm", name: "Bohmian dialogue", native: "suspension", date: 1985, when: "mid-1980s; <i>On Dialogue</i> 1996",
   family: "dialogic", telos: "understanding", parents: [], views: ["hinges", "attachment"],
   who: "David Bohm",
-  summary: "A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. Disagreement shows where unexamined assumptions defend themselves as if they were the self.",
+  summary: "A group of about twenty to forty people meets without agenda or decision. Participants practise suspending their assumptions, neither acting on them nor suppressing them, so that the group can observe thought as a collective, self-sustaining process. In a disagreement, participants can watch unexamined assumptions defend themselves as if they were the self.",
   moves: ["No agenda, no leader, no decision", "Suspend reactions; observe them", "Attend to the flow of meaning between participants"],
   cite: [["bohm1996"]] },
 
 { id: "public_conv", name: "Reflective structured dialogue", native: "Public Conversations Project / Essential Partners", date: 1989, when: "Boston, 1989–; abortion dialogues 1990s",
   family: "dialogic", telos: "understanding", parents: ["rogerian"], views: ["identity", "polarization"],
   who: "Laura Chasin; Richard Chasin; Margaret Herzig",
-  summary: "Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. The aim is to break the ‘old conversation’ of stereotyped positions and to make each side’s complexity visible.",
+  summary: "Family therapists applied systemic techniques to polarised public issues, starting with abortion. Participants agree to communication rules. They answer prepared questions in timed rounds, beginning with personal experience. They are asked to name uncertainties and ‘grey areas’ within their own view. Facilitators aim to break the ‘old conversation’ of stereotyped positions and to show the complexity on each side.",
   moves: ["Agreements in advance", "Go-rounds with timed, uninterrupted speech", "Questions of genuine curiosity", "Name your own grey areas"],
   cite: [["chasin1996"]] },
 
@@ -424,7 +424,7 @@ HOD.methods = [
 { id: "deep_canvass", name: "Deep canvassing", native: "non-judgmental exchange of narratives", date: 2016, when: "Broockman & Kalla 2016; 2020",
   family: "dialogic", telos: "understanding", parents: ["mi", "rogerian"], views: ["threat", "identity"],
   who: "Leadership LAB (Los Angeles LGBT Center); David Broockman; Joshua Kalla",
-  summary: "Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier study of the method was fabricated (LaCour & Green, 2014, retracted 2015). The genuine replication that followed therefore carries extra weight.",
+  summary: "Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier study of the method was fabricated (LaCour & Green, 2014, retracted 2015). The genuine replication that followed carries extra weight.",
   moves: ["Elicit their view and rating", "Exchange stories instead of arguments", "Invite reflection; re-ask the rating"],
   cite: [["broockman2016"], ["kalla2020"]] },
 
@@ -446,7 +446,7 @@ HOD.methods = [
 { id: "discourse_ethics", name: "Discourse ethics", native: "ideale Sprechsituation", date: 1981, when: "Habermas 1981–83; Apel",
   family: "argument", telos: "truth", parents: ["coffeehouse", "peirce"], views: ["validity"],
   who: "Jürgen Habermas; Karl-Otto Apel",
-  summary: "Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Disagreement is a breakdown in mutual understanding that discourse is designed to repair.",
+  summary: "Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Habermas treats disagreement as a breakdown of mutual understanding, which discourse is designed to repair.",
   moves: ["Identify the validity claim at issue", "Admit all affected; no coercion", "Accept only reasons all could share"],
   cite: [["habermas1981"]] },
 
@@ -461,7 +461,7 @@ HOD.methods = [
 { id: "delib_polling", name: "Deliberative polling", native: "", date: 1988, when: "proposed 1988; first held 1994",
   family: "deliberative", telos: "decision", parents: ["discourse_ethics", "parliament"], views: ["burdens", "interests"],
   who: "James Fishkin",
-  summary: "A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Disagreement is treated as partly a product of inattention and misinformation, which deliberation reduces, and partly as real and reportable.",
+  summary: "A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Fishkin treats some disagreement as a product of inattention and misinformation, which deliberation reduces. The rest is real, and the second poll reports it.",
   moves: ["Random sample", "Balanced briefing", "Small-group deliberation; plenary with experts", "Before/after measurement"],
   cite: [["fishkin1991"], ["fishkin2009"]] },
 
@@ -482,7 +482,7 @@ HOD.methods = [
 { id: "polis", name: "Bridging systems", native: "Pol.is; Community Notes", date: 2015, when: "vTaiwan 2015–; Birdwatch/Community Notes 2021–",
   family: "deliberative", telos: "decision", parents: ["delib_polling"], views: ["polarization"],
   who: "Colin Megill et al. (Pol.is); Audrey Tang; X/Twitter",
-  summary: "Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. Disagreement is modelled as geometry, and the target is the bridging statement, not the median.",
+  summary: "Participants vote agree or disagree on short statements written by one another. Dimensionality reduction maps the opinion clusters, and the system surfaces statements that win support across clusters. Community Notes publishes a fact-check only when raters who usually disagree both rate it helpful. The system models disagreement as geometry and looks for the bridging statement, not the median.",
   moves: ["Crowd-written statements", "Agree/disagree/pass voting; no replies", "Cluster opinion space", "Rank by cross-cluster agreement"],
   cite: [["small2021"], ["wojcik2022"], ["ovadya2023"]] },
 
@@ -511,7 +511,7 @@ HOD.methods = [
 { id: "double_crux", name: "Double crux", native: "", date: 2017, when: "CFAR; Sabien 2017",
   family: "rationalist", telos: "truth", parents: ["calculemus", "itt"], views: ["priors"],
   who: "Center for Applied Rationality; Duncan Sabien",
-  summary: "Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The dispute is moved down the belief-graph until it reaches something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.",
+  summary: "Each party finds their crux, a belief that, if it changed, would change their conclusion. Then they look for a double crux: a single empirical or conceptual question on which both conclusions depend in opposite directions. The parties move the dispute down the graph of their beliefs until they reach something testable. This assumes disagreement is a matter of models and that both parties are trying to be right. Aumann’s theorem stands in the background.",
   moves: ["State your conclusion and confidence", "Find your crux: ‘if B were false, would I change my mind?’", "Search for a shared crux", "Investigate the crux"],
   cite: [["sabien2017"], ["aumann1976"]] }
 ];
