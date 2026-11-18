@@ -15,7 +15,7 @@
 <main>
   <div class="kicker">Guided reading</div>
   <h1>Reading paths</h1>
-  <p class="lede">Each path is a short tour of seven to nine entries, chosen to tell one story across traditions. Start a tour and step through it with the Next button or the arrow keys. Every stop has its own link.</p>
+  <p class="lede">Each path is a short tour of entries, chosen to tell one story across traditions. Start a tour and step through it with the Next button or the arrow keys. Every stop has its own link.</p>
   <div id="paths"></div>
 </main>
 <script src="vendor/d3.min.js"></script>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("paths").innerHTML = H.paths.map((p) => `<section class="gcard" id="${p.id}">
     <h2>${p.name}</h2><p>${p.blurb}</p>
     <div class="path-steps">${p.steps.map((s, i) => `<a href="#tour=${p.id}.${i}" data-tour="${p.id}" data-i="${i}">${H.dot(H.colorOf(s))}${H.get(s).name}</a>`).join('<span class="arrow">→</span>')}</div>
-    <button type="button" class="btn primary" data-tour="${p.id}" data-i="0">Start the tour</button> <span class="meta">${p.steps.length} stops</span></section>`).join("");
+    <button type="button" class="btn primary" data-tour="${p.id}" data-i="0">Start the tour</button></section>`).join("");
   document.getElementById("paths").addEventListener("click", (e) => {
     const t = e.target.closest("[data-tour]"); if (!t) return;
     e.preventDefault(); H.startTour(t.dataset.tour, +t.dataset.i);

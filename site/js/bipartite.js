@@ -32,7 +32,8 @@
     const toggle = () => `<label class="primtoggle"><input type="checkbox" ${primaryOnly ? "checked" : ""}> Primary threads only</label>`;
     const wireToggle = () => { const c = bar.querySelector(".primtoggle input"); if (c) c.onchange = () => { primaryOnly = c.checked; svg.classed("prim", primaryOnly); }; };
     const idle = () => {
-      bar.innerHTML = `<span class="hint">Showing ${views.length} of ${H.views.length} views and ${methods.length} of ${H.methods.length} methods. Click any name to focus it.</span>${toggle()}`;
+      const hidden = views.length < H.views.length || methods.length < H.methods.length;
+      bar.innerHTML = `<span class="hint">${hidden ? "The filters are hiding some entries. " : ""}Click any name to focus it.</span>${toggle()}`;
       wireToggle();
     };
     if (!methods.length && !views.length) { bar.innerHTML = ""; scroller.innerHTML = "<p class='meta' style='padding:1rem'>Nothing matches these filters.</p>"; return {}; }
@@ -133,9 +134,8 @@
     function pin(id) {
       pinned = id; focus([id]);
       const x = H.get(id), kind = H.kind(id);
-      const n = kind === "method" ? x.views.filter((v) => vSet.has(v)).length : x.methods.filter((m) => mSet.has(m.id)).length;
       bar.innerHTML = `<span class="dot" style="display:inline-block;width:.7em;height:.7em;border-radius:50%;background:${H.colorOf(id)}"></span>
-        <b>${x.name}</b><span class="hint">${kind === "method" ? `presupposes ${n} view${n === 1 ? "" : "s"}` : `assumed by ${n} method${n === 1 ? "" : "s"}`}</span>
+        <b>${x.name}</b><span class="hint">${kind === "method" ? "presupposes the views lit on the left" : "is assumed by the methods lit on the right"}</span>
         <button type="button" data-a="open">Read entry</button><button type="button" data-a="clear">Clear focus</button>${toggle()}`;
       bar.querySelector('[data-a=open]').onclick = () => H.open(id);
       bar.querySelector('[data-a=clear]').onclick = unpin;

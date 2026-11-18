@@ -76,8 +76,7 @@
       <button class="theme-toggle" type="button" aria-label="Toggle colour theme">◐ theme</button></div>`;
     document.body.prepend(hdr);
     const ftr = document.createElement("footer");
-    ftr.innerHTML = `<div class="inner">${H.methods.length} methods · ${H.views.length} views · ${(H.people || []).length} people · ${Object.keys(H.sources).length} sources.
-      <a href="data.html">Download the data</a> · <a href="${REPO}/issues/new">Propose a correction</a> · <a href="${REPO}">Source on GitHub</a></div>`;
+    ftr.innerHTML = `<div class="inner"><a href="data.html">Download the data</a> · <a href="${REPO}/issues/new">Propose a correction</a> · <a href="${REPO}">Source on GitHub</a></div>`;
     document.body.append(ftr);
     const root = document.documentElement;
     try { const t = localStorage.getItem("hod-theme"); if (t) root.dataset.theme = t; } catch (e) {}
@@ -109,7 +108,7 @@
       <text x="260" y="126" text-anchor="middle" class="mh">heavy thread = the method’s primary view</text></svg>`;
   };
   const welcomeSteps = () => [
-    { h: "Two questions, one map", b: `<p>This site surveys ${H.methods.length} <b>methods</b> of conducting a disagreement, from Socratic questioning to AI-mediated deliberation. It also surveys ${H.views.length} <b>views</b> of what a disagreement is really about: error, words, values, interests, power, the psyche, the relationship.</p>
+    { h: "Two questions, one map", b: `<p>This site surveys <b>methods</b> of conducting a disagreement, from Socratic questioning to AI-mediated deliberation. It also surveys <b>views</b> of what a disagreement is really about: error, words, values, interests, power, the psyche, the relationship.</p>
       <p>The two are linked. Every method assumes one of the views, so choosing a method is already a diagnosis.</p>` },
     { h: "Read the diagram from left to right", b: `${miniDiagram()}<p>Views sit on the left and methods on the right. A thread joins a view to a method that presupposes it. Hover a name to trace its threads, and click it to hold the focus. A hollow dot marks a view that no method here is built on.</p>` },
     { h: "Open any entry", b: `<p>Click a focused name again, or press “Read entry”. Each method gives its procedure, the view it assumes, how it fails and its strongest critic.</p>
@@ -187,7 +186,7 @@
     H.views.forEach((v) => idx.push({ kind: "View", id: v.id, label: v.name, sub: H.D[v.domain].name, col: H.domainColor[v.domain], hay: H.fold([v.name, v.who].join(" ")), body: H.fold(v.summary) }));
     (H.people || []).forEach((p) => idx.push({ kind: "Person", id: "p:" + p.id, label: p.name, sub: H.year(p.born) + "–" + (p.died ? H.year(p.died) : ""), col: "var(--ink-3)", hay: H.fold(p.name), body: "" }));
     (H.glossary || []).forEach((g) => idx.push({ kind: "Term", id: "g:" + g.id, label: g.term, sub: g.lang, col: "var(--ink-3)", hay: H.fold(g.term + " " + g.match.join(" ")), body: H.fold(g.def) }));
-    (H.paths || []).forEach((p) => idx.push({ kind: "Path", id: "t:" + p.id, label: p.name, sub: p.steps.length + " stops", col: "var(--accent)", hay: H.fold(p.name), body: H.fold(p.blurb) }));
+    (H.paths || []).forEach((p) => idx.push({ kind: "Path", id: "t:" + p.id, label: p.name, sub: "guided tour", col: "var(--accent)", hay: H.fold(p.name), body: H.fold(p.blurb) }));
     return idx;
   }
   const KR = { Method: 0, View: 1, Person: 2, Term: 3, Path: 4 };
@@ -328,10 +327,9 @@
   // List pages show each entry folded to a heading and one line; it opens on click, on a link to it, or on find-in-page.
   H.foldEntry = (x) => {
     const isM = !!H.M[x.id];
-    // The chip carries the other half of the pairing: a method shows its primary view, a view its count of methods.
-    const n = isM ? 0 : x.methods.length;
+    // The chip carries the other half of the pairing: a method shows its primary view, and a view says so when no method is built on it.
     const tagc = isM ? H.chip("assumes: " + H.V[x.views[0]].name, H.domainColor[H.V[x.views[0]].domain])
-      : H.chip(n ? `${n} method${n === 1 ? "" : "s"}` : "no method", n ? H.domainColor[x.domain] : "transparent");
+      : x.methods.length ? "<span></span>" : H.chip("no method", "transparent");
     return `<details class="entry fold" id="${x.id}"><summary><span class="f-name">${x.name}</span>${tagc}
       <span class="f-when">${x.when}${x.who ? ` · ${x.who}` : ""}</span>
       <span class="f-line">${H.firstSentence(x.summary)}</span></summary>
@@ -484,10 +482,5 @@
     return div;
   };
 
-  // Counts in page text come from the data, so prose cannot drift when entries are added: <span data-n="methods"></span>.
-  function counts() {
-    const n = { methods: H.methods.length, views: H.views.length, gaps: H.views.filter((v) => !v.methods.length).length, domains: H.domains.length, teloi: H.teloi.length, people: (H.people || []).length };
-    document.querySelectorAll("[data-n]").forEach((el) => { el.textContent = n[el.dataset.n]; });
-  }
-  document.addEventListener("DOMContentLoaded", () => { chrome(); counts(); setTimeout(fromHash, 0); setTimeout(firstVisit, 250); });
+  document.addEventListener("DOMContentLoaded", () => { chrome(); setTimeout(fromHash, 0); setTimeout(firstVisit, 250); });
 })();

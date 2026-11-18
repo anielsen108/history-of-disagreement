@@ -54,6 +54,9 @@ for (const [p, s] of items) {
     const q = quoted(sent), n = sent.split(/\s+/).length;
     const m = q.match(banRe); if (m) out("error", p, `banned: “${m[1]}”`, sent);
     if (/\w—\w|\s—\s/.test(q)) out("error", p, "em dash in running prose", sent);
+    // Inventory counts ("74 methods", "fifty-five views") are junk information. Proportions ("13 of 27 methods") carry an argument and pass.
+    const tally = q.match(/\b(\d{2,}|ten|eleven|twelve|thirteen|\w+teen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)(-\w+)?\s+(or so\s+)?(methods|views|people|thinkers|sources|entries|paths|tours|terms|excerpts|diagnoses|gaps)\b/i);
+    if (tally && !/\bof\s+$/.test(q.slice(0, tally.index)) && !/^(readings|example|gaps)\./.test(p)) out("error", p, `inventory count: “${tally[0]}”`, sent);
     if (/\?/.test(q) && !/\.moves\.|^example\.|gaps\.\w+\.sketch/.test(p)) out("error", p, "rhetorical question", sent);
     if (hedgeRe.test(q)) out("warn", p, "stacked hedges", sent);
     if (n > 40) out("warn", p, `sentence of ${n} words`, sent);
