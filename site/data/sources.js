@@ -55,6 +55,16 @@ HOD.sources = {
   kamali2003: "Kamali, Mohammad Hashim. <i>Principles of Islamic Jurisprudence</i>. 3rd ed. Cambridge: Islamic Texts Society, 2003.",
 
   // ── Latin scholastic ──────────────────────────────────────────
+  lambertini: "Benedict XIV (Prospero Lambertini). <i>De servorum Dei beatificatione et beatorum canonizatione</i>. 4 vols. Bologna, 1734–38.",
+  jp2_1983: "John Paul II. <i>Divinus perfectionis Magister</i>. Apostolic constitution, 25 January 1983.",
+  janis1972: "Janis, Irving L. <i>Victims of Groupthink</i>. Boston: Houghton Mifflin, 1972.",
+  csiszar2016: "Csiszar, Alex. “Peer Review: Troubled from the Start.” <i>Nature</i> 532 (2016): 306–308.",
+  baldwin2018: "Baldwin, Melinda. “Scientific Autonomy, Public Accountability, and the Rise of ‘Peer Review’ in the Cold War United States.” <i>Isis</i> 109 (2018): 538–558.",
+  zuckerman1971: "Zuckerman, Harriet, and Robert K. Merton. “Patterns of Evaluation in Science: Institutionalisation, Structure and Functions of the Referee System.” <i>Minerva</i> 9 (1971): 66–100.",
+  dalkey1963: "Dalkey, Norman, and Olaf Helmer. “An Experimental Application of the Delphi Method to the Use of Experts.” <i>Management Science</i> 9 (1963): 458–467.",
+  trc1998: "Truth and Reconciliation Commission of South Africa. <i>Report</i>. 5 vols. Cape Town: Juta, 1998.",
+  hayner2011: "Hayner, Priscilla B. <i>Unspeakable Truths: Transitional Justice and the Challenge of Truth Commissions</i>. 2nd ed. New York: Routledge, 2011.",
+  tutu1999: "Tutu, Desmond. <i>No Future Without Forgiveness</i>. New York: Doubleday, 1999.",
   polletta2002: "Polletta, Francesca. <i>Freedom Is an Endless Meeting: Democracy in American Social Movements</i>. Chicago: University of Chicago Press, 2002.",
   novikoff2013: "Novikoff, Alex J. <i>The Medieval Culture of Disputation: Pedagogy, Practice, and Performance</i>. Philadelphia: University of Pennsylvania Press, 2013.",
   abelard: "Abelard, Peter. <i>Sic et Non: A Critical Edition</i>. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77.",

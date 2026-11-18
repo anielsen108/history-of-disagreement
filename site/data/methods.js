@@ -7,7 +7,7 @@ var HOD = window.HOD = window.HOD || {};
 HOD.methods = [
 // ───────────────────────────── Greek & Roman ─────────────────────────────
 { id: "antilogic", name: "Antilogic", native: "antilogikē; dissoi logoi", date: -450, when: "c. 450–400 BCE",
-  family: "greek", telos: "victory", parents: [], views: ["perspectival", "agon"],
+  family: "greek", telos: "victory", parents: [], views: ["measure", "agon"],
   who: "Protagoras; the anonymous <i>Dissoi Logoi</i>",
   summary: "Protagoras was reported to be the first to say that on every matter there are two logoi opposed to each other. Antilogic is the drill that follows: argue the case, then argue its contrary with equal force. Its premise is the homo-mensura doctrine. If each person is the measure, disagreement is the normal condition of speech. The trained speaker learns to make the weaker logos the stronger.",
   moves: ["Pair every speech with its counter-speech", "Treat the audience as the measure of success", "Exploit the reversibility of commonplaces (good/bad, just/unjust)"],
@@ -234,6 +234,13 @@ HOD.methods = [
   moves: ["Bracket rank", "Argue in public about common concerns", "Circulate the argument in print"],
   cite: [["habermas1962"], ["ellis2004"]] },
 
+{ id: "peer_review", name: "Peer review", native: "refereeing", date: 1832, when: "Royal Society Committee of Papers 1752; written referee reports from the 1830s; routine after 1945",
+  family: "civic", telos: "truth", parents: ["experimental"], views: ["error", "inquiry"],
+  who: "The Royal Society; journal editors and referees",
+  summary: "An editor sends a manuscript to a few specialists, who report on its faults in writing and usually without giving their names. The author must answer the reports before the journal prints the paper. The Royal Society asked for written reports on papers from the 1830s. Csiszar and Baldwin show that journals adopted the practice slowly, and that the phrase ‘peer review’ and its standing as a mark of scientific legitimacy date from the 1970s. The method assumes that authors cannot see their own errors and that qualified rivals can.",
+  moves: ["Editor chooses referees with competence in the field", "Referees report faults in writing, usually unnamed", "Author revises or rebuts each point", "Editor decides"],
+  cite: [["csiszar2016"], ["baldwin2018"], ["zuckerman1971"]] },
+
 { id: "calculemus", name: "Calculemus", native: "characteristica universalis", date: 1685, when: "Leibniz, 1685 (after Llull’s <i>Ars</i>, c. 1305)",
   family: "rationalist", telos: "truth", parents: ["disputatio"], views: ["calculation"],
   who: "G. W. Leibniz",
@@ -248,6 +255,14 @@ HOD.methods = [
   summary: "Since no one’s reason is ‘right reason’ by nature, ‘the parties must by their own accord set up for right reason the reason of some arbitrator or judge’. Without this, dispute degenerates toward war. Hobbes gives the purest procedural answer. The parties leave the disagreement unresolved and hand its outcome to an authority they have agreed in advance to obey.",
   moves: ["Pre-commit to an arbiter", "Accept the determination as if it were right reason"],
   cite: [["hobbes1651", "ch. 5"]] },
+
+{ id: "advocatus", name: "Devil’s advocate & red team", native: "advocatus diaboli; promotor fidei", date: 1587, when: "office of Promotor Fidei 1587–1983; Janis 1972; military and security red teams",
+  family: "forum", telos: "decision", parents: ["disputatio"], views: ["collision", "argumentative"],
+  who: "The Roman Congregation of Rites; Irving Janis",
+  summary: "Sixtus V gave the Roman Congregation of Rites an officer, the Promoter of the Faith, whose duty was to argue against every candidate for sainthood. Popular speech called him the devil’s advocate. A cause went forward only after its promoters had answered his objections. Mill cites the office in <i>On Liberty</i>: even the most intolerant of churches listens to a devil’s advocate before it canonises. Janis prescribed the same role as a remedy for groupthink, and armies and security teams keep red teams to attack their own plans.",
+  moves: ["Appoint someone whose duty is to argue against the proposal", "Require the proposers to answer each objection", "Decide only after the objections have been heard"],
+  note: "John Paul II’s reform of 1983 ended the adversarial form of the office.",
+  cite: [["lambertini"], ["jp2_1983"], ["mill1859", "ch. 2"], ["janis1972"]] },
 
 { id: "adversarial", name: "Adversarial trial & cross-examination", native: "common-law adversary system", date: 1730, when: "lawyerisation of English criminal trial from the 1730s",
   family: "forum", telos: "decision", parents: ["stasis"], views: ["collision", "agon"],
@@ -349,6 +364,13 @@ HOD.methods = [
   summary: "Sander’s 1976 address launched modern alternative dispute resolution. Its idea, soon named the ‘multi-door courthouse’, was to send each dispute to the process that fits it. Facilitative mediation seeks interest-based settlement. Transformative mediation drops settlement as the goal and aims at empowerment and recognition, so that each party regains clarity and sees the other. Narrative mediation, drawing on Foucault, helps parties deconstruct ‘conflict-saturated stories’ and co-author alternatives.",
   moves: ["Neutral third party controls process, not outcome", "Separate positions from interests (facilitative)", "Follow the parties’ shifts in empowerment and recognition (transformative)", "Externalise the conflict story (narrative)"],
   cite: [["sander1976"], ["bush1994"], ["winslade2000"]] },
+
+{ id: "truth_commission", name: "Truth commission", native: "truth and reconciliation commission", date: 1995, when: "Argentina 1983–84; Chile 1990–91; South Africa 1995–98",
+  family: "negotiation", telos: "understanding", parents: ["restorative"], views: ["harm", "differend"],
+  who: "CONADEP (Argentina); the South African Truth and Reconciliation Commission, chaired by Desmond Tutu",
+  summary: "After a period of state violence, a temporary official body takes statements from victims and perpetrators and publishes a record. It is not a court and passes no sentence. The South African commission could grant amnesty to perpetrators who disclosed their acts in full. Its report distinguishes four kinds of truth: forensic, personal or narrative, social, and healing or restorative. Victims testified in their own words and languages, in forms a court would not admit as evidence. Tutu described the work as restorative justice.",
+  moves: ["Take statements from victims and perpetrators", "Hold public hearings where victims speak in their own terms", "Offer conditional amnesty for full disclosure (South Africa)", "Publish a report and recommend reparations"],
+  cite: [["trc1998", "vol. 1, ch. 5"], ["hayner2011"], ["tutu1999"]] },
 
 { id: "principled", name: "Principled negotiation", native: "Harvard Negotiation Project", date: 1981, when: "Fisher & Ury, 1981",
   family: "negotiation", telos: "settlement", parents: ["follett", "game_bargaining"], views: ["interests"],
@@ -494,6 +516,13 @@ HOD.methods = [
   cite: [["tessler2024"]] },
 
 // ───────────────────────────── Rationalist & experimental ─────────────────────────────
+{ id: "delphi", name: "Delphi method", native: "", date: 1963, when: "RAND Corporation, 1950s; Dalkey & Helmer 1963",
+  family: "rationalist", telos: "truth", parents: [], views: ["peer", "vanity"],
+  who: "Norman Dalkey; Olaf Helmer",
+  summary: "A panel of experts answers a questionnaire, each alone and without names attached. A coordinator sends back the spread of the answers, with the reasons given for the outlying ones, and the experts revise. After several rounds the coordinator reports the median and the spread that remains. Dalkey and Helmer designed the anonymity to keep rank and forceful personalities from moving the estimate. The method treats the other experts’ answers as evidence each expert should weigh.",
+  moves: ["Experts answer separately and anonymously", "Coordinator returns the spread of answers and the reasons for outliers", "Experts revise; repeat for several rounds", "Report the median and the remaining spread"],
+  cite: [["dalkey1963"]] },
+
 { id: "adv_collab", name: "Adversarial collaboration", native: "", date: 2001, when: "Mellers, Hertwig & Kahneman 2001",
   family: "rationalist", telos: "truth", parents: ["experimental"], views: ["priors", "error"],
   who: "Daniel Kahneman and collaborators",

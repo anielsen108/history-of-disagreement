@@ -6,7 +6,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 |---|---|---|---|
 | 500 BCE | view | [Strife as engine](framings/dialectical.md) | Heraclitus c. 500 BCE; Hegel 1807; Marx |
 | 450 BCE | method | [Antilogic](approaches/antilogic.md) | c. 450–400 BCE |
-| 450 BCE | view | [Partial perspectives](framings/perspectival.md) | Protagoras; Jain anekānta; Mill; Nietzsche |
+| 450 BCE | view | [Each the measure](framings/measure.md) | Protagoras, c. 450 BCE |
 | 450 BCE | view | [Contest & honour](framings/agon.md) | archaic and classical Greece onward |
 | 430 BCE | method | [Socratic elenchus](approaches/elenchus.md) | c. 430–399 BCE; Plato’s early dialogues |
 | 430 BCE | view | [Inconsistency & aporia](framings/aporia.md) | Socratic elenchus |
@@ -23,6 +23,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 | 340 BCE | method | [Deliberative rhetoric](approaches/rhetoric.md) | c. 340 BCE (systematised) |
 | 300 BCE | method | [Mohist disputation](approaches/bian.md) | Later Mohist Canons, c. 300 BCE |
 | 300 BCE | method | [Walking two roads](approaches/liangxing.md) | Zhuangzi, Inner Chapters, 4th c. BCE |
+| 300 BCE | view | [Partial perspectives](framings/perspectival.md) | Jain anekānta; the elephant parable; Mill; Nietzsche |
 | 300 BCE | view | [‘This’ and ‘that’](framings/shi_fei.md) | Zhuangzi, ch. 2 |
 | 250 BCE | method | [Abhidharma controversy](approaches/kathavatthu.md) | trad. Third Council, c. 250 BCE; compiled over centuries |
 | 250 BCE | method | [Rectification of names](approaches/zhengming.md) | Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE) |
@@ -46,6 +47,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 | 1170 | method | [Science of juristic disagreement](approaches/khilaf.md) | Ibn Rushd’s *Bidāyat al-mujtahid*, c. 1168–88 |
 | 1263 | method | [Staged religious disputation](approaches/staged.md) | Paris 1240; Barcelona 1263; Tortosa 1413–14 |
 | 1300 | method | [Obligational disputation](approaches/obligationes.md) | c. 1200–1400; Walter Burley c. 1302 |
+| 1587 | method | [Devil’s advocate & red team](approaches/advocatus.md) | office of Promotor Fidei 1587–1983; Janis 1972; military and security red teams |
 | 1588 | method | [Free conversation](approaches/conference.md) | Montaigne, *Essais* III.8, 1588 |
 | 1644 | method | [Free and open encounter](approaches/free_discussion.md) | Milton 1644; Mill 1859 |
 | 1644 | view | [Collision with error](framings/collision.md) | Milton 1644; Mill 1859 |
@@ -66,6 +68,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 | 1807 | view | [Struggle for recognition](framings/recognition.md) | Hegel 1807; Honneth 1992 |
 | 1831 | method | [Eristic dialectic](approaches/schopenhauer.md) | written c. 1830–31; published 1864 |
 | 1831 | view | [Vanity & obstinacy](framings/vanity.md) | the Aṭṭhakavagga; Montaigne; Schopenhauer |
+| 1832 | method | [Peer review](approaches/peer_review.md) | Royal Society Committee of Papers 1752; written referee reports from the 1830s; routine after 1945 |
 | 1848 | view | [Class interest & ideology](framings/class.md) | Marx & Engels 1848 |
 | 1877 | method | [Community of inquiry](approaches/peirce.md) | Peirce 1877; Dewey 1938 |
 | 1877 | view | [Unfinished inquiry](framings/inquiry.md) | Peirce; Dewey |
@@ -85,6 +88,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 | 1960 | method | [Rapoport’s rules & region of validity](approaches/rapoport.md) | Anatol Rapoport, 1960; Dennett 2013 |
 | 1960 | view | [Mixed-motive game](framings/strategic.md) | Nash 1950; Schelling 1960 |
 | 1962 | view | [Incommensurable paradigms](framings/paradigm.md) | Kuhn 1962 |
+| 1963 | method | [Delphi method](approaches/delphi.md) | RAND Corporation, 1950s; Dalkey & Helmer 1963 |
 | 1965 | method | [Nonviolent Communication](approaches/nvc.md) | Rosenberg, 1960s; CNVC 1984; book 1999 |
 | 1966 | method | [Interactive problem-solving workshop](approaches/problem_solving.md) | Burton 1965–69; Kelman 1970s–; Lederach 1995– |
 | 1967 | view | [Relationship-level message](framings/relationship_level.md) | Watzlawick et al. 1967 |
@@ -110,6 +114,7 @@ Generated from the site data. Dates are plotting years; see each note for the ho
 | 1990 | view | [Harm to relationship](framings/harm.md) | Zehr 1990 |
 | 1993 | view | [Burdens of judgment](framings/burdens.md) | Rawls 1993 (anticipated by ʿilm al-khilāf) |
 | 1994 | view | [Developmental form](framings/developmental.md) | Kegan 1994; Chapman |
+| 1995 | method | [Truth commission](approaches/truth_commission.md) | Argentina 1983–84; Chile 1990–91; South Africa 1995–98 |
 | 1999 | method | [Difficult conversations](approaches/difficult.md) | Stone, Patton & Heen, 1999 |
 | 2000 | method | [Agonistic pluralism](approaches/agonism.md) | Mouffe 2000, 2005 |
 | 2000 | view | [Hegemony](framings/hegemony.md) | Gramsci; Laclau & Mouffe; Mouffe 2000 |

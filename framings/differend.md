@@ -4,7 +4,7 @@
 - **When:** Lyotard 1983
 - **Who:** Jean-François Lyotard
 - **Remedy implied:** Bear witness; find idioms for what cannot yet be phrased.
-- **Methods presupposing it:** none in this survey
+- **Methods presupposing it:** [Truth commission](../approaches/truth_commission.md)
 
 A differend is a conflict between parties that cannot be equitably resolved because no rule of judgment applies to both. To settle it in one party’s idiom wrongs the other, whose harm cannot be stated in that idiom. Litigation presupposes a shared genre. In a differend there is none.
 

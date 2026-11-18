@@ -6,7 +6,7 @@
 - **Who:** Protagoras; the anonymous *Dissoi Logoi*
 - **Telos:** Victory
 - **Family:** Greek & Roman
-- **Presupposes:** [Partial perspectives](../framings/perspectival.md) (primary), [Contest & honour](../framings/agon.md)
+- **Presupposes:** [Each the measure](../framings/measure.md) (primary), [Contest & honour](../framings/agon.md)
 
 - **Gave rise to:** [Eristic](eristic.md), [Socratic elenchus](elenchus.md), [Deliberative rhetoric](rhetoric.md), [Pyrrhonian equipollence](pyrrhonian.md)
 
@@ -18,7 +18,7 @@ Protagoras was reported to be the first to say that on every matter there are tw
 3. Exploit the reversibility of commonplaces (good/bad, just/unjust)
 
 ## What it assumes
-[Partial perspectives](../framings/perspectival.md): Each party sees a real aspect of something larger.
+[Each the measure](../framings/measure.md): Protagoras holds that a human being is the measure of all things.
 
 ## In practice
 - **Third party:** The audience, who judge which logos prevails.

@@ -8,7 +8,7 @@ HOD.regions = [
 ];
 HOD.people = [
   { id: "heraclitus", name: "Heraclitus", born: -535, died: -475, approx: true, region: "greek", infl: [], views: ["dialectical"] },
-  { id: "protagoras", name: "Protagoras", born: -490, died: -420, approx: true, region: "greek", infl: [], methods: ["antilogic"], views: ["perspectival"] },
+  { id: "protagoras", name: "Protagoras", born: -490, died: -420, approx: true, region: "greek", infl: [], methods: ["antilogic"], views: ["measure"] },
   { id: "socrates", name: "Socrates", born: -470, died: -399, region: "greek", infl: ["protagoras"], methods: ["elenchus"], views: ["aporia", "unmeasurable"] },
   { id: "plato", name: "Plato", born: -428, died: -348, approx: true, region: "greek", infl: ["socrates", "heraclitus"], methods: ["platonic_dialectic"], views: ["error"] },
   { id: "aristotle", name: "Aristotle", born: -384, died: -322, region: "greek", infl: ["plato"], methods: ["aristotelian_dialectic", "rhetoric"], views: ["endoxa", "equivocation"] },

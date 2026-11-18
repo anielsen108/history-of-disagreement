@@ -10,6 +10,8 @@ Generated from `site/data/sources.js`.
 - Aumann, Robert J. “Agreeing to Disagree.” *Annals of Statistics* 4, no. 6 (1976): 1236–1239.
 - Aung, Shwe Zan, and C. A. F. Rhys Davids, trans. *Points of Controversy, or Subjects of Discourse: Being a Translation of the Kathā-vatthu*. London: Pali Text Society, 1915.
 - Babylonian Talmud (Eruvin 13b; Bava Metzia 59a–b; Taanit 7a, 23a). Cited by folio. Text and translation: Sefaria, https://www.sefaria.org
+- Baldwin, Melinda. “Scientific Autonomy, Public Accountability, and the Rise of ‘Peer Review’ in the Cold War United States.” *Isis* 109 (2018): 538–558.
+- Benedict XIV (Prospero Lambertini). *De servorum Dei beatificatione et beatorum canonizatione*. 4 vols. Bologna, 1734–38.
 - Berlin, Isaiah. “Two Concepts of Liberty” (1958). In *Four Essays on Liberty*. Oxford: Oxford University Press, 1969.
 - Bodhi, Bhikkhu, trans. *The Suttanipāta: An Ancient Collection of the Buddha’s Discourses*. Boston: Wisdom Publications, 2017.
 - Boghossian, Peter. *A Manual for Creating Atheists*. Durham, NC: Pitchstone, 2013.
@@ -29,6 +31,8 @@ Generated from `site/data/sources.js`.
 - Cicero. *Tusculan Disputations*. Translated by J. E. King. Loeb Classical Library 141. Cambridge, MA: Harvard University Press, 1927.
 - Coser, Lewis A. *The Functions of Social Conflict*. Glencoe, IL: Free Press, 1956.
 - Cowen, Tyler, and Robin Hanson. “Are Disagreements Honest?” Working paper, George Mason University, 2004. https://mason.gmu.edu/~rhanson/deceive.pdf
+- Csiszar, Alex. “Peer Review: Troubled from the Start.” *Nature* 532 (2016): 306–308.
+- Dalkey, Norman, and Olaf Helmer. “An Experimental Application of the Delphi Method to the Use of Experts.” *Management Science* 9 (1963): 458–467.
 - Dasti, Matthew, and Stephen H. Phillips, trans. *The Nyāya-sūtra: Selections with Early Commentaries*. Indianapolis: Hackett, 2017.
 - Dennett, Daniel C. *Intuition Pumps and Other Tools for Thinking*. New York: Norton, 2013. (“Rapoport’s Rules.”)
 - Diogenes Laertius. *Lives of Eminent Philosophers*. Edited by Tiziano Dorandi. Cambridge: Cambridge University Press, 2013.
@@ -56,6 +60,7 @@ Generated from `site/data/sources.js`.
 - Haidt, Jonathan. *The Righteous Mind: Why Good People Are Divided by Politics and Religion*. New York: Pantheon, 2012.
 - Halbertal, Moshe. *People of the Book: Canon, Meaning, and Authority*. Cambridge, MA: Harvard University Press, 1997.
 - Hamblin, C. L. *Fallacies*. London: Methuen, 1970.
+- Hayner, Priscilla B. *Unspeakable Truths: Transitional Justice and the Challenge of Truth Commissions*. 2nd ed. New York: Routledge, 2011.
 - Heath, Malcolm, trans. *Hermogenes, On Issues: Strategies of Argument in Later Greek Rhetoric*. Oxford: Clarendon Press, 1995.
 - Hegel, G. W. F. *Phenomenology of Spirit* (1807). Translated by Terry Pinkard. Cambridge: Cambridge University Press, 2018.
 - Hidary, Richard. *Dispute for the Sake of Heaven: Legal Pluralism in the Talmud*. Providence: Brown Judaic Studies, 2010.
@@ -69,7 +74,9 @@ Generated from `site/data/sources.js`.
 - Ireland, John D., trans. *The Udāna and the Itivuttaka*. Kandy: Buddhist Publication Society, 1997. (Udāna 6.4, the blind men and the elephant.)
 - Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. “Affect, Not Ideology: A Social Identity Perspective on Polarization.” *Public Opinion Quarterly* 76, no. 3 (2012): 405–431.
 - James, William. *Pragmatism: A New Name for Some Old Ways of Thinking*. New York: Longmans, Green, 1907. (Lecture II, the squirrel.)
+- Janis, Irving L. *Victims of Groupthink*. Boston: Houghton Mifflin, 1972.
 - Jefferson, Thomas. *A Manual of Parliamentary Practice for the Use of the Senate of the United States*. Washington, 1801.
+- John Paul II. *Divinus perfectionis Magister*. Apostolic constitution, 25 January 1983.
 - Kahan, Dan M., et al. “The Polarizing Impact of Science Literacy and Numeracy on Perceived Climate Change Risks.” *Nature Climate Change* 2 (2012): 732–735.
 - Kahn, Charles H. *The Art and Thought of Heraclitus*. Cambridge: Cambridge University Press, 1979. (Fragments cited by Diels–Kranz number.)
 - Kalla, Joshua L., and David E. Broockman. “Reducing Exclusionary Attitudes through Interpersonal Conversation: Evidence from Three Field Experiments.” *American Political Science Review* 114, no. 2 (2020): 410–425.
@@ -147,6 +154,8 @@ Generated from `site/data/sources.js`.
 - Thomas Aquinas. *Summa Theologiae*. Cited by part, question and article.
 - Thomas, Kenneth W., and Ralph H. Kilmann. *Thomas–Kilmann Conflict Mode Instrument*. Tuxedo, NY: Xicom, 1974.
 - Toulmin, Stephen. *The Uses of Argument*. Cambridge: Cambridge University Press, 1958.
+- Truth and Reconciliation Commission of South Africa. *Report*. 5 vols. Cape Town: Juta, 1998.
+- Tutu, Desmond. *No Future Without Forgiveness*. New York: Doubleday, 1999.
 - Uckelman, Sara L., and Catarina Dutilh Novaes. “Medieval Theories of Obligationes.” *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/obligationes/
 - van Eemeren, Frans H., and Rob Grootendorst. *A Systematic Theory of Argumentation: The Pragma-Dialectical Approach*. Cambridge: Cambridge University Press, 2004.
 - van Eemeren, Frans H., and Rob Grootendorst. *Speech Acts in Argumentative Discussions*. Dordrecht: Foris, 1984.
@@ -165,3 +174,4 @@ Generated from `site/data/sources.js`.
 - Young, Walter Edward. *The Dialectical Forge: Juridical Disputation and the Evolution of Islamic Law*. Cham: Springer, 2017.
 - Zehr, Howard. *Changing Lenses: A New Focus for Crime and Justice*. Scottdale, PA: Herald Press, 1990.
 - Ziporyn, Brook, trans. *Zhuangzi: The Essential Writings*. Indianapolis: Hackett, 2009.
+- Zuckerman, Harriet, and Robert K. Merton. “Patterns of Evaluation in Science: Institutionalisation, Structure and Functions of the Referee System.” *Minerva* 9 (1971): 66–100.

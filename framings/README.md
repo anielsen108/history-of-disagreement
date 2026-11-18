@@ -6,10 +6,11 @@ Generated from `site/data/views.js`. Grouped by domain.
 
 *It is really about what is true: evidence, inference, priors, perspective.*
 
-- [Partial perspectives](perspectival.md) — Protagoras; Jain anekānta; Mill; Nietzsche
+- [Each the measure](measure.md) — Protagoras, c. 450 BCE
 - [Inconsistency & aporia](aporia.md) — Socratic elenchus
 - [Error & ignorance](error.md) — Socrates onward
 - [Disputed reputable opinion](endoxa.md) — Aristotle
+- [Partial perspectives](perspectival.md) — Jain anekānta; the elephant parable; Mill; Nietzsche
 - [Undecidability](equipollence.md) — Pyrrhonism; Kant’s antinomies
 - [Calculation error](calculation.md) — Leibniz
 - [Unfinished inquiry](inquiry.md) — Peirce; Dewey
@@ -31,24 +32,6 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Clash of final vocabularies](vocabularies.md) — Rorty 1979, 1989
 - [Metalinguistic negotiation](metaling.md) — Plunkett & Sundell 2013
 
-## Generative
-
-*It is no problem at all. Disagreement drives the growth of truth, history, social life or law.*
-
-- [Strife as engine](dialectical.md) — Heraclitus c. 500 BCE; Hegel 1807; Marx
-- [Collision with error](collision.md) — Milton 1644; Mill 1859
-- [Conflict as sociation](sociation.md) — Simmel 1908; Coser 1956
-- [Constructive difference](constructive.md) — Follett 1925
-
-## Axiological
-
-*It is really about values: rival goods, sacred commitments, incommensurable gods.*
-
-- [What cannot be measured](unmeasurable.md) — Plato, Euthyphro
-- [Value pluralism](warring_gods.md) — Weber 1917/19; Berlin 1958
-- [Sacred values](sacred.md) — Tetlock 2003; Atran & Axelrod 2008
-- [Moral foundations](foundations.md) — Graham, Haidt & Nosek 2009; Haidt 2012
-
 ## Power
 
 *It is really about who rules: domination, hegemony, sovereignty, the friend and the enemy.*
@@ -58,6 +41,15 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Friend & enemy](friend_enemy.md) — Schmitt 1932
 - [Power / knowledge](powerknow.md) — Nietzsche 1887; Foucault 1976–80
 - [Hegemony](hegemony.md) — Gramsci; Laclau & Mouffe; Mouffe 2000
+
+## Axiological
+
+*It is really about values: rival goods, sacred commitments, incommensurable gods.*
+
+- [What cannot be measured](unmeasurable.md) — Plato, Euthyphro
+- [Value pluralism](warring_gods.md) — Weber 1917/19; Berlin 1958
+- [Sacred values](sacred.md) — Tetlock 2003; Atran & Axelrod 2008
+- [Moral foundations](foundations.md) — Graham, Haidt & Nosek 2009; Haidt 2012
 
 ## Interest
 
@@ -100,3 +92,12 @@ Generated from `site/data/views.js`. Grouped by domain.
 - [Plurality willed from above](divine_plurality.md) — Eruvin 13b; Talmud
 - [Disagreement as mercy](ikhtilaf.md) — classical fiqh, 8th c. onward
 - [Incomplete discernment](discernment.md) — Quakers, 1650s–
+
+## Generative
+
+*It is no problem at all. Disagreement drives the growth of truth, history, social life or law.*
+
+- [Strife as engine](dialectical.md) — Heraclitus c. 500 BCE; Hegel 1807; Marx
+- [Collision with error](collision.md) — Milton 1644; Mill 1859
+- [Conflict as sociation](sociation.md) — Simmel 1908; Coser 1956
+- [Constructive difference](constructive.md) — Follett 1925

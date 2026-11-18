@@ -109,8 +109,16 @@ HOD.readings = {
   /* views */
   perspectival: [
     { claim: "The parable of the blind men and the elephant appears in the Pāli canon.", status: "attested", by: "Udāna 6.4" },
-    { claim: "Grouping Mill and Nietzsche with Jain many-sidedness is this site’s choice.", status: "site" },
-    { claim: "Protagoras’s measure doctrine is a relativism about truth, and it posits no whole of which each view is a part.", status: "reading", by: "Plato, Theaetetus 152a–c, 166d–167d; M. F. Burnyeat, ‘Protagoras and Self-Refutation in Plato’s Theaetetus’ (1976)" }
+    { claim: "Grouping Mill and Nietzsche with Jain many-sidedness is this site’s choice.", status: "site" }
+  ],
+  measure: [
+    { claim: "A human being is the measure of all things.", status: "attested", by: "Protagoras, DK 80 B1, quoted in Plato, Theaetetus 152a" },
+    { claim: "The doctrine is a relativism about truth: what appears to each person is so for that person.", status: "reading", by: "Plato, Theaetetus 152a–c; M. F. Burnyeat, ‘Protagoras and Self-Refutation in Plato’s Theaetetus’ (1976)" },
+    { claim: "The defence that one opinion can be better without being truer is Plato’s construction on Protagoras’s behalf.", status: "consensus", by: "Plato, Theaetetus 166d–167d; G. B. Kerferd, The Sophistic Movement (1981)" }
+  ],
+  truth_commission: [
+    { claim: "The commission’s report distinguishes four notions of truth.", status: "attested", by: "Truth and Reconciliation Commission of South Africa Report (1998), vol. 1, ch. 5" },
+    { claim: "Narrative testimony answers Lyotard’s call for idioms in which a wrong can be phrased.", status: "site" }
   ],
   dialectical: [
     { claim: "‘War is father of all’ and ‘justice is strife’.", status: "attested", by: "Heraclitus, DK B53 and B80" },

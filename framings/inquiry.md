@@ -4,7 +4,7 @@
 - **When:** Peirce; Dewey
 - **Who:** C. S. Peirce
 - **Remedy implied:** Better experiments; patience; fallibilism.
-- **Methods presupposing it:** [Community of inquiry](../approaches/peirce.md)
+- **Methods presupposing it:** [Peer review](../approaches/peer_review.md), [Community of inquiry](../approaches/peirce.md)
 
 On this view, a community disagrees because its inquiry has not yet converged. Under the method of science, the opinion ‘fated to be ultimately agreed to by all who investigate’ is what we mean by truth. Disagreement is a stage that inquiry will pass through.
 

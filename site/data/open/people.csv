@@ -1,6 +1,6 @@
 id,name,born,died,approx,region,infl,methods,views
 heraclitus,Heraclitus,-535,-475,true,greek,,,dialectical
-protagoras,Protagoras,-490,-420,true,greek,,antilogic,perspectival
+protagoras,Protagoras,-490,-420,true,greek,,antilogic,measure
 socrates,Socrates,-470,-399,false,greek,protagoras,elenchus,"aporia;unmeasurable"
 plato,Plato,-428,-348,true,greek,"socrates;heraclitus",platonic_dialectic,error
 aristotle,Aristotle,-384,-322,false,greek,plato,"aristotelian_dialectic;rhetoric","endoxa;equivocation"

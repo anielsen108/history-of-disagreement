@@ -8,7 +8,7 @@
 - **Family:** Negotiation, mediation & peacemaking
 - **Presupposes:** [Harm to relationship](../framings/harm.md) (primary), [Relationship-level message](../framings/relationship_level.md)
 
-
+- **Gave rise to:** [Truth commission](truth_commission.md)
 
 Restorative justice treats crime and conflict as harm to people and relationships. The legal model sees a broken rule; this model sees people who were hurt. Victim, offender and community meet in a facilitated encounter or a talking-piece circle to name the harm, take responsibility and repair. Braithwaite adds ‘reintegrative shaming’: disapproval of the act within continued respect for the person.
 

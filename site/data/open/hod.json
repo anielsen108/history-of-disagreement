@@ -14,11 +14,6 @@
    "gloss": "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open."
   },
   {
-   "id": "decision",
-   "name": "Decision",
-   "gloss": "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place."
-  },
-  {
    "id": "victory",
    "name": "Victory",
    "gloss": "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded."
@@ -27,6 +22,11 @@
    "id": "plurality",
    "name": "Plurality",
    "gloss": "The parties keep the disagreement on record and honour it. Ending it would be a loss."
+  },
+  {
+   "id": "decision",
+   "name": "Decision",
+   "gloss": "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place."
   },
   {
    "id": "settlement",
@@ -114,19 +114,14 @@
    "gloss": "It is really about words: names, equivocation, attitudes dressed as beliefs, idioms with no common measure."
   },
   {
-   "id": "generative",
-   "name": "Generative",
-   "gloss": "It is no problem at all. Disagreement drives the growth of truth, history, social life or law."
+   "id": "power",
+   "name": "Power",
+   "gloss": "It is really about who rules: domination, hegemony, sovereignty, the friend and the enemy."
   },
   {
    "id": "axiological",
    "name": "Axiological",
    "gloss": "It is really about values: rival goods, sacred commitments, incommensurable gods."
-  },
-  {
-   "id": "power",
-   "name": "Power",
-   "gloss": "It is really about who rules: domination, hegemony, sovereignty, the friend and the enemy."
   },
   {
    "id": "interest",
@@ -147,6 +142,11 @@
    "id": "contemplative",
    "name": "Contemplative",
    "gloss": "It is really about attachment: clinging to views, a self that needs to be right, partial sight of a whole."
+  },
+  {
+   "id": "generative",
+   "name": "Generative",
+   "gloss": "It is no problem at all. Disagreement drives the growth of truth, history, social life or law."
   }
  ],
  "regions": [
@@ -197,9 +197,9 @@
    "who": "Protagoras; the anonymous Dissoi Logoi",
    "family": "greek",
    "telos": "victory",
-   "primary_view": "perspectival",
+   "primary_view": "measure",
    "views": [
-    "perspectival",
+    "measure",
     "agon"
    ],
    "parents": [],
@@ -1592,6 +1592,56 @@
    ]
   },
   {
+   "id": "peer_review",
+   "name": "Peer review",
+   "native": "refereeing",
+   "date": 1832,
+   "when": "Royal Society Committee of Papers 1752; written referee reports from the 1830s; routine after 1945",
+   "who": "The Royal Society; journal editors and referees",
+   "family": "civic",
+   "telos": "truth",
+   "primary_view": "error",
+   "views": [
+    "error",
+    "inquiry"
+   ],
+   "parents": [
+    "experimental"
+   ],
+   "summary": "An editor sends a manuscript to a few specialists, who report on its faults in writing and usually without giving their names. The author must answer the reports before the journal prints the paper. The Royal Society asked for written reports on papers from the 1830s. Csiszar and Baldwin show that journals adopted the practice slowly, and that the phrase ‘peer review’ and its standing as a mark of scientific legitimacy date from the 1970s. The method assumes that authors cannot see their own errors and that qualified rivals can.",
+   "moves": [
+    "Editor chooses referees with competence in the field",
+    "Referees report faults in writing, usually unnamed",
+    "Author revises or rebuts each point",
+    "Editor decides"
+   ],
+   "note": "",
+   "date_confidence": "contested",
+   "pairing_confidence": "interpretive",
+   "third_party": "The editor, who chooses the referees and decides.",
+   "ends_well_when": "The editor accepts the paper once the author has answered the reports.",
+   "typical_failure": "Referees miss errors and favour known names and familiar results.",
+   "critique": {
+    "who": "Douglas Peters and Stephen Ceci, Behavioral and Brain Sciences 5 (1982)",
+    "from_view": "powerknow",
+    "text": "Twelve published articles went back to the journals that had printed them, under invented names and institutions. Three were recognised, and eight of the other nine were rejected."
+   },
+   "sources": [
+    {
+     "key": "csiszar2016",
+     "loc": ""
+    },
+    {
+     "key": "baldwin2018",
+     "loc": ""
+    },
+    {
+     "key": "zuckerman1971",
+     "loc": ""
+    }
+   ]
+  },
+  {
    "id": "calculemus",
    "name": "Calculemus",
    "native": "characteristica universalis",
@@ -1667,6 +1717,59 @@
     {
      "key": "hobbes1651",
      "loc": "ch. 5"
+    }
+   ]
+  },
+  {
+   "id": "advocatus",
+   "name": "Devil’s advocate & red team",
+   "native": "advocatus diaboli; promotor fidei",
+   "date": 1587,
+   "when": "office of Promotor Fidei 1587–1983; Janis 1972; military and security red teams",
+   "who": "The Roman Congregation of Rites; Irving Janis",
+   "family": "forum",
+   "telos": "decision",
+   "primary_view": "collision",
+   "views": [
+    "collision",
+    "argumentative"
+   ],
+   "parents": [
+    "disputatio"
+   ],
+   "summary": "Sixtus V gave the Roman Congregation of Rites an officer, the Promoter of the Faith, whose duty was to argue against every candidate for sainthood. Popular speech called him the devil’s advocate. A cause went forward only after its promoters had answered his objections. Mill cites the office in On Liberty: even the most intolerant of churches listens to a devil’s advocate before it canonises. Janis prescribed the same role as a remedy for groupthink, and armies and security teams keep red teams to attack their own plans.",
+   "moves": [
+    "Appoint someone whose duty is to argue against the proposal",
+    "Require the proposers to answer each objection",
+    "Decide only after the objections have been heard"
+   ],
+   "note": "John Paul II’s reform of 1983 ended the adversarial form of the office.",
+   "date_confidence": "firm",
+   "pairing_confidence": "interpretive",
+   "third_party": "The tribunal or the commander, who hears both sides.",
+   "ends_well_when": "The proposal survives its objections, or is dropped.",
+   "typical_failure": "Everyone knows the objector is playing a part.",
+   "critique": {
+    "who": "Charlan Nemeth, Keith Brown and John Rogers, ‘Devil’s Advocate versus Authentic Dissent’ (2001)",
+    "from_view": "character",
+    "text": "Assigned dissent prompts less rethinking than dissent the speaker means. A group discounts an opponent who is known to be playing a role."
+   },
+   "sources": [
+    {
+     "key": "lambertini",
+     "loc": ""
+    },
+    {
+     "key": "jp2_1983",
+     "loc": ""
+    },
+    {
+     "key": "mill1859",
+     "loc": "ch. 2"
+    },
+    {
+     "key": "janis1972",
+     "loc": ""
     }
    ]
   },
@@ -2292,6 +2395,56 @@
     },
     {
      "key": "winslade2000",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "truth_commission",
+   "name": "Truth commission",
+   "native": "truth and reconciliation commission",
+   "date": 1995,
+   "when": "Argentina 1983–84; Chile 1990–91; South Africa 1995–98",
+   "who": "CONADEP (Argentina); the South African Truth and Reconciliation Commission, chaired by Desmond Tutu",
+   "family": "negotiation",
+   "telos": "understanding",
+   "primary_view": "harm",
+   "views": [
+    "harm",
+    "differend"
+   ],
+   "parents": [
+    "restorative"
+   ],
+   "summary": "After a period of state violence, a temporary official body takes statements from victims and perpetrators and publishes a record. It is not a court and passes no sentence. The South African commission could grant amnesty to perpetrators who disclosed their acts in full. Its report distinguishes four kinds of truth: forensic, personal or narrative, social, and healing or restorative. Victims testified in their own words and languages, in forms a court would not admit as evidence. Tutu described the work as restorative justice.",
+   "moves": [
+    "Take statements from victims and perpetrators",
+    "Hold public hearings where victims speak in their own terms",
+    "Offer conditional amnesty for full disclosure (South Africa)",
+    "Publish a report and recommend reparations"
+   ],
+   "note": "",
+   "date_confidence": "firm",
+   "pairing_confidence": "interpretive",
+   "third_party": "Commissioners, who hear testimony and write the record.",
+   "ends_well_when": "A public record that victims recognise; amnesty or reparation.",
+   "typical_failure": "Individual confessions stand in for a reckoning with the system.",
+   "critique": {
+    "who": "Mahmood Mamdani, ‘Amnesty or Impunity?’, Diacritics 32 (2002)",
+    "from_view": "hegemony",
+    "text": "The commission defined victims and perpetrators as individuals who suffered or committed gross violations. The many who lost land and livelihood under apartheid law, and those who gained, fell outside its account."
+   },
+   "sources": [
+    {
+     "key": "trc1998",
+     "loc": "vol. 1, ch. 5"
+    },
+    {
+     "key": "hayner2011",
+     "loc": ""
+    },
+    {
+     "key": "tutu1999",
      "loc": ""
     }
    ]
@@ -3163,6 +3316,46 @@
    ]
   },
   {
+   "id": "delphi",
+   "name": "Delphi method",
+   "native": "",
+   "date": 1963,
+   "when": "RAND Corporation, 1950s; Dalkey & Helmer 1963",
+   "who": "Norman Dalkey; Olaf Helmer",
+   "family": "rationalist",
+   "telos": "truth",
+   "primary_view": "peer",
+   "views": [
+    "peer",
+    "vanity"
+   ],
+   "parents": [],
+   "summary": "A panel of experts answers a questionnaire, each alone and without names attached. A coordinator sends back the spread of the answers, with the reasons given for the outlying ones, and the experts revise. After several rounds the coordinator reports the median and the spread that remains. Dalkey and Helmer designed the anonymity to keep rank and forceful personalities from moving the estimate. The method treats the other experts’ answers as evidence each expert should weigh.",
+   "moves": [
+    "Experts answer separately and anonymously",
+    "Coordinator returns the spread of answers and the reasons for outliers",
+    "Experts revise; repeat for several rounds",
+    "Report the median and the remaining spread"
+   ],
+   "note": "",
+   "date_confidence": "firm",
+   "pairing_confidence": "interpretive",
+   "third_party": "A coordinator, who collects and feeds back the answers.",
+   "ends_well_when": "The estimates converge, or the remaining spread is reported.",
+   "typical_failure": "Panellists drift to the median they are shown.",
+   "critique": {
+    "who": "Harold Sackman, Delphi Critique (1975)",
+    "from_view": "inquiry",
+    "text": "Delphi gathers opinions and reports their convergence as a finding. The convergence can show only that panellists moved toward the group figure."
+   },
+   "sources": [
+    {
+     "key": "dalkey1963",
+     "loc": ""
+    }
+   ]
+  },
+  {
    "id": "adv_collab",
    "name": "Adversarial collaboration",
    "native": "",
@@ -3321,6 +3514,7 @@
     "munazara",
     "disputatio",
     "experimental",
+    "peer_review",
     "street_epist",
     "toulmin",
     "formal_dialectic",
@@ -3393,13 +3587,45 @@
    ]
   },
   {
+   "id": "measure",
+   "name": "Each the measure",
+   "date": -450,
+   "when": "Protagoras, c. 450 BCE",
+   "who": "Protagoras, as reported by Plato",
+   "domain": "epistemic",
+   "summary": "Protagoras holds that a human being is the measure of all things. On Plato’s reading, whatever appears to a person is so for that person. Two people who disagree are then both right, each for themselves, and no further fact decides between them. Plato’s Protagoras still ranks opinions: one can be better than another, meaning more useful, though none is truer. On this view the skilled speaker changes how things appear, to a patient or to a city.",
+   "implies": "Persuasion; argue both sides; change how things appear.",
+   "quote": {
+    "text": "Of all things the measure is man: of the things that are, that they are, and of the things that are not, that they are not.",
+    "source": "Protagoras, DK 80 B1, in Plato, Theaetetus 152a"
+   },
+   "date_confidence": "contested",
+   "methods": [
+    "antilogic"
+   ],
+   "sources": [
+    {
+     "key": "plato",
+     "loc": "Theaetetus 152a, 166d–167d"
+    },
+    {
+     "key": "diogenes",
+     "loc": "9.51"
+    },
+    {
+     "key": "kerferd1981",
+     "loc": ""
+    }
+   ]
+  },
+  {
    "id": "perspectival",
    "name": "Partial perspectives",
-   "date": -450,
-   "when": "Protagoras; Jain anekānta; Mill; Nietzsche",
-   "who": "Protagoras; Jain logicians; J. S. Mill; Nietzsche",
+   "date": -300,
+   "when": "Jain anekānta; the elephant parable; Mill; Nietzsche",
+   "who": "Jain logicians; J. S. Mill; Nietzsche",
    "domain": "epistemic",
-   "summary": "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. Protagoras holds a stronger thesis, on which each person is the measure and no larger whole stands behind the appearances. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
+   "summary": "Each party sees a real aspect of something larger. The blind men are each right about the elephant and wrong only in saying ‘only’. The whole is what separates this view from Protagoras’s, on which nothing stands behind the appearances. Mill’s secular version holds that conflicting doctrines ‘share the truth between them’. Nietzsche’s holds that ‘there is only a perspective seeing’, and that the more eyes we bring to a thing, the more complete our ‘objectivity’.",
    "implies": "Standpoint indexing, both-sides argument, synthesis.",
    "quote": {
     "text": "There is only a perspective seeing, only a perspective ‘knowing’.",
@@ -3407,7 +3633,6 @@
    },
    "date_confidence": "contested",
    "methods": [
-    "antilogic",
     "utramque",
     "syadvada",
     "conference",
@@ -3496,6 +3721,7 @@
    "quote": null,
    "date_confidence": "firm",
    "methods": [
+    "peer_review",
     "peirce"
    ],
    "sources": [
@@ -3575,7 +3801,9 @@
    "implies": "Calibrated humility; or principled steadfastness.",
    "quote": null,
    "date_confidence": "firm",
-   "methods": [],
+   "methods": [
+    "delphi"
+   ],
    "sources": [
     {
      "key": "kelly2005",
@@ -3776,7 +4004,9 @@
    "implies": "Bear witness; find idioms for what cannot yet be phrased.",
    "quote": null,
    "date_confidence": "firm",
-   "methods": [],
+   "methods": [
+    "truth_commission"
+   ],
    "sources": [
     {
      "key": "lyotard1983",
@@ -4150,7 +4380,8 @@
     "eristic",
     "atthaka",
     "conference",
-    "schopenhauer"
+    "schopenhauer",
+    "delphi"
    ],
    "sources": [
     {
@@ -4266,7 +4497,9 @@
    "implies": "Argue in groups with real diversity; decouple facts from identity.",
    "quote": null,
    "date_confidence": "firm",
-   "methods": [],
+   "methods": [
+    "advocatus"
+   ],
    "sources": [
     {
      "key": "mercier2011",
@@ -4395,7 +4628,8 @@
    "methods": [
     "palaver",
     "restorative",
-    "mediation"
+    "mediation",
+    "truth_commission"
    ],
    "sources": [
     {
@@ -4637,6 +4871,7 @@
     "havruta",
     "free_discussion",
     "coffeehouse",
+    "advocatus",
     "adversarial"
    ],
    "sources": [
@@ -4699,7 +4934,7 @@
  "links": [
   {
    "method": "antilogic",
-   "view": "perspectival",
+   "view": "measure",
    "primary": true,
    "contested": true
   },
@@ -5088,6 +5323,18 @@
    "contested": false
   },
   {
+   "method": "peer_review",
+   "view": "error",
+   "primary": true,
+   "contested": false
+  },
+  {
+   "method": "peer_review",
+   "view": "inquiry",
+   "primary": false,
+   "contested": false
+  },
+  {
    "method": "calculemus",
    "view": "calculation",
    "primary": true,
@@ -5097,6 +5344,18 @@
    "method": "arbitration",
    "view": "sovereign",
    "primary": true,
+   "contested": false
+  },
+  {
+   "method": "advocatus",
+   "view": "collision",
+   "primary": true,
+   "contested": false
+  },
+  {
+   "method": "advocatus",
+   "view": "argumentative",
+   "primary": false,
    "contested": false
   },
   {
@@ -5252,6 +5511,18 @@
   {
    "method": "mediation",
    "view": "harm",
+   "primary": false,
+   "contested": false
+  },
+  {
+   "method": "truth_commission",
+   "view": "harm",
+   "primary": true,
+   "contested": false
+  },
+  {
+   "method": "truth_commission",
+   "view": "differend",
    "primary": false,
    "contested": false
   },
@@ -5448,6 +5719,18 @@
    "contested": false
   },
   {
+   "method": "delphi",
+   "view": "peer",
+   "primary": true,
+   "contested": false
+  },
+  {
+   "method": "delphi",
+   "view": "vanity",
+   "primary": false,
+   "contested": false
+  },
+  {
    "method": "adv_collab",
    "view": "priors",
    "primary": true,
@@ -5503,7 +5786,7 @@
     "antilogic"
    ],
    "views": [
-    "perspectival"
+    "measure"
    ]
   },
   {
@@ -6909,6 +7192,8 @@
     "calculemus",
     "calculation",
     "peirce",
+    "peer_review",
+    "delphi",
     "priors",
     "adv_collab",
     "itt",
@@ -6923,6 +7208,7 @@
    "blurb": "Who decides, and what happens to disagreement under a sovereign.",
    "steps": [
     "staged",
+    "advocatus",
     "arbitration",
     "sovereign",
     "parliament",
@@ -6951,17 +7237,6 @@
   }
  ],
  "gaps": {
-  "peer": {
-   "method": "Calibration rounds",
-   "sketch": [
-    "Each party states a credence, not a verdict",
-    "Each estimates the other’s track record on similar questions",
-    "Both update by an agreed rule (equal weight, or weighted by record)",
-    "Record the result and score it later"
-   ],
-   "why": "The epistemology of peer disagreement says how far to revise a belief on learning that a peer disagrees. It prescribes a revision and describes no conversation.",
-   "near": "The Delphi method (Dalkey and Helmer, 1963) has experts revise anonymous estimates after seeing the group’s. Forecasting tournaments score such revisions. Neither has an entry in this survey."
-  },
   "paradigm": {
    "method": "Exemplar exchange",
    "sketch": [
@@ -7004,17 +7279,6 @@
    ],
    "why": "Rorty’s ironist redescribes, but he never wrote it down as a method for two people."
   },
-  "differend": {
-   "method": "Witnessing circle",
-   "sketch": [
-    "Suspend the forum’s rules of evidence",
-    "Let the party who cannot state their wrong in the forum’s idiom try other idioms (story, image, silence)",
-    "Record what could not be said",
-    "Ask what idiom would be needed to judge it"
-   ],
-   "why": "Lyotard’s remedy is to bear witness and to seek new idioms. Truth commissions came closest, but no general method exists.",
-   "near": "Truth and reconciliation commissions admit testimony that courts exclude. They have no entry in this survey yet."
-  },
   "sacred": {
    "method": "Symbolic-concession mapping",
    "sketch": [
@@ -7053,16 +7317,6 @@
     "Refuse the scapegoat explicitly"
    ],
    "why": "Girard’s theory implies renunciation of rivalry, but no method lets two rivals do it together."
-  },
-  "argumentative": {
-   "method": "Engineered group reasoning",
-   "sketch": [
-    "Assemble a group whose members disagree",
-    "Each produces arguments; each evaluates the others’",
-    "Pool the evaluations, not the productions"
-   ],
-   "why": "Mercier and Sperber argue that groups reason well when members disagree and judge one another’s arguments. They state the conditions and name no method.",
-   "near": "Devil’s advocacy and red teams assign someone to argue the other side. The Catholic Church kept such an office for canonisations from 1587 to 1983."
   },
   "developmental": {
    "method": "Subject–object interview for two",
@@ -7129,6 +7383,16 @@
   "margoliouth1905": "Margoliouth, D. S. “The Discussion between Abu Bishr Matta and Abu Sa‘id al-Sirafi on the Merits of Logic and Grammar.” Journal of the Royal Asiatic Society (1905): 79–129.",
   "bukhari": "al-Bukhārī. Ṣaḥīḥ al-Bukhārī, Kitāb al-Iʿtiṣām, no. 7352 (the ijtihād hadith). https://sunnah.com/bukhari:7352",
   "kamali2003": "Kamali, Mohammad Hashim. Principles of Islamic Jurisprudence. 3rd ed. Cambridge: Islamic Texts Society, 2003.",
+  "lambertini": "Benedict XIV (Prospero Lambertini). De servorum Dei beatificatione et beatorum canonizatione. 4 vols. Bologna, 1734–38.",
+  "jp2_1983": "John Paul II. Divinus perfectionis Magister. Apostolic constitution, 25 January 1983.",
+  "janis1972": "Janis, Irving L. Victims of Groupthink. Boston: Houghton Mifflin, 1972.",
+  "csiszar2016": "Csiszar, Alex. “Peer Review: Troubled from the Start.” Nature 532 (2016): 306–308.",
+  "baldwin2018": "Baldwin, Melinda. “Scientific Autonomy, Public Accountability, and the Rise of ‘Peer Review’ in the Cold War United States.” Isis 109 (2018): 538–558.",
+  "zuckerman1971": "Zuckerman, Harriet, and Robert K. Merton. “Patterns of Evaluation in Science: Institutionalisation, Structure and Functions of the Referee System.” Minerva 9 (1971): 66–100.",
+  "dalkey1963": "Dalkey, Norman, and Olaf Helmer. “An Experimental Application of the Delphi Method to the Use of Experts.” Management Science 9 (1963): 458–467.",
+  "trc1998": "Truth and Reconciliation Commission of South Africa. Report. 5 vols. Cape Town: Juta, 1998.",
+  "hayner2011": "Hayner, Priscilla B. Unspeakable Truths: Transitional Justice and the Challenge of Truth Commissions. 2nd ed. New York: Routledge, 2011.",
+  "tutu1999": "Tutu, Desmond. No Future Without Forgiveness. New York: Doubleday, 1999.",
   "polletta2002": "Polletta, Francesca. Freedom Is an Endless Meeting: Democracy in American Social Movements. Chicago: University of Chicago Press, 2002.",
   "novikoff2013": "Novikoff, Alex J. The Medieval Culture of Disputation: Pedagogy, Practice, and Performance. Philadelphia: University of Pennsylvania Press, 2013.",
   "abelard": "Abelard, Peter. Sic et Non: A Critical Edition. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77.",

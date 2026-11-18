@@ -1,12 +1,12 @@
 # path prefix|fragment  — sentences flagged by lint-prose.mjs that are correct on purpose
-methods.67.moves|crucial experiment
-views.10.implies|crucial experiment
+methods.adv_collab.moves|crucial experiment
+views.paradigm.implies|crucial experiment
 diagnose.html|What do you want from it?
 print.html|landscape
 print.html|Landscape
 taxonomy.html|Method ↔ view Lineage of methods
-methods.36.summary|may ‘stand aside’ or may block
+methods.quaker.summary|may ‘stand aside’ or may block
 about.html|Sources: Heath 1995
 about.html|Practices not yet entered include
-methods.48.summary|The ‘what happened’ conversation
-methods.50.summary|In fights the aim
+methods.difficult.summary|The ‘what happened’ conversation
+methods.rapoport.summary|In fights the aim

@@ -8,7 +8,7 @@
 - **Family:** Latin scholastic
 - **Presupposes:** [Equivocation & verbal dispute](../framings/equivocation.md) (primary), [Inconsistency & aporia](../framings/aporia.md), [Error & ignorance](../framings/error.md)
 - **Descends from:** [Aristotelian dialectic](aristotelian_dialectic.md), [Jadal & munāẓara](munazara.md)
-- **Gave rise to:** [Obligational disputation](obligationes.md), [Staged religious disputation](staged.md), [Experimental matter of fact](experimental.md), [Calculemus](calculemus.md)
+- **Gave rise to:** [Obligational disputation](obligationes.md), [Staged religious disputation](staged.md), [Experimental matter of fact](experimental.md), [Calculemus](calculemus.md), [Devil’s advocate & red team](advocatus.md)
 
 Abelard’s *Sic et Non* set authorities against one another, and its prologue gives rules for reconciling them: check the text, the context, and above all the senses of words. The university disputation institutionalised this. The opponens objects, the respondens answers, and the master determines. Every article of the *Summa* keeps the trace: objections (videtur quod), counter-authority (sed contra), response (respondeo), and replies, often by distinguo.
 

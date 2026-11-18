@@ -10,13 +10,13 @@ A research project with two questions.
 
 `site/` is a static website (no build step) that presents both questions with a graphic taxonomy:
 
-- **View ↔ method diagram.** Two columns joined by threads, with all labels horizontal. Views sit on the left, grouped by *domain*: epistemic, linguistic, generative, axiological, power, interest, relational, psyche, contemplative. Methods sit on the right, grouped by *telos*: truth, formation, decision, victory, plurality, settlement, understanding, release. Each thread links a view to a method that presupposes it. Group and row order are chosen to minimise crossings, and a toggle leaves only each method’s primary thread.
+- **View ↔ method diagram.** Two columns joined by threads, with all labels horizontal. Views sit on the left, grouped by *domain*: epistemic, linguistic, power, axiological, interest, relational, psyche, contemplative, generative. Methods sit on the right, grouped by *telos*: truth, formation, victory, plurality, decision, settlement, understanding, release. Each thread links a view to a method that presupposes it. Group and row order are chosen to minimise crossings, and a toggle leaves only each method’s primary thread.
 - **Lineage map.** Methods placed on a compressed time axis, one lane per family of practice, with lines of descent. It is drawn to the page width, with half the axis given to the years since 1900.
 - **Table.** Every view against the eight teloi, with each cell naming the methods that presuppose it, plus a domain × telos summary.
-- Entry pages for 70 methods and 54 views, a combined timeline, and a bibliography of about 160 sources.
+- Entry pages for 74 methods and 55 views, a combined timeline, and a bibliography of about 170 sources.
 - **Exploring.** Site-wide search (press `/`); facet filters by telos, domain and culture and a century slider with Play on the diagram; click to focus; permalinks for entries (`#e=id`), people (`#p=id`), terms (`#g=id`), tours (`#tour=path.n`) and filter state (`taxonomy.html?telos=…&to=…&focus=…`); an "Over time" chart of diagnoses by period.
 - **Using.** *Diagnose* (stasis-style questions → domains → fitting methods) and a mismatch finder; *Compare* two methods side by side; a worked example running one dispute through five methods.
-- **Reading.** Strongest critique and confidence flags on every method; primary-text excerpts; a glossary with hover cards in entry text; seven guided reading paths; an influence graph of about sixty people; a gap gallery sketching methods for the thirteen views no method presupposes.
+- **Reading.** Strongest critique and confidence flags on every method; primary-text excerpts; a glossary with hover cards in entry text; seven guided reading paths; an influence graph of about sixty people; a gap gallery sketching methods for the views no method presupposes.
 - **Orienting.** A five-step welcome tour on a first visit (remembered in the browser, replayable) and a Help button on every page (or press `?`). The Methods and Views lists fold each entry to one line.
 - **Keeping.** Private notes per entry (stored in the browser, exportable), a pre-filled GitHub issue link for corrections, a one-page printable chart, and open data as JSON and CSV in `site/data/open/`.
 

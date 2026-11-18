@@ -18,8 +18,10 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Experimental matter of fact](experimental.md) — Royal Society, 1660s
 - [Calculemus](calculemus.md) — Leibniz, 1685 (after Llull’s *Ars*, c. 1305)
 - [Speculative dialectic](hegel.md) — Hegel, *Phenomenology*, 1807
+- [Peer review](peer_review.md) — Royal Society Committee of Papers 1752; written referee reports from the 1830s; routine after 1945
 - [Community of inquiry](peirce.md) — Peirce 1877; Dewey 1938
 - [Toulmin model](toulmin.md) — Toulmin 1958
+- [Delphi method](delphi.md) — RAND Corporation, 1950s; Dalkey & Helmer 1963
 - [Formal dialectic & dialogue types](formal_dialectic.md) — Hamblin 1970; Walton & Krabbe 1995
 - [Discourse ethics](discourse_ethics.md) — Habermas 1981–83; Apel
 - [Pragma-dialectics](pragma.md) — van Eemeren & Grootendorst, 1984–2004
@@ -36,24 +38,6 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Tibetan monastic debate](tibetan.md) — Sangphu, 12th c.; Geluk curriculum to the present
 - [Obligational disputation](obligationes.md) — c. 1200–1400; Walter Burley c. 1302
 - [Competitive debate](debate.md) — London debating societies 1770s; Cambridge Union 1815; Oxford Union 1823; Lincoln–Douglas 1858
-
-## Decision
-
-*A group must act. It turns disagreement into a binding choice and leaves the disagreement in place.*
-
-- [Deliberative rhetoric](rhetoric.md) — c. 340 BCE (systematised)
-- [Rectification of names](zhengming.md) — Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE)
-- [Stasis theory](stasis.md) — Hermagoras of Temnos, mid-2nd c. BCE
-- [Court policy debate](saltiron.md) — 81 BCE
-- [Sovereign arbitration](arbitration.md) — Hobbes, *Leviathan*, 1651
-- [Sense of the meeting](quaker.md) — Religious Society of Friends, 1650s–
-- [Parliamentary debate](parliament.md) — Bill of Rights 1689; codified by Jefferson 1801, May 1844, Robert 1876
-- [Adversarial trial & cross-examination](adversarial.md) — lawyerisation of English criminal trial from the 1730s
-- [Activist consensus process](consensus.md) — Movement for a New Society 1971; anti-nuclear and Occupy movements
-- [Deliberative polling](delib_polling.md) — proposed 1988; first held 1994
-- [Citizens’ assemblies](citizens.md) — British Columbia 2004; Ireland 2016–18
-- [Bridging systems](polis.md) — vTaiwan 2015–; Birdwatch/Community Notes 2021–
-- [AI-mediated deliberation](ai_mediated.md) — Tessler et al. 2024
 
 ## Victory
 
@@ -74,6 +58,25 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Syādvāda (sevenfold predication)](syadvada.md) — anekānta early; saptabhaṅgī systematised c. 5th–8th c. CE
 - [Science of juristic disagreement](khilaf.md) — Ibn Rushd’s *Bidāyat al-mujtahid*, c. 1168–88
 - [Agonistic pluralism](agonism.md) — Mouffe 2000, 2005
+
+## Decision
+
+*A group must act. It turns disagreement into a binding choice and leaves the disagreement in place.*
+
+- [Deliberative rhetoric](rhetoric.md) — c. 340 BCE (systematised)
+- [Rectification of names](zhengming.md) — Analects (5th c. BCE); Xunzi ch. 22 (3rd c. BCE)
+- [Stasis theory](stasis.md) — Hermagoras of Temnos, mid-2nd c. BCE
+- [Court policy debate](saltiron.md) — 81 BCE
+- [Devil’s advocate & red team](advocatus.md) — office of Promotor Fidei 1587–1983; Janis 1972; military and security red teams
+- [Sovereign arbitration](arbitration.md) — Hobbes, *Leviathan*, 1651
+- [Sense of the meeting](quaker.md) — Religious Society of Friends, 1650s–
+- [Parliamentary debate](parliament.md) — Bill of Rights 1689; codified by Jefferson 1801, May 1844, Robert 1876
+- [Adversarial trial & cross-examination](adversarial.md) — lawyerisation of English criminal trial from the 1730s
+- [Activist consensus process](consensus.md) — Movement for a New Society 1971; anti-nuclear and Occupy movements
+- [Deliberative polling](delib_polling.md) — proposed 1988; first held 1994
+- [Citizens’ assemblies](citizens.md) — British Columbia 2004; Ireland 2016–18
+- [Bridging systems](polis.md) — vTaiwan 2015–; Birdwatch/Community Notes 2021–
+- [AI-mediated deliberation](ai_mediated.md) — Tessler et al. 2024
 
 ## Settlement
 
@@ -99,6 +102,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 - [Motivational interviewing](mi.md) — Miller 1983; Miller & Rollnick 1991
 - [Bohmian dialogue](bohm.md) — mid-1980s; *On Dialogue* 1996
 - [Reflective structured dialogue](public_conv.md) — Boston, 1989–; abortion dialogues 1990s
+- [Truth commission](truth_commission.md) — Argentina 1983–84; Chile 1990–91; South Africa 1995–98
 - [Difficult conversations](difficult.md) — Stone, Patton & Heen, 1999
 - [Ideological Turing test & steelmanning](itt.md) — Caplan 2011
 - [Deep canvassing](deep_canvass.md) — Broockman & Kalla 2016; 2020

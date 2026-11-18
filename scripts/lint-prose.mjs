@@ -21,7 +21,7 @@ const SKIP = /^(id|cite|parents|views|steps|infl|methods|match|entry|m|see|famil
 const items = [];
 function walk(o, p) {
   if (typeof o === "string") { if (!SKIP.test(p.split(".").pop())) items.push([p, o]); return; }
-  if (Array.isArray(o)) o.forEach((x, i) => walk(x, p + "." + i));
+  if (Array.isArray(o)) o.forEach((x, i) => walk(x, p + "." + (x && x.id ? x.id : i))); // entries are addressed by id, so the allow-list survives reordering
   else if (o && typeof o === "object") for (const k in o) walk(o[k], p + "." + k);
 }
 for (const k of ["teloi", "families", "domains", "methods", "views", "extras", "glossary", "paths", "gaps", "example", "readings"]) walk(H[k], k);

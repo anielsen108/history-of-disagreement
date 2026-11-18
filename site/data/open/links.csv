@@ -1,5 +1,5 @@
 method,view,primary,contested
-antilogic,perspectival,true,true
+antilogic,measure,true,true
 antilogic,agon,false,false
 eristic,agon,true,false
 eristic,vanity,false,false
@@ -64,8 +64,12 @@ free_discussion,collision,true,false
 free_discussion,perspectival,false,false
 coffeehouse,collision,true,true
 coffeehouse,validity,false,false
+peer_review,error,true,false
+peer_review,inquiry,false,false
 calculemus,calculation,true,false
 arbitration,sovereign,true,false
+advocatus,collision,true,false
+advocatus,argumentative,false,false
 adversarial,collision,true,false
 adversarial,agon,false,false
 parliament,faction,true,false
@@ -92,6 +96,8 @@ restorative,relationship_level,false,false
 mediation,interests,true,false
 mediation,relationship_level,false,false
 mediation,harm,false,false
+truth_commission,harm,true,false
+truth_commission,differend,false,false
 principled,interests,true,false
 difficult,identity,true,false
 difficult,relationship_level,false,false
@@ -124,6 +130,8 @@ citizens,warring_gods,false,false
 polis,polarization,true,false
 ai_mediated,polarization,true,false
 ai_mediated,burdens,false,false
+delphi,peer,true,false
+delphi,vanity,false,false
 adv_collab,priors,true,false
 adv_collab,error,false,false
 itt,priors,true,false

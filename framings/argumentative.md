@@ -4,7 +4,7 @@
 - **When:** Mercier & Sperber 2011; Kahan 2012
 - **Who:** Hugo Mercier; Dan Sperber; Dan Kahan
 - **Remedy implied:** Argue in groups with real diversity; decouple facts from identity.
-- **Methods presupposing it:** none in this survey
+- **Methods presupposing it:** [Devil’s advocate & red team](../approaches/advocatus.md)
 
 Reasoning evolved for social exchange, where people produce arguments and evaluate the arguments of others. Individuals show myside bias when producing arguments and are better at judging others’ arguments. Groups that argue can outperform individuals. Kahan adds identity-protective cognition: partisans who are better with numbers polarise more on politicised facts.
 

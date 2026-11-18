@@ -116,7 +116,7 @@
       <p>Each entry also says how far to trust it. Flags mark uncertain dates and interpretive pairings, and a “Whose reading?” box names the scholar behind a contested claim.</p>` },
     { h: "Bring a dispute of your own", b: `<p><a href="diagnose.html">Diagnose</a> asks a few questions about a dispute and suggests methods that fit it. Its mismatch finder shows what happens when two parties hold different views of the same quarrel.</p>
       <p><a href="compare.html">Compare</a> sets two methods side by side. The <a href="example.html">worked example</a> runs one family dispute through five methods.</p>` },
-    { h: "Find your way back", b: `<p>Press <kbd>/</kbd> to search methods, views, people and terms. <a href="paths.html">Paths</a> offers seven guided tours through the entries. Dotted underlines in the text open glossary cards.</p>
+    { h: "Find your way back", b: `<p>Press <kbd>/</kbd> to search methods, views, people and terms. <a href="paths.html">Paths</a> offers guided tours through the entries. Dotted underlines in the text open glossary cards.</p>
       <p>The <b>? Help</b> button in the header reopens this guide on any page.</p>` }
   ];
   let dlg;
@@ -165,7 +165,7 @@
         <dl class="helpdl">
           <dt><a href="diagnose.html">Diagnose</a></dt><dd>Answer a few questions about a dispute and get the domains in play and the methods that fit. The mismatch finder takes two views and shows how each party’s method looks to the other.</dd>
           <dt><a href="compare.html">Compare</a></dt><dd>Two methods side by side.</dd>
-          <dt><a href="paths.html">Paths</a></dt><dd>Seven guided tours. Use ← and → to step through one.</dd>
+          <dt><a href="paths.html">Paths</a></dt><dd>Guided tours through the entries. Use ← and → to step through one.</dd>
           <dt><a href="gaps.html">Gap gallery</a></dt><dd>The views no method is built on, with a sketch of a method for each.</dd>
         </dl>
         <h3>Keys</h3>
@@ -484,5 +484,10 @@
     return div;
   };
 
-  document.addEventListener("DOMContentLoaded", () => { chrome(); setTimeout(fromHash, 0); setTimeout(firstVisit, 250); });
+  // Counts in page text come from the data, so prose cannot drift when entries are added: <span data-n="methods"></span>.
+  function counts() {
+    const n = { methods: H.methods.length, views: H.views.length, gaps: H.views.filter((v) => !v.methods.length).length, domains: H.domains.length, teloi: H.teloi.length, people: (H.people || []).length };
+    document.querySelectorAll("[data-n]").forEach((el) => { el.textContent = n[el.dataset.n]; });
+  }
+  document.addEventListener("DOMContentLoaded", () => { chrome(); counts(); setTimeout(fromHash, 0); setTimeout(firstVisit, 250); });
 })();

@@ -8,7 +8,7 @@
 - **Family:** Early-modern civic & scientific
 - **Presupposes:** [Error & ignorance](../framings/error.md) (primary), [War & sovereignty](../framings/sovereign.md)
 - **Descends from:** [Scholastic disputation](disputatio.md)
-- **Gave rise to:** [Community of inquiry](peirce.md), [Adversarial collaboration](adv_collab.md)
+- **Gave rise to:** [Peer review](peer_review.md), [Community of inquiry](peirce.md), [Adversarial collaboration](adv_collab.md)
 
 After civil war over doctrine, natural philosophers moved dispute off contested causes and onto witnessed matters of fact. Machines such as the air-pump produced these facts, gentlemen witnessed them, and reports described them in a modest style. Shapin and Schaffer argue that this was a political technology as well as an epistemic one. It made disagreement safe by giving it a narrow, public object that anyone could inspect. Hobbes saw it as a recipe for faction.
 
