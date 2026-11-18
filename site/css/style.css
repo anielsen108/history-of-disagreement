@@ -193,6 +193,10 @@ table.simple th { background: var(--chip); }
 .bip .item.orphan text { fill: var(--ink-3); }
 .bip .hit { fill: transparent; }
 .bip .item:hover .hit { fill: var(--chip); }
+.bip .item.pinned { cursor: pointer; }
+.bip .item.pinned .hit { fill: var(--chip); stroke: var(--accent); stroke-width: 1.2; rx: 4; }
+.bip .openbadge rect { fill: var(--accent); }
+.bip .item .openbadge text, .bip.focus .item .openbadge text { fill: #fff; font-size: 10px; font-weight: 700; letter-spacing: .04em; opacity: 1; }
 .bip .link { fill: none; stroke-opacity: .28; transition: stroke-opacity .12s; }
 .bip.focus .link { stroke-opacity: .05; }
 .bip.prim .link.sec { display: none; }

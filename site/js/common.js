@@ -55,8 +55,8 @@
 
   /* ── chrome ───────────────────────────────────────────── */
   const primary = [
-    ["index.html", "Overview"], ["taxonomy.html", "Taxonomy"], ["methods.html", "Methods"], ["views.html", "Views"],
-    ["diagnose.html", "Diagnose"], ["compare.html", "Compare"], ["paths.html", "Paths"]
+    ["index.html", "Overview"], ["diagnose.html", "Diagnose"], ["taxonomy.html", "Taxonomy"], ["methods.html", "Methods"],
+    ["views.html", "Views"], ["compare.html", "Compare"], ["paths.html", "Paths"]
   ];
   const more = [
     ["timeline.html", "Timeline"], ["people.html", "People"], ["gaps.html", "Gap gallery"], ["example.html", "Worked example"],

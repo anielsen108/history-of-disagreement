@@ -138,8 +138,21 @@
       items.classed("on", (r) => lit.has(r.id));
       link.filter(".on").raise();
     }
+    function badge(id) {
+      svg.selectAll(".openbadge").remove();
+      items.classed("pinned", (r) => r.id === id);
+      if (!id) return;
+      const g = items.filter((r) => r.id === id);
+      const bb = g.select("text").node().getBBox(), isL = bb.x < W / 2, bw = 50;
+      let bx = isL ? bb.x - bw - 8 : bb.x + bb.width + 8;
+      bx = Math.max(1, Math.min(W - bw - 1, bx));
+      const b = g.append("g").attr("class", "openbadge");
+      b.append("rect").attr("x", bx).attr("y", bb.y + bb.height / 2 - 8).attr("width", bw).attr("height", 16).attr("rx", 8);
+      b.append("text").attr("x", bx + bw / 2).attr("y", bb.y + bb.height / 2).attr("dy", "0.34em").attr("text-anchor", "middle").text("open ↗");
+      b.append("title").text("Click again to open the entry");
+    }
     function pin(id) {
-      pinned = id; focus([id]);
+      pinned = id; focus([id]); badge(id);
       const x = H.get(id), kind = H.kind(id);
       bar.innerHTML = `<span class="dot" style="display:inline-block;width:.7em;height:.7em;border-radius:50%;background:${H.colorOf(id)}"></span>
         <b>${x.name}</b><span class="hint">${kind === "method" ? `presupposes the views lit on the ${VL ? "left" : "right"}` : `is assumed by the methods lit on the ${VL ? "right" : "left"}`}</span>
@@ -149,7 +162,7 @@
       wireToggle();
       if (opts.onPin) opts.onPin(id);
     }
-    function unpin() { pinned = null; focus(null); idle(); if (opts.onPin) opts.onPin(null); }
+    function unpin() { pinned = null; focus(null); badge(null); idle(); if (opts.onPin) opts.onPin(null); }
 
     items.style("cursor", "pointer")
       .on("mouseenter", (ev, r) => { if (!pinned) focus([r.id]); H.tip(H.tipFor(r.id), ev); })
