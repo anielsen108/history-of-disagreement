@@ -13,9 +13,9 @@
 </head>
 <body data-page="compare" data-drawer-links="1">
 <main>
-  <div class="kicker">Side by side</div>
+  <div class="kicker">Use · side by side</div>
   <h1>Compare two methods</h1>
-  <p class="lede">Pick two methods. The chips above each list choose which aim it shows. Rows where they agree are shaded, so the differences stand out. The address bar keeps your choice, so the comparison can be shared.</p>
+  <p class="lede">This page sets two methods side by side and shades the rows where they agree. Use it when you are choosing between two methods or want to see how they differ.</p>
   <p class="page-thesis">How this bears on the thesis: two methods with different diagnoses will each look like evasion from the other’s side. <a href="index.html">The thesis</a></p>
   <form class="cmp-pick" id="pick" onsubmit="return false">
     <div class="cmp-side"><div class="cmp-chips" data-for="a"></div><label>First method <select name="a"></select></label></div>
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sel.innerHTML = cur + list.map((m) => `<option value="${m.id}">${H.strip(m.name)}</option>`).join("");
     sel.value = id;
     const box = f.querySelector(`.cmp-chips[data-for=${key}]`);
-    box.innerHTML = H.teloi.map((t) => `<button type="button" class="chip" data-t="${t.id}" aria-pressed="${t.id === filt[key]}">${H.dot(H.teloColor[t.id])}${t.name}</button>`).join("");
+    box.innerHTML = H.teloi.map((t) => `<button type="button" class="chip" data-t="${t.id}" aria-pressed="${t.id === filt[key]}">${H.dot(H.teloColor[t.id], true)}${t.name}</button>`).join("");
     box.querySelectorAll("button").forEach((b) => { b.onclick = () => { fill(sel, sel.value, b.dataset.t); sel.focus(); }; });
   }
   const q = new URLSearchParams(location.search);
@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ["Native name", (m) => m.native || "", (a, b) => false],
     ["Date", (m) => m.when, (a, b) => Math.abs(a.date - b.date) < 50],
     ["Family", (m) => H.F[m.family].name, (a, b) => a.family === b.family],
-    ["Telos", (m) => H.chip(H.T[m.telos].name, H.teloColor[m.telos]) + `<div class="meta">${H.T[m.telos].gloss}</div>`, (a, b) => a.telos === b.telos],
+    ["Aim", (m) => H.chip(H.T[m.telos].name, H.teloColor[m.telos], true) + `<div class="meta">${H.T[m.telos].gloss}</div>`, (a, b) => a.telos === b.telos],
     ["Primary diagnosis", (m) => H.link(m.views[0]) + ` <span class="meta">(${H.D[H.V[m.views[0]].domain].name})</span>`, (a, b) => a.views[0] === b.views[0]],
-    ["Domain of diagnosis", (m) => H.chip(H.D[H.V[m.views[0]].domain].name, H.domainColor[H.V[m.views[0]].domain]), (a, b) => H.V[a.views[0]].domain === H.V[b.views[0]].domain],
+    ["Where the diagnosis lives", (m) => H.chip(H.D[H.V[m.views[0]].domain].name, H.domainColor[H.V[m.views[0]].domain]), (a, b) => H.V[a.views[0]].domain === H.V[b.views[0]].domain],
     ["All views presupposed", views, (a, b) => a.views.some((v) => b.views.includes(v))],
     ["Moves", (m) => (m.moves || []).length ? `<ul class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ul>` : "", () => false],
     ["Third party", (m) => m.third || "", () => false],

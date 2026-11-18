@@ -67,7 +67,7 @@
     // nodes
     const node = svg.append("g").selectAll("g").data(H.methods).join("g").attr("class", "node")
       .attr("transform", (m) => `translate(${m._x},${m._y})`);
-    node.append("circle").attr("r", 5).attr("fill", (m) => H.teloColor[m.telos]);
+    node.append("rect").attr("x", -4.5).attr("y", -4.5).attr("width", 9).attr("height", 9).attr("rx", 1.5).attr("fill", (m) => H.teloColor[m.telos]);
     node.append("text").attr("x", 8).attr("dy", "0.33em").text((m) => m.name);
 
     // lineage closure for highlight
@@ -95,7 +95,8 @@
     const prevOpen = H.onOpen; H.onOpen = (id) => { if (H.M[id]) { pinned = id; focus(id); } if (prevOpen) prevOpen(id); };
 
     return {
-      filter(on) { node.classed("dim", (m) => !on.has(m.telos)); link.classed("dim", (l) => !on.has(l.t.telos) || !on.has(l.s.telos)); }
+      // keep(m) says whether a method passes the shared filters; the rest are dimmed.
+      filter(keep) { node.classed("dim", (m) => !keep(m)); link.classed("dim", (l) => !keep(l.t) || !keep(l.s)); }
     };
 
     function wrap(text, width) {

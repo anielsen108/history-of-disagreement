@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Taxonomy · Disagreement, a history</title>
-<meta name="description" content="Graphic taxonomy: a two-column diagram linking methods of disagreement to views of what disagreement is about, a lineage map, and a table.">
+<meta name="description" content="Graphic taxonomy: a two-column diagram linking methods of disagreement to views of what disagreement is about, a lineage map, a table, an influence map of people and a chronology.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -13,31 +13,29 @@
 </head>
 <body data-page="taxonomy" data-drawer-links="1">
 <main>
-  <div class="kicker">Graphic taxonomy</div>
+  <div class="kicker">Browse · the map</div>
   <h1>Taxonomy</h1>
-  <p class="lede">The tabs below draw the same corpus in different ways. The two-column diagram joins each method to the views it presupposes. A lineage map shows who descends from whom. The table names every link. The last tab shows how the mix of diagnoses shifted over time.</p>
+  <p class="lede">This page draws the whole survey as a map. Use it when you want to see how the methods and the views connect.</p>
   <p class="page-thesis">How this bears on the thesis: every thread in the first diagram is one method’s assumption about what disagreement is. <a href="index.html">The thesis</a></p>
 
   <div class="tabs" role="tablist">
     <button role="tab" aria-selected="true" data-tab="t-wheel" id="tab-bip">Method ↔ view</button>
     <button role="tab" aria-selected="false" data-tab="t-lineage">Lineage of methods</button>
     <button role="tab" aria-selected="false" data-tab="t-matrix">Table</button>
+    <button role="tab" aria-selected="false" data-tab="t-people">People</button>
     <button role="tab" aria-selected="false" data-tab="t-drift">Over time</button>
   </div>
+  <div id="fbar"></div>
 
   <section class="tabpanel" id="t-wheel">
     <div class="viz-frame">
-      <div class="facets">
-        <div id="f-telos"></div><div id="f-domain"></div><div id="f-culture"></div>
-        <div class="slider"><button type="button" class="btn" id="play" aria-label="Play through the centuries">▶ Play</button>
-          <label for="to">Show everything up to</label><input type="range" id="to" min="-600" max="2100" step="100" value="2100"><output id="to-out" for="to">the present</output></div>
-        <div class="facet-actions"><span class="meta">Click chips to hide or show a group. The address bar keeps the current filters, so you can share the exact view.</span>
-          <button type="button" class="linkbtn" id="reset">Reset filters</button> <button type="button" class="linkbtn" id="copy">Copy link to this view</button></div>
-      </div>
+      <div class="slider"><button type="button" class="btn" id="play" aria-label="Play through the centuries">▶ Play</button>
+        <label for="to">Show everything up to</label><input type="range" id="to" min="-600" max="2100" step="100" value="2100"><output id="to-out" for="to">the present</output>
+        <button type="button" class="linkbtn" id="copy">Copy link to this view</button></div>
       <div id="wheel"></div>
     </div>
-    <p class="viz-caption">Each thread joins a method to a view of disagreement that it presupposes. “Swap sides” exchanges the two columns. Threads take the colour of the view’s domain. A heavy thread marks a method’s primary view, and a dashed thread marks a primary pairing that scholars contest. Tick “Primary threads only” to leave one thread per method. </p>
-    <p class="viz-caption">Inside each group, rows are ordered by the average height of their partners, which removes most crossings; the order of the groups was chosen the same way. Hover a group heading to light a whole domain or telos. Click a name to focus it; click again, or press “Read entry”, to open it. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
+    <p class="viz-caption">Methods are grouped by aim, which the traditions call <i>telos</i>: what the exchange is for. Views are grouped by where they say the dispute lives, which this site calls the <i>domain</i>. A square marks a method or an aim, and a circle marks a view or a domain. Each thread joins a method to a view it presupposes and takes the colour of the view’s domain.</p>
+    <p class="viz-caption">The diagram opens with every group shut and with primary threads only, so the first screen shows which aims lean on which domains. A wider band carries more methods. Click a group to open it. Click a name to focus it, and click it again, or press “Read entry”, to open it. “Show all links” adds each method’s secondary views. A dashed thread marks a primary pairing that scholars contest. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
   </section>
 
   <section class="tabpanel" id="t-lineage" hidden>
@@ -45,16 +43,24 @@
       <div id="legend-t2"></div>
       <div class="viz-scroll" id="lineage"></div>
     </div>
-    <p class="viz-caption">One lane per family of methods. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Each edge takes the colour of the later method’s telos. Hover a method to light its full ancestry and descent, and click it to open the entry. Click the legend to dim a telos. The axis gives half its width to the years since 1900, where half the methods fall. Scroll sideways on small screens.</p>
+    <p class="viz-caption">One lane per family of methods. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Each edge takes the colour of the later method’s aim. Hover a method to light its full ancestry and descent, and click it to open the entry. The filters above dim the methods they exclude. The axis gives half its width to the years since 1900, where half the methods fall. Scroll sideways on small screens.</p>
   </section>
 
   <section class="tabpanel" id="t-matrix" hidden>
     <div class="viz-toolbar"><label for="sort">Order rows by</label>
-      <select id="sort"><option value="domain">domain</option><option value="count">number of methods</option><option value="date">date</option></select>
-      <span class="meta">Views run down the side. Each cell names the methods with that telos that presuppose the view. ★ marks a method’s primary view.</span></div>
+      <select id="sort"><option value="domain">where the dispute lives</option><option value="count">number of methods</option><option value="date">date</option></select>
+      <span class="meta">Views run down the side. Each cell names the methods with that aim that presuppose the view. ★ marks a method’s primary view.</span></div>
     <div class="viz-frame"><div id="matrix"></div></div>
-    <h2>Domain × telos</h2>
+    <h2>Where the dispute lives, by aim</h2>
     <div id="tdt"></div>
+  </section>
+
+  <section class="tabpanel" id="t-people" hidden>
+    <p class="viz-caption">Each bar is a life, coloured by the aim of the person’s main method, or by the domain of their main view if they gave no method. A thread runs from a thinker to each later thinker who read, studied with or wrote against them. Hover to light a person’s sources and heirs, and click to open their entry.</p>
+    <div class="viz-frame"><div class="viz-scroll" id="pgraph"></div></div>
+    <p class="viz-caption">Lifetimes before about 500 CE are approximate and drawn paler. The time axis is compressed for antiquity and stretched for the modern period, as on the lineage map. Influence here is the documented kind: a named reading, a teacher, or a published reply. Diffuse cultural influence is left out. Scroll sideways on small screens.</p>
+    <h2>By region</h2>
+    <div id="plist"></div>
   </section>
 
   <section class="tabpanel" id="t-drift" hidden>
@@ -63,6 +69,12 @@
     <div class="viz-frame"><div id="legend-d3"></div><div id="driftchart"></div></div>
     <p class="viz-caption">Each bar is one period; its segments give the share of that period’s methods whose diagnosis falls in each domain. Some periods hold only a few methods (one, for 1900–1950), so read their percentages as rough. Two things still show. Before 1800 no method locates disagreement in the psyche or in the relationship; epistemic, linguistic, power and contemplative diagnoses fill most of it. From 1950 to 1980 the psyche, interest and relational domains together hold 7 of 11 methods. After 1980 epistemic diagnoses hold 7 of 19 methods (37%), carried by the rationalist and deliberative methods, and relational diagnoses hold 5 of 19 (26%). That is the “therapeutic turn” discussed on the <a href="index.html">overview</a>.</p>
     <div id="drifttable"></div>
+    <h2 id="chronology">Chronology</h2>
+    <p class="prose">Methods and views are interleaved here by date. The order shows when a diagnosis arrives before any method built on it, and when the reverse happens. Dates mark first articulation or attestation, and each entry gives its honest range.</p>
+    <div class="legend"><span class="legend-title">Show</span>
+      <button class="chip" type="button" aria-pressed="true" data-show="method">methods</button>
+      <button class="chip" type="button" aria-pressed="true" data-show="view">views</button></div>
+    <ol class="tl" id="tl"></ol>
   </section>
 </main>
 <script src="vendor/d3.min.js"></script>
@@ -78,6 +90,7 @@
 <script src="js/common.js"></script>
 <script src="js/bipartite.js"></script>
 <script src="js/lineage.js"></script>
+<script src="js/people.js"></script>
 <script src="js/matrix.js"></script>
 <script src="js/drift.js"></script>
 <script src="js/pages.js"></script>
@@ -85,77 +98,88 @@
 document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
   const q = new URLSearchParams(location.search);
-  const setOf = (k, all) => q.get(k) ? new Set(q.get(k).split(",").filter((x) => all.some((y) => y.id === x))) : null;
-  const F = { telos: setOf("telos", H.teloi), domain: setOf("domain", H.domains), culture: setOf("culture", H.cultures), to: q.get("to") ? +q.get("to") : null };
-  let pinned = q.get("focus"), tab = q.get("tab") || (["wheel", "lineage", "matrix", "drift"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "wheel");
+  const TABS = ["wheel", "lineage", "matrix", "people", "drift"];
+  const alias = { time: "drift", timeline: "drift" };
+  const want = alias[q.get("tab")] || q.get("tab") || location.hash.slice(1);
+  let pinned = q.get("focus"), tab = TABS.includes(want) ? want : /^#p=/.test(location.hash) && !q.get("tab") ? "wheel" : "wheel";
+  let to = q.get("to") ? +q.get("to") : null;
   const MAXY = 2100;
 
+  // The shared filter bar writes its own keys to the address bar. This page adds the tab, the year and the focus.
   function writeURL() {
-    const p = new URLSearchParams();
-    if (tab !== "wheel") p.set("tab", tab);
-    ["telos", "domain", "culture"].forEach((k) => { if (F[k]) p.set(k, [...F[k]].join(",")); });
-    if (F.to != null && F.to < MAXY) p.set("to", F.to);
-    if (pinned) p.set("focus", pinned);
+    const p = new URLSearchParams(location.search);
+    const set = (k, v) => { if (v == null || v === "") p.delete(k); else p.set(k, v); };
+    set("tab", tab === "wheel" ? null : tab); set("to", to != null && to < MAXY ? to : null); set("focus", pinned);
     const s = p.toString();
-    try { history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash.replace(/^#(wheel|lineage|matrix|drift)$/, "")); } catch (e) {}
+    try { history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash.replace(/^#(wheel|lineage|matrix|drift|people)$/, "")); } catch (e) {}
   }
-  const full = (set, all) => !set || set.size === all.length ? null : set;
-  let api = {};
+  // A link to one entry opens its group and its partners' groups. A Diagnose result opens every group it kept.
+  if (pinned) H.bipExpand([pinned]);
+  if (H.filters.only) H.bipOpenAll();
   function draw() {
-    api = H.drawBipartite(document.getElementById("wheel"), { filter: F, pin: pinned, onPin: (id) => { pinned = id; writeURL(); } });
+    H.drawBipartite(document.getElementById("wheel"), { filtered: true, to, pin: pinned, onPin: (id) => { pinned = id; writeURL(); } });
     writeURL();
   }
-  const facet = (host, title, items, colors, key) => document.getElementById(host).append(
-    H.legend(title, items, colors, (on) => { F[key] = full(on, items); draw(); }, F[key] || undefined));
-  facet("f-telos", "Telos", H.teloi, H.teloColor, "telos");
-  facet("f-domain", "Domain", H.domains, H.domainColor, "domain");
-  facet("f-culture", "Culture", H.cultures, null, "culture");
 
-  const to = document.getElementById("to"), out = document.getElementById("to-out"), play = document.getElementById("play");
+  const slider = document.getElementById("to"), out = document.getElementById("to-out"), play = document.getElementById("play");
   const label = (y) => (y >= MAXY ? "the present" : H.year(y));
-  if (F.to != null) to.value = F.to;
-  out.textContent = label(+to.value);
-  to.oninput = () => { F.to = +to.value >= MAXY ? null : +to.value; out.textContent = label(+to.value); draw(); };
+  if (to != null) slider.value = to;
+  out.textContent = label(+slider.value);
+  slider.oninput = () => { to = +slider.value >= MAXY ? null : +slider.value; out.textContent = label(+slider.value); draw(); };
   let timer = null;
   const stop = () => { clearInterval(timer); timer = null; play.textContent = "▶ Play"; };
   play.onclick = () => {
     if (timer) return stop();
-    if (+to.value >= MAXY) to.value = to.min;
+    if (+slider.value >= MAXY) slider.value = slider.min;
     play.textContent = "❚❚ Pause";
-    to.oninput();
+    slider.oninput();
     timer = setInterval(() => {
-      const v = +to.value + 100;
+      const v = +slider.value + 100;
       if (v > MAXY) return stop();
-      to.value = v; to.oninput();
+      slider.value = v; slider.oninput();
     }, 650);
   };
-  document.getElementById("reset").onclick = () => { location.href = location.pathname; };
   document.getElementById("copy").onclick = (e) => {
     const done = () => { e.target.textContent = "Link copied"; setTimeout(() => (e.target.textContent = "Copy link to this view"), 1500); };
     try { navigator.clipboard.writeText(location.href).then(done, done); } catch (err) { done(); }
   };
-  draw();
 
   // The lineage map is drawn to the page width, so it is drawn when its tab is first shown and redrawn on resize.
   const linHost = document.getElementById("lineage");
-  let lin = null, linOn = null;
-  const drawLin = () => { lin = H.drawLineage(linHost); if (linOn) lin.filter(linOn); };
-  document.getElementById("legend-t2").append(H.legend("Telos (click to filter)", H.teloi, H.teloColor, (on) => { linOn = on; if (lin) lin.filter(on); }));
-  let rz = null;
-  window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (tab === "lineage") drawLin(); else lin = null; }, 200); });
+  let lin = null;
+  const drawLin = () => { lin = H.drawLineage(linHost); lin.filter(H.keepM); };
+  document.getElementById("legend-t2").append(H.legend("Aim", H.teloi, H.teloColor, true));
   const sort = document.getElementById("sort");
   const drawM = () => H.drawMatrix(document.getElementById("matrix"), sort.value);
-  sort.onchange = drawM; drawM();
+  sort.onchange = drawM;
   H.telosDomainTable(document.getElementById("tdt"));
 
-  const dl = H.legend("Domain", H.domains, H.domainColor); dl.querySelectorAll("button").forEach((b) => (b.disabled = true));
-  document.getElementById("legend-d3").append(dl);
+  let pg = null;
+  const drawP = () => { pg = H.drawPeople(document.getElementById("pgraph")); };
+  H.onOpen = (id) => { if (pg && id && id.startsWith("p:")) pg.pin(id.slice(2)); };
+  H.onClose = () => { if (pg) pg.clear(); };
+  document.getElementById("plist").innerHTML = H.regions.map((r) => {
+    const ps = H.people.filter((p) => p.region === r.id).sort((a, b) => a.born - b.born);
+    return ps.length ? `<h3>${r.name}</h3><p>${ps.map((p) => `${H.plink(p.id)} <span class="meta">${H.year(p.born)}–${p.died ? H.year(p.died) : ""}</span>`).join(" · ")}</p>` : "";
+  }).join("");
+  let rz = null;
+  window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => {
+    if (tab === "lineage") drawLin(); else lin = null;
+    if (tab === "people") drawP(); else pg = null; }, 200); });
+
+  document.getElementById("legend-d3").append(H.legend("Where it lives", H.domains, H.domainColor));
   const dmode = document.getElementById("dmode");
   const drawD = () => {
     const rows = H.drawDrift(document.getElementById("driftchart"), dmode.value);
     document.getElementById("drifttable").innerHTML = `<div class="mtable-wrap" style="max-height:none"><table class="simple"><thead><tr><th>Period</th>${H.domains.map((d) => `<th>${d.name}</th>`).join("")}<th>Total</th></tr></thead><tbody>${rows.map((r) => `<tr><th>${r.n}</th>${H.domains.map((d) => `<td>${r.c[d.id] || ""}</td>`).join("")}<td>${r.total}</td></tr>`).join("")}</tbody></table></div>`;
   };
   dmode.onchange = drawD; drawD();
+  H.timelineInit(document.getElementById("tl"), document.querySelectorAll("[data-show]"));
+
+  // One filter bar serves the diagram, the lineage map and the table.
+  const fbar = document.getElementById("fbar");
+  H.filterBar(fbar, () => { draw(); drawM(); if (lin) lin.filter(H.keepM); });
+  draw(); drawM();
 
   document.getElementById("tab-bip").textContent = H.viewsLeft === false ? "Method ↔ view" : "View ↔ method";
   const tabs = document.querySelectorAll("[role=tab]");
@@ -163,11 +187,14 @@ document.addEventListener("DOMContentLoaded", () => {
     tab = id;
     tabs.forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === "t-" + id));
     document.querySelectorAll(".tabpanel").forEach((p) => (p.hidden = p.id !== "t-" + id));
+    fbar.hidden = id === "people" || id === "drift";
     if (id === "lineage" && !lin) drawLin();
+    if (id === "people" && !pg) drawP();
     writeURL();
   }
   tabs.forEach((t) => (t.onclick = () => show(t.dataset.tab.slice(2))));
   show(tab);
+  if (q.get("tab") === "timeline" || location.hash === "#chronology") setTimeout(() => document.getElementById("chronology").scrollIntoView(), 50);
 });
 </script>
 </body>

@@ -2,49 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>People and influence · Disagreement, a history</title>
-<meta name="description" content="Influence graph of thinkers on disagreement, from Heraclitus to Kahneman, by region and lifetime.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+<title>Moved · Disagreement, a history</title>
+<link rel="canonical" href="taxonomy.html?tab=people">
+<script>location.replace("taxonomy.html?tab=people" + location.hash);</script>
+<meta http-equiv="refresh" content="1; url=taxonomy.html?tab=people">
 </head>
-<body data-page="people" data-drawer-links="1">
-<main>
-  <div class="kicker">Who read whom</div>
-  <h1>People and influence</h1>
-  <p class="lede">Each bar is a life, coloured by the telos of the person’s main method (or the domain of their main view if they gave no method). A thread runs from a thinker to each later thinker who read, studied with or wrote against them. Hover to light a person’s sources and heirs; click to open their entry.</p>
-  <div class="viz-frame"><div class="viz-scroll" id="pgraph"></div></div>
-  <p class="viz-caption">Lifetimes before about 500 CE are approximate and drawn paler. The time axis is compressed for antiquity and stretched for the modern period, as on the lineage map. Influence here is the documented kind: a named reading, a teacher, or a published reply. Diffuse cultural influence is left out. Scroll sideways on small screens.</p>
-  <h2>By region</h2>
-  <div id="plist"></div>
-</main>
-<script src="vendor/d3.min.js"></script>
-<script src="data/sources.js"></script>
-<script src="data/taxonomy.js"></script>
-<script src="data/methods.js"></script>
-<script src="data/views.js"></script>
-<script src="data/extras.js"></script>
-<script src="data/people.js"></script>
-<script src="data/glossary.js"></script>
-<script src="data/content.js"></script>
-<script src="data/readings.js"></script>
-<script src="js/common.js"></script>
-<script src="js/people.js"></script>
-<script src="js/pages.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const H = HOD;
-  const g = H.drawPeople(document.getElementById("pgraph"));
-  H.onOpen = (id) => { if (id && id.startsWith("p:")) g.pin(id.slice(2)); };
-  H.onClose = () => g.clear();
-  document.getElementById("plist").innerHTML = H.regions.map((r) => {
-    const ps = H.people.filter((p) => p.region === r.id).sort((a, b) => a.born - b.born);
-    return ps.length ? `<h3>${r.name}</h3><p>${ps.map((p) => `${H.plink(p.id)} <span class="meta">${H.year(p.born)}–${p.died ? H.year(p.died) : ""}</span>`).join(" · ")}</p>` : "";
-  }).join("");
-});
-</script>
+<body>
+<p>This page now lives inside <a href="taxonomy.html?tab=people">the Taxonomy page</a>.</p>
 </body>
 </html>

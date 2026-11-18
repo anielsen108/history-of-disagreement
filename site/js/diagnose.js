@@ -26,6 +26,9 @@
     relational: "recognition, respect and repair", contemplative: "letting go of the position, or reverence for what is at stake",
     generative: "keeping the tension productive and leaving it open"
   };
+  // Questions and goals follow the one order of groups used on every page.
+  QUESTIONS.sort((a, b) => H.domains.findIndex((d) => d.id === a.d) - H.domains.findIndex((d) => d.id === b.d));
+  GOALS.sort((a, b) => H.teloi.findIndex((t) => t.id === a[0]) - H.teloi.findIndex((t) => t.id === b[0]));
   const STASIS_ORDER = ["epistemic", "linguistic", "axiological", "power"];
 
   function diagnose(form, out) {
@@ -52,8 +55,10 @@
       ${stasisHit.length > 1 ? `<p class="note">Stasis theory’s rule of order applies. Settle the earlier question before the later one: ${stasisHit.map((d) => H.D[d].name.toLowerCase()).join(" → ")}. A dispute argued at two stases at once usually has each party winning on a different question.</p>` : ""}
       ${doms.length > 2 ? `<p class="note">Several domains are live at once. Expect each party to experience the other’s “solution” as missing the point. The <a href="#mismatch">mismatch finder</a> below can show where.</p>` : ""}
       <h2>Methods that fit</h2>
-      <ol class="diag-methods">${scored.map(({ m, why }) => `<li>${H.link(m.id)} <span class="meta">· ${H.T[m.telos].name}${m.telos === goal ? " (matches your goal)" : ""} · addresses ${why.join(", ")}</span>
-        <div class="meta">${m.failure ? "Watch for: " + m.failure : ""}</div></li>`).join("")}</ol>`;
+      <ol class="diag-methods">${scored.map(({ m, why }) => `<li>${H.link(m.id)} <span class="meta">· aim: ${H.T[m.telos].name.toLowerCase()}${m.telos === goal ? " (matches your goal)" : ""} · addresses ${why.join(", ")}</span>
+        <div class="meta">${m.failure ? "Watch for: " + m.failure : ""}</div></li>`).join("")}</ol>
+      <p><a class="btn primary" href="taxonomy.html?only=${[...scored.map((x) => x.m.id), ...new Set(scored.flatMap((x) => x.m.views.filter((v) => w[H.V[v].domain])))].join(",")}">Show these in the diagram →</a>
+        <span class="meta">The diagram opens with only these methods and the views they rest on in the places you marked.</span></p>`;
   }
 
   function mismatch(form, out) {
@@ -79,7 +84,7 @@
 
   H.initDiagnose = function () {
     const form = document.getElementById("diag-form"), out = document.getElementById("diag-out");
-    form.querySelector("#qs").innerHTML = QUESTIONS.map((x) => `<fieldset class="q"><legend><span class="dot" style="background:${H.domainColor[x.d]}"></span>${x.q}</legend>
+    form.querySelector("#qs").innerHTML = QUESTIONS.map((x) => `<fieldset class="q"><legend>${H.dot(H.domainColor[x.d])}${x.q}</legend>
       ${[["2", "Yes"], ["1", "Somewhat"], ["0", "No"]].map(([v, l]) => `<label><input type="radio" name="q-${x.d}" value="${v}"${v === "0" ? " checked" : ""}> ${l}</label>`).join("")}</fieldset>`).join("");
     form.querySelector("[name=goal]").innerHTML = GOALS.map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
     form.addEventListener("change", () => diagnose(form, out));

@@ -13,9 +13,10 @@
 </head>
 <body data-page="paths" data-drawer-links="1">
 <main>
-  <div class="kicker">Guided reading</div>
+  <div class="kicker">Read · guided tours</div>
   <h1>Reading paths</h1>
-  <p class="lede">Each path is a short tour of entries, chosen to tell one story across traditions. Start a tour and step through it with the Next button or the arrow keys. Every stop has its own link.</p>
+  <p class="lede">Each path on this page is a short tour of entries that tells one story across traditions. Use it when you would rather follow an argument than browse a map.</p>
+  <p class="prose meta">Start a path and step through it with the buttons in the bar at the foot of the page, or with the arrow keys. The bar stays with you on every page until you leave the path.</p>
   <div id="paths"></div>
 </main>
 <script src="vendor/d3.min.js"></script>
@@ -35,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
   document.getElementById("paths").innerHTML = H.paths.map((p) => `<section class="gcard" id="${p.id}">
     <h2>${p.name}</h2><p>${p.blurb}</p>
-    <div class="path-steps">${p.steps.map((s, i) => `<a href="#tour=${p.id}.${i}" data-tour="${p.id}" data-i="${i}">${H.dot(H.colorOf(s))}${H.get(s).name}</a>`).join('<span class="arrow">→</span>')}</div>
-    <button type="button" class="btn primary" data-tour="${p.id}" data-i="0">Start the tour</button></section>`).join("");
+    <div class="path-steps">${p.steps.map((s, i) => `<a href="#tour=${p.id}.${i}" data-tour="${p.id}" data-i="${i}">${H.mark(s)}${H.get(s).name}</a>`).join('<span class="arrow">→</span>')}</div>
+    <button type="button" class="btn primary" data-tour="${p.id}" data-i="0">Start this path</button></section>`).join("");
   document.getElementById("paths").addEventListener("click", (e) => {
     const t = e.target.closest("[data-tour]"); if (!t) return;
     e.preventDefault(); H.startTour(t.dataset.tour, +t.dataset.i);

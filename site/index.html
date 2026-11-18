@@ -18,14 +18,21 @@
   <p class="lede">This site asks two linked questions. The first is how people have conducted conversations in which they disagree. The second is what they took the disagreement to be <em>really about</em>.</p>
   <div class="thesis"><b>Thesis.</b> Every method of disagreement assumes an answer to what the disagreement is about, so choosing a method is already a diagnosis. When the parties hold different diagnoses, each one’s method looks like evasion to the other. This site maps the methods, the diagnoses and the links between them, so that a reader can see which assumption a method brings.</div>
 
+  <h2 class="doors-h">Where to start</h2>
+  <div class="doors">
+    <a class="door" href="diagnose.html"><span class="verb">Use</span><h3>I have a dispute</h3><p>Answer a few questions about it. The site names where the dispute lives and suggests methods built for that kind of trouble.</p><span class="go">Diagnose a dispute →</span></a>
+    <a class="door" href="taxonomy.html"><span class="verb">Browse</span><h3>I want the map</h3><p>See every method joined to the views it presupposes, then open the lists, the lineage and the table from there.</p><span class="go">Open the taxonomy →</span></a>
+    <a class="door" href="paths.html"><span class="verb">Read</span><h3>I want to read</h3><p>Follow a short path of entries that tells one story across traditions, from the first stop to the last.</p><span class="go">Choose a path →</span></a>
+  </div>
+
+  <h2>The map in brief</h2>
   <div class="prose">
     <p>The questions are linked because every method assumes a diagnosis. The Socratic elenchus presupposes that the interlocutor’s beliefs are mutually inconsistent. Principled negotiation presupposes that positions hide compatible interests. Nonviolent Communication presupposes that needs never conflict and that only strategies do. The double crux presupposes that the dispute lives in a world-model with a testable node. Whoever adopts the method accepts its diagnosis, usually without noticing.</p>
-    <p>The diagram below makes that commitment visible. One column holds the methods, grouped by <em>telos</em>, meaning what the exchange is for. The other holds the views, grouped by <em>domain</em>, meaning where the trouble is said to live. Each thread joins a method to a view it presupposes, and the heavier thread marks the method’s primary view. Hover a name to trace its threads. Click a name to focus it, so that only its threads remain; click again or press “Read entry” to open it. Dashed threads mark pairings that scholars contest. Views marked “no method”, with a hollow dot, are diagnoses that no method in this survey takes as its premise.</p>
+    <p>The diagram below makes that commitment visible. One column holds the methods, grouped by aim: what the exchange is for. The traditions call this the <em>telos</em>. The other column holds the views, grouped by where they say the dispute lives. This site calls that the <em>domain</em>. A square marks a method or an aim, and a circle marks a view or a domain.</p>
+    <p>The diagram opens with every group shut. A band joins an aim to a domain when methods with that aim take a view in that domain as their primary diagnosis, and a wider band carries more methods. Click a group to open it and see its members. Click a name to focus it, and click it again to open the entry.</p>
   </div>
 
   <div class="viz-frame">
-    <div id="legend-t"></div>
-    <div id="legend-d"></div>
     <div id="wheel"></div>
   </div>
 
@@ -41,12 +48,6 @@
     <p><b>3. Some diagnoses have no method.</b> No method in this survey presupposes some of the views. They include incommensurable paradigms, mimetic rivalry, the narcissism of small differences, sacred values, class interest and Kegan’s developmental account. Each either awaits its method or implies that no conversational method can reach it. Atran and Axelrod’s symbolic concessions come close to a method for sacred values. Kuhn and Girard each say that argument stops at some limit. There Kuhn’s scientist converts, and Girard’s rivals must refuse the scapegoat. A gap can also mean that the survey is incomplete. Three closed when the Delphi method, the devil’s advocate and the truth commission were entered.</p>
   </div>
 
-  <div class="cards">
-    <a class="card" href="taxonomy.html"><h3>Taxonomy</h3><p>The method ↔ view diagram, a lineage map across 2,500 years, and a full table of links.</p></a>
-    <a class="card" href="methods.html"><h3>Methods</h3><p>Ways of conducting disagreement, from antilogic to AI-mediated deliberation, with their steps and sources.</p></a>
-    <a class="card" href="views.html"><h3>Views</h3><p>Accounts of what disagreement is “really about”, grouped by domain.</p></a>
-    <a class="card" href="timeline.html"><h3>Timeline</h3><p>Methods and views interleaved chronologically.</p></a>
-  </div>
 </main>
 <script src="vendor/d3.min.js"></script>
 <script src="data/sources.js"></script>
@@ -65,13 +66,9 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
-  document.getElementById("legend-t").append(H.legend("Telos", H.teloi, H.teloColor));
-  document.getElementById("legend-d").append(H.legend("Domain", H.domains, H.domainColor));
-  document.querySelectorAll(".legend button").forEach(b => b.disabled = true);
   H.drawBipartite(document.getElementById("wheel"));
   // Over-time chart, in the five eras the text uses.
-  const dl = H.legend("Domain", H.domains, H.domainColor); dl.querySelectorAll("button").forEach((b) => (b.disabled = true));
-  document.getElementById("drift").before(dl);
+  document.getElementById("drift").before(H.legend("Where it lives", H.domains, H.domainColor));
   H.drawDrift(document.getElementById("drift"), "primary", [[-1e4, 500, "to 500 CE"], [500, 1500, "500–1500"], [1500, 1900, "1500–1900"], [1900, 1975, "1900–1975"], [1975, 3000, "1975–present"]]);
 });
 </script>
