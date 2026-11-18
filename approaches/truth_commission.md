@@ -29,6 +29,10 @@ After a period of state violence, a temporary official body takes statements fro
 **Strongest critique** (Mahmood Mamdani, ‘Amnesty or Impunity?’, Diacritics 32 (2002)): The commission defined victims and perpetrators as individuals who suffered or committed gross violations. The many who lost land and livelihood under apartheid law, and those who gained, fell outside its account.
 
 
+## Whose reading?
+- *attested*: The commission’s report distinguishes four notions of truth. Truth and Reconciliation Commission of South Africa Report (1998), vol. 1, ch. 5.
+
+
 ## Sources
 - Truth and Reconciliation Commission of South Africa. *Report*. 5 vols. Cape Town: Juta, 1998. — vol. 1, ch. 5
 - Hayner, Priscilla B. *Unspeakable Truths: Transitional Justice and the Challenge of Truth Commissions*. 2nd ed. New York: Routledge, 2011.

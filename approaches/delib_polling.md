@@ -27,6 +27,7 @@ Organisers poll a random sample of citizens, give them balanced briefing materia
 **Strongest critique** (Lynn Sanders, ‘Against Deliberation’ (1997)): Deliberation’s norms of reasoned speech privilege those already advantaged. Testimony may be fairer than argument.
 
 
+
 ## Sources
 - Fishkin, James S. *Democracy and Deliberation: New Directions for Democratic Reform*. New Haven: Yale University Press, 1991.
 - Fishkin, James S. *When the People Speak: Deliberative Democracy and Public Consultation*. Oxford: Oxford University Press, 2009.

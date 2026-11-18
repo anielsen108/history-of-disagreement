@@ -27,5 +27,10 @@ Wiredu reconstructs Asante council politics as government by consensus, with no 
 **Strongest critique** (Emmanuel Chukwudi Eze, ‘Democracy or Consensus?’ (1997)): Appeals to traditional consensus can mask hierarchy and supply cover for one-party rule.
 
 
+## Whose reading?
+- *reading*: Asante council politics worked by consensus, and this could ground a non-party polity. Kwasi Wiredu, Cultural Universals and Particulars (1996).
+- *reading*: This idealises pre-colonial practice and lends cover to one-party rule. Emmanuel Chukwudi Eze, ‘Democracy or Consensus? A Response to Wiredu’ (1997).
+
+
 ## Sources
 - Wiredu, Kwasi. “Democracy and Consensus in African Traditional Politics: A Plea for a Non-party Polity.” In *Cultural Universals and Particulars: An African Perspective*. Bloomington: Indiana University Press, 1996.

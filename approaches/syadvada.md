@@ -28,6 +28,10 @@ Reality is many-sided (anekānta), so every assertion holds only ‘in some resp
 **Strongest critique** (Śaṅkara, Brahmasūtrabhāṣya 2.2.33): Contradictory attributes cannot belong to one thing at once. A doctrine of ‘maybe’ yields no knowledge.
 
 
+## Whose reading?
+- *reading*: The sevenfold scheme indexes each predication to a standpoint and contains no true contradiction. Jonardon Ganeri, ‘Jaina Logic and the Philosophical Basis of Pluralism’ (2002); Graham Priest, ‘Jaina Logic: A Contemporary Perspective’ (2008), reads it as paraconsistent.
+
+
 ## Sources
 - Matilal, Bimal Krishna. *The Central Philosophy of Jainism (Anekānta-vāda)*. Ahmedabad: L. D. Institute of Indology, 1981.
 - Ireland, John D., trans. *The Udāna and the Itivuttaka*. Kandy: Buddhist Publication Society, 1997. (Udāna 6.4, the blind men and the elephant.) — 6.4

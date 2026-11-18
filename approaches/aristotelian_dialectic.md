@@ -29,6 +29,7 @@ The answerer defends a thesis with yes-or-no replies, while the questioner tries
 **Strongest critique** (Francis Bacon, Novum Organum I.13–14 (1620)): The syllogism commands assent to propositions but not the thing itself. Discovery needs induction from experiment.
 
 
+
 > The dialectical game survives into the medieval obligationes and modern dialogue logic.
 
 ## Sources

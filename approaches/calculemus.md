@@ -28,5 +28,6 @@ Leibniz imagined a universal characteristic in which reasoning would be calculat
 **Strongest critique** (Thomas Kuhn, Structure of Scientific Revolutions (1962)): There is no neutral algorithm for theory choice. Even scientists cannot calculate their way across a paradigm.
 
 
+
 ## Sources
 - Leibniz, G. W. “The Art of Discovery” (1685). In *Leibniz: Selections*, edited by Philip P. Wiener, 50–58. New York: Scribner, 1951.

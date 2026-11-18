@@ -28,6 +28,10 @@ Abelard’s *Sic et Non* set authorities against one another, and its prologue g
 **Strongest critique** (Erasmus, The Praise of Folly (1511)): The theologians fence themselves with definitions, conclusions and corollaries, and are puffed up by their subtlety.
 
 
+## Whose reading?
+- *reading*: The scholastic method descends in part from Islamic juridical disputation. George Makdisi, The Rise of Colleges (1981); most historians of the Latin schools, such as Alex Novikoff (2013), derive it from Latin sources.
+
+
 ## Sources
 - Abelard, Peter. *Sic et Non: A Critical Edition*. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77. — Prologue
 - Novikoff, Alex J. *The Medieval Culture of Disputation: Pedagogy, Practice, and Performance*. Philadelphia: University of Pennsylvania Press, 2013.

@@ -29,5 +29,6 @@ Every utterance can be heard as an expression of observation, feeling, need and 
 **Strongest critique** (Critics in conflict studies): Recasting injustice as unmet need can depoliticise grievances and leave power untouched.
 
 
+
 ## Sources
 - Rosenberg, Marshall B. *Nonviolent Communication: A Language of Life*. 2nd ed. Encinitas, CA: PuddleDancer Press, 2003.

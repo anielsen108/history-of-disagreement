@@ -41,7 +41,7 @@
     const c = x.conf || {};
     const sym = { firm: "●", approx: "◐", contested: "○", explicit: "●", interpretive: "◐" };
     let out = `<span class="conf conf-${c.date}" title="How secure the date is">${sym[c.date]} ${H.confLabel[c.date]}</span>`;
-    if (c.pair) out += `<span class="conf conf-${c.pair}" title="How secure the primary pairing is">${c.pair === "contested" ? "○" : sym[c.pair]} ${c.pair === "contested" ? H.confLabel.contested_pair : H.confLabel[c.pair]}</span>`;
+    if (c.pair && c.pair !== "interpretive") out += `<span class="conf conf-${c.pair}" title="How secure the primary pairing is">${c.pair === "contested" ? "○" : sym[c.pair]} ${c.pair === "contested" ? H.confLabel.contested_pair : H.confLabel[c.pair]}</span>`;
     return `<div class="confs">${out}</div>${c.note ? `<p class="conf-note">${c.note}</p>` : ""}`;
   };
 
@@ -180,7 +180,7 @@
         <h3>Entries</h3>
         <dl class="helpdl">
           <dt>One panel</dt><dd>Every link to an entry opens the same panel. Its first line is a breadcrumb, and the row beneath shows the entry among its neighbours.</dd>
-          <dt>Reference</dt><dd>The one fold in an entry. It holds the flags for dating and pairing (● firm, ◐ approximate or interpretive, ○ contested), lineage, people, sources and links. It stays open on the next entry once you open it.</dd>
+          <dt>Reference</dt><dd>The one fold in an entry. It holds “Whose reading?”, which names the source or scholar behind a disputed claim, the flags for dating and pairing (● firm, ◐ approximate, ○ contested), lineage, people, sources and links. It stays open on the next entry once you open it.</dd>
           <dt>Pin</dt><dd>Pinned entries wait in the tray at the foot of the page. The tray sends them to Compare or to the mismatch finder, or loads them as a reading sequence.</dd>
           <dt>Sequence</dt><dd>In the diagram, focus a name and press “Read these in sequence” to load everything lit. “Reorder” in the bar moves or removes stops. A named path can be reordered the same way.</dd>
           <dt>Notes</dt><dd>“Your notes” sits under each entry’s text and saves private notes in this browser. Export them from <a href="data.html">Open data &amp; notes</a>.</dd>
@@ -389,7 +389,7 @@
     ${m.note ? `<p class="note">${m.note}</p>` : ""}
     ${H.excerptsFor(m.id)}
     ${H.notesBox(m.id, m.name)}
-    ${sec("ref", "Reference", `${H.confBadges(m)}
+    ${sec("ref", "Reference", `${H.readingFor(m)}${H.confBadges(m)}
       ${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
       ${m.children.length ? `<p class="rel"><b>Gave rise to</b>${m.children.map((p) => H.link(p)).join(", ")}</p>` : ""}
       ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}
@@ -408,6 +408,13 @@
       <span class="f-line">${H.firstSentence(x.summary)}</span></a>`;
   };
 
+  // Whose reading: the claims in an entry that rest on a source, a consensus or a named scholar.
+  // A claim that is only this site's own reading is the default, so it gets no label and is not listed.
+  H.statusLabel = { attested: "Attested in the source", consensus: "Scholarly consensus", reading: "A named scholar’s reading" };
+  H.readingFor = (x) => {
+    const r = ((H.readings || {})[x.id] || []).filter((c) => H.statusLabel[c.status]); if (!r.length) return "";
+    return `<div class="reading"><b>Whose reading?</b>${r.map((c) => `<p><span class="st st-${c.status}">${H.statusLabel[c.status]}</span> ${c.claim}${c.by ? ` <span class="meta">${c.by}.</span>` : ""}</p>`).join("")}</div>`;
+  };
   H.renderView = (v, tag = "h2") => {
     const ppl = H.peopleFor(v.id);
     const gap = (H.gaps || {})[v.id];
@@ -420,7 +427,7 @@
     ${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}
     ${H.excerptsFor(v.id)}
     ${H.notesBox(v.id, v.name)}
-    ${sec("ref", "Reference", `${H.confBadges(v)}
+    ${sec("ref", "Reference", `${H.readingFor(v)}${H.confBadges(v)}
       ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}
       <p class="rel"><b>Tools</b><a href="diagnose.html?a=${v.id}#mismatch">Use in the mismatch finder</a> · <a href="taxonomy.html?focus=${v.id}">Show in diagram</a> · <a href="#e=${v.id}" class="permalink">Permalink</a></p>
       <h4 class="sk">Sources</h4>${H.citeList(v.cite)}${H.fixLink(v.id, v.name)}`)}

@@ -28,6 +28,7 @@ A body selected by lot hears evidence, deliberates over weeks or months, and rec
 **Strongest critique** (Cristina Lafont, Democracy without Shortcuts (2019)): Assemblies are a shortcut: citizens are asked to defer to a body they did not authorise.
 
 
+
 ## Sources
 - Gutmann, Amy, and Dennis Thompson. *Democracy and Disagreement*. Cambridge, MA: Harvard University Press, 1996.
 - Fishkin, James S. *When the People Speak: Deliberative Democracy and Public Consultation*. Oxford: Oxford University Press, 2009.

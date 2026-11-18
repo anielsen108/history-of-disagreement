@@ -27,5 +27,6 @@ Since no one’s reason is ‘right reason’ by nature, ‘the parties must by 
 **Strongest critique** (Locke, Second Treatise §93 (1689)): Men take care to avoid harm from polecats or foxes, but are content to be devoured by lions.
 
 
+
 ## Sources
 - Hobbes, Thomas. *Leviathan* (1651). Edited by Richard Tuck. Cambridge: Cambridge University Press, 1996. — ch. 5

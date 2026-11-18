@@ -28,5 +28,6 @@ Montaigne calls conversation ‘the most fruitful and natural exercise of our mi
 **Strongest critique** (Pascal, Entretien avec M. de Sacy (1655)): Montaigne’s easy doubt rests comfortably on a pillow of ignorance. It never faces the question that matters.
 
 
+
 ## Sources
 - Montaigne, Michel de. “Of the Art of Discussion” (*Essais* III.8, “De l’art de conférer”). In *The Complete Essays of Montaigne*, translated by Donald M. Frame. Stanford: Stanford University Press, 1958. — III.8

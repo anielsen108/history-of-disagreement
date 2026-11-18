@@ -27,6 +27,7 @@
 **Strongest critique** (Daodejing 1): The name that can be named is not the constant name. Fixing names fixes nothing that matters.
 
 
+
 ## Sources
 - Slingerland, Edward, trans. *Confucius: Analects*. Indianapolis: Hackett, 2003. — 13.3
 - Hutton, Eric L., trans. *Xunzi: The Complete Text*. Princeton: Princeton University Press, 2014. — ch. 22

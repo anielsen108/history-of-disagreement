@@ -28,5 +28,6 @@ Rhetoric is the counterpart (antistrophos) of dialectic. It finds the available 
 **Strongest critique** (Plato, Gorgias 454e–455a): Rhetoric produces belief without knowledge in a crowd that cannot test it.
 
 
+
 ## Sources
 - Aristotle. *The Complete Works of Aristotle: The Revised Oxford Translation*. Edited by Jonathan Barnes. 2 vols. Princeton: Princeton University Press, 1984. (Cited by Bekker pagination.) — Rhetoric 1354a1, 1355b25–35, 1358b

@@ -27,6 +27,7 @@ The sceptical Academy turned Socratic questioning into a standing practice of ar
 **Strongest critique** (Cato the Elder, as reported by Plutarch, Cato Maior 22): Send the philosophers home before the young learn to argue either side of justice.
 
 
+
 ## Sources
 - Cicero. *Tusculan Disputations*. Translated by J. E. King. Loeb Classical Library 141. Cambridge, MA: Harvard University Press, 1927. — 2.9
 - Lactantius. *Divine Institutes*. Translated by Anthony Bowen and Peter Garnsey. Liverpool: Liverpool University Press, 2003. — 5.14

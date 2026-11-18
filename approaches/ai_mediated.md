@@ -28,5 +28,6 @@ A language model drafts group statements from individual opinions, collects crit
 **Strongest critique** (Critics of AI mediation): A mediator trained by a company encodes contestable values and may homogenise dissent.
 
 
+
 ## Sources
 - Tessler, Michael Henry, et al. “AI Can Help Humans Find Common Ground in Democratic Deliberation.” *Science* 386, no. 6719 (2024).

@@ -28,5 +28,10 @@ Scepticism is ‘an ability to set out oppositions among things that appear and 
 **Strongest critique** (Hume, Enquiry concerning Human Understanding XII (1748)): Pyrrhonism cannot survive action. Nature is too strong for principle, and the sceptic must still eat, act and believe.
 
 
+## Whose reading?
+- *attested*: Scepticism is an ability to set out oppositions among appearances and thoughts. Sextus Empiricus, Outlines of Pyrrhonism 1.8.
+- *reading*: Pyrrho himself held a different, metaphysical doctrine, and Sextus’ scepticism owes him little beyond the name. Richard Bett, Pyrrho, His Antecedents, and His Legacy (2000).
+
+
 ## Sources
 - Sextus Empiricus. *Outlines of Scepticism*. Translated by Julia Annas and Jonathan Barnes. 2nd ed. Cambridge: Cambridge University Press, 2000. — PH 1.8–10, 1.25–29, 1.164–177

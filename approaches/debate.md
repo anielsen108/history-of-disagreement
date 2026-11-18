@@ -28,5 +28,9 @@ Sides are assigned, often by lot, and the speaker argues whatever they are given
 **Strongest critique** (Deborah Tannen, The Argument Culture (1998)): Treating every issue as a two-sided fight polarises and hides the many-sidedness of real questions.
 
 
+## Whose reading?
+- *reading*: Ticketed London debating societies flourished in the 1770s–90s. Donna T. Andrew, London Debating Societies, 1776–1799 (1994).
+
+
 ## Sources
 - Andrew, Donna T., ed. *London Debating Societies, 1776–1799*. London: London Record Society, 1994.

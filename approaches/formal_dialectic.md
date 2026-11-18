@@ -28,6 +28,7 @@ Hamblin modelled argument as a rule-governed game in which each move updates a p
 **Strongest critique** (Critics of ideal dialogue models): Real arguers are not commitment stores. Fear, status and identity drive the moves the model calls fallacies.
 
 
+
 ## Sources
 - Hamblin, C. L. *Fallacies*. London: Methuen, 1970.
 - Walton, Douglas N., and Erik C. W. Krabbe. *Commitment in Dialogue: Basic Concepts of Interpersonal Reasoning*. Albany: SUNY Press, 1995.

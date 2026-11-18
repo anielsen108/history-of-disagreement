@@ -28,6 +28,11 @@ The Mādhyamika shows that each of the opponent’s positions entails absurdity,
 **Strongest critique** (Naiyāyika objectors (Vigrahavyāvartanī vv. 1–20)): A refutation that asserts nothing refutes nothing. Your denial is also a thesis.
 
 
+## Whose reading?
+- *attested*: ‘If I had any thesis, that fault would apply to me.’ Nāgārjuna, Vigrahavyāvartanī 29.
+- *reading*: Nāgārjuna rejects only theses that ascribe intrinsic nature (svabhāva), and not every assertion. Jan Westerhoff, Nāgārjuna’s Madhyamaka (2009), ch. 9.
+
+
 ## Sources
 - Westerhoff, Jan, trans. *The Dispeller of Disputes: Nāgārjuna’s Vigrahavyāvartanī*. New York: Oxford University Press, 2010. — v. 29
 - Matilal, Bimal Krishna. *The Character of Logic in India*. Edited by Jonardon Ganeri and Heeraman Tiwari. Albany: SUNY Press, 1998.

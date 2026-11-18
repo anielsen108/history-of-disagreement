@@ -372,7 +372,7 @@ pre.schema { background: var(--paper); border: 1px solid var(--rule); border-rad
   .more-menu { left: auto; right: 0; }
 }
 
-/* method skeleton */
+/* method skeleton and named readings */
 .entry h4.sk { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); margin: .9rem 0 .2rem; font-weight: 600; }
 .entry ol.moves { margin: .2rem 0 .4rem 1.3rem; }
 .entry .assumes { margin-top: .2rem; }
@@ -563,3 +563,10 @@ details.sec[data-sec=ref] .cites { margin-top: .2rem; }
 .dock .seqedit li .mv { color: var(--ink-3); font-size: .7rem; }
 .dock .seqedit li .mv:hover:not(:disabled) { color: var(--accent); }
 .dock .seqedit li .mv:disabled { opacity: .25; cursor: default; }
+
+/* ── whose reading: claims that rest on a source or a named scholar ── */
+.reading { border: 1px solid var(--rule); border-radius: 8px; padding: .45rem .75rem; margin: .6rem 0; font-size: .92rem; }
+.reading > b { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); }
+.reading p { margin: .3rem 0; }
+.st { font-family: var(--sans); font-size: .7rem; padding: .05rem .4rem; border-radius: 4px; border: 1px solid var(--rule); white-space: nowrap; margin-right: .2rem; }
+.st-attested { border-color: var(--accent-2); color: var(--accent-2); }

@@ -27,6 +27,11 @@ Christian authorities compelled Jewish scholars to debate Christian disputants, 
 **Strongest critique** (Nahmanides, Vikkuaḥ (1263)): Speech under a king’s licence, before a hostile court, decides nothing; the speaker pays for winning.
 
 
+## Whose reading?
+- *reading*: Nahmanides spoke freely at Barcelona and had the better of the argument. Hyam Maccoby, Judaism on Trial (1982); Robert Chazan, Barcelona and Beyond (1992), treats Nahmanides’ narrative as a literary work written for Jewish readers.
+- *consensus*: Nahmanides’ Hebrew account and the Latin protocol of Barcelona (1263) each claim the debate went their way. Robert Chazan, Barcelona and Beyond (1992).
+
+
 ## Sources
 - Chazan, Robert. *Barcelona and Beyond: The Disputation of 1263 and Its Aftermath*. Berkeley: University of California Press, 1992.
 - Maccoby, Hyam. *Judaism on Trial: Jewish–Christian Disputations in the Middle Ages*. London: Littman Library, 1982.

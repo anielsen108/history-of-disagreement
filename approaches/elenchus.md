@@ -29,6 +29,11 @@ The interlocutor states a thesis, usually a definition of a virtue. Socrates sec
 **Strongest critique** (Nietzsche, Twilight of the Idols, ‘The Problem of Socrates’ §§5–7): Dialectic is the weapon of those who have no other weapon: a plebeian revenge that forces the noble to prove themselves.
 
 
+## Whose reading?
+- *attested*: Socrates says he would rather be refuted than refute. Plato, Gorgias 458a.
+- *reading*: The elenchus can establish positive moral truths. Gregory Vlastos, ‘The Socratic Elenchus’ (1983); Hugh Benson, Socratic Wisdom (2000), argues that it only exposes inconsistency.
+
+
 > Gorgias 458a: Socrates claims he would rather be refuted than refute, since being refuted rids one of the greater evil.
 
 ## Sources

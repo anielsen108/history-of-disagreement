@@ -28,6 +28,7 @@ Doubt is an irritation that inquiry relieves. Peirce ranks four ways of fixing b
 **Strongest critique** (Richard Rorty, Consequences of Pragmatism (1982)): Nothing guarantees convergence. ‘What inquiry would end in’ adds nothing to ‘what we now justify’.
 
 
+
 ## Sources
 - Peirce, Charles S. “The Fixation of Belief.” *Popular Science Monthly* 12 (November 1877): 1–15.
 - Peirce, Charles S. “How to Make Our Ideas Clear.” *Popular Science Monthly* 12 (January 1878): 286–302.

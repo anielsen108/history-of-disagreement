@@ -28,5 +28,9 @@ After civil war over doctrine, natural philosophers moved dispute off contested 
 **Strongest critique** (Hobbes, Dialogus physicus (1661)): An experimental society is a new faction. Its ‘facts’ are opinions of a closed club, and the air-pump leaks.
 
 
+## Whose reading?
+- *reading*: The experimental matter of fact was a political technology for making dispute safe after the civil wars. Steven Shapin and Simon Schaffer, Leviathan and the Air-Pump (1985).
+
+
 ## Sources
 - Shapin, Steven, and Simon Schaffer. *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life*. Princeton: Princeton University Press, 1985.

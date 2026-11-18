@@ -27,6 +27,10 @@ Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinder
 **Strongest critique** (Dharmakīrti, Vādanyāya (7th c.)): Defeat should come only from failing to prove one’s thesis. Quibbles and sophistical rejoinders should not count.
 
 
+## Whose reading?
+- *attested*: Jalpa and vitaṇḍā protect truth as a hedge of thorns protects a seedling. Nyāya-sūtra 4.2.50.
+
+
 ## Sources
 - Dasti, Matthew, and Stephen H. Phillips, trans. *The Nyāya-sūtra: Selections with Early Commentaries*. Indianapolis: Hackett, 2017. — NS 1.2.2–3, 4.2.50
 - Matilal, Bimal Krishna. *The Character of Logic in India*. Edited by Jonardon Ganeri and Heeraman Tiwari. Albany: SUNY Press, 1998.

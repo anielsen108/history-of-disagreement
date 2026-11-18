@@ -28,6 +28,7 @@ Unofficial representatives of warring communities meet with a panel of social sc
 **Strongest critique** (Evaluators of track-two diplomacy (‘the transfer problem’)): Changed minds in a workshop rarely change policy. Power sits with people who were not in the room.
 
 
+
 ## Sources
 - Burton, John W. *Conflict and Communication: The Use of Controlled Communication in International Relations*. London: Macmillan, 1969.
 - Burton, John W., ed. *Conflict: Human Needs Theory*. New York: St. Martin’s Press, 1990.

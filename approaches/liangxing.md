@@ -28,5 +28,10 @@ Zhuangzi asks whether winning an argument makes the winner right, and answers th
 **Strongest critique** (Xunzi, ch. 21 ‘Undoing Fixation’): Zhuangzi was fixated on Heaven and did not understand the human. Society needs names and decisions.
 
 
+## Whose reading?
+- *consensus*: Only the Inner Chapters (1–7) are usually ascribed to Zhuangzi himself. A. C. Graham, Chuang-tzŭ: The Inner Chapters (1981).
+- *reading*: Zhuangzi is a perspectival relativist about shì and fēi. Chad Hansen, A Daoist Theory of Chinese Thought (1992); Graham (1981) stresses spontaneous response more than relativism.
+
+
 ## Sources
 - Ziporyn, Brook, trans. *Zhuangzi: The Essential Writings*. Indianapolis: Hackett, 2009. — ch. 2

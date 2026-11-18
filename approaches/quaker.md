@@ -28,5 +28,9 @@ No vote is taken. The clerk listens for and minutes the â€˜sense of the meetingâ
 **Strongest critique** (Jane Mansbridge, Beyond Adversary Democracy (1980)): Unitary, consensual democracy works where interests are common. Where they conflict, it hides the conflict and favours the articulate.
 
 
+## Whose reading?
+- *reading*: Secular consensus process in 1960s movements drew on Quaker practice. Francesca Polletta, Freedom Is an Endless Meeting (2002).
+
+
 ## Sources
 - Sheeran, Michael J. *Beyond Majority Rule: Voteless Decisions in the Religious Society of Friends*. Philadelphia: Philadelphia Yearly Meeting, 1983.

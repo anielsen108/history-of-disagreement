@@ -28,5 +28,6 @@ The method has four rules: separate the people from the problem; focus on intere
 **Strongest critique** (James J. White, review of Getting to Yes (1984)): Most negotiation is distributive. Fisher and Ury wish away the part where one side’s gain is the other’s loss.
 
 
+
 ## Sources
 - Fisher, Roger, and William Ury. *Getting to Yes: Negotiating Agreement Without Giving In*. Boston: Houghton Mifflin, 1981.

@@ -28,6 +28,7 @@ Restorative justice treats crime and conflict as harm to people and relationship
 **Strongest critique** (Annalise Acorn, Compulsory Compassion (2004)): The promise of healing and reconciliation can coerce victims and sentimentalise justice.
 
 
+
 ## Sources
 - Zehr, Howard. *Changing Lenses: A New Focus for Crime and Justice*. Scottdale, PA: Herald Press, 1990.
 - Braithwaite, John. *Crime, Shame and Reintegration*. Cambridge: Cambridge University Press, 1989.

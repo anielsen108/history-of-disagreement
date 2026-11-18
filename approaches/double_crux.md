@@ -27,6 +27,7 @@ Each party finds their crux, a belief that, if it changed, would change their co
 **Strongest critique** (From the standpoint of value pluralism (Weber, Berlin)): Not every disagreement bottoms out in a testable belief. Some end at incompatible goods.
 
 
+
 ## Sources
 - Sabien, Duncan. “Double Crux — A Strategy for Resolving Disagreement.” *LessWrong*, January 2017. https://www.lesswrong.com/posts/exa5kmvopeRyfJgCy/double-crux-a-strategy-for-resolving-disagreement
 - Aumann, Robert J. “Agreeing to Disagree.” *Annals of Statistics* 4, no. 6 (1976): 1236–1239.

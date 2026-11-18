@@ -28,6 +28,7 @@ Against Habermasian consensus, Mouffe argues that antagonism is ineradicable and
 **Strongest critique** (Deliberative democrats): Without shared standards of justification, agonism cannot say why anyone should accept defeat.
 
 
+
 ## Sources
 - Mouffe, Chantal. *The Democratic Paradox*. London: Verso, 2000.
 - Mouffe, Chantal. *On the Political*. London: Routledge, 2005.

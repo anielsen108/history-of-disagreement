@@ -10,7 +10,7 @@ import vm from "node:vm";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const ctx = { window: {} };
 vm.createContext(ctx);
-for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content"])
+for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content", "readings"])
   vm.runInContext(fs.readFileSync(path.join(root, "site/data", f + ".js"), "utf8"), ctx);
 const H = ctx.window.HOD;
 const allow = fs.existsSync(path.join(root, "scripts/lint-allow.txt"))
@@ -24,7 +24,7 @@ function walk(o, p) {
   if (Array.isArray(o)) o.forEach((x, i) => walk(x, p + "." + (x && x.id ? x.id : i))); // entries are addressed by id, so the allow-list survives reordering
   else if (o && typeof o === "object") for (const k in o) walk(o[k], p + "." + k);
 }
-for (const k of ["teloi", "families", "domains", "methods", "views", "extras", "glossary", "paths", "gaps", "example"]) walk(H[k], k);
+for (const k of ["teloi", "families", "domains", "methods", "views", "extras", "glossary", "paths", "gaps", "example", "readings"]) walk(H[k], k);
 for (const f of fs.readdirSync(path.join(root, "site")).filter((f) => f.endsWith(".html"))) {
   const s = fs.readFileSync(path.join(root, "site", f), "utf8");
   const main = (s.match(/<main>([\s\S]*?)<\/main>/) || [, ""])[1].replace(/<script[\s\S]*?<\/script>/g, "").replace(/<(table|pre|select)[\s\S]*?<\/\1>/g, "");
@@ -56,7 +56,7 @@ for (const [p, s] of items) {
     if (/\w—\w|\s—\s/.test(q)) out("error", p, "em dash in running prose", sent);
     // Inventory counts ("74 methods", "fifty-five views") are junk information. Proportions ("13 of 27 methods") carry an argument and pass.
     const tally = q.match(/\b(\d{2,}|ten|eleven|twelve|thirteen|\w+teen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)(-\w+)?\s+(or so\s+)?(methods|views|people|thinkers|sources|entries|paths|tours|terms|excerpts|diagnoses|gaps)\b/i);
-    if (tally && !/\bof\s+$/.test(q.slice(0, tally.index)) && !/^(example|gaps)\./.test(p)) out("error", p, `inventory count: “${tally[0]}”`, sent);
+    if (tally && !/\bof\s+$/.test(q.slice(0, tally.index)) && !/^(readings|example|gaps)\./.test(p)) out("error", p, `inventory count: “${tally[0]}”`, sent);
     if (/\?/.test(q) && !/\.moves\.|^example\.|gaps\.\w+\.sketch/.test(p)) out("error", p, "rhetorical question", sent);
     if (hedgeRe.test(q)) out("warn", p, "stacked hedges", sent);
     if (n > 40) out("warn", p, `sentence of ${n} words`, sent);

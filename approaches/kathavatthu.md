@@ -28,6 +28,10 @@ This canonical text sets out over two hundred points of controversy between the 
 **Strongest critique** (This site’s summary of the usual caution about polemical sources): The winning side reconstructs the rival schools’ positions, so it stages the controversy.
 
 
+## Whose reading?
+- *consensus*: Tradition assigns the text to Moggaliputta Tissa’s council under Aśoka; specialists treat much of it as later accretion. K. R. Norman, Pāli Literature (1983).
+
+
 ## Sources
 - Aung, Shwe Zan, and C. A. F. Rhys Davids, trans. *Points of Controversy, or Subjects of Discourse: Being a Translation of the Kathā-vatthu*. London: Pali Text Society, 1915.
 - Matilal, Bimal Krishna. *The Character of Logic in India*. Edited by Jonardon Ganeri and Heeraman Tiwari. Albany: SUNY Press, 1998. — ch. 3

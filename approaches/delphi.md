@@ -27,5 +27,6 @@ A panel of experts answers a questionnaire, each alone and without names attache
 **Strongest critique** (Harold Sackman, Delphi Critique (1975)): Delphi gathers opinions and reports their convergence as a finding. The convergence can show only that panellists moved toward the group figure.
 
 
+
 ## Sources
 - Dalkey, Norman, and Olaf Helmer. “An Experimental Application of the Delphi Method to the Use of Experts.” *Management Science* 9 (1963): 458–467.

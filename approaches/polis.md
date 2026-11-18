@@ -29,6 +29,7 @@ Participants vote agree or disagree on short statements written by one another. 
 **Strongest critique** (Critics of consensus ranking): Truths held by one cluster never surface. The bridging statement is often the vaguest one.
 
 
+
 ## Sources
 - Small, Christopher, Michael Bjorkegren, Timo Erkkilä, Lynette Shaw, and Colin Megill. “Polis: Scaling Deliberation by Mapping High Dimensional Opinion Spaces.” *Recerca: Revista de Pensament i Anàlisi* 26, no. 2 (2021).
 - Wojcik, Stefan, et al. “Birdwatch: Crowd Wisdom and Bridging Algorithms Can Inform Understanding and Reduce the Spread of Misinformation.” arXiv:2210.15723 (2022).

@@ -28,5 +28,6 @@ Toulmin models practical argument on the law court instead of on geometry. A cla
 **Strongest critique** (Formal logicians): A warrant is just a suppressed premise. Toulmin’s layout adds nothing a valid argument form lacks.
 
 
+
 ## Sources
 - Toulmin, Stephen. *The Uses of Argument*. Cambridge: Cambridge University Press, 1958.

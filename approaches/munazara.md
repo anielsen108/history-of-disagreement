@@ -28,6 +28,10 @@ Juridical dialectic (jadal) structured legal reasoning in the madrasa through qu
 **Strongest critique** (al-Ghazālī, Iḥyāʾ ʿulūm al-dīn, Book of Knowledge): Disputation for display breeds envy, pride and hatred, the vices it claims to tame.
 
 
+## Whose reading?
+- *attested*: The majlis of 932 between al-Sīrāfī and Abū Bishr Mattā is known from al-Tawḥīdī’s later account. Abū Ḥayyān al-Tawḥīdī, al-Imtāʿ wa-l-muʾānasa, night 8; trans. D. S. Margoliouth, JRAS (1905).
+
+
 ## Sources
 - Young, Walter Edward. *The Dialectical Forge: Juridical Disputation and the Evolution of Islamic Law*. Cham: Springer, 2017.
 - Miller, Larry Benjamin. *Islamic Disputation Theory: The Uses & Rules of Argument in Medieval Islam*. Cham: Springer, 2020.

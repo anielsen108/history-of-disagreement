@@ -29,6 +29,7 @@ An editor sends a manuscript to a few specialists, who report on its faults in w
 **Strongest critique** (Douglas Peters and Stephen Ceci, Behavioral and Brain Sciences 5 (1982)): Twelve published articles went back to the journals that had printed them, under invented names and institutions. Three were recognised, and eight of the other nine were rejected.
 
 
+
 ## Sources
 - Csiszar, Alex. “Peer Review: Troubled from the Start.” *Nature* 532 (2016): 306–308.
 - Baldwin, Melinda. “Scientific Autonomy, Public Accountability, and the Rise of ‘Peer Review’ in the Cold War United States.” *Isis* 109 (2018): 538–558.
