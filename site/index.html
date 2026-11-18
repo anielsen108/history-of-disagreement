@@ -18,6 +18,14 @@
   <p class="lede">This site asks two linked questions. The first is how people have conducted conversations in which they disagree. The second is what they took the disagreement to be <em>really about</em>.</p>
   <div class="thesis"><b>Thesis.</b> Every method of disagreement assumes an answer to what the disagreement is about, so choosing a method is already a diagnosis. When the parties hold different diagnoses, each one’s method looks like evasion to the other. This site maps the methods, the diagnoses and the links between them, so that a reader can see which assumption a method brings.</div>
 
+  <figure class="film">
+    <a class="film-play" href="https://youtu.be/uKOtQx8nIEg" data-yt="uKOtQx8nIEg" aria-label="Play the film: What is this disagreement really about?">
+      <img src="img/film-poster.jpg" width="1280" height="720" alt="Two columns of marks joined by threads: nine circles for what a dispute is about, eight squares for what an exchange is for.">
+      <span class="film-btn" aria-hidden="true"></span>
+    </a>
+    <figcaption><b>The film.</b> Twelve minutes on what a disagreement is really about and what an exchange is for, covering every kind of view and every aim on this site. The first minute and a half stands alone as a short version. The player loads from YouTube when you press play.</figcaption>
+  </figure>
+
   <h2 class="doors-h">Where to start</h2>
   <div class="doors">
     <a class="door" href="diagnose.html"><span class="verb">Use</span><h3>I have a dispute</h3><p>Answer a few questions about it. The site names where the dispute lives and suggests methods built for that kind of trouble.</p><span class="go">Diagnose a dispute →</span></a>
@@ -66,6 +74,18 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
+  // The film: load the YouTube player only when the reader presses play.
+  const play = document.querySelector(".film-play");
+  if (play) play.addEventListener("click", e => {
+    e.preventDefault();
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + play.dataset.yt + "?autoplay=1&rel=0&cc_load_policy=1";
+    f.title = "What is this disagreement really about?";
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    f.className = "film-frame";
+    play.replaceWith(f);
+  });
   H.drawBipartite(document.getElementById("wheel"));
   // Over-time chart, in the five eras the text uses.
   document.getElementById("drift").before(H.legend("Where it lives", H.domains, H.domainColor));
