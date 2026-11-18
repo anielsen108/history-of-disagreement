@@ -32,7 +32,7 @@
   <div id="notes"></div>
   <p><button type="button" class="btn" id="export">Export notes as JSON</button> <label class="btn" style="display:inline-block">Import notes <input type="file" id="import" accept="application/json" hidden></label> <button type="button" class="btn" id="clear">Delete all notes</button></p>
   <h2>Corrections</h2>
-  <p class="prose">Every entry has a “Propose a correction” link under “Your notes”. It opens a pre-filled issue on <a href="https://github.com/anielsen108/history-of-disagreement/issues">GitHub</a>. Please name a source.</p>
+  <p class="prose">Every entry has a “Propose a correction” link in its Reference fold. It opens a pre-filled issue on <a href="https://github.com/anielsen108/history-of-disagreement/issues">GitHub</a>. Please name a source.</p>
 </main>
 <script src="vendor/d3.min.js"></script>
 <script src="data/sources.js"></script>
@@ -70,7 +70,7 @@ pairing_confidence: explicit (stated by the tradition) | interpretive (this site
   function renderNotes() {
     const n = H.allNotes(), ks = Object.keys(n);
     document.getElementById("notes").innerHTML = ks.length ? `<div class="viz-frame">${ks.map((k) => `<p><b>${H.get(k) ? H.link(k) : k}</b><br>${H.esc(n[k]).replace(/\n/g, "<br>")}</p>`).join("")}</div>`
-      : `<p class="meta">No notes yet. Open any entry and use “Your notes” at the bottom.</p>`;
+      : `<p class="meta">No notes yet. Open any entry and write under “Your notes”.</p>`;
   }
   renderNotes();
   document.getElementById("export").onclick = () => {

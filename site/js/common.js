@@ -321,7 +321,7 @@
     return out;
   };
   H.notesBox = (id) => `<div class="notes"><label for="note-${id}">Your notes</label>
-      <textarea id="note-${id}" data-note="${id}" rows="2" placeholder="Private notes, saved only in this browser">${H.esc(H.getNote(id))}</textarea></div>`;
+      <textarea id="note-${id}" data-note="${id}" rows="2">${H.esc(H.getNote(id))}</textarea></div>`;
   H.fixLink = (id, name) => {
     const body = encodeURIComponent(`Entry: ${name} (${id})\nPage: ${location.origin}${location.pathname}#e=${id}\n\nWhat is wrong or missing:\n\nSource for the correction:\n`);
     return `<p class="meta"><a href="${REPO}/issues/new?title=${encodeURIComponent("Correction: " + name)}&body=${body}" target="_blank" rel="noopener">Propose a correction on GitHub ↗</a></p>`;
