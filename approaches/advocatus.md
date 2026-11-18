@@ -28,7 +28,6 @@ Sixtus V gave the Roman Congregation of Rites an officer, the Promoter of the Fa
 **Strongest critique** (Charlan Nemeth, Keith Brown and John Rogers, ‘Devil’s Advocate versus Authentic Dissent’ (2001)): Assigned dissent prompts less rethinking than dissent the speaker means. A group discounts an opponent who is known to be playing a role.
 
 
-
 > John Paul II’s reform of 1983 ended the adversarial form of the office.
 
 ## Sources

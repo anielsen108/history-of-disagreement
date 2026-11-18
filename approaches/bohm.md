@@ -28,6 +28,5 @@ A group of about twenty to forty people meets without agenda or decision. Partic
 **Strongest critique** (Practitioners of decision-oriented dialogue): Groups with real stakes cannot suspend forever. Some decisions must be made by people with conflicting interests.
 
 
-
 ## Sources
 - Bohm, David. *On Dialogue*. Edited by Lee Nichol. London: Routledge, 1996.

@@ -31,7 +31,6 @@ Preview locally with `cd site && python3 -m http.server`. To deploy on Netlify, 
 - `sources/bibliography.md`: **generated**.
 - `timeline.md`: **generated**.
 - `scripts/lint-prose.mjs`: checks all site prose against the style sheet on the About page (banned words, em dashes, rhetorical questions, stacked hedges, “not X but Y”, long sentences and paragraphs, inventory counts, plus two read-aloud checks: repeated sentence openings and runs of very short sentences). Run it before committing; accepted exceptions go in `scripts/lint-allow.txt`.
-- `site/data/readings.js`: named scholarly readings and claim status for the most contested entries.
 - `scripts/export-markdown.mjs`: regenerates the notes and the open data (`node scripts/export-markdown.mjs`). Edit the data, not the generated Markdown.
 
 ## Status

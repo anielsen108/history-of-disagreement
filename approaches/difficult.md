@@ -28,6 +28,5 @@ Every hard conversation is three conversations at once. The ‘what happened’ 
 **Strongest critique** (Laura Nader’s critique of ‘harmony ideology’ (1990), applied here): Reframing conflict as perception and identity can personalise what is really about position and resources.
 
 
-
 ## Sources
 - Stone, Douglas, Bruce Patton, and Sheila Heen. *Difficult Conversations: How to Discuss What Matters Most*. New York: Viking, 1999.

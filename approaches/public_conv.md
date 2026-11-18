@@ -29,6 +29,5 @@ Family therapists applied systemic techniques to polarised public issues, starti
 **Strongest critique** (Chantal Mouffe, On the Political (2005), applied here): Dialogue that lowers the temperature can depoliticise conflicts that need to be fought out.
 
 
-
 ## Sources
 - Chasin, Richard, Margaret Herzig, Sallyann Roth, Laura Chasin, Carol Becker, and Robert R. Stains Jr. “From Diatribe to Dialogue on Divisive Public Issues: Approaches Drawn from Family Therapy.” *Mediation Quarterly* 13, no. 4 (1996): 323–344.

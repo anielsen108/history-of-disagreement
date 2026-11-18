@@ -28,7 +28,6 @@ Canon A74: ‘disputation is contending over converse claims’. One party says 
 **Strongest critique** (Zhuangzi, ‘Qiwulun’): Your ‘this’ is my ‘that’. No judge can stand outside both of us to say who fits.
 
 
-
 ## Sources
 - Graham, A. C. *Later Mohist Logic, Ethics and Science*. Hong Kong: Chinese University Press; London: SOAS, 1978. — A74, B35
 - Fraser, Chris. “Mohist Canons.” *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/mohist-canons/

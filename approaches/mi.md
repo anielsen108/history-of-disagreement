@@ -28,6 +28,5 @@ Arguing for change produces resistance, because the listener voices the other si
 **Strongest critique** (Miller and Rollnick, Motivational Interviewing, 3rd ed. (2013), on the ethics of MI): A technique that evokes change by design must guard against manipulating autonomy it claims to respect.
 
 
-
 ## Sources
 - Miller, William R., and Stephen Rollnick. *Motivational Interviewing: Preparing People to Change Addictive Behavior*. New York: Guilford, 1991.

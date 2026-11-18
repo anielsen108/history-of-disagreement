@@ -25,7 +25,6 @@ Caplan’s test asks whether you can state your opponent’s view so well that t
 **Strongest critique** (Critics of the test): One can learn a vocabulary well enough to pass without sharing the form of life that gives it sense.
 
 
-
 ## Sources
 - Caplan, Bryan. “The Ideological Turing Test.” *EconLog*, June 2011. https://www.econlib.org/archives/2011/06/the_ideological.html
 - Mill, John Stuart. *On Liberty*. London: John W. Parker and Son, 1859. — ch. 2

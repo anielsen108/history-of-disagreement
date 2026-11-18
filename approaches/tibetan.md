@@ -28,10 +28,6 @@ The defender sits. Standing over him, the challenger claps and stamps as he puts
 **Strongest critique** (Critics of scholastic monasticism (cf. Dreyfus 2003)): The courtyard trains the defence of orthodoxy, and nobody questions the canon.
 
 
-## Whose reading?
-- *reading*: Debate is how monks interpret and absorb the texts they have memorised; it does more than rehearse fixed answers. Georges Dreyfus, The Sound of Two Hands Clapping (2003).
-
-
 ## Sources
 - Dreyfus, Georges B. J. *The Sound of Two Hands Clapping: The Education of a Tibetan Buddhist Monk*. Berkeley: University of California Press, 2003.
 - Perdue, Daniel E. *Debate in Tibetan Buddhism*. Ithaca, NY: Snow Lion, 1992.

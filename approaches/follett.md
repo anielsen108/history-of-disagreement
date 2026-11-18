@@ -28,9 +28,5 @@ Follett defines conflict as ‘the appearance of difference, difference of opini
 **Strongest critique** (Chantal Mouffe, On the Political (2005), applied here to Follett): Some conflicts are antagonistic. Treating them as integrable differences makes the stronger party’s frame the default.
 
 
-## Whose reading?
-- *site*: Getting to Yes restates Follett’s integration with new cases.
-
-
 ## Sources
 - Follett, Mary Parker. “Constructive Conflict” (1925). In *Dynamic Administration: The Collected Papers of Mary Parker Follett*, edited by Henry C. Metcalf and L. Urwick. New York: Harper, 1940.

@@ -28,6 +28,5 @@ Every speech act raises validity claims: truth, normative rightness, sincerity a
 **Strongest critique** (Lyotard, The Postmodern Condition (1979)): Consensus is an outmoded and suspect value. It does violence to the heterogeneity of language games.
 
 
-
 ## Sources
 - Habermas, Jürgen. *The Theory of Communicative Action* (1981). Translated by Thomas McCarthy. 2 vols. Boston: Beacon Press, 1984–87.

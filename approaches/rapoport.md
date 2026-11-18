@@ -29,7 +29,6 @@ Rapoport distinguishes three kinds of conflict. In fights the aim is to harm the
 **Strongest critique** (Rapoport himself, on fights): When one side aims to harm, no technique of debate applies.
 
 
-
 ## Sources
 - Rapoport, Anatol. *Fights, Games, and Debates*. Ann Arbor: University of Michigan Press, 1960.
 - Dennett, Daniel C. *Intuition Pumps and Other Tools for Thinking*. New York: Norton, 2013. (“Rapoport’s Rules.”)

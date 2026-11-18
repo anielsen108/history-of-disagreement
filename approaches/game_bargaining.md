@@ -28,7 +28,6 @@ Game theory treats conflict as a mixed-motive game. The parties share an interes
 **Strongest critique** (Anatol Rapoport, Fights, Games, and Debates (1960)): Game theory models only one kind of conflict. Debates, where the aim is to change the other’s mind, fall outside it.
 
 
-
 ## Sources
 - Nash, John F. “The Bargaining Problem.” *Econometrica* 18, no. 2 (1950): 155–162.
 - Schelling, Thomas C. *The Strategy of Conflict*. Cambridge, MA: Harvard University Press, 1960.

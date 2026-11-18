@@ -28,7 +28,6 @@ A parliament debates under fixed rules and ends each debate with a division. Mot
 **Strongest critique** (Carl Schmitt, The Crisis of Parliamentary Democracy (1923)): Public discussion has become an empty formality. Parties and interests make the real decisions behind closed doors.
 
 
-
 ## Sources
 - Jefferson, Thomas. *A Manual of Parliamentary Practice for the Use of the Senate of the United States*. Washington, 1801.
 - May, Thomas Erskine. *A Treatise upon the Law, Privileges, Proceedings and Usage of Parliament*. London: Charles Knight, 1844.

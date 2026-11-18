@@ -28,10 +28,6 @@ A respondent is ‘obliged’ to maintain a proposition that may be false, calle
 **Strongest critique** (Juan Luis Vives, In pseudodialecticos (1520)): These sophistical exercises teach young men to talk nonsense with technical precision.
 
 
-## Whose reading?
-- *reading*: Obligational disputation is a logical game of consistency maintenance. Catarina Dutilh Novaes, ‘Medieval Obligationes as Logical Games of Consistency Maintenance’, Synthese 145 (2005).
-
-
 ## Sources
 - Dutilh Novaes, Catarina. *Formalizing Medieval Logical Theories: Suppositio, Consequentiae and Obligationes*. Dordrecht: Springer, 2007.
 - Uckelman, Sara L., and Catarina Dutilh Novaes. “Medieval Theories of Obligationes.” *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/obligationes/

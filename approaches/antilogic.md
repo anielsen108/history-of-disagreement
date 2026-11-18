@@ -28,11 +28,6 @@ Protagoras was reported to be the first to say that on every matter there are tw
 **Strongest critique** (Plato, Phaedo 89d–90c): Those who spend their time on arguments for and against end by believing that no argument is sound. They come to hate argument as a misanthrope hates people.
 
 
-## Whose reading?
-- *attested*: Protagoras said that on every matter there are two logoi opposed to each other. Diogenes Laertius 9.51.
-- *reading*: Antilogic follows from the homo-mensura doctrine. G. B. Kerferd, The Sophistic Movement (1981), ch. 6.
-
-
 > One can read Plato’s project as a refusal of antilogic that keeps borrowing its tools.
 
 ## Sources

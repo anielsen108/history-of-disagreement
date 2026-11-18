@@ -26,6 +26,5 @@ This is the elenchus crossed with motivational interviewing. The questioner exam
 **Strongest critique** (Critics of ‘Socratic’ persuasion): If you already know where you want the other to end up, your questions are a technique and no longer an inquiry.
 
 
-
 ## Sources
 - Boghossian, Peter. *A Manual for Creating Atheists*. Durham, NC: Pitchstone, 2013.

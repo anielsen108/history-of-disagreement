@@ -28,7 +28,6 @@ Milton wrote: ‘Let her and Falsehood grapple; who ever knew Truth put to the w
 **Strongest critique** (Herbert Marcuse, ‘Repressive Tolerance’ (1965)): Formal tolerance under unequal power reproduces the established order. Neutral discussion favours the side already winning.
 
 
-
 ## Sources
 - Milton, John. *Areopagitica*. London, 1644.
 - Mill, John Stuart. *On Liberty*. London: John W. Parker and Son, 1859. — ch. 2

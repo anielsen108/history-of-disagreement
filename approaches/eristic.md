@@ -28,7 +28,6 @@ The eristic argues only to win, and turns any answer the respondent gives into a
 **Strongest critique** (Aristotle, Sophistical Refutations): Eristic refutations only appear to be refutations. Name the fallacy and the victory evaporates.
 
 
-
 > Walton and Krabbe keep ‘eristic’ as a formal dialogue type: the quarrel, whose real goal is to hit the other party.
 
 ## Sources

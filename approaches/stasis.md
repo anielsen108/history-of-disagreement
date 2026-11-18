@@ -28,7 +28,6 @@ Before arguing a case, the advocate finds its stasis, the point at which the par
 **Strongest critique** (From Lyotard’s standpoint (The Differend, 1983)): Some wrongs cannot be stated in the forum’s idiom. Stasis theory presupposes the common genre a differend lacks.
 
 
-
 > Most quarrels are carried on at two different stases at once. One party argues fact while the other argues definition.
 
 ## Sources

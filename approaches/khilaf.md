@@ -28,11 +28,6 @@ The khilāf literature catalogues and explains juristic disagreement and makes n
 **Strongest critique** (Ibn Ḥazm (d. 1064)): Truth in God’s law is one. Disagreement among the schools is error, to be corrected from the texts. It is no mercy.
 
 
-## Whose reading?
-- *attested*: A judge who strives and is right earns two rewards; one who strives and errs earns one. Ṣaḥīḥ al-Bukhārī 7352.
-- *site*: The khilāf genre anticipates Rawls’s burdens of judgment.
-
-
 ## Sources
 - Ibn Rushd (Averroes). *The Distinguished Jurist’s Primer* (*Bidāyat al-mujtahid*). Translated by Imran Ahsan Khan Nyazee. 2 vols. Reading: Garnet, 1994–96.
 - al-Bukhārī. *Ṣaḥīḥ al-Bukhārī*, Kitāb al-Iʿtiṣām, no. 7352 (the ijtihād hadith). https://sunnah.com/bukhari:7352 — 7352

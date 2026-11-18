@@ -28,7 +28,6 @@ Rogers names ‘our very natural tendency to judge, to evaluate’ as the main b
 **Strongest critique** (Phyllis Lassner, ‘Feminist Responses to Rogerian Argument’ (1990)): For those already expected to accommodate, the Rogerian demand to suppress judgment repeats their silencing.
 
 
-
 ## Sources
 - Rogers, Carl R. “Communication: Its Blocking and Its Facilitation.” *ETC: A Review of General Semantics* 9 (1952): 83–88. (Delivered at Northwestern University, 1951.)
 - Young, Richard E., Alton L. Becker, and Kenneth L. Pike. *Rhetoric: Discovery and Change*. New York: Harcourt, Brace & World, 1970.

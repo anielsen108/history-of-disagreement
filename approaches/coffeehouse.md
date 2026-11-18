@@ -28,12 +28,6 @@ On Habermas’s account, private people came together as a public to argue about
 **Strongest critique** (Nancy Fraser, ‘Rethinking the Public Sphere’ (1990)): The bourgeois public sphere was built on exclusions of women, workers and others, who formed counter-publics of their own.
 
 
-## Whose reading?
-- *reading*: In the bourgeois public sphere, status was bracketed and only the argument counted. Jürgen Habermas, The Structural Transformation of the Public Sphere (1962).
-- *reading*: That sphere rested on the exclusion of women and workers, who formed counter-publics. Nancy Fraser, ‘Rethinking the Public Sphere’ (1990).
-- *reading*: Actual coffeehouse talk was less open and less rational than Habermas’s ideal. Brian Cowan, The Social Life of Coffee (2005).
-
-
 ## Sources
 - Habermas, Jürgen. *The Structural Transformation of the Public Sphere* (1962). Translated by Thomas Burger. Cambridge, MA: MIT Press, 1989.
 - Ellis, Markman. *The Coffee-House: A Cultural History*. London: Weidenfeld & Nicolson, 2004.

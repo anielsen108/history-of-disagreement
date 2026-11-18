@@ -28,11 +28,6 @@ Two learners argue their way through a text aloud. ‘As iron sharpens iron, so 
 **Strongest critique** (Maharal of Prague (16th c.)): Hair-splitting dialectic trains ingenuity at the expense of understanding and distorts the plain sense of the law.
 
 
-## Whose reading?
-- *attested*: The Talmud praises study with a companion. Babylonian Talmud, Taanit 7a.
-- *site*: When paired study became the standard yeshiva format is uncertain. Shaul Stampfer’s Lithuanian Yeshivas of the Nineteenth Century (2012) is the usual authority for a late date; this site has not checked the claim against his text.
-
-
 ## Sources
 - Babylonian Talmud (Eruvin 13b; Bava Metzia 59a–b; Taanit 7a, 23a). Cited by folio. Text and translation: Sefaria, https://www.sefaria.org — Taanit 7a, 23a
 - Holzer, Elie, with Orit Kent. *A Philosophy of Havruta: Understanding and Teaching the Art of Text Study in Pairs*. Boston: Academic Studies Press, 2013.

@@ -29,10 +29,6 @@ Avot 5:17: a dispute for the sake of Heaven will endure, and the model is Hillel
 **Strongest critique** (Sanhedrin 88b; Maimonides, Introduction to the Mishnah Commentary): Disputes multiplied when students did not serve their teachers enough. Disagreement records a loss of transmitted knowledge.
 
 
-## Whose reading?
-- *attested*: A heavenly voice declares ‘these and these are the words of the living God’, and the law follows Hillel. Babylonian Talmud, Eruvin 13b.
-
-
 ## Sources
 - Mishnah (Avot 5:17; Eduyot 1:4–6). Cited by tractate, chapter and mishnah. Hebrew text and translation: Sefaria, https://www.sefaria.org — Avot 5:17; Eduyot 1:5–6
 - Babylonian Talmud (Eruvin 13b; Bava Metzia 59a–b; Taanit 7a, 23a). Cited by folio. Text and translation: Sefaria, https://www.sefaria.org — Eruvin 13b; Bava Metzia 59b

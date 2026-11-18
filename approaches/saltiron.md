@@ -27,9 +27,5 @@ In 81 BCE the Han court summoned officials and Confucian literati to debate the 
 **Strongest critique** (Michael Loewe, Crisis and Conflict in Han China (1974)): Huan Kuan wrote decades later as a sympathiser of the literati. The ‘debate’ is a literary construction.
 
 
-## Whose reading?
-- *reading*: Huan Kuan compiled the record decades after the debate of 81 BCE and favoured the literati. Michael Loewe, Crisis and Conflict in Han China (1974), ch. 3.
-
-
 ## Sources
 - Huan Kuan. *Discourses on Salt and Iron*. Translated by Esson M. Gale. Leiden: Brill, 1931.

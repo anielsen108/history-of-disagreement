@@ -25,7 +25,6 @@ People argue in the moral foundations of their own side, and so fail to persuade
 **Strongest critique** (Critics of strategic framing): Arguing in values you do not hold is a kind of insincerity, and audiences can tell.
 
 
-
 ## Sources
 - Feinberg, Matthew, and Robb Willer. “From Gulf to Bridge: When Do Moral Arguments Facilitate Political Influence?” *Personality and Social Psychology Bulletin* 41, no. 12 (2015): 1665–1681.
 - Haidt, Jonathan. *The Righteous Mind: Why Good People Are Divided by Politics and Religion*. New York: Pantheon, 2012.

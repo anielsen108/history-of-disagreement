@@ -28,11 +28,6 @@ The sage does not enter disputes. Those who say ‘only this is pure’ and call
 **Strongest critique** (Nyāya-sūtra 4.2.50): To protect true knowledge one must sometimes dispute, as a hedge of thorns protects a seedling.
 
 
-## Whose reading?
-- *consensus*: The Aṭṭhakavagga belongs to the oldest stratum of the Pāli canon. K. R. Norman, Pāli Literature (1983).
-- *reading*: It preserves an anti-doctrinal strand that Madhyamaka later developed. Luis O. Gómez, ‘Proto-Mādhyamika in the Pāli Canon’, Philosophy East and West 26 (1976).
-
-
 ## Sources
 - Bodhi, Bhikkhu, trans. *The Suttanipāta: An Ancient Collection of the Buddha’s Discourses*. Boston: Wisdom Publications, 2017. — Sn 4.8, 4.11–4.13
 - Gómez, Luis O. “Proto-Mādhyamika in the Pāli Canon.” *Philosophy East and West* 26, no. 2 (1976): 137–165.

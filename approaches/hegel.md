@@ -28,10 +28,6 @@ Each shape of consciousness, pressed to its own standard, generates its contradi
 **Strongest critique** (Kierkegaard, Concluding Unscientific Postscript (1846)): A system of existence cannot be given. The existing individual and their decision fall outside every mediation.
 
 
-## Whose reading?
-- *reading*: ‘Thesis–antithesis–synthesis’ is not Hegel’s formula. Gustav E. Mueller, ‘The Hegel Legend of “Thesis-Antithesis-Synthesis”’, Journal of the History of Ideas 19 (1958).
-
-
 ## Sources
 - Hegel, G. W. F. *Phenomenology of Spirit* (1807). Translated by Terry Pinkard. Cambridge: Cambridge University Press, 2018. — §§178–196
 - Mueller, Gustav E. “The Hegel Legend of ‘Thesis–Antithesis–Synthesis.’” *Journal of the History of Ideas* 19, no. 3 (1958): 411–414.

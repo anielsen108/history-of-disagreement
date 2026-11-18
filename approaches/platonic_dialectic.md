@@ -28,6 +28,5 @@ In the middle and late dialogues, dialectic becomes the capstone discipline. It 
 **Strongest critique** (Karl Popper, The Open Society and Its Enemies (1945)): A method that ends in certain vision licenses rule by those who claim to have it. Knowledge stays conjectural.
 
 
-
 ## Sources
 - Plato. *Complete Works*. Edited by John M. Cooper. Indianapolis: Hackett, 1997. (Cited by Stephanus pagination.) — Republic 531d–534e, 539b–c; Phaedrus 265d–266b

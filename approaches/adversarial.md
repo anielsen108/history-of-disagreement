@@ -28,10 +28,6 @@ Truth is to emerge from a contest between partisan advocates before a passive ju
 **Strongest critique** (Jerome Frank, Courts on Trial (1949)): The ‘fight theory’ of justice obstructs the ‘truth theory’. Partisan coaching distorts testimony.
 
 
-## Whose reading?
-- *reading*: Defence counsel entered English felony trials only in the 1730s. John H. Langbein, The Origins of Adversary Criminal Trial (2003).
-
-
 ## Sources
 - Wigmore, John Henry. *A Treatise on the System of Evidence in Trials at Common Law*. Vol. 2, §1367. Boston: Little, Brown, 1904. — §1367
 - Langbein, John H. *The Origins of Adversary Criminal Trial*. Oxford: Oxford University Press, 2003.

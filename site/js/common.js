@@ -128,10 +128,10 @@
       <p><b>Browse.</b> The <a href="taxonomy.html">Taxonomy</a> draws the whole map. <a href="methods.html">Methods</a> and <a href="views.html">Views</a> list every entry.</p>
       <p><b>Read.</b> <a href="paths.html">Paths</a> are short tours that tell one story across traditions.</p>` },
     { h: "Read the diagram across", b: `${miniDiagram()}<p>Methods fill one column and views the other. A square marks a method and a circle marks a view. The diagram opens with its groups shut, so click a group to see its members. Click a name to trace its threads, and click it again to open it.</p>` },
-    { h: "One panel for every entry", b: `<p>An entry opens in the same panel wherever you click it. The top line says where it sits, and the row beneath shows its neighbours in the group. The summary and the view it assumes come first. Procedure, critique and sources wait behind labelled folds.</p>
-      <p>“How far to trust this” holds the flags for uncertain dates and interpretive pairings, and names the scholar behind a contested claim.</p>` },
+    { h: "One panel for every entry", b: `<p>An entry opens in the same panel wherever you click it. The top line says where it sits, and the row beneath shows its neighbours in the group. The entry reads straight down: summary, the view it assumes, procedure, critique, primary text, then your own notes.</p>
+      <p>One fold, “Reference”, holds what you look up: how secure the dating is, lineage, people, sources and links.</p>` },
     { h: "Carry things with you", b: `<p><b>Pin</b> an entry and it joins a tray at the foot of the page. The tray sends two methods to Compare, or two views to the mismatch finder.</p>
-      <p>A reading path shows its bar in the same place on every page until you leave it. Filters set on one page hold on the next.</p>` },
+      <p>Focus a name in the diagram and press “Read these in sequence”. Everything lit becomes a reading sequence in the bar at the foot of the page, and “Reorder” lets you set the order. Filters set on one page hold on the next.</p>` },
     { h: "Find your way back", b: `<p>Press <kbd>/</kbd> to search methods, views, people and terms. Click the empty search box to see what you opened last. Dotted underlines in the text open glossary cards.</p>
       <p>The <b>?</b> button in the header reopens this guide on any page.</p>` }
   ];
@@ -180,10 +180,10 @@
         <h3>Entries</h3>
         <dl class="helpdl">
           <dt>One panel</dt><dd>Every link to an entry opens the same panel. Its first line is a breadcrumb, and the row beneath shows the entry among its neighbours.</dd>
-          <dt>Folds</dt><dd>The summary comes first. Procedure, critique, sources and the rest open on a click, and a fold you open stays open on the next entry.</dd>
-          <dt>Trust</dt><dd>“How far to trust this” gives the flags: ● firm, ◐ approximate or interpretive, ○ contested. “Whose reading?” says whether a claim is attested, a consensus, one scholar’s reading, or this site’s own.</dd>
-          <dt>Pin</dt><dd>Pinned entries wait in the tray at the foot of the page. The tray sends them to Compare or to the mismatch finder.</dd>
-          <dt>Notes</dt><dd>“Your notes” saves private notes in this browser. Export them from <a href="data.html">Open data &amp; notes</a>.</dd>
+          <dt>Reference</dt><dd>The one fold in an entry. It holds the flags for dating and pairing (● firm, ◐ approximate or interpretive, ○ contested), lineage, people, sources and links. It stays open on the next entry once you open it.</dd>
+          <dt>Pin</dt><dd>Pinned entries wait in the tray at the foot of the page. The tray sends them to Compare or to the mismatch finder, or loads them as a reading sequence.</dd>
+          <dt>Sequence</dt><dd>In the diagram, focus a name and press “Read these in sequence” to load everything lit. “Reorder” in the bar moves or removes stops. A named path can be reordered the same way.</dd>
+          <dt>Notes</dt><dd>“Your notes” sits under each entry’s text and saves private notes in this browser. Export them from <a href="data.html">Open data &amp; notes</a>.</dd>
         </dl>
         <h3>Tools</h3>
         <dl class="helpdl">
@@ -320,11 +320,11 @@
     try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("hod-note-") && localStorage.getItem(k)) out[k.slice(9)] = localStorage.getItem(k); } } catch (e) {}
     return out;
   };
-  H.notesBox = (id, name) => {
+  H.notesBox = (id) => `<div class="notes"><label for="note-${id}">Your notes</label>
+      <textarea id="note-${id}" data-note="${id}" rows="2" placeholder="Private notes, saved only in this browser">${H.esc(H.getNote(id))}</textarea></div>`;
+  H.fixLink = (id, name) => {
     const body = encodeURIComponent(`Entry: ${name} (${id})\nPage: ${location.origin}${location.pathname}#e=${id}\n\nWhat is wrong or missing:\n\nSource for the correction:\n`);
-    return `<details class="notes"${H.getNote(id) ? " open" : ""}><summary>Your notes${H.getNote(id) ? " ✎" : ""}</summary>
-      <textarea data-note="${id}" rows="3" placeholder="Private notes, saved only in this browser">${H.esc(H.getNote(id))}</textarea>
-      <a class="meta" href="${REPO}/issues/new?title=${encodeURIComponent("Correction: " + name)}&body=${body}" target="_blank" rel="noopener">Propose a correction on GitHub ↗</a></details>`;
+    return `<p class="meta"><a href="${REPO}/issues/new?title=${encodeURIComponent("Correction: " + name)}&body=${body}" target="_blank" rel="noopener">Propose a correction on GitHub ↗</a></p>`;
   };
   document.addEventListener("input", (e) => {
     const t = e.target; if (!t.dataset || !t.dataset.note) return;
@@ -372,7 +372,8 @@
   const head = (x, tag) => `${H.crumbs(x.id)}${H.hereMap(x.id)}
     <div class="ehead"><${tag}>${H.mark(x.id)}${x.name}</${tag}>${H.pinBtn(x.id)}</div>`;
 
-  // Every method uses one skeleton: summary and what it assumes in view; the rest behind folds.
+  // Every method uses one skeleton. What a reader reads is in view: summary, assumption, procedure, practice, critique,
+  // primary text, then the reader's own notes. One fold, "Reference", holds what is looked up: dating, lineage, people, sources, tools.
   H.renderMethod = (m, tag = "h2") => {
     const ppl = H.peopleFor(m.id), pv = H.V[m.views[0]];
     return `${head(m, tag)}
@@ -382,17 +383,18 @@
     <p>${H.glossify(m.summary, null)}</p>
     <h4 class="sk">What it assumes</h4>
     <p class="assumes">${H.link(pv.id, { star: true })}: ${H.firstSentence(pv.summary)}${m.views.length > 1 ? ` <span class="meta">It also presupposes ${m.views.slice(1).map((v) => H.link(v)).join(", ")}.</span>` : ""}</p>
-    ${sec("proc", "Procedure", (m.moves || []).length ? `<ol class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ol>` : "")}
-    ${sec("practice", "In practice and how it fails", m.third ? `<dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>How it fails</dt><dd>${m.failure}</dd></dl>` : "")}
-    ${sec("critique", "Strongest critique", m.critic ? `<div class="critique"><span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : "")}
-    ${sec("text", "Primary text", H.excerptsFor(m.id))}
-    ${sec("trust", "How far to trust this", `${m.note ? `<p class="note">${m.note}</p>` : ""}${H.readingFor(m)}${H.confBadges(m)}`)}
-    ${sec("kin", "Lineage and people", `${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
-      ${m.children.length ? `<p class="rel"><b>Gave rise to</b>${m.children.map((p) => H.link(p)).join(", ")}</p>` : ""}
-      ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}`)}
-    ${sec("src", "Sources", H.citeList(m.cite))}
+    ${(m.moves || []).length ? `<h4 class="sk">Procedure</h4><ol class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ol>` : ""}
+    ${m.third ? `<h4 class="sk">In practice</h4><dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>How it fails</dt><dd>${m.failure}</dd></dl>` : ""}
+    ${m.critic ? `<div class="critique"><b>Strongest critique</b> <span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : ""}
+    ${m.note ? `<p class="note">${m.note}</p>` : ""}
+    ${H.excerptsFor(m.id)}
     ${H.notesBox(m.id, m.name)}
-    <p class="rel tools"><b>Tools</b><a href="compare.html?a=${m.id}">Compare with another method</a> · <a href="taxonomy.html?focus=${m.id}">Show in diagram</a> · <a href="#e=${m.id}" class="permalink">Permalink</a></p>
+    ${sec("ref", "Reference", `${H.confBadges(m)}
+      ${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
+      ${m.children.length ? `<p class="rel"><b>Gave rise to</b>${m.children.map((p) => H.link(p)).join(", ")}</p>` : ""}
+      ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}
+      <p class="rel"><b>Tools</b><a href="compare.html?a=${m.id}">Compare with another method</a> · <a href="taxonomy.html?focus=${m.id}">Show in diagram</a> · <a href="#e=${m.id}" class="permalink">Permalink</a></p>
+      <h4 class="sk">Sources</h4>${H.citeList(m.cite)}${H.fixLink(m.id, m.name)}`)}
     ${H.stepRow(m.id)}`;
   };
   // One row per entry on the list pages. A row opens the entry panel, as every other link to an entry does.
@@ -406,12 +408,6 @@
       <span class="f-line">${H.firstSentence(x.summary)}</span></a>`;
   };
 
-  // Named readings for contested entries: what is claimed, its status, and whose reading it is.
-  H.statusLabel = { attested: "Attested in the source", consensus: "Scholarly consensus", reading: "A named scholar’s reading", site: "This site’s reading" };
-  H.readingFor = (x) => {
-    const r = (H.readings || {})[x.id]; if (!r) return "";
-    return `<div class="reading"><b>Whose reading?</b>${r.map((c) => `<p><span class="st st-${c.status}">${H.statusLabel[c.status]}</span> ${c.claim}${c.by ? ` <span class="meta">${c.by}.</span>` : ""}</p>`).join("")}</div>`;
-  };
   H.renderView = (v, tag = "h2") => {
     const ppl = H.peopleFor(v.id);
     const gap = (H.gaps || {})[v.id];
@@ -421,12 +417,13 @@
     <p>${H.glossify(v.summary, null)}</p>
     <p class="rel"><b>Remedy implied</b>${v.implies}</p>
     <p class="rel"><b>Methods presupposing it</b>${v.methods.length ? v.methods.map((x) => H.link(x.id, { star: x.primary })).join(", ") : `none in this survey. <a href="views.html?tab=gaps#${v.id}">See the views without a method</a>${gap ? ` for a sketch (“${gap.method}”)` : ""}.`}</p>
-    ${sec("text", "Primary text", `${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}${H.excerptsFor(v.id)}`)}
-    ${sec("trust", "How far to trust this", `${H.readingFor(v)}${H.confBadges(v)}`)}
-    ${sec("kin", "Lineage and people", ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : "")}
-    ${sec("src", "Sources", H.citeList(v.cite))}
+    ${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}
+    ${H.excerptsFor(v.id)}
     ${H.notesBox(v.id, v.name)}
-    <p class="rel tools"><b>Tools</b><a href="diagnose.html?a=${v.id}#mismatch">Use in the mismatch finder</a> · <a href="taxonomy.html?focus=${v.id}">Show in diagram</a> · <a href="#e=${v.id}" class="permalink">Permalink</a></p>
+    ${sec("ref", "Reference", `${H.confBadges(v)}
+      ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}
+      <p class="rel"><b>Tools</b><a href="diagnose.html?a=${v.id}#mismatch">Use in the mismatch finder</a> · <a href="taxonomy.html?focus=${v.id}">Show in diagram</a> · <a href="#e=${v.id}" class="permalink">Permalink</a></p>
+      <h4 class="sk">Sources</h4>${H.citeList(v.cite)}${H.fixLink(v.id, v.name)}`)}
     ${H.stepRow(v.id)}`;
   };
 
@@ -441,8 +438,16 @@
     return `<button type="button" class="pinbtn" data-pin="${id}" aria-pressed="${on}" title="${on ? "Remove from the pinned tray" : "Keep in the pinned tray, to compare later"}">${on ? "Pinned" : "Pin"}</button>`; };
   H.togglePin = (id) => { const t = H.tray(); store("hod-tray", t.includes(id) ? t.filter((x) => x !== id) : [...t, id]); renderDock();
     document.querySelectorAll(`[data-pin="${id}"]`).forEach((b) => (b.outerHTML = H.pinBtn(id))); };
-  let tour = load("hod-path", null, true);
-  if (tour && !H.PATH[tour.path]) tour = null;
+  // The sequence being read: a named path ({ path, i }) or a list the reader loaded ({ steps, name, i }).
+  let tour = load("hod-path", null, true), editing = false;
+  if (tour && !(tour.steps ? tour.steps.filter((id) => H.get(id)).length : H.PATH[tour.path])) tour = null;
+  const tsteps = () => (tour.steps || H.PATH[tour.path].steps);
+  const go = (i) => { const st = tsteps(); tour.i = Math.max(0, Math.min(st.length - 1, i)); store("hod-path", tour, true); renderDock(); H.open(st[tour.i]); };
+  // Load a list of entries as a reading sequence. The dock then steps through it and lets the reader reorder it.
+  H.startSeq = (ids, name) => {
+    const st = [...new Set(ids)].filter((id) => H.get(id)); if (!st.length) return;
+    tour = { steps: st, name: name || "Your sequence", i: 0 }; editing = st.length > 1; go(0);
+  };
 
   // One dock at the foot of every page holds the reading path, when one is being followed, and the pinned tray.
   let dock;
@@ -451,27 +456,45 @@
       dock.addEventListener("click", (e) => {
         const b = e.target.closest("[data-a]"); if (!b) return;
         const a = b.dataset.a;
-        if (a === "prev") H.startTour(tour.path, tour.i - 1);
-        if (a === "next") H.startTour(tour.path, tour.i + 1);
-        if (a === "stop") H.startTour(tour.path, tour.i);
-        if (a === "leave") { tour = null; store("hod-path", null, true); renderDock(); }
+        if (a === "prev") go(tour.i - 1);
+        if (a === "next") go(tour.i + 1);
+        if (a === "stop") go(tour.i);
+        if (a === "goto") go(+b.dataset.i);
+        if (a === "leave") { tour = null; editing = false; store("hod-path", null, true); renderDock(); }
+        if (a === "edit") { editing = !editing; renderDock(); }
+        if (a === "seq") H.startSeq(H.tray(), "Pinned entries");
+        // Reordering works on a copy, so a named path becomes the reader's own sequence once it is changed.
+        if (a === "mv" || a === "rm") {
+          const st = tsteps().slice(), k = +b.dataset.i, cur = st[tour.i];
+          if (a === "rm") st.splice(k, 1); else { const t = k + +b.dataset.d; if (t < 0 || t >= st.length) return; [st[k], st[t]] = [st[t], st[k]]; }
+          if (!st.length) { tour = null; editing = false; store("hod-path", null, true); return renderDock(); }
+          tour = { steps: st, name: tour.name || H.PATH[tour.path].name, i: Math.max(0, st.indexOf(cur)) };
+          store("hod-path", tour, true); renderDock();
+        }
         if (a === "unpin") H.togglePin(b.dataset.id);
         if (a === "clear") { store("hod-tray", []); renderDock(); document.querySelectorAll("[data-pin]").forEach((x) => (x.outerHTML = H.pinBtn(x.dataset.pin))); }
       }); }
     const t = H.tray(), ms = t.filter((id) => H.M[id]).slice(-2), vs = t.filter((id) => H.V[id]).slice(-2);
     let html = "";
-    if (tour) { const p = H.PATH[tour.path], n = p.steps.length, s = p.steps[tour.i];
-      html += `<div class="pathbar"><span class="lab">Path</span><b>${p.name}</b>
-        <span class="pips">${p.steps.map((_, j) => `<i class="${j === tour.i ? "on" : ""}"></i>`).join("")}</span>
-        <button type="button" class="linkbtn" data-a="stop">${tour.i + 1} of ${n}: ${H.strip(H.get(s).name)}</button>
+    if (tour) { const st = tsteps(), n = st.length, cur = st[tour.i], name = tour.name || H.PATH[tour.path].name;
+      html += `<div class="pathbar"><span class="lab">${tour.steps ? "Sequence" : "Path"}</span><b>${name}</b>
+        <span class="pips">${st.map((_, j) => `<i class="${j === tour.i ? "on" : ""}"></i>`).join("")}</span>
+        <button type="button" class="linkbtn" data-a="stop">${tour.i + 1} of ${n}: ${H.strip(H.get(cur).name)}</button>
         <span class="grow"></span><button type="button" class="btn" data-a="prev" ${tour.i === 0 ? "disabled" : ""}>← Previous</button>
         <button type="button" class="btn" data-a="next" ${tour.i === n - 1 ? "disabled" : ""}>Next →</button>
-        <button type="button" class="linkbtn" data-a="leave">Leave path</button></div>`; }
+        <button type="button" class="linkbtn" data-a="edit" aria-expanded="${editing}">${editing ? "Done ordering" : "Reorder"}</button>
+        <button type="button" class="linkbtn" data-a="leave">Leave</button></div>`;
+      if (editing) html += `<div class="seqedit"><span class="lab">Order</span><ol>${st.map((id, j) => `<li class="${j === tour.i ? "on" : ""}">
+          <button type="button" class="mv" data-a="mv" data-i="${j}" data-d="-1" ${j === 0 ? "disabled" : ""} aria-label="Move earlier">◀</button>
+          <button type="button" class="nm" data-a="goto" data-i="${j}">${H.mark(id)}${H.strip(H.get(id).name)}</button>
+          <button type="button" class="mv" data-a="mv" data-i="${j}" data-d="1" ${j === n - 1 ? "disabled" : ""} aria-label="Move later">▶</button>
+          <button type="button" class="mv" data-a="rm" data-i="${j}" aria-label="Remove from the sequence">×</button></li>`).join("")}</ol></div>`; }
     if (t.length) html += `<div class="tray"><span class="lab">Pinned</span>
         ${t.map((id) => `<span class="chip">${H.mark(id)}<a class="xref" data-id="${id}" href="${H.href(id)}">${H.strip(H.get(id).name)}</a><button type="button" data-a="unpin" data-id="${id}" aria-label="Unpin ${H.esc(H.strip(H.get(id).name))}">×</button></span>`).join("")}
         <span class="grow"></span>
         ${ms.length ? `<a class="btn" href="compare.html?a=${ms[0]}${ms[1] ? "&b=" + ms[1] : ""}" title="Sends the two methods pinned last">Compare</a>` : ""}
         ${vs.length ? `<a class="btn" href="diagnose.html?a=${vs[0]}${vs[1] ? "&b=" + vs[1] : ""}#mismatch" title="Sends the two views pinned last">Mismatch finder</a>` : ""}
+        <button type="button" class="btn" data-a="seq" title="Load the pinned entries as a reading sequence">Read in sequence</button>
         <button type="button" class="linkbtn" data-a="clear">Clear</button></div>`;
     dock.innerHTML = html; dock.hidden = !html;
     document.body.classList.toggle("has-dock", !!html);
@@ -492,7 +515,7 @@
       if (!drawer.classList.contains("open") || typing() || !["ArrowRight", "ArrowLeft"].includes(e.key)) return;
       const d = e.key === "ArrowRight" ? 1 : -1;
       // Arrows step the reading path while its current stop is open, and the group otherwise.
-      if (tour && H.PATH[tour.path].steps[tour.i] === current) return H.startTour(tour.path, tour.i + d);
+      if (tour && tsteps()[tour.i] === current) return go(tour.i + d);
       if (current && H.get(current)) { const G = H.groupOf(current), y = G.items[G.i + d]; if (y) H.open(y.id); }
     });
     drawer.addEventListener("click", (e) => {
@@ -513,7 +536,7 @@
   H.open = (id) => {
     const x = H.get(id); if (!x) return;
     const kind = H.kind(id); current = id; remember(id);
-    const onPath = tour && H.PATH[tour.path].steps[tour.i] === id;
+    const onPath = tour && !tour.steps && tsteps()[tour.i] === id;
     show("", kind === "method" ? H.renderMethod(x) : H.renderView(x), onPath ? `tour=${tour.path}.${tour.i}` : `e=${id}`, kind);
     drawer.style.setProperty("--g", H.colorOf(id));
     document.querySelectorAll(".row.here-now").forEach((r) => r.classList.remove("here-now"));
@@ -539,10 +562,8 @@
   };
   // Path mode: the path and the reader's place in it are kept for the visit and shown in the dock on every page.
   H.startTour = (pathId, i) => {
-    const p = H.PATH[pathId]; if (!p) return;
-    i = Math.max(0, Math.min(p.steps.length - 1, i));
-    tour = { path: pathId, i }; store("hod-path", tour, true);
-    renderDock(); H.open(p.steps[i]);
+    if (!H.PATH[pathId]) return;
+    tour = { path: pathId, i: 0 }; editing = false; go(i);
   };
   H.close = () => { current = null; if (drawer) drawer.classList.remove("open"); setHash("");
     document.querySelectorAll(".row.here-now").forEach((r) => r.classList.remove("here-now")); if (H.onClose) H.onClose(); };

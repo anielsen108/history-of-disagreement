@@ -9,7 +9,7 @@ import vm from "node:vm";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const ctx = { window: {} };
 vm.createContext(ctx);
-for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content", "readings"]) {
+for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content"]) {
   vm.runInContext(fs.readFileSync(path.join(root, "site/data", f + ".js"), "utf8"), ctx);
 }
 const H = ctx.window.HOD;
@@ -47,7 +47,6 @@ ${(m.moves || []).map((x, i) => `${i + 1}. ${md(x)}`).join("\n")}
 ## In practice
 ${X[m.id] ? `- **Third party:** ${md(X[m.id].third)}\n- **Ends well when:** ${md(X[m.id].resolution)}\n- **How it fails:** ${md(X[m.id].failure)}` : ""}
 ${X[m.id] && X[m.id].critic ? `\n**Strongest critique** (${md(X[m.id].critic.who)}): ${md(X[m.id].critic.text)}\n` : ""}
-${(H.readings || {})[m.id] ? `\n## Whose reading?\n${H.readings[m.id].map((c) => `- *${c.status}*: ${md(c.claim)}${c.by ? ` ${md(c.by)}.` : ""}`).join("\n")}\n` : ""}
 ${m.note ? `\n> ${md(m.note)}\n` : ""}
 ## Sources
 ${cites(m.cite)}

@@ -26,6 +26,5 @@ Scientists who disagree co-design a study whose outcome each agrees in advance w
 **Strongest critique** (Kahneman’s own reflections): Even after agreed tests, collaborators rarely updated. Commitment to a view is also commitment to a self.
 
 
-
 ## Sources
 - Mellers, Barbara, Ralph Hertwig, and Daniel Kahneman. “Do Frequency Representations Eliminate Conjunction Effects? An Exercise in Adversarial Collaboration.” *Psychological Science* 12, no. 4 (2001): 269–275.

@@ -195,8 +195,15 @@
       const other = (isM ? VL : !VL) ? "left" : "right";
       const shut = links.some((l) => (l.a === id || l.b === id) && (l.a.includes(":") || l.b.includes(":")));
       bar.innerHTML = `${H.mark(id)}<b>${x.name}</b><span class="hint">${isM ? `presupposes what is lit on the ${other}` : `is assumed by what is lit on the ${other}`}${shut ? ". Open a lit group to see its members" : ""}</span>
-        <button type="button" data-a="open">Read entry</button><button type="button" data-a="clear">Clear focus</button>${controls()}`;
+        <button type="button" data-a="open">Read entry</button><button type="button" data-a="seq" title="Load ${H.esc(H.strip(x.name))} and everything lit into a reading sequence">Read these in sequence</button><button type="button" data-a="clear">Clear focus</button>${controls()}`;
       bar.querySelector("[data-a=open]").onclick = () => H.open(id);
+      // The sequence is the focused entry, then every entry its lit threads reach, in the order of the column they sit in.
+      bar.querySelector("[data-a=seq]").onclick = () => {
+        const partners = isM ? x.views.filter((v, i) => vSet.has(v) && (allLinks || i === 0))
+          : methods.filter((m) => m.views.some((v, i) => v === id && (allLinks || i === 0))).map((m) => m.id);
+        const rank = (p) => { const k = H.M[p] ? [H.teloi.findIndex((t) => t.id === H.M[p].telos), H.M[p].date] : [H.domains.findIndex((d) => d.id === H.V[p].domain), H.V[p].date]; return k[0] * 1e5 + k[1]; };
+        H.startSeq([id, ...partners.sort((p, q) => rank(p) - rank(q))], H.strip(x.name) + " and its threads");
+      };
       bar.querySelector("[data-a=clear]").onclick = unpin;
       wire();
       if (opts.onPin) opts.onPin(id);

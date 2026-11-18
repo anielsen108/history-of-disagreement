@@ -29,7 +29,6 @@ Van Eemeren and Grootendorst model an ideal ‘critical discussion’ that resol
 **Strongest critique** (Mercier & Sperber, The Enigma of Reason (2017)): Reasoning evolved for persuasion and is biased in production. An ideal model must be engineered around that bias.
 
 
-
 ## Sources
 - van Eemeren, Frans H., and Rob Grootendorst. *Speech Acts in Argumentative Discussions*. Dordrecht: Foris, 1984.
 - van Eemeren, Frans H., and Rob Grootendorst. *A Systematic Theory of Argumentation: The Pragma-Dialectical Approach*. Cambridge: Cambridge University Press, 2004.

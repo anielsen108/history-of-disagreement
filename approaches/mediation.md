@@ -29,7 +29,6 @@ Sander’s 1976 address launched modern alternative dispute resolution. Its idea
 **Strongest critique** (Owen Fiss, ‘Against Settlement’ (1984)): Settlement trades justice for peace. Power imbalances go unremedied and public norms go unmade.
 
 
-
 ## Sources
 - Sander, Frank E. A. “Varieties of Dispute Processing.” 70 *Federal Rules Decisions* 111 (1976).
 - Bush, Robert A. Baruch, and Joseph P. Folger. *The Promise of Mediation*. San Francisco: Jossey-Bass, 1994.
