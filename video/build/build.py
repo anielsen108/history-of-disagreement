@@ -6,7 +6,9 @@ from kit import *
 from scenes import SCENES, SAY
 
 SLOW = 2.0     # picture runs at 1/SLOW of the nominal timings written in scenes.py
-LEAD = 0.5     # seconds between a caption appearing and its first sentence
+LEAD = 0.3     # seconds between a caption appearing and its first sentence
+BREATH = 0.45  # silence after every sentence
+TAIL = 2.0     # extra hold at the end of every board
 PAUSE = float(os.environ.get('PAUSE', 2.0))    # minimum silence after every sentence
 SR = 44100
 VOICE_ID, MODEL_ID = 'onwK4e9ZLuTAKqWW03F9', 'eleven_multilingual_v2'     # Daniel
@@ -68,11 +70,16 @@ def voice():
                 chars += len(sent)
                 clips.append([fn, d])
             speech = sum(d for _, d in clips)
-            frames = int(round(max(SLOW * (t1 - t0), LEAD + speech + PAUSE * len(clips)) * FPS))
-            gap = (frames / FPS - LEAD - speech) / max(1, len(clips))
+            # Board length = speech + a breath between sentences + TAIL + reading time for diagrams (sc['extra'], at most 6 s).
+            # The reading time is shared equally among the board's captions; TAIL falls after the last one.
+            last = ci + 1 == len(sc['caps'])
+            spare = min(6.0, sc.get('extra', 0.0)) / len(sc['caps']) + (TAIL if last else 0.0)
+            gap = BREATH + spare / len(clips)
+            frames = int(round((LEAD + speech + gap * len(clips)) * FPS))
+            gap = (frames / FPS - LEAD - speech) / len(clips)
             segs.append(dict(t0=t0, t1=t1, frames=frames, gap=gap, clips=clips))
             print('scene %d caption %d: window %.1fs, %d sentence(s), speech %.1fs, %.1fs after each%s' % (
-                si + 1, ci, frames / FPS, len(clips), speech, gap, '  (held longer to fit)' if frames / FPS > SLOW * (t1 - t0) + .05 else ''))
+                si + 1, ci, frames / FPS, len(clips), speech, gap, ''))
         n = sum(g['frames'] for g in segs)
         plan.append(dict(start=start, frames=n, segs=segs))
         start += n

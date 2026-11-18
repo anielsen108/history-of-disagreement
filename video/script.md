@@ -2,7 +2,7 @@
 
 Status: as voiced on 18 November 2026. Each bullet is one caption, read aloud and shown under the board. Every claim comes from the site's data unless marked.
 
-Running time 12:00, of which 42% is silence. Voice: "Daniel" (ElevenLabs), synthetic.
+Running time 9:30. Each board lasts for its speech, plus 2 seconds, plus up to 6 seconds of reading time where there is a diagram. Voice: "Daniel" (ElevenLabs), synthetic.
 
 ## 1. Title
 Picture: plain title card.
