@@ -79,10 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (play) play.addEventListener("click", e => {
     e.preventDefault();
     const f = document.createElement("iframe");
-    f.src = "https://www.youtube-nocookie.com/embed/" + play.dataset.yt + "?autoplay=1&rel=0&cc_load_policy=1";
+    f.src = "https://www.youtube.com/embed/" + play.dataset.yt + "?autoplay=1&rel=0&cc_load_policy=1&playsinline=1";
     f.title = "What is this disagreement really about?";
     f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
     f.allowFullscreen = true;
+    f.referrerPolicy = "strict-origin-when-cross-origin";
     f.className = "film-frame";
     play.replaceWith(f);
   });
