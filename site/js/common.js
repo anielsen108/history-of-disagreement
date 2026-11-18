@@ -16,7 +16,24 @@
   H.T = by(H.teloi); H.F = by(H.families); H.D = by(H.domains);
 
   // reverse links
-  H.methods.forEach((m) => { m.children = []; });
+  H.methods.forEach((m) => {
+    m.children = [];
+    const x = (H.extras || {})[m.id] || {};
+    m.conf = Object.assign({ date: m.date >= 1500 ? "firm" : "approx", pair: "interpretive" }, x.conf || {});
+    m.third = x.third; m.resolution = x.resolution; m.failure = x.failure; m.critic = x.critic;
+  });
+  H.views.forEach((v) => { v.conf = { date: (H.viewConf || {})[v.id] || "firm" }; });
+  H.confLabel = {
+    firm: "dating firm", approx: "dating approximate", contested: "dating contested",
+    explicit: "diagnosis stated by the tradition", interpretive: "diagnosis is this site’s reading", contested_pair: "diagnosis contested by scholars"
+  };
+  H.confBadges = (x) => {
+    const c = x.conf || {};
+    const sym = { firm: "●", approx: "◐", contested: "○", explicit: "●", interpretive: "◐" };
+    let out = `<span class="conf conf-${c.date}" title="How secure the date is">${sym[c.date]} ${H.confLabel[c.date]}</span>`;
+    if (c.pair) out += `<span class="conf conf-${c.pair}" title="How secure the primary pairing is">${c.pair === "contested" ? "○" : sym[c.pair]} ${c.pair === "contested" ? H.confLabel.contested_pair : H.confLabel[c.pair]}</span>`;
+    return `<div class="confs">${out}</div>${c.note ? `<p class="conf-note">${c.note}</p>` : ""}`;
+  };
   H.views.forEach((v) => { v.methods = []; });
   H.methods.forEach((m) => {
     m.parents.forEach((p) => H.M[p].children.push(m.id));
@@ -33,7 +50,7 @@
   /* ── chrome ───────────────────────────────────────────── */
   const pages = [
     ["index.html", "Overview"], ["taxonomy.html", "Taxonomy"], ["methods.html", "Methods"],
-    ["views.html", "Views"], ["timeline.html", "Timeline"], ["sources.html", "Sources"], ["about.html", "About"]
+    ["views.html", "Views"], ["diagnose.html", "Diagnose"], ["timeline.html", "Timeline"], ["sources.html", "Sources"], ["about.html", "About"]
   ];
   function chrome() {
     const here = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "") || "index";
@@ -79,6 +96,9 @@
     <p>${m.summary}</p>
     ${m.moves && m.moves.length ? `<ul class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ul>` : ""}
     ${m.note ? `<p class="note">${m.note}</p>` : ""}
+    ${m.third ? `<dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>Typical failure</dt><dd>${m.failure}</dd></dl>` : ""}
+    ${m.critic ? `<div class="critique"><b>Strongest critique</b> <span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : ""}
+    ${H.confBadges(m)}
     <p class="rel"><b>Presupposes</b>${m.views.map((v, i) => H.link(v, { star: i === 0 })).join(", ")}</p>
     ${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
     ${m.children.length ? `<p class="rel"><b>Gave rise to</b>${m.children.map((p) => H.link(p)).join(", ")}</p>` : ""}
@@ -91,6 +111,7 @@
     <p>${v.summary}</p>
     ${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}
     <p class="rel"><b>Remedy implied</b>${v.implies}</p>
+    ${H.confBadges(v)}
     <p class="rel"><b>Methods presupposing it</b>${v.methods.length ? v.methods.map((x) => H.link(x.id, { star: x.primary })).join(", ") : "<i>none in this survey: a diagnosis still awaiting its procedure</i>"}</p>
     ${H.citeList(v.cite)}`;
 

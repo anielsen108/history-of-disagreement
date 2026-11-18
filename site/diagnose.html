@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnose a dispute · Disagreement, a history</title>
+<meta name="description" content="Answer stasis-style questions about a dispute and get the views that fit it and the methods suited to them; find where two parties talk past each other.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+</head>
+<body data-page="diagnose" data-drawer-links="1">
+<main>
+  <div class="kicker">A working tool</div>
+  <h1>Diagnose a dispute</h1>
+  <p class="lede">Think of a disagreement you are in. Answer the questions. The tool locates the dispute in the nine domains, the way Hermagoras located a case at its stasis, and suggests methods built for that kind of trouble.</p>
+  <form id="diag-form" class="diag-form">
+    <div id="qs"></div>
+    <label class="goal">What do you want from it? <select name="goal" class="search"></select></label>
+  </form>
+  <div id="diag-out" class="diag-out"><p class="meta">Answer at least one question with “yes” or “somewhat”.</p></div>
+
+  <hr>
+  <h2 id="mismatch">Mismatch finder</h2>
+  <p class="prose">Two people can disagree about the disagreement. Pick what each party thinks it is really about, and see where they talk past each other and which methods can hold both frames.</p>
+  <form id="mm-form" class="mm-form">
+    <label>Party A thinks it is about <select name="va" class="search"></select></label>
+    <label>Party B thinks it is about <select name="vb" class="search"></select></label>
+  </form>
+  <div id="mm-out" class="diag-out"></div>
+  <p class="meta">This is a heuristic built from the site’s data, not a clinical instrument. It ranks methods by how many of their presupposed views fall in the domains you marked, weighting a method’s primary view double and adding weight for a match with your goal.</p>
+</main>
+<script src="vendor/d3.min.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/taxonomy.js"></script>
+<script src="data/methods.js"></script>
+<script src="data/views.js"></script>
+<script src="data/extras.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/diagnose.js"></script>
+<script src="js/pages.js"></script>
+<script>document.addEventListener("DOMContentLoaded", () => HOD.initDiagnose());</script>
+</body>
+</html>

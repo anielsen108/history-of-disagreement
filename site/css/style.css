@@ -209,5 +209,37 @@ table.simple th { background: var(--chip); }
 .mtable td a.prim { font-weight: 600; }
 .mtable tr.grp th { position: static; background: none; padding-top: .9rem; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
 .mtable-wrap { max-height: 80vh; overflow: auto; }
-#wheel { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.bip-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .bip { min-width: 880px; }
+
+/* confidence, facts, critique */
+.confs { display: flex; flex-wrap: wrap; gap: .3rem; margin: .4rem 0; }
+.conf { font-family: var(--sans); font-size: .72rem; padding: .08rem .45rem; border-radius: 4px; border: 1px solid var(--rule); color: var(--ink-2); }
+.conf-contested { border-color: var(--accent); color: var(--accent); }
+.conf-note { font-size: .85rem; color: var(--ink-3); margin: .2rem 0; }
+.facts { display: grid; grid-template-columns: 9rem 1fr; gap: .15rem .8rem; font-size: .92rem; margin: .5rem 0; }
+.facts dt { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); padding-top: .2rem; }
+.facts dd { margin: 0; }
+.critique { background: var(--chip); border-radius: 8px; padding: .55rem .8rem; margin: .6rem 0; font-size: .93rem; }
+.critique b { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+.critique p { margin: .25rem 0; }
+@media (max-width: 640px) { .facts { grid-template-columns: 1fr; } }
+
+/* focus bar */
+.focusbar { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; font-family: var(--sans); font-size: .85rem; padding: .45rem .7rem; margin-bottom: .4rem; border-radius: 8px; background: var(--chip); min-height: 2.3rem; }
+.focusbar button { font: inherit; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 6px; padding: .15rem .55rem; cursor: pointer; }
+.focusbar .hint { color: var(--ink-3); }
+
+/* diagnose */
+.diag-form fieldset.q { border: 0; border-top: 1px solid var(--rule); margin: 0; padding: .55rem 0; display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: center; }
+.diag-form legend { float: left; width: 100%; padding: 0; margin-bottom: .2rem; }
+.diag-form legend .dot { display: inline-block; width: .6em; height: .6em; border-radius: 50%; margin-right: .45em; }
+.diag-form label { font-family: var(--sans); font-size: .85rem; color: var(--ink-2); cursor: pointer; }
+.diag-form .goal { display: block; margin: 1rem 0; font-size: .95rem; }
+.diag-doms, .mm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .8rem; }
+.diag-dom { border-left: 4px solid; background: var(--paper); border-radius: 6px; padding: .6rem .8rem; box-shadow: var(--shadow); }
+.diag-dom p { margin: .3rem 0; font-size: .92rem; }
+.diag-methods li { margin: .45rem 0; }
+.mm-form { display: flex; flex-wrap: wrap; gap: .8rem 2rem; font-family: var(--sans); font-size: .9rem; }
+.mm-form select { max-width: 100%; }
+.diag-out { max-width: 980px; }
