@@ -10,9 +10,9 @@ A research project with two questions.
 
 `site/` is a static website (no build step) that presents both questions with a graphic taxonomy:
 
-- **Wheel.** A radial edge-bundled diagram. Methods sit on the left, grouped by *telos*: truth, victory, formation, decision, settlement, understanding, plurality, release. Views sit on the right, grouped by *domain*: epistemic, linguistic, axiological, interest, power, psyche, relational, contemplative, generative. Each thread links a method to a view of disagreement it presupposes.
+- **Method ↔ view diagram.** Two columns joined by threads, with all labels horizontal. Methods sit on the left, grouped by *telos*: truth, victory, formation, decision, settlement, understanding, plurality, release. Views sit on the right, grouped by *domain*: epistemic, linguistic, axiological, interest, power, psyche, relational, contemplative, generative. Each thread links a method to a view of disagreement it presupposes.
 - **Lineage map.** Methods placed on a compressed time axis, one lane per family of practice, with lines of descent.
-- **Matrix.** Every method set against every view, plus a telos × domain summary.
+- **Table.** Every method against the nine domains, with each cell naming the views it presupposes, plus a telos × domain summary.
 - Entry pages for 70 methods and 54 views, a combined timeline, and a bibliography of about 160 sources.
 
 Preview locally with `cd site && python3 -m http.server`. To deploy on Netlify, connect the repo; `netlify.toml` publishes `site/` with no build command.

@@ -19,7 +19,7 @@
 
   <div class="prose">
     <p>The two questions cannot be separated, because every procedure smuggles in a diagnosis. The Socratic elenchus presupposes that the interlocutor’s beliefs are mutually inconsistent. Principled negotiation presupposes that positions hide compatible interests. Nonviolent Communication presupposes that needs never truly conflict, and that only strategies do. The double crux presupposes that the dispute lives in a world-model with a testable node. Adopt the therapy and you have accepted the diagnosis, usually without noticing.</p>
-    <p>The wheel makes that commitment visible. Methods sit on the left, sorted by <em>telos</em>, meaning what the exchange is for. Views sit on the right, sorted by <em>domain</em>, meaning where the trouble is said to live. Each bundled thread joins a method to a view it presupposes; the heavier thread marks the primary one. Hover to trace a method, click to read it. Views in grey italics are diagnoses that no method in this survey takes as its premise.</p>
+    <p>The diagram below makes that commitment visible. Methods sit on the left, grouped by <em>telos</em>, meaning what the exchange is for. Views sit on the right, grouped by <em>domain</em>, meaning where the trouble is said to live. Each thread joins a method to a view it presupposes; the heavier thread marks the primary one. Hover to trace a method, click to read it. Views marked “no method”, with a hollow dot, are diagnoses that no method in this survey takes as its premise.</p>
   </div>
 
   <div class="viz-frame">
@@ -38,7 +38,7 @@
   </div>
 
   <div class="cards">
-    <a class="card" href="taxonomy.html"><h3>Taxonomy</h3><p>The wheel, a lineage map across 2,500 years, and a full method × view matrix.</p></a>
+    <a class="card" href="taxonomy.html"><h3>Taxonomy</h3><p>The method ↔ view diagram, a lineage map across 2,500 years, and a full table of links.</p></a>
     <a class="card" href="methods.html"><h3>Methods</h3><p>Seventy ways of conducting disagreement, from antilogic to AI-mediated deliberation, with procedures and sources.</p></a>
     <a class="card" href="views.html"><h3>Views</h3><p>Fifty-four accounts of what disagreement is “really about”, grouped into nine domains.</p></a>
     <a class="card" href="timeline.html"><h3>Timeline</h3><p>Methods and views interleaved chronologically.</p></a>
@@ -50,7 +50,7 @@
 <script src="data/methods.js"></script>
 <script src="data/views.js"></script>
 <script src="js/common.js"></script>
-<script src="js/wheel.js"></script>
+<script src="js/bipartite.js"></script>
 <script src="js/pages.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("legend-t").append(H.legend("Telos", H.teloi, H.teloColor));
   document.getElementById("legend-d").append(H.legend("Domain", H.domains, H.domainColor));
   document.querySelectorAll(".legend button").forEach(b => b.disabled = true);
-  H.drawWheel(document.getElementById("wheel"));
+  H.drawBipartite(document.getElementById("wheel"));
   // drift chart
   const eras = [[-1e4, 500, "to 500 CE"], [500, 1500, "500–1500"], [1500, 1900, "1500–1900"], [1900, 1975, "1900–1975"], [1975, 3000, "1975–present"]];
   const rows = eras.map(([a, b, n]) => {
