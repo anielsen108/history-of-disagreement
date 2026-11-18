@@ -196,6 +196,8 @@ table.simple th { background: var(--chip); }
 .bip .link { fill: none; stroke-opacity: .28; transition: stroke-opacity .12s; }
 .bip.focus .link { stroke-opacity: .05; }
 .bip.prim .link.sec { display: none; }
+.focusbar .swap { margin-left: auto; }
+.focusbar .swap + .primtoggle { margin-left: 0; }
 .primtoggle { margin-left: auto; color: var(--ink-2, var(--ink)); cursor: pointer; white-space: nowrap; }
 .primtoggle input { vertical-align: -1px; margin-right: .3em; accent-color: var(--accent); }
 .bip.focus .link.on { stroke-opacity: .9; }

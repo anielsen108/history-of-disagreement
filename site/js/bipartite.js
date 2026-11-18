@@ -9,6 +9,8 @@
 (function () {
   const H = window.HOD;
   let primaryOnly = false;
+  // Which column the views take. Set HOD.viewsLeft in data/taxonomy.js; "Swap sides" in the diagram flips it for the session.
+  let viewsLeft = H.viewsLeft !== false;
 
   H.cultures = [
     { id: "greek", name: "Greek & Roman" }, { id: "indian", name: "Indian & Tibetan" }, { id: "chinese", name: "Chinese" },
@@ -29,8 +31,10 @@
     host.innerHTML = "";
     const bar = document.createElement("div"); bar.className = "focusbar"; host.append(bar);
     const scroller = document.createElement("div"); scroller.className = "bip-scroll"; host.append(scroller);
-    const toggle = () => `<label class="primtoggle"><input type="checkbox" ${primaryOnly ? "checked" : ""}> Primary threads only</label>`;
-    const wireToggle = () => { const c = bar.querySelector(".primtoggle input"); if (c) c.onchange = () => { primaryOnly = c.checked; svg.classed("prim", primaryOnly); }; };
+    const toggle = () => `<button type="button" class="swap" data-a="swap" title="Put ${VL0 ? "methods" : "views"} on the left">⇄ Swap sides</button><label class="primtoggle"><input type="checkbox" ${primaryOnly ? "checked" : ""}> Primary threads only</label>`;
+    const VL0 = viewsLeft;
+    const wireToggle = () => { const sw = bar.querySelector("[data-a=swap]"); if (sw) sw.onclick = () => { viewsLeft = !viewsLeft; H.drawBipartite(host, Object.assign({}, opts, { pin: pinned })); };
+      const c = bar.querySelector(".primtoggle input"); if (c) c.onchange = () => { primaryOnly = c.checked; svg.classed("prim", primaryOnly); }; };
     const idle = () => {
       const hidden = views.length < H.views.length || methods.length < H.methods.length;
       bar.innerHTML = `<span class="hint">${hidden ? "The filters are hiding some entries. " : ""}Click any name to focus it.</span>${toggle()}`;
@@ -45,9 +49,10 @@
     methods.forEach((m) => m.views.forEach((v, i) => { if (vSet.has(v)) links.push({ m: m.id, v, primary: i === 0, contested: i === 0 && m.conf.pair === "contested" }); }));
 
     // Column layout. `order` maps group id -> ordered item ids; rows are spread to a common height.
-    const groupsL = H.domains.filter((d) => views.some((v) => v.domain === d.id));
-    const groupsR = H.teloi.filter((t) => methods.some((m) => m.telos === t.id));
-    const Ht = top + 16 + Math.max(groupsL.length * headH + views.length * rowH, groupsR.length * headH + methods.length * rowH);
+    const VL = viewsLeft;
+    const groupsV = H.domains.filter((d) => views.some((v) => v.domain === d.id));
+    const groupsM = H.teloi.filter((t) => methods.some((m) => m.telos === t.id));
+    const Ht = top + 16 + Math.max(groupsV.length * headH + views.length * rowH, groupsM.length * headH + methods.length * rowH);
     const place = (groups, order, n) => {
       const step = n ? (Ht - 16 - top - groups.length * headH) / n : rowH;
       const rows = []; let y = top;
@@ -56,10 +61,10 @@
     };
     const pos = (rows) => Object.fromEntries(rows.filter((r) => !r.head).map((r) => [r.id, r.y]));
     const byDate = (a, b) => H.get(a).date - H.get(b).date;
-    const ordL = Object.fromEntries(groupsL.map((d) => [d.id, views.filter((v) => v.domain === d.id).map((v) => v.id).sort(byDate)]));
-    const ordR = Object.fromEntries(groupsR.map((t) => [t.id, methods.filter((m) => m.telos === t.id).map((m) => m.id).sort(byDate)]));
-    let left = place(groupsL, ordL, views.length), right = place(groupsR, ordR, methods.length);
-    let posL = pos(left), posR = pos(right);
+    const ordV = Object.fromEntries(groupsV.map((d) => [d.id, views.filter((v) => v.domain === d.id).map((v) => v.id).sort(byDate)]));
+    const ordM = Object.fromEntries(groupsM.map((t) => [t.id, methods.filter((m) => m.telos === t.id).map((m) => m.id).sort(byDate)]));
+    let rowsV = place(groupsV, ordV, views.length), rowsM = place(groupsM, ordM, methods.length);
+    let posV = pos(rowsV), posM = pos(rowsM);
     const bary = (ord, mine, theirs, other) => {
       for (const g in ord) {
         const k = {};
@@ -72,23 +77,25 @@
       }
     };
     for (let i = 0; i < 4; i++) {
-      bary(ordL, "v", "m", posR); left = place(groupsL, ordL, views.length); posL = pos(left);
-      bary(ordR, "m", "v", posL); right = place(groupsR, ordR, methods.length); posR = pos(right);
+      bary(ordV, "v", "m", posM); rowsV = place(groupsV, ordV, views.length); posV = pos(rowsV);
+      bary(ordM, "m", "v", posV); rowsM = place(groupsM, ordM, methods.length); posM = pos(rowsM);
     }
+    const left = VL ? rowsV : rowsM, right = VL ? rowsM : rowsV;
+    const sideV = VL ? "L" : "R"; // the side that holds views
 
     const svg = d3.select(scroller).append("svg").attr("class", "bip" + (primaryOnly ? " prim" : ""))
       .attr("viewBox", [0, 0, W, Ht]).attr("width", W).attr("height", Ht)
-      .attr("role", "img").attr("aria-label", "Views of what disagreement is about (left, by domain) linked to the methods that presuppose them (right, by telos)")
+      .attr("role", "img").attr("aria-label", VL ? "Views of what disagreement is about (left, by domain) linked to the methods that presuppose them (right, by telos)" : "Methods of disagreement (left, by telos) linked to the views they presuppose (right, by domain)")
       .style("display", "block").style("max-width", "100%").style("height", "auto").style("margin", "0 auto");
     svg.append("rect").attr("width", W).attr("height", Ht).attr("fill", "transparent").on("click", () => unpin());
     idle();
 
-    svg.append("text").attr("class", "coltitle").attr("x", labelW).attr("y", 18).attr("text-anchor", "end").text("VIEWS, by domain");
-    svg.append("text").attr("class", "coltitle").attr("x", W - labelW).attr("y", 18).text("METHODS, by telos");
+    svg.append("text").attr("class", "coltitle").attr("x", labelW).attr("y", 18).attr("text-anchor", "end").text(VL ? "VIEWS, by domain" : "METHODS, by telos");
+    svg.append("text").attr("class", "coltitle").attr("x", W - labelW).attr("y", 18).text(VL ? "METHODS, by telos" : "VIEWS, by domain");
     svg.append("text").attr("class", "colsub").attr("x", W / 2).attr("y", 18).attr("text-anchor", "middle").text("heavy = primary · dashed = contested pairing");
 
     const path = (l) => {
-      const y1 = posL[l.v], y2 = posR[l.m], mx = (dotL + dotR) / 2;
+      const y1 = VL ? posV[l.v] : posM[l.m], y2 = VL ? posM[l.m] : posV[l.v], mx = (dotL + dotR) / 2;
       return `M${dotL},${y1} C${mx},${y1} ${mx},${y2} ${dotR},${y2}`;
     };
     const link = svg.append("g").selectAll("path").data(links).join("path").attr("class", (l) => "link" + (l.primary ? "" : " sec"))
@@ -98,25 +105,25 @@
     const head = (rows, side) => svg.append("g").selectAll("g").data(rows.filter((r) => r.head)).join("g").attr("class", "ghead")
       .each(function (r) {
         const g = d3.select(this);
-        const col = side === "L" ? H.domainColor[r.id] : H.teloColor[r.id];
-        const name = side === "L" ? H.D[r.id].name : H.T[r.id].name;
+        const col = side === sideV ? H.domainColor[r.id] : H.teloColor[r.id];
+        const name = side === sideV ? H.D[r.id].name : H.T[r.id].name;
         const x0 = side === "L" ? 0 : W - labelW;
         g.append("rect").attr("x", x0).attr("y", r.y + 8).attr("width", labelW).attr("height", 18).attr("rx", 3).attr("fill", col).attr("opacity", 0.14);
         g.append("text").attr("x", side === "L" ? labelW - 6 : x0 + 6).attr("y", r.y + 21)
           .attr("text-anchor", side === "L" ? "end" : "start").style("fill", col).text(name.toUpperCase());
-        g.append("title").text(side === "L" ? H.D[r.id].gloss : H.T[r.id].gloss);
+        g.append("title").text(side === sideV ? H.D[r.id].gloss : H.T[r.id].gloss);
       });
     const headL = head(left, "L"), headR = head(right, "R");
 
     const item = (rows, side) => svg.append("g").selectAll("g").data(rows.filter((r) => !r.head)).join("g")
-      .attr("class", (r) => "item" + (side === "L" && !H.V[r.id].methods.length ? " orphan" : ""))
+      .attr("class", (r) => "item" + (side === sideV && !H.V[r.id].methods.length ? " orphan" : ""))
       .each(function (r) {
         const g = d3.select(this), x = side === "L" ? dotL : dotR;
-        const col = H.colorOf(r.id), orphan = side === "L" && !H.V[r.id].methods.length;
+        const col = H.colorOf(r.id), orphan = side === sideV && !H.V[r.id].methods.length;
         g.append("rect").attr("class", "hit").attr("x", side === "L" ? 0 : dotR - 6).attr("y", r.y - 8).attr("width", labelW + 14).attr("height", 16);
         g.append("circle").attr("cx", x).attr("cy", r.y).attr("r", 3.4).attr("fill", orphan ? "none" : col).attr("stroke", col).attr("stroke-width", 1.4);
         g.append("text").attr("x", side === "L" ? labelW : dotR + 8).attr("y", r.y).attr("dy", "0.34em")
-          .attr("text-anchor", side === "L" ? "end" : "start").text((orphan ? "(no method)  " : "") + H.get(r.id).name);
+          .attr("text-anchor", side === "L" ? "end" : "start").text(orphan ? (side === "L" ? "(no method)  " + H.get(r.id).name : H.get(r.id).name + "  (no method)") : H.get(r.id).name);
       });
     item(left, "L"); item(right, "R");
     const items = svg.selectAll(".item");
@@ -135,7 +142,7 @@
       pinned = id; focus([id]);
       const x = H.get(id), kind = H.kind(id);
       bar.innerHTML = `<span class="dot" style="display:inline-block;width:.7em;height:.7em;border-radius:50%;background:${H.colorOf(id)}"></span>
-        <b>${x.name}</b><span class="hint">${kind === "method" ? "presupposes the views lit on the left" : "is assumed by the methods lit on the right"}</span>
+        <b>${x.name}</b><span class="hint">${kind === "method" ? `presupposes the views lit on the ${VL ? "left" : "right"}` : `is assumed by the methods lit on the ${VL ? "right" : "left"}`}</span>
         <button type="button" data-a="open">Read entry</button><button type="button" data-a="clear">Clear focus</button>${toggle()}`;
       bar.querySelector('[data-a=open]').onclick = () => H.open(id);
       bar.querySelector('[data-a=clear]').onclick = unpin;
@@ -149,11 +156,11 @@
       .on("mousemove", (ev, r) => H.tip(H.tipFor(r.id), ev))
       .on("mouseleave", () => { if (!pinned) focus(null); else focus([pinned]); H.tip(null); })
       .on("click", (ev, r) => { ev.stopPropagation(); H.tip(null); if (pinned === r.id) H.open(r.id); else pin(r.id); });
-    const groupIds = (side, gid) => (side === "L" ? views.filter((v) => v.domain === gid) : methods.filter((m) => m.telos === gid)).map((x) => x.id);
+    const groupIds = (side, gid) => (side === sideV ? views.filter((v) => v.domain === gid) : methods.filter((m) => m.telos === gid)).map((x) => x.id);
     headL.style("cursor", "pointer").on("mouseenter", (ev, r) => { if (!pinned) focus(groupIds("L", r.id)); }).on("mouseleave", () => { if (!pinned) focus(null); });
     headR.style("cursor", "pointer").on("mouseenter", (ev, r) => { if (!pinned) focus(groupIds("R", r.id)); }).on("mouseleave", () => { if (!pinned) focus(null); });
 
-    if (opts.pin && (posL[opts.pin] || posR[opts.pin])) pin(opts.pin);
+    if (opts.pin && (posV[opts.pin] || posM[opts.pin])) pin(opts.pin);
     return { pin, unpin };
   };
 })();

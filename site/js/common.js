@@ -93,24 +93,22 @@
   /* ── help and first-visit welcome ─────────────────────── */
   // A small picture of the diagram, with upright labels, for the welcome and help panels.
   const miniDiagram = () => {
-    const c = H.domainColor, t = H.teloColor;
-    return `<svg class="mini" viewBox="0 0 520 132" role="img" aria-label="A view on the left joined by threads to the methods that presuppose it on the right">
-      <text x="150" y="14" text-anchor="end" class="mh">VIEWS</text><text x="370" y="14" class="mh">METHODS</text>
-      <path d="M160,44 C265,44 265,38 360,38" stroke="${c.interest}" stroke-width="2.4" fill="none"/>
-      <path d="M160,44 C265,44 265,64 360,64" stroke="${c.interest}" stroke-width="2.4" fill="none"/>
-      <path d="M160,84 C265,84 265,64 360,64" stroke="${c.relational}" stroke-width="1" fill="none" opacity=".7"/>
-      <path d="M160,84 C265,84 265,104 360,104" stroke="${c.relational}" stroke-width="2.4" fill="none"/>
-      <circle cx="160" cy="44" r="4" fill="${c.interest}"/><text x="150" y="48" text-anchor="end">Interests beneath positions</text>
-      <circle cx="160" cy="84" r="4" fill="${c.relational}"/><text x="150" y="88" text-anchor="end">Relationship-level message</text>
-      <circle cx="360" cy="38" r="4" fill="${t.settlement}"/><text x="370" y="42">Principled negotiation</text>
-      <circle cx="360" cy="64" r="4" fill="${t.settlement}"/><text x="370" y="68">Mediation</text>
-      <circle cx="360" cy="104" r="4" fill="${t.understanding}"/><text x="370" y="108">Difficult conversations</text>
+    const c = H.domainColor, t = H.teloColor, VL = H.viewsLeft !== false;
+    // Views take the left column when VL, the right otherwise. Labels sit outside the dots, upright.
+    const xV = VL ? 160 : 360, xM = VL ? 360 : 160, lab = (x) => (x === 160 ? `x="150" text-anchor="end"` : `x="370"`);
+    const th = (yv, ym, col, w) => `<path d="M${xV},${yv} C260,${yv} 260,${ym} ${xM},${ym}" stroke="${col}" stroke-width="${w}" fill="none"${w < 2 ? ' opacity=".7"' : ""}/>`;
+    const node = (x, y, col, name) => `<circle cx="${x}" cy="${y}" r="4" fill="${col}"/><text ${lab(x)} y="${y + 4}">${name}</text>`;
+    return `<svg class="mini" viewBox="0 0 520 132" role="img" aria-label="Methods in one column joined by threads to the views they presuppose in the other">
+      <text ${lab(xV)} y="14" class="mh">VIEWS</text><text ${lab(xM)} y="14" class="mh">METHODS</text>
+      ${th(44, 38, c.interest, 2.4)}${th(44, 64, c.interest, 2.4)}${th(84, 64, c.relational, 1)}${th(84, 104, c.relational, 2.4)}
+      ${node(xV, 44, c.interest, "Interests beneath positions")}${node(xV, 84, c.relational, "Relationship-level message")}
+      ${node(xM, 38, t.settlement, "Principled negotiation")}${node(xM, 64, t.settlement, "Mediation")}${node(xM, 104, t.understanding, "Difficult conversations")}
       <text x="260" y="126" text-anchor="middle" class="mh">heavy thread = the method’s primary view</text></svg>`;
   };
   const welcomeSteps = () => [
     { h: "Two questions, one map", b: `<p>This site surveys <b>methods</b> of conducting a disagreement, from Socratic questioning to AI-mediated deliberation. It also surveys <b>views</b> of what a disagreement is really about: error, words, values, interests, power, the psyche, the relationship.</p>
       <p>The two are linked. Every method assumes one of the views, so choosing a method is already a diagnosis.</p>` },
-    { h: "Read the diagram from left to right", b: `${miniDiagram()}<p>Views sit on the left and methods on the right. A thread joins a view to a method that presupposes it. Hover a name to trace its threads, and click it to hold the focus. A hollow dot marks a view that no method here is built on.</p>` },
+    { h: "Read the diagram across", b: `${miniDiagram()}<p>Methods fill one column and views the other. A thread joins a method to a view it presupposes. Hover a name to trace its threads, and click it to hold the focus. A hollow dot marks a view that no method here is built on.</p>` },
     { h: "Open any entry", b: `<p>Click a focused name again, or press “Read entry”. Each method gives its procedure, the view it assumes, how it fails and its strongest critic.</p>
       <p>Each entry also says how far to trust it. Flags mark uncertain dates and interpretive pairings, and a “Whose reading?” box names the scholar behind a contested claim.</p>` },
     { h: "Bring a dispute of your own", b: `<p><a href="diagnose.html">Diagnose</a> asks a few questions about a dispute and suggests methods that fit it. Its mismatch finder shows what happens when two parties hold different views of the same quarrel.</p>
@@ -149,7 +147,7 @@
         <p>A survey of methods of conducting disagreement and of views of what disagreement is about. Each method is linked to the views it presupposes.</p>
         <h3>The diagram</h3>${miniDiagram()}
         <dl class="helpdl">
-          <dt>Left and right</dt><dd>Views on the left, grouped by domain. Methods on the right, grouped by telos, meaning what the exchange is for.</dd>
+          <dt>Two columns</dt><dd>Methods are grouped by telos, meaning what the exchange is for. Views are grouped by domain. “Swap sides” exchanges the columns.</dd>
           <dt>Threads</dt><dd>A heavy thread marks a method’s primary view. A dashed thread marks a pairing that scholars contest. “Primary threads only” leaves one thread per method.</dd>
           <dt>Focus</dt><dd>Hover a name to trace it. Click to hold the focus, and click again to open the entry. Hover a group heading to light the whole group.</dd>
           <dt>Filters</dt><dd>On the Taxonomy page, chips hide a telos, domain or culture, and the slider rebuilds the field century by century. The address bar keeps the filter state, so a copied link reopens the same view.</dd>

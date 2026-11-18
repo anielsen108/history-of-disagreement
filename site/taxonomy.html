@@ -15,11 +15,11 @@
 <main>
   <div class="kicker">Graphic taxonomy</div>
   <h1>Taxonomy</h1>
-  <p class="lede">The tabs below draw the same corpus in different ways. The two-column diagram puts each diagnosis on the left and the methods that presuppose it on the right. A lineage map shows who descends from whom. The table names every link. The last tab shows how the mix of diagnoses shifted over time.</p>
+  <p class="lede">The tabs below draw the same corpus in different ways. The two-column diagram joins each method to the views it presupposes. A lineage map shows who descends from whom. The table names every link. The last tab shows how the mix of diagnoses shifted over time.</p>
   <p class="page-thesis">How this bears on the thesis: every thread in the first diagram is one method’s assumption about what disagreement is. <a href="index.html">The thesis</a></p>
 
   <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-tab="t-wheel">View ↔ method</button>
+    <button role="tab" aria-selected="true" data-tab="t-wheel" id="tab-bip">Method ↔ view</button>
     <button role="tab" aria-selected="false" data-tab="t-lineage">Lineage of methods</button>
     <button role="tab" aria-selected="false" data-tab="t-matrix">Table</button>
     <button role="tab" aria-selected="false" data-tab="t-drift">Over time</button>
@@ -36,7 +36,7 @@
       </div>
       <div id="wheel"></div>
     </div>
-    <p class="viz-caption">Read from left to right: a view of what disagreement is about, then the methods built on it. Threads take the colour of the view’s domain. A heavy thread marks a method’s primary view, and a dashed thread marks a primary pairing that scholars contest. Tick “Primary threads only” to leave one thread per method. </p>
+    <p class="viz-caption">Each thread joins a method to a view of disagreement that it presupposes. “Swap sides” exchanges the two columns. Threads take the colour of the view’s domain. A heavy thread marks a method’s primary view, and a dashed thread marks a primary pairing that scholars contest. Tick “Primary threads only” to leave one thread per method. </p>
     <p class="viz-caption">Inside each group, rows are ordered by the average height of their partners, which removes most crossings; the order of the groups was chosen the same way. Hover a group heading to light a whole domain or telos. Click a name to focus it; click again, or press “Read entry”, to open it. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
   </section>
 
@@ -157,6 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   dmode.onchange = drawD; drawD();
 
+  document.getElementById("tab-bip").textContent = H.viewsLeft === false ? "Method ↔ view" : "View ↔ method";
   const tabs = document.querySelectorAll("[role=tab]");
   function show(id) {
     tab = id;

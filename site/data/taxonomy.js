@@ -6,6 +6,10 @@
    domain stays last, because it alone denies that disagreement is a trouble. The order carries no ranking. */
 var HOD = window.HOD = window.HOD || {};
 
+/* Side order of the two-column diagram. true = views on the left, methods on the right; false = the reverse.
+   This one line sets the default everywhere; the diagram's "Swap sides" button flips it for a visit. */
+HOD.viewsLeft = false;
+
 HOD.teloi = [
   { id: "truth",       name: "Truth",        gloss: "The parties treat disagreement as a sign that someone is wrong. They talk to remove the error, and winning is incidental." },
   { id: "formation",   name: "Formation",    gloss: "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open." },
