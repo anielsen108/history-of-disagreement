@@ -12,10 +12,22 @@
 
 Milton wrote: ‘Let her and Falsehood grapple; who ever knew Truth put to the worse, in a free and open encounter?’ The second chapter of Mill’s *On Liberty* gives the argument its canonical form. The suppressed opinion may be true. It may hold part of the truth. Even if false, its collision with truth keeps truth from becoming dead dogma. ‘He who knows only his own side of the case, knows little of that.’
 
-## Moves
-- Do not suppress dissent
-- Seek the strongest form of the opposing view
-- Treat orthodoxy as needing periodic re-defence
+## Procedure
+1. Do not suppress dissent
+2. Seek the strongest form of the opposing view
+3. Treat orthodoxy as needing periodic re-defence
+
+## What it assumes
+[Collision with error](../framings/collision.md): Truth unchallenged becomes dead dogma.
+
+## In practice
+- **Third party:** None; the public over time.
+- **Ends well when:** Truth emerges or is re-earned through collision.
+- **How it fails:** The loudest voices dominate the ‘marketplace’.
+
+**Strongest critique** (Herbert Marcuse, ‘Repressive Tolerance’ (1965)): Formal tolerance under unequal power reproduces the established order. Neutral discussion favours the side already winning.
+
+
 
 ## Sources
 - Milton, John. *Areopagitica*. London, 1644.

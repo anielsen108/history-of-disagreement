@@ -12,10 +12,22 @@
 
 Abelard’s *Sic et Non* set authorities against one another, and its prologue gives rules for reconciling them: check the text, the context, and above all the senses of words. The university disputation institutionalised this. The opponens objects, the respondens answers, and the master determines. Every article of the *Summa* keeps the trace: objections (videtur quod), counter-authority (sed contra), response (respondeo), and replies, often by distinguo.
 
-## Moves
-- Pose the question
-- Rehearse objections at full strength
-- Determine; then answer each objection, typically by distinction
+## Procedure
+1. Pose the question
+2. Rehearse objections at full strength
+3. Determine; then answer each objection, typically by distinction
+
+## What it assumes
+[Equivocation & verbal dispute](../framings/equivocation.md): The parties use one word in two senses and so do not contradict each other.
+
+## In practice
+- **Third party:** The master, who determines.
+- **Ends well when:** A determination that answers every objection.
+- **How it fails:** Endless distinctions; questions nobody needs answered.
+
+**Strongest critique** (Erasmus, The Praise of Folly (1511)): The theologians fence themselves with definitions, conclusions and corollaries, and are puffed up by their subtlety.
+
+
 
 ## Sources
 - Abelard, Peter. *Sic et Non: A Critical Edition*. Edited by Blanche B. Boyer and Richard McKeon. Chicago: University of Chicago Press, 1976–77. — Prologue

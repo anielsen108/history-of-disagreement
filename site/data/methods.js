@@ -17,7 +17,7 @@ HOD.methods = [
 { id: "eristic", name: "Eristic", native: "eristikē", date: -420, when: "late 5th c. BCE; satirised c. 380 BCE",
   family: "greek", telos: "victory", parents: ["antilogic"], views: ["agon", "vanity"],
   who: "Euthydemus and Dionysodorus (as Plato portrays them)",
-  summary: "Argument for the sake of winning. The eristic turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the <i>Euthydemus</i> the brothers show that a learner both knows and does not know. Aristotle wrote the <i>Sophistical Refutations</i> as a field guide to eristic, so that a dialectician could detect and defuse it.",
+  summary: "The eristic argues only to win, and turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the <i>Euthydemus</i> the brothers show that a learner both knows and does not know. Aristotle wrote the <i>Sophistical Refutations</i> as a field guide to eristic, so that a dialectician could detect and defuse it.",
   moves: ["Ask questions whose every answer is a trap", "Trade on homonymy and amphiboly", "Claim victory on any apparent contradiction"],
   note: "Walton and Krabbe keep ‘eristic’ as a formal dialogue type: the quarrel, whose real goal is to hit the other party.",
   cite: [["plato", "Euthydemus 275d–277c"], ["aristotle", "Sophistical Refutations 165b–166b"], ["walton1995", "ch. 3"]] },
@@ -40,7 +40,7 @@ HOD.methods = [
 { id: "aristotelian_dialectic", name: "Aristotelian dialectic", native: "dialektikē (Topics)", date: -350, when: "c. 350 BCE",
   family: "greek", telos: "formation", parents: ["platonic_dialectic", "eristic"], views: ["endoxa", "equivocation"],
   who: "Aristotle, <i>Topics</i> and <i>Sophistical Refutations</i>",
-  summary: "A rule-governed game between questioner and answerer, reasoning from endoxa: what is accepted by all, by most, or by the wise. The <i>Topics</i> catalogues the places (topoi) from which arguments may be drawn. Aristotle names three uses: intellectual exercise, encounters with ordinary people, and the philosophical sciences, where working through difficulties on both sides helps one see truth and falsity more easily.",
+  summary: "The answerer defends a thesis with yes-or-no replies, while the questioner tries to force a contradiction from endoxa, the opinions accepted by all, by most, or by the wise. The <i>Topics</i> catalogues the places (topoi) from which arguments may be drawn. Aristotle names three uses: intellectual exercise, encounters with ordinary people, and the philosophical sciences, where working through difficulties on both sides helps one see truth and falsity more easily.",
   moves: ["Answerer defends a thesis by yes/no replies", "Questioner seeks to extract the contradictory", "Draw premises only from endoxa", "Diagnose sophisms by type (language vs. outside language)"],
   note: "The dialectical game survives into the medieval obligationes and modern dialogue logic.",
   cite: [["aristotle", "Topics 100a18–101b4; Sophistical Refutations"]] },
@@ -55,7 +55,7 @@ HOD.methods = [
 { id: "stasis", name: "Stasis theory", native: "stasis / status / constitutio", date: -150, when: "Hermagoras of Temnos, mid-2nd c. BCE",
   family: "greek", telos: "decision", parents: ["rhetoric"], views: ["equivocation", "error", "unmeasurable", "sovereign"],
   who: "Hermagoras; Cicero; Quintilian; Hermogenes",
-  summary: "A procedure for finding where a dispute actually stands, the point at which the parties come to rest against each other. It asks four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
+  summary: "Before arguing a case, the advocate finds its stasis, the point at which the parties come to rest against each other. It asks four questions in order. Conjecture asks whether a thing was done. Definition asks what it should be called. Quality asks whether it was justified. Translation asks whether this forum has jurisdiction. Stasis theory is the oldest explicit taxonomy of what a disagreement is ‘really about’. It already separates questions of fact, of words, of value and of jurisdiction.",
   moves: ["Identify the stasis before arguing", "Concede earlier stases to contest later ones", "Shift the issue (translatio) when the forum is wrong"],
   note: "Most quarrels are carried on at two different stases at once. One party argues fact while the other argues definition.",
   cite: [["cicero_inv", "1.10–16"], ["quintilian", "3.6"], ["heath1995"]] },
@@ -85,7 +85,7 @@ HOD.methods = [
 { id: "kathavatthu", name: "Abhidharma controversy", native: "Kathāvatthu", date: -250, when: "trad. Third Council, c. 250 BCE; compiled over centuries",
   family: "indic", telos: "truth", parents: ["atthaka"], views: ["error"],
   who: "Attributed to Moggaliputta Tissa",
-  summary: "A canonical text of over two hundred points of controversy between the Theravāda and rival schools, set out as formalised exchanges. The orthodox questioner extracts an admission, then shows that it entails a contradiction with another admission. It is an early Indian dialogue-logic. Its structure is close to the elenchus, but the school used it to police the boundaries of doctrine.",
+  summary: "This canonical text sets out over two hundred points of controversy between the Theravāda and rival schools as formalised exchanges. The orthodox questioner extracts an admission, then shows that it entails a contradiction with another admission. It is an early Indian dialogue-logic. Its structure is close to the elenchus, but the school used it to police the boundaries of doctrine.",
   moves: ["Establish the opponent’s thesis", "Derive the ‘refutation by implication’ (anuloma/paṭikamma)", "Close the point with the opponent’s self-contradiction"],
   cite: [["kathavatthu"], ["matilal1998", "ch. 3"]] },
 
@@ -149,7 +149,7 @@ HOD.methods = [
 { id: "saltiron", name: "Court policy debate", native: "鹽鐵論 Yántiě lùn", date: -81, when: "81 BCE",
   family: "sinitic", telos: "decision", parents: ["zhengming"], views: ["interests", "faction", "unmeasurable"],
   who: "Han court officials vs. Confucian ‘worthies and literati’",
-  summary: "An imperial conference on the state monopolies of salt and iron, written up by Huan Kuan as a set-piece dialogue. On one side stood fiscal statecraft and frontier defence. On the other stood agrarian virtue and the Confucian distrust of profit. It is one of the earliest records of a structured policy debate between institutional factions before a sovereign arbiter.",
+  summary: "In 81 BCE the Han court summoned officials and Confucian literati to debate the state monopolies of salt and iron, and Huan Kuan later wrote the debate up as a set-piece dialogue. On one side stood fiscal statecraft and frontier defence. On the other stood agrarian virtue and the Confucian distrust of profit. It is one of the earliest records of a structured policy debate between institutional factions before a sovereign arbiter.",
   moves: ["Each faction speaks in turn before the throne", "Arguments from precedent, classic and consequence"],
   cite: [["gale1931"]] },
 
@@ -172,7 +172,7 @@ HOD.methods = [
 { id: "munazara", name: "Jadal & munāẓara", native: "jadal; munāẓara; ādāb al-baḥth wa-l-munāẓara", date: 950, when: "9th–14th c.; Sīrāfī–Mattā debate 932; Samarqandī d. 1303",
   family: "islamic", telos: "truth", parents: ["aristotelian_dialectic"], views: ["error", "endoxa", "equivocation"],
   who: "Jurists and theologians; Ibn ʿAqīl; Shams al-Dīn al-Samarqandī",
-  summary: "Juridical dialectic (jadal) structured legal reasoning in the madrasa through question and objection. Samarqandī’s ‘etiquette of inquiry and disputation’ later recast it as a general theory with fixed roles: claimant, questioner, and the permitted objections (manʿ, naqḍ, muʿāraḍa). In the famous majlis of 932, al-Sīrāfī and Abū Bishr Mattā argued over how disputes should be judged: by universal logic, or by the grammar of a particular language.",
+  summary: "Juridical dialectic (jadal) structured legal reasoning in the madrasa through question and objection. Samarqandī’s ‘etiquette of inquiry and disputation’ later recast it as a general theory with fixed roles: claimant, questioner, and the permitted objections (manʿ, naqḍ, muʿāraḍa). In the majlis of 932, al-Sīrāfī and Abū Bishr Mattā argued over how disputes should be judged: by universal logic, or by the grammar of a particular language.",
   moves: ["Claimant asserts; questioner may demand proof (manʿ)", "Counter-instance (naqḍ)", "Counter-argument (muʿāraḍa)"],
   cite: [["young2017"], ["miller2020"], ["margoliouth1905"], ["makdisi1981"]] },
 
@@ -194,7 +194,7 @@ HOD.methods = [
 { id: "obligationes", name: "Obligational disputation", native: "obligationes", date: 1300, when: "c. 1200–1400; Walter Burley c. 1302",
   family: "latin", telos: "formation", parents: ["disputatio", "aristotelian_dialectic"], views: ["aporia"],
   who: "Walter Burley; Roger Swyneshed; William of Ockham",
-  summary: "A formal logic game. The respondent is ‘obliged’ to maintain a possibly false proposition (the positum). The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Modern scholars read it as an ancestor of belief-revision and dialogue logics.",
+  summary: "The respondent is ‘obliged’ to maintain a proposition that may be false, called the positum. The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Catarina Dutilh Novaes reads it as an ancestor of belief-revision and dialogue logics.",
   moves: ["Positum accepted", "Grant what follows; deny what is incompatible; answer irrelevant sentences by their truth", "Lose on inconsistency"],
   cite: [["dutilh2007"], ["sep_obligationes"]] },
 
@@ -216,7 +216,7 @@ HOD.methods = [
 { id: "experimental", name: "Experimental matter of fact", native: "nullius in verba", date: 1660, when: "Royal Society, 1660s",
   family: "civic", telos: "truth", parents: ["disputatio"], views: ["error", "sovereign"],
   who: "Robert Boyle; the Royal Society",
-  summary: "After civil war over doctrine, natural philosophers moved dispute off contested causes and onto witnessed matters of fact. These were produced by machines such as the air-pump, attested by gentlemen, and reported in a modest style. Shapin and Schaffer argue that this was a political technology as well as an epistemic one. It made disagreement safe by giving it a narrow, public object that anyone could inspect. Hobbes saw it as a recipe for faction.",
+  summary: "After civil war over doctrine, natural philosophers moved dispute off contested causes and onto witnessed matters of fact. Machines such as the air-pump produced these facts, gentlemen witnessed them, and reports described them in a modest style. Shapin and Schaffer argue that this was a political technology as well as an epistemic one. It made disagreement safe by giving it a narrow, public object that anyone could inspect. Hobbes saw it as a recipe for faction.",
   moves: ["Narrow the dispute to an observable", "Multiply witnesses", "Separate fact from hypothesis; tolerate disagreement about the latter"],
   cite: [["shapin1985"]] },
 
@@ -259,14 +259,14 @@ HOD.methods = [
 { id: "parliament", name: "Parliamentary debate", native: "debate under standing orders", date: 1689, when: "Bill of Rights 1689; codified by Jefferson 1801, May 1844, Robert 1876",
   family: "forum", telos: "decision", parents: ["rhetoric"], views: ["faction", "interests"],
   who: "Westminster; US Congress; Henry M. Robert",
-  summary: "Rule-governed adversarial deliberation that ends in a division. Motions, amendments, speaking in turn and through the chair, and the ban on imputing motives to members all contain hostility without denying it. The ‘loyal opposition’ (Hobhouse, 1826) formalises disagreement as a permanent and legitimate office. Rules of order let a body decide while it remains divided.",
+  summary: "A parliament debates under fixed rules and ends each debate with a division. Motions, amendments, speaking in turn and through the chair, and the ban on imputing motives to members all contain hostility without denying it. The ‘loyal opposition’ (Hobhouse, 1826) formalises disagreement as a permanent and legitimate office. Rules of order let a body decide while it remains divided.",
   moves: ["Move; second; debate; amend; divide", "Address the chair, not the opponent", "Never impute dishonourable motive"],
   cite: [["jefferson1801"], ["may1844"], ["robert1876"]] },
 
 { id: "debate", name: "Competitive debate", native: "debating society; Oxford/Cambridge Union", date: 1776, when: "London debating societies 1770s; Cambridge Union 1815; Oxford Union 1823; Lincoln–Douglas 1858",
   family: "forum", telos: "formation", parents: ["parliament", "rhetoric"], views: ["agon"],
   who: "Debating societies; school and university leagues",
-  summary: "Sides are assigned, often by lot, and the speaker argues whatever they are given. Ticketed London debating societies of the 1770s–90s took up questions of politics, religion and the sexes. The Unions trained a governing class. The modern tournament formats (British Parliamentary, policy, Lincoln–Douglas) descend from in utramque partem. They prize advocacy over belief. Defenders call this a virtue and critics a vice.",
+  summary: "Sides are assigned, often by lot, and the speaker argues whatever they are given. Ticketed London debating societies of the 1770s–90s took up questions of politics, religion and the sexes. The Unions trained a governing class. The modern tournament formats (British Parliamentary, policy, Lincoln–Douglas) descend from in utramque partem. They prize advocacy over belief. Deborah Tannen counts this among the vices of an ‘argument culture’.",
   moves: ["Sides assigned", "Timed constructive and rebuttal speeches", "Adjudicated by judges or audience vote"],
   cite: [["andrew1994"]] },
 
@@ -288,7 +288,7 @@ HOD.methods = [
 { id: "consensus", name: "Activist consensus process", native: "formal consensus", date: 1971, when: "Movement for a New Society 1971; anti-nuclear and Occupy movements",
   family: "spirit", telos: "decision", parents: ["quaker"], views: ["discernment", "constructive"],
   who: "Movement for a New Society; Clamshell Alliance; Occupy",
-  summary: "Quaker practice secularised for movements. It uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
+  summary: "Activist movements secularised Quaker practice. Their consensus process uses facilitator roles, temperature checks, blocks and stand-asides. The group treats each objection as information about a weakness in the proposal. Its known pathologies are tyranny of the patient, exhaustion and the hidden veto. These inspired later hybrids (sociocracy’s ‘consent’, ‘no paramount objection’).",
   moves: ["Proposal → clarifying questions → concerns → amendments", "Test for consensus; record stand-asides; honour blocks"],
   cite: [["sheeran1983"]] },
 
@@ -360,7 +360,7 @@ HOD.methods = [
 { id: "difficult", name: "Difficult conversations", native: "the three conversations", date: 1999, when: "Stone, Patton & Heen, 1999",
   family: "negotiation", telos: "understanding", parents: ["principled"], views: ["identity", "relationship_level"],
   who: "Douglas Stone; Bruce Patton; Sheila Heen",
-  summary: "Every hard conversation is three conversations at once. The ‘what happened’ conversation is about truth, intent and blame. The feelings conversation is about what each person feels. The identity conversation asks what this says about me: am I competent, good, lovable? Shift from certainty to curiosity, from blame to contribution, from inferred intent to reported impact.",
+  summary: "Every hard conversation is three conversations at once. The ‘what happened’ conversation is about truth, intent and blame. The feelings conversation is about what each person feels. The identity conversation is about what the conflict says about me, for instance whether I am competent, good and lovable. Shift from certainty to curiosity, from blame to contribution, from inferred intent to reported impact.",
   moves: ["Disentangle intent from impact", "Map joint contribution instead of blame", "Name the identity quake"],
   cite: [["stone1999"]] },
 
@@ -432,7 +432,7 @@ HOD.methods = [
 { id: "toulmin", name: "Toulmin model", native: "claim–data–warrant", date: 1958, when: "Toulmin 1958",
   family: "argument", telos: "truth", parents: ["aristotelian_dialectic"], views: ["error", "endoxa"],
   who: "Stephen Toulmin",
-  summary: "Practical argument is modelled jurisprudentially, not geometrically. A claim rests on data through a warrant, which has backing and is limited by a qualifier and rebuttals. Many disagreements turn out to sit at the warrant, the inference licence, and not at the data or the claim. Warrants are ‘field-dependent’, so disputes across fields need a meta-argument about which warrants govern.",
+  summary: "Toulmin models practical argument on the law court instead of on geometry. A claim rests on data through a warrant, which has backing and is limited by a qualifier and rebuttals. Many disagreements turn out to sit at the warrant, the inference licence, and not at the data or the claim. Warrants are ‘field-dependent’, so disputes across fields need a meta-argument about which warrants govern.",
   moves: ["Separate claim from data", "Surface the warrant", "Locate the disagreement: data, warrant, backing or qualifier"],
   cite: [["toulmin1958"]] },
 
@@ -453,7 +453,7 @@ HOD.methods = [
 { id: "pragma", name: "Pragma-dialectics", native: "critical discussion", date: 1984, when: "van Eemeren & Grootendorst, 1984–2004",
   family: "argument", telos: "truth", parents: ["formal_dialectic", "toulmin"], views: ["error"],
   who: "Frans van Eemeren; Rob Grootendorst",
-  summary: "An ideal model of ‘critical discussion’ for resolving a difference of opinion on the merits. It runs through four stages: confrontation, opening, argumentation and concluding. Ten rules govern it, among them the freedom rule, the burden-of-proof rule, the standpoint rule and the closure rule. Each fallacy is a violation of a specific rule at a specific stage. Later work on ‘strategic manoeuvring’ admits that real arguers want both to be reasonable and to win.",
+  summary: "Van Eemeren and Grootendorst model an ideal ‘critical discussion’ that resolves a difference of opinion on the merits. It runs through four stages: confrontation, opening, argumentation and concluding. Ten rules govern it, among them the freedom rule, the burden-of-proof rule, the standpoint rule and the closure rule. Each fallacy is a violation of a specific rule at a specific stage. Later work on ‘strategic manoeuvring’ admits that real arguers want both to be reasonable and to win.",
   moves: ["Externalise the difference of opinion", "Agree starting points", "Argue by the ten rules", "Conclude: retract doubt or standpoint"],
   cite: [["eemeren1984"], ["eemeren2004"]] },
 
@@ -461,7 +461,7 @@ HOD.methods = [
 { id: "delib_polling", name: "Deliberative polling", native: "", date: 1988, when: "proposed 1988; first held 1994",
   family: "deliberative", telos: "decision", parents: ["discourse_ethics", "parliament"], views: ["burdens", "interests"],
   who: "James Fishkin",
-  summary: "A random sample of citizens is polled, given balanced briefing materials and competing experts, and deliberates in moderated small groups over a weekend. The sample is then polled again. The output is a counterfactual: what the public would think if it had the chance to think. Fishkin treats some disagreement as a product of inattention and misinformation, which deliberation reduces. The rest is real, and the second poll reports it.",
+  summary: "Organisers poll a random sample of citizens, give them balanced briefing materials and competing experts, and have them deliberate in moderated small groups over a weekend. Then they poll the sample again. The output is a counterfactual: what the public would think if it had the chance to think. Fishkin treats some disagreement as a product of inattention and misinformation, which deliberation reduces. The rest is real, and the second poll reports it.",
   moves: ["Random sample", "Balanced briefing", "Small-group deliberation; plenary with experts", "Before/after measurement"],
   cite: [["fishkin1991"], ["fishkin2009"]] },
 
@@ -497,7 +497,7 @@ HOD.methods = [
 { id: "adv_collab", name: "Adversarial collaboration", native: "", date: 2001, when: "Mellers, Hertwig & Kahneman 2001",
   family: "rationalist", telos: "truth", parents: ["experimental"], views: ["priors", "error"],
   who: "Daniel Kahneman and collaborators",
-  summary: "Scientists who disagree co-design a study whose outcome each agrees in advance would count against their view. An arbiter holds the data. Kahneman proposed it as an alternative to the ‘angry science’ of comment and reply. It works best when the dispute can be operationalised, and it reveals how often it cannot.",
+  summary: "Scientists who disagree co-design a study whose outcome each agrees in advance would count against their view. An arbiter holds the data. Kahneman proposed it as an alternative to the ‘angry science’ of comment and reply. It works best when the dispute can be turned into a test, and it shows how often it cannot.",
   moves: ["Agree on the crucial experiment in advance", "Pre-state predictions", "Joint publication with an arbiter"],
   cite: [["mellers2001"]] },
 

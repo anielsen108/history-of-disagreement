@@ -4,7 +4,7 @@
 var HOD = window.HOD = window.HOD || {};
 
 HOD.teloi = [
-  { id: "truth",       name: "Truth",        gloss: "The parties treat disagreement as a sign that someone is wrong. They talk in order to remove the error, and winning is incidental." },
+  { id: "truth",       name: "Truth",        gloss: "The parties treat disagreement as a sign that someone is wrong. They talk to remove the error, and winning is incidental." },
   { id: "victory",     name: "Victory",      gloss: "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded." },
   { id: "formation",   name: "Formation",    gloss: "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open." },
   { id: "decision",    name: "Decision",     gloss: "A group must act. It turns disagreement into a binding choice and leaves the disagreement in place." },

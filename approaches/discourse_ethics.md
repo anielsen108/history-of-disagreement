@@ -12,10 +12,22 @@
 
 Every speech act raises validity claims: truth, normative rightness, sincerity and comprehensibility. When a claim is contested, communication shifts into discourse, where only ‘the unforced force of the better argument’ should count. Norms are valid if all affected could accept them as participants in such discourse. Habermas treats disagreement as a breakdown of mutual understanding, which discourse is designed to repair.
 
-## Moves
-- Identify the validity claim at issue
-- Admit all affected; no coercion
-- Accept only reasons all could share
+## Procedure
+1. Identify the validity claim at issue
+2. Admit all affected; no coercion
+3. Accept only reasons all could share
+
+## What it assumes
+[Contested validity claims](../framings/validity.md): Speech acts implicitly claim truth, rightness and sincerity.
+
+## In practice
+- **Third party:** None; the ideal community of discourse.
+- **Ends well when:** Consensus under ideal conditions.
+- **How it fails:** Consensus as a hidden demand to speak in one idiom.
+
+**Strongest critique** (Lyotard, The Postmodern Condition (1979)): Consensus is an outmoded and suspect value. It does violence to the heterogeneity of language games.
+
+
 
 ## Sources
 - Habermas, Jürgen. *The Theory of Communicative Action* (1981). Translated by Thomas McCarthy. 2 vols. Boston: Beacon Press, 1984–87.

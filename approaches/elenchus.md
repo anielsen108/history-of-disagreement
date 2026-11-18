@@ -12,11 +12,28 @@
 
 The interlocutor states a thesis, usually a definition of a virtue. Socrates secures assent to further premises the interlocutor holds, then shows that these entail the thesis’s negation. The outcome is aporia: the interlocutor no longer knows what to say. Vlastos’s ‘problem of the elenchus’ asks how exposing inconsistency could establish any truth. The dialogues suggest an indirect answer. Socrates examines the person as well as the proposition.
 
-## Moves
-- Ask for a definition (‘What is X?’)
-- Elicit the answerer’s own further beliefs
-- Derive contradiction; ask the answerer to revise
-- Say only what you believe (the ‘say what you think’ rule)
+## Procedure
+1. Ask for a definition (‘What is X?’)
+2. Elicit the answerer’s own further beliefs
+3. Derive contradiction; ask the answerer to revise
+4. Say only what you believe (the ‘say what you think’ rule)
+
+## What it assumes
+[Inconsistency & aporia](../framings/aporia.md): The disagreement that matters is within a person, among beliefs they already hold.
+
+## In practice
+- **Third party:** None; bystanders sometimes, but the exchange is dyadic.
+- **Ends well when:** The answerer admits aporia and resolves to inquire further.
+- **How it fails:** Humiliation hardens the answerer instead of freeing them (Callicles, Thrasymachus).
+
+**Strongest critique** (Nietzsche, Twilight of the Idols, ‘The Problem of Socrates’ §§5–7): Dialectic is the weapon of those who have no other weapon: a plebeian revenge that forces the noble to prove themselves.
+
+
+## Whose reading?
+- *attested*: Socrates says he would rather be refuted than refute. Plato, Gorgias 458a.
+- *reading*: The elenchus can establish positive moral truths. Gregory Vlastos, ‘The Socratic Elenchus’ (1983); Hugh Benson, Socratic Wisdom (2000), argues that it only exposes inconsistency.
+- *site*: Pairing the elenchus first with inconsistency and aporia follows Benson’s reading.
+
 
 > Gorgias 458a: Socrates claims he would rather be refuted than refute, since being refuted rids one of the greater evil.
 

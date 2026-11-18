@@ -45,6 +45,6 @@
         const c = count[t.id + "|" + d.id] || 0;
         return `<td style="text-align:center;background:color-mix(in srgb, ${H.teloColor[t.id]} ${Math.round((c / max) * 70)}%, transparent)">${c || ""}</td>`;
       }).join("")}</tr>`).join("")}</tbody></table></div>
-      <p class="viz-caption">Weighted count (primary presupposition = 2, secondary = 1). Read across a row to see where a kind of practice locates the trouble. Truth-seeking practices sit almost wholly in the epistemic column. Understanding-oriented practices migrate to psyche and relation. Release-oriented practices are the only ones that treat the disagreer’s attachment as the object.</p>`;
+      <p class="viz-caption">Weighted count (primary presupposition = 2, secondary = 1). Read across a row to see where methods with one telos locate the trouble. Truth-seeking methods put 42 of their 57 weighted links (74%) in the epistemic column. Methods aimed at understanding put 24 of 36 (67%) in the psyche and relational columns. Release methods put 8 of 12 (67%) in the contemplative column; plurality methods come next, with 4 of 11.</p>`;
   };
 })();

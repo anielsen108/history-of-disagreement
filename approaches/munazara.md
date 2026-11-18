@@ -10,12 +10,27 @@
 - **Descends from:** [Aristotelian dialectic](aristotelian_dialectic.md)
 - **Gave rise to:** [Science of juristic disagreement](khilaf.md), [Scholastic disputation](disputatio.md)
 
-Juridical dialectic (jadal) structured legal reasoning in the madrasa through question and objection. Samarqandī’s ‘etiquette of inquiry and disputation’ later recast it as a general theory with fixed roles: claimant, questioner, and the permitted objections (manʿ, naqḍ, muʿāraḍa). In the famous majlis of 932, al-Sīrāfī and Abū Bishr Mattā argued over how disputes should be judged: by universal logic, or by the grammar of a particular language.
+Juridical dialectic (jadal) structured legal reasoning in the madrasa through question and objection. Samarqandī’s ‘etiquette of inquiry and disputation’ later recast it as a general theory with fixed roles: claimant, questioner, and the permitted objections (manʿ, naqḍ, muʿāraḍa). In the majlis of 932, al-Sīrāfī and Abū Bishr Mattā argued over how disputes should be judged: by universal logic, or by the grammar of a particular language.
 
-## Moves
-- Claimant asserts; questioner may demand proof (manʿ)
-- Counter-instance (naqḍ)
-- Counter-argument (muʿāraḍa)
+## Procedure
+1. Claimant asserts; questioner may demand proof (manʿ)
+2. Counter-instance (naqḍ)
+3. Counter-argument (muʿāraḍa)
+
+## What it assumes
+[Error & ignorance](../framings/error.md): Two contradictory claims cannot both be true, so at least one party is wrong.
+
+## In practice
+- **Third party:** The patron’s majlis or the madrasa audience.
+- **Ends well when:** The claimant’s proof stands or falls under the permitted objections.
+- **How it fails:** Display, envy and rivalry.
+
+**Strongest critique** (al-Ghazālī, Iḥyāʾ ʿulūm al-dīn, Book of Knowledge): Disputation for display breeds envy, pride and hatred, the vices it claims to tame.
+
+
+## Whose reading?
+- *attested*: The majlis of 932 between al-Sīrāfī and Abū Bishr Mattā is known from al-Tawḥīdī’s later account. Abū Ḥayyān al-Tawḥīdī, al-Imtāʿ wa-l-muʾānasa, night 8; trans. D. S. Margoliouth, JRAS (1905).
+
 
 ## Sources
 - Young, Walter Edward. *The Dialectical Forge: Juridical Disputation and the Evolution of Islamic Law*. Cham: Springer, 2017.

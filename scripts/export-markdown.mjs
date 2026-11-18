@@ -9,10 +9,11 @@ import vm from "node:vm";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const ctx = { window: {} };
 vm.createContext(ctx);
-for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content"]) {
+for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content", "readings"]) {
   vm.runInContext(fs.readFileSync(path.join(root, "site/data", f + ".js"), "utf8"), ctx);
 }
 const H = ctx.window.HOD;
+const X = H.extras || {};
 const md = (s) => String(s).replace(/<i>(.*?)<\/i>/g, "*$1*").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
 const year = (y) => (y < 0 ? `${-y} BCE` : y < 1000 ? `${y} CE` : `${y}`);
 const by = (a) => Object.fromEntries(a.map((x) => [x.id, x]));
@@ -37,8 +38,16 @@ ${kids.length ? `- **Gave rise to:** ${kids.map((k) => `[${k.name}](${k.id}.md)`
 
 ${md(m.summary)}
 
-## Moves
-${(m.moves || []).map((x) => `- ${md(x)}`).join("\n")}
+## Procedure
+${(m.moves || []).map((x, i) => `${i + 1}. ${md(x)}`).join("\n")}
+
+## What it assumes
+[${V[m.views[0]].name}](../framings/${m.views[0]}.md): ${md(V[m.views[0]].summary).split(/(?<=[.!?’])\s+(?=[A-Z‘“])/)[0]}
+
+## In practice
+${X[m.id] ? `- **Third party:** ${md(X[m.id].third)}\n- **Ends well when:** ${md(X[m.id].resolution)}\n- **How it fails:** ${md(X[m.id].failure)}` : ""}
+${X[m.id] && X[m.id].critic ? `\n**Strongest critique** (${md(X[m.id].critic.who)}): ${md(X[m.id].critic.text)}\n` : ""}
+${(H.readings || {})[m.id] ? `\n## Whose reading?\n${H.readings[m.id].map((c) => `- *${c.status}*: ${md(c.claim)}${c.by ? ` ${md(c.by)}.` : ""}`).join("\n")}\n` : ""}
 ${m.note ? `\n> ${md(m.note)}\n` : ""}
 ## Sources
 ${cites(m.cite)}
@@ -80,7 +89,6 @@ console.log(`wrote ${H.methods.length} approaches, ${H.views.length} framings, $
 const plain = (s) => (s == null ? "" : String(s).replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
 const csvCell = (v) => { const s = Array.isArray(v) ? v.join(";") : plain(v); return /[",\n;]/.test(s) || /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 const csv = (cols, rows) => [cols.join(","), ...rows.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\n") + "\n";
-const X = H.extras || {};
 const methods = H.methods.map((m) => ({
   id: m.id, name: plain(m.name), native: plain(m.native), date: m.date, when: plain(m.when), who: plain(m.who), family: m.family, telos: m.telos,
   primary_view: m.views[0], views: m.views, parents: m.parents, summary: plain(m.summary), moves: (m.moves || []).map(plain), note: plain(m.note),

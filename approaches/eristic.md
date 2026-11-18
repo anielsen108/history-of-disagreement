@@ -10,12 +10,24 @@
 - **Descends from:** [Antilogic](antilogic.md)
 - **Gave rise to:** [Aristotelian dialectic](aristotelian_dialectic.md), [Eristic dialectic](schopenhauer.md)
 
-Argument for the sake of winning. The eristic turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the *Euthydemus* the brothers show that a learner both knows and does not know. Aristotle wrote the *Sophistical Refutations* as a field guide to eristic, so that a dialectician could detect and defuse it.
+The eristic argues only to win, and turns any answer the respondent gives into a refutation, by equivocation, ambiguity or speed. In the *Euthydemus* the brothers show that a learner both knows and does not know. Aristotle wrote the *Sophistical Refutations* as a field guide to eristic, so that a dialectician could detect and defuse it.
 
-## Moves
-- Ask questions whose every answer is a trap
-- Trade on homonymy and amphiboly
-- Claim victory on any apparent contradiction
+## Procedure
+1. Ask questions whose every answer is a trap
+2. Trade on homonymy and amphiboly
+3. Claim victory on any apparent contradiction
+
+## What it assumes
+[Contest & honour](../framings/agon.md): Argument is a form of combat whose stake is standing.
+
+## In practice
+- **Third party:** Spectators, who applaud the hits.
+- **Ends well when:** The opponent is reduced to silence or contradiction.
+- **How it fails:** Victory proves nothing, and nobody answers the question.
+
+**Strongest critique** (Aristotle, Sophistical Refutations): Eristic refutations only appear to be refutations. Name the fallacy and the victory evaporates.
+
+
 
 > Walton and Krabbe keep ‘eristic’ as a formal dialogue type: the quarrel, whose real goal is to hit the other party.
 

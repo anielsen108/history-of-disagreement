@@ -127,7 +127,7 @@ HOD.views = [
 // ───────────────────────────── Axiological ─────────────────────────────
 { id: "unmeasurable", name: "What cannot be measured", domain: "axiological", date: -399, when: "Plato, Euthyphro",
   who: "Socrates (Euthyphro 7b–d)",
-  summary: "Socrates observes that disputes about number, size and weight are ended by counting, measuring and weighing. The disputes that cause anger and enmity concern the just and unjust, the noble and shameful, the good and bad, for which we have no agreed standard of decision. It is the earliest explicit statement that value disagreements differ in kind.",
+  summary: "Socrates observes that people end disputes about number, size and weight by counting, measuring and weighing. The disputes that cause anger and enmity concern the just and unjust, the noble and shameful, the good and bad, for which we have no agreed standard of decision. It is the earliest explicit statement that value disagreements differ in kind.",
   implies: "Find a measure, or accept enduring enmity.",
   cite: [["plato", "Euthyphro 7b–d"]] },
 
@@ -276,7 +276,7 @@ HOD.views = [
 
 { id: "character", name: "Character & motive", domain: "relational", date: -430, when: "Plato; Avot 5:17; Nyāya",
   who: "Socrates; the Mishnah; Nyāya debaters",
-  summary: "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The exchange is judged by the disputants’ intention and virtue more than by its outcome.",
+  summary: "Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. This view judges the exchange by the disputants’ intention and virtue more than by its outcome.",
   implies: "Purify motive; judge disputes by their spirit.",
   cite: [["mishnah", "Avot 5:17"], ["plato", "Laches 187e–188a"]] },
 

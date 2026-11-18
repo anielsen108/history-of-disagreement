@@ -12,10 +12,22 @@
 
 Arguing for change produces resistance, because the listener voices the other side of their own ambivalence. MI instead uses reflective listening to evoke the person’s own reasons for change, and it ‘rolls with resistance’. MI began as a clinical method and became a general template for persuasion without confrontation. Street epistemology and deep canvassing descend from it.
 
-## Moves
-- Open questions; affirmations; reflections; summaries (OARS)
-- Elicit their reasons, not yours
-- Avoid the righting reflex
+## Procedure
+1. Open questions; affirmations; reflections; summaries (OARS)
+2. Elicit their reasons, not yours
+3. Avoid the righting reflex
+
+## What it assumes
+[Threat & defensiveness](../framings/threat.md): A person who feels threatened cannot hear.
+
+## In practice
+- **Third party:** The clinician as guide.
+- **Ends well when:** The person voices their own reasons for change.
+- **How it fails:** Steering dressed as neutrality.
+
+**Strongest critique** (Miller and Rollnick, Motivational Interviewing, 3rd ed. (2013), on the ethics of MI): A technique that evokes change by design must guard against manipulating autonomy it claims to respect.
+
+
 
 ## Sources
 - Miller, William R., and Stephen Rollnick. *Motivational Interviewing: Preparing People to Change Addictive Behavior*. New York: Guilford, 1991.

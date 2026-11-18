@@ -10,13 +10,25 @@
 - **Descends from:** [Formal dialectic & dialogue types](formal_dialectic.md), [Toulmin model](toulmin.md)
 
 
-An ideal model of ‘critical discussion’ for resolving a difference of opinion on the merits. It runs through four stages: confrontation, opening, argumentation and concluding. Ten rules govern it, among them the freedom rule, the burden-of-proof rule, the standpoint rule and the closure rule. Each fallacy is a violation of a specific rule at a specific stage. Later work on ‘strategic manoeuvring’ admits that real arguers want both to be reasonable and to win.
+Van Eemeren and Grootendorst model an ideal ‘critical discussion’ that resolves a difference of opinion on the merits. It runs through four stages: confrontation, opening, argumentation and concluding. Ten rules govern it, among them the freedom rule, the burden-of-proof rule, the standpoint rule and the closure rule. Each fallacy is a violation of a specific rule at a specific stage. Later work on ‘strategic manoeuvring’ admits that real arguers want both to be reasonable and to win.
 
-## Moves
-- Externalise the difference of opinion
-- Agree starting points
-- Argue by the ten rules
-- Conclude: retract doubt or standpoint
+## Procedure
+1. Externalise the difference of opinion
+2. Agree starting points
+3. Argue by the ten rules
+4. Conclude: retract doubt or standpoint
+
+## What it assumes
+[Error & ignorance](../framings/error.md): Two contradictory claims cannot both be true, so at least one party is wrong.
+
+## In practice
+- **Third party:** None; an analyst may reconstruct the discussion.
+- **Ends well when:** Standpoint retracted or doubt withdrawn.
+- **How it fails:** Real arguers are not ideal discussants.
+
+**Strongest critique** (Mercier & Sperber, The Enigma of Reason (2017)): Reasoning evolved for persuasion and is biased in production. An ideal model must be engineered around that bias.
+
+
 
 ## Sources
 - van Eemeren, Frans H., and Rob Grootendorst. *Speech Acts in Argumentative Discussions*. Dordrecht: Foris, 1984.

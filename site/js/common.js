@@ -205,19 +205,25 @@
 
   /* ── entry renderers ─────────────────────────────────── */
   H.peopleFor = (id) => (H.people || []).filter((p) => p.methods.includes(id) || p.views.includes(id));
+  H.firstSentence = (s) => H.strip(s).split(/(?<=[.!?’])\s+(?=[A-Z‘“])/)[0];
+  // Every method uses one skeleton: who and when; in brief; procedure; what it assumes; in practice and how it fails; critique.
   H.renderMethod = (m, tag = "h3") => {
-    const ppl = H.peopleFor(m.id);
+    const ppl = H.peopleFor(m.id), pv = H.V[m.views[0]];
     return `
     <${tag}>${m.name}</${tag}>
     ${m.native ? `<div class="native">${m.native}</div>` : ""}
     <div class="when">${m.when}${m.who ? ` · ${m.who}` : ""}</div>
     <div class="chips">${H.chip("Telos: " + H.T[m.telos].name, H.teloColor[m.telos])}${H.chip(H.F[m.family].name, "var(--ink-3)")}</div>
     <p>${H.glossify(m.summary, null)}</p>
-    ${m.moves && m.moves.length ? `<ul class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ul>` : ""}
+    <h4 class="sk">Procedure</h4>
+    <ol class="moves">${(m.moves || []).map((x) => `<li>${x}</li>`).join("")}</ol>
+    <h4 class="sk">What it assumes</h4>
+    <p class="assumes">${H.link(pv.id)}: ${H.firstSentence(pv.summary)}${m.views.length > 1 ? ` <span class="meta">Also presupposes ${m.views.slice(1).map((v) => H.link(v)).join(", ")}.</span>` : ""}</p>
+    ${m.third ? `<h4 class="sk">In practice</h4><dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>How it fails</dt><dd>${m.failure}</dd></dl>` : ""}
+    ${m.critic ? `<div class="critique"><b>Strongest critique</b> <span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : ""}
     ${m.note ? `<p class="note">${m.note}</p>` : ""}
     ${H.excerptsFor(m.id)}
-    ${m.third ? `<dl class="facts"><dt>Third party</dt><dd>${m.third}</dd><dt>Ends well when</dt><dd>${m.resolution}</dd><dt>Typical failure</dt><dd>${m.failure}</dd></dl>` : ""}
-    ${m.critic ? `<div class="critique"><b>Strongest critique</b> <span class="meta">from ${H.link(m.critic.view)}</span><p>${m.critic.text}</p><span class="meta">— ${m.critic.who}</span></div>` : ""}
+    ${H.readingFor(m)}
     ${H.confBadges(m)}
     <p class="rel"><b>Presupposes</b>${m.views.map((v, i) => H.link(v, { star: i === 0 })).join(", ")}</p>
     ${m.parents.length ? `<p class="rel"><b>Descends from</b>${m.parents.map((p) => H.link(p)).join(", ")}</p>` : ""}
@@ -226,6 +232,12 @@
     <p class="rel"><b>Tools</b><a href="compare.html?a=${m.id}">Compare with another method</a> · <a href="taxonomy.html?focus=${m.id}">Show in diagram</a> · <a href="#e=${m.id}" class="permalink">Permalink</a></p>
     ${H.citeList(m.cite)}
     ${H.notesBox(m.id, m.name)}`;
+  };
+  // Named readings for contested entries: what is claimed, its status, and whose reading it is.
+  H.statusLabel = { attested: "Attested in the source", consensus: "Scholarly consensus", reading: "A named scholar’s reading", site: "This site’s reading" };
+  H.readingFor = (x) => {
+    const r = (H.readings || {})[x.id]; if (!r) return "";
+    return `<div class="reading"><b>Whose reading?</b>${r.map((c) => `<p><span class="st st-${c.status}">${H.statusLabel[c.status]}</span> ${c.claim}${c.by ? ` <span class="meta">${c.by}.</span>` : ""}</p>`).join("")}</div>`;
   };
   H.renderView = (v, tag = "h3") => {
     const ppl = H.peopleFor(v.id);
@@ -238,6 +250,7 @@
     ${v.quote ? `<blockquote>“${v.quote.t}”<cite>${v.quote.src}</cite></blockquote>` : ""}
     ${H.excerptsFor(v.id)}
     <p class="rel"><b>Remedy implied</b>${v.implies}</p>
+    ${H.readingFor(v)}
     ${H.confBadges(v)}
     <p class="rel"><b>Methods presupposing it</b>${v.methods.length ? v.methods.map((x) => H.link(x.id, { star: x.primary })).join(", ") : `none in this survey. <a href="gaps.html#${v.id}">See the gap gallery</a>${gap ? ` for a sketch (“${gap.method}”)` : ""}.`}</p>
     ${ppl.length ? `<p class="rel"><b>People</b>${ppl.map((p) => H.plink(p.id)).join(", ")}</p>` : ""}

@@ -12,9 +12,24 @@
 
 Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis, in which the debater only refutes. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school admits that good-faith debate needs a defence against bad faith.
 
-## Moves
-- Exploit chala and jāti
-- In vitaṇḍā, refute without asserting
+## Procedure
+1. Exploit chala and jāti
+2. In vitaṇḍā, refute without asserting
+
+## What it assumes
+[Contest & honour](../framings/agon.md): Argument is a form of combat whose stake is standing.
+
+## In practice
+- **Third party:** Judges and audience in public debate.
+- **Ends well when:** One side commits a point of defeat.
+- **How it fails:** Tricks win; truth loses.
+
+**Strongest critique** (Dharmakīrti, Vādanyāya (7th c.)): Defeat should come only from failing to prove one’s thesis. Quibbles and sophistical rejoinders should not count.
+
+
+## Whose reading?
+- *attested*: Jalpa and vitaṇḍā protect truth as a hedge of thorns protects a seedling. Nyāya-sūtra 4.2.50.
+
 
 ## Sources
 - Dasti, Matthew, and Stephen H. Phillips, trans. *The Nyāya-sūtra: Selections with Early Commentaries*. Indianapolis: Hackett, 2017. — NS 1.2.2–3, 4.2.50

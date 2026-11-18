@@ -12,9 +12,21 @@
 
 The sceptical Academy turned Socratic questioning into a standing practice of arguing for and against any thesis. On the Athenian embassy of 155 BCE Carneades argued for justice one day and against it the next, scandalising Cato. Cicero, who admired the method, said it suits the search for what is most probable and trains the orator in copiousness.
 
-## Moves
-- Argue the thesis; argue its contrary
-- Withhold assent, or assent only to the persuasive (pithanon)
+## Procedure
+1. Argue the thesis; argue its contrary
+2. Withhold assent, or assent only to the persuasive (pithanon)
+
+## What it assumes
+[Undecidability](../framings/equipollence.md): Some disputes are interminable because the arguments on each side are of equal force (isostheneia).
+
+## In practice
+- **Third party:** None, or a pupil learning the method.
+- **Ends well when:** Assent to the most persuasive, held provisionally.
+- **How it fails:** Moral corrosion: arguing against justice weakens it.
+
+**Strongest critique** (Cato the Elder, as reported by Plutarch, Cato Maior 22): Send the philosophers home before the young learn to argue either side of justice.
+
+
 
 ## Sources
 - Cicero. *Tusculan Disputations*. Translated by J. E. King. Loeb Classical Library 141. Cambridge, MA: Harvard University Press, 1927. — 2.9

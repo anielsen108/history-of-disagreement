@@ -6,7 +6,7 @@
 - **Remedy implied:** Purify motive; judge disputes by their spirit.
 - **Methods presupposing it:** [Socratic elenchus](../approaches/elenchus.md), [Vāda (good-faith debate)](../approaches/vada.md), [Dispute for the sake of Heaven](../approaches/machloket.md)
 
-Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. The exchange is judged by the disputants’ intention and virtue more than by its outcome.
+Disagreement tests who you are. The Mishnah judges a dispute by whether it is ‘for the sake of Heaven’, and Socratic examination is examination of a life. This view judges the exchange by the disputants’ intention and virtue more than by its outcome.
 
 ## Sources
 - Mishnah (Avot 5:17; Eduyot 1:4–6). Cited by tractate, chapter and mishnah. Hebrew text and translation: Sefaria, https://www.sefaria.org — Avot 5:17

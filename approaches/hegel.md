@@ -12,10 +12,25 @@
 
 Each shape of consciousness, pressed to its own standard, generates its contradiction and is sublated: cancelled, preserved and raised. For Hegel, contradiction drives both thought and history. The textbook formula ‘thesis–antithesis–synthesis’ is Fichte’s and Chalybäus’s, not Hegel’s (Mueller 1958). The master–servant section makes the struggle for recognition the primal scene of conflict.
 
-## Moves
-- Take the position at its word
-- Find its internal contradiction
-- Determine the richer standpoint that contains both
+## Procedure
+1. Take the position at its word
+2. Find its internal contradiction
+3. Determine the richer standpoint that contains both
+
+## What it assumes
+[Strife as engine](../framings/dialectical.md): ‘War is father of all and king of all.’
+
+## In practice
+- **Third party:** None; the movement of the concept itself.
+- **Ends well when:** Sublation into a richer standpoint.
+- **How it fails:** Every opponent is pre-absorbed into the system.
+
+**Strongest critique** (Kierkegaard, Concluding Unscientific Postscript (1846)): A system of existence cannot be given. The existing individual and their decision fall outside every mediation.
+
+
+## Whose reading?
+- *reading*: ‘Thesis–antithesis–synthesis’ is not Hegel’s formula. Gustav E. Mueller, ‘The Hegel Legend of “Thesis-Antithesis-Synthesis”’, Journal of the History of Ideas 19 (1958).
+
 
 ## Sources
 - Hegel, G. W. F. *Phenomenology of Spirit* (1807). Translated by Terry Pinkard. Cambridge: Cambridge University Press, 2018. — §§178–196

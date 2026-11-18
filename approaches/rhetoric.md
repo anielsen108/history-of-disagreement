@@ -12,10 +12,22 @@
 
 Rhetoric is the counterpart (antistrophos) of dialectic. It finds the available means of persuasion in matters that admit of being otherwise. In its deliberative genre an assembly is persuaded about future advantage. Here disagreement is ordinary uncertainty about what to do. The speaker works through it by appeals to character (ēthos), emotion (pathos) and argument (logos). The audience is a crowd that cannot follow long chains of reasoning.
 
-## Moves
-- Argue from probabilities and signs (enthymeme)
-- Project a credible character
-- Fit emotion to the decision at hand
+## Procedure
+1. Argue from probabilities and signs (enthymeme)
+2. Project a credible character
+3. Fit emotion to the decision at hand
+
+## What it assumes
+[Disputed reputable opinion](../framings/endoxa.md): Some questions belong to things that ‘admit of being otherwise’, where only probable premises are available.
+
+## In practice
+- **Third party:** The assembly or jury, who decide.
+- **Ends well when:** A decision by the audience.
+- **How it fails:** Demagogy: emotion outruns judgment.
+
+**Strongest critique** (Plato, Gorgias 454e–455a): Rhetoric produces belief without knowledge in a crowd that cannot test it.
+
+
 
 ## Sources
 - Aristotle. *The Complete Works of Aristotle: The Revised Oxford Translation*. Edited by Jonathan Barnes. 2 vols. Princeton: Princeton University Press, 1984. (Cited by Bekker pagination.) — Rhetoric 1354a1, 1355b25–35, 1358b

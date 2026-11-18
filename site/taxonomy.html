@@ -16,6 +16,7 @@
   <div class="kicker">Graphic taxonomy</div>
   <h1>Taxonomy</h1>
   <p class="lede">The same corpus is drawn four ways. The two-column diagram shows which diagnosis each method presupposes. The lineage map shows who descends from whom. The table spells out every link by name. The last tab shows how the mix of diagnoses shifted over time.</p>
+  <p class="page-thesis">How this bears on the thesis: every thread in the first diagram is one method’s assumption about what disagreement is. <a href="index.html">The thesis</a></p>
 
   <div class="tabs" role="tablist">
     <button role="tab" aria-selected="true" data-tab="t-wheel">Method ↔ view</button>
@@ -43,7 +44,7 @@
       <div id="legend-t2"></div>
       <div class="viz-scroll" id="lineage"></div>
     </div>
-    <p class="viz-caption">One lane per family of practice. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Hover to light a method’s full ancestry and descent. Click the legend to hide teloi. Scroll sideways on small screens.</p>
+    <p class="viz-caption">One lane per family of methods. An edge means the later method descends from the earlier one or defines itself against it, as the elenchus against antilogic or the experimental matter of fact against the disputation. Hover to light a method’s full ancestry and descent. Click the legend to hide teloi. Scroll sideways on small screens.</p>
   </section>
 
   <section class="tabpanel" id="t-matrix" hidden>
@@ -59,7 +60,7 @@
     <div class="viz-toolbar"><label for="dmode">Count</label>
       <select id="dmode"><option value="primary">each method once, by its primary view</option><option value="all">every view a method presupposes</option></select></div>
     <div class="viz-frame"><div id="legend-d3"></div><div id="driftchart"></div></div>
-    <p class="viz-caption">Each bar is one period; its segments give the share of that period’s methods whose diagnosis falls in each domain. Some periods hold only a few methods (one, for 1900–1950), so read their percentages as rough. Two things still show. Before 1800 no method locates disagreement in the psyche or in the relationship; epistemic, linguistic, power and contemplative diagnoses fill most of it. From 1950 to 1980 the psyche, interest and relational domains together hold seven methods in ten. After 1980 epistemic diagnoses recover with the rationalist and deliberative practices, but relational ones keep a fifth of the field. That is the “therapeutic turn” discussed on the <a href="index.html">overview</a>, and its partial reversal.</p>
+    <p class="viz-caption">Each bar is one period; its segments give the share of that period’s methods whose diagnosis falls in each domain. Some periods hold only a few methods (one, for 1900–1950), so read their percentages as rough. Two things still show. Before 1800 no method locates disagreement in the psyche or in the relationship; epistemic, linguistic, power and contemplative diagnoses fill most of it. From 1950 to 1980 the psyche, interest and relational domains together hold seven methods in ten. After 1980 epistemic diagnoses recover to 7 of 18 methods (39%), carried by the rationalist and deliberative methods, while relational diagnoses hold 4 of 18 (22%). That is the “therapeutic turn” discussed on the <a href="index.html">overview</a>, and its partial reversal.</p>
     <div id="drifttable"></div>
   </section>
 </main>
@@ -72,6 +73,7 @@
 <script src="data/people.js"></script>
 <script src="data/glossary.js"></script>
 <script src="data/content.js"></script>
+<script src="data/readings.js"></script>
 <script src="js/common.js"></script>
 <script src="js/bipartite.js"></script>
 <script src="js/lineage.js"></script>

@@ -12,10 +12,22 @@
 
 Unofficial representatives of warring communities meet with a panel of social scientists. They analyse the conflict jointly instead of negotiating positions. Burton’s premise, later his human-needs theory, is that deep-rooted conflict stems from non-negotiable needs for identity, security and recognition. These needs, unlike interests, cannot be bargained away and must be satisfied. Lederach widened this into ‘conflict transformation’ of relationships and structures.
 
-## Moves
-- Off-the-record analytic dialogue
-- Third party as facilitator, not judge
-- Surface needs and fears; co-design options
+## Procedure
+1. Off-the-record analytic dialogue
+2. Third party as facilitator, not judge
+3. Surface needs and fears; co-design options
+
+## What it assumes
+[Unmet needs](../framings/needs.md): Beneath interests lie universal human needs: security, identity, recognition, autonomy, meaning.
+
+## In practice
+- **Third party:** A panel of scholar-practitioners as facilitators.
+- **Ends well when:** Shared analysis and new options carried back home.
+- **How it fails:** Insights do not transfer to official negotiators.
+
+**Strongest critique** (Evaluators of track-two diplomacy (‘the transfer problem’)): Changed minds in a workshop rarely change policy. Power sits with people who were not in the room.
+
+
 
 ## Sources
 - Burton, John W. *Conflict and Communication: The Use of Controlled Communication in International Relations*. London: Macmillan, 1969.

@@ -12,9 +12,25 @@
 
 Wiredu reconstructs Asante council politics as government by consensus, with no majority vote. Talk continues until a position is reached that all can accept as a basis for action, though not necessarily one all believe true. The premise is that ultimate interests are shared even when immediate interests conflict. Wiredu offers it as a model for a ‘non-party polity’.
 
-## Moves
-- Talk until a common basis for action is found
-- Separate agreement on action from agreement on belief
+## Procedure
+1. Talk until a common basis for action is found
+2. Separate agreement on action from agreement on belief
+
+## What it assumes
+[Interests beneath positions](../framings/interests.md): What people say they want, their positions, is a strategy for what they need, their interests.
+
+## In practice
+- **Third party:** Chiefs and elders, who preside.
+- **Ends well when:** A shared basis for action.
+- **How it fails:** Consensus that silences juniors, women and outsiders.
+
+**Strongest critique** (Emmanuel Chukwudi Eze, ‘Democracy or Consensus?’ (1997)): Appeals to traditional consensus can mask hierarchy and supply cover for one-party rule.
+
+
+## Whose reading?
+- *reading*: Asante council politics worked by consensus, and this could ground a non-party polity. Kwasi Wiredu, Cultural Universals and Particulars (1996).
+- *reading*: This idealises pre-colonial practice and lends cover to one-party rule. Emmanuel Chukwudi Eze, ‘Democracy or Consensus? A Response to Wiredu’ (1997).
+
 
 ## Sources
 - Wiredu, Kwasi. “Democracy and Consensus in African Traditional Politics: A Plea for a Non-party Polity.” In *Cultural Universals and Particulars: An African Perspective*. Bloomington: Indiana University Press, 1996.

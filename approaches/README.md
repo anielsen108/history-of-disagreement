@@ -4,7 +4,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Truth
 
-*The parties treat disagreement as a sign that someone is wrong. They talk in order to remove the error, and winning is incidental.*
+*The parties treat disagreement as a sign that someone is wrong. They talk to remove the error, and winning is incidental.*
 
 - [Socratic elenchus](elenchus.md) — c. 430–399 BCE; Plato’s early dialogues
 - [Platonic dialectic](platonic_dialectic.md) — c. 380–350 BCE

@@ -12,10 +12,26 @@
 
 The khilāf literature catalogues and explains juristic disagreement and makes no attempt to eliminate it. The hadith of ijtihād holds that a judge who strives and is right earns two rewards, and one who strives and errs still earns one. Ibn Rushd’s handbook traces each disagreement to its cause: an ambiguous term, conflicting reports, an analogy pulling against a text. The genre anticipates Rawls’s burdens of judgment by eight centuries.
 
-## Moves
-- Lay out each school’s ruling
-- Diagnose the source (sabab) of the difference
-- Leave legitimate plurality standing
+## Procedure
+1. Lay out each school’s ruling
+2. Diagnose the source (sabab) of the difference
+3. Leave legitimate plurality standing
+
+## What it assumes
+[Disagreement as mercy](../framings/ikhtilaf.md): Diverse rulings reached by sincere ijtihād are each rewarded, even when mistaken.
+
+## In practice
+- **Third party:** None; each school stands.
+- **Ends well when:** The disagreement is explained and left standing.
+- **How it fails:** Legitimised plurality becomes cover for arbitrary choice.
+
+**Strongest critique** (Ibn Ḥazm (d. 1064)): Truth in God’s law is one. Disagreement among the schools is error, to be corrected from the texts. It is no mercy.
+
+
+## Whose reading?
+- *attested*: A judge who strives and is right earns two rewards; one who strives and errs earns one. Ṣaḥīḥ al-Bukhārī 7352.
+- *site*: The khilāf genre anticipates Rawls’s burdens of judgment.
+
 
 ## Sources
 - Ibn Rushd (Averroes). *The Distinguished Jurist’s Primer* (*Bidāyat al-mujtahid*). Translated by Imran Ahsan Khan Nyazee. 2 vols. Reading: Garnet, 1994–96.

@@ -12,11 +12,23 @@
 
 Rapoport distinguishes three kinds of conflict. In fights the aim is to harm the opponent. In games the aim is to outwit them within rules. In debates the aim is to convince them. In a true debate one must reduce the opponent’s sense of threat by showing that one understands their position. One does this by stating the ‘region of validity’ in which their view is correct. Dennett distilled this into four rules: re-express, list agreements, mention what you learned, and only then rebut.
 
-## Moves
-- Re-express their position so well they wish they had said it
-- List points of agreement
-- Say what you learned
-- Only then rebut
+## Procedure
+1. Re-express their position so well they wish they had said it
+2. List points of agreement
+3. Say what you learned
+4. Only then rebut
+
+## What it assumes
+[Threat & defensiveness](../framings/threat.md): A person who feels threatened cannot hear.
+
+## In practice
+- **Third party:** None.
+- **Ends well when:** The opponent feels understood and can hear the rebuttal.
+- **How it fails:** Useless against someone fighting, not debating.
+
+**Strongest critique** (Rapoport himself, on fights): When one side aims to harm, no technique of debate applies.
+
+
 
 ## Sources
 - Rapoport, Anatol. *Fights, Games, and Debates*. Ann Arbor: University of Michigan Press, 1960.

@@ -12,10 +12,25 @@
 
 Reality is many-sided (anekānta), so every assertion holds only ‘in some respect’ (syāt). The sevenfold scheme combines ‘is’, ‘is not’ and ‘is inexpressible’ under different standpoints (naya). Rival doctrines are recast as partial truths, each valid from its standpoint and false when absolutised. This is the elephant parable formalised as a logic.
 
-## Moves
-- Index each claim to a standpoint
-- Map rival claims onto the seven predications
-- Reject only the absolutising ‘only’
+## Procedure
+1. Index each claim to a standpoint
+2. Map rival claims onto the seven predications
+3. Reject only the absolutising ‘only’
+
+## What it assumes
+[Partial perspectives](../framings/perspectival.md): Each party sees a real aspect of something larger.
+
+## In practice
+- **Third party:** None.
+- **Ends well when:** Each claim is indexed to its standpoint; the ‘only’ is dropped.
+- **How it fails:** Everything becomes partly true; no position can be wrong.
+
+**Strongest critique** (Śaṅkara, Brahmasūtrabhāṣya 2.2.33): Contradictory attributes cannot belong to one thing at once. A doctrine of ‘maybe’ yields no knowledge.
+
+
+## Whose reading?
+- *reading*: The sevenfold scheme indexes each predication to a standpoint and contains no true contradiction. Jonardon Ganeri, ‘Jaina Logic and the Philosophical Basis of Pluralism’ (2002); Graham Priest, ‘Jaina Logic: A Contemporary Perspective’ (2008), reads it as paraconsistent.
+
 
 ## Sources
 - Matilal, Bimal Krishna. *The Central Philosophy of Jainism (Anekānta-vāda)*. Ahmedabad: L. D. Institute of Indology, 1981.
