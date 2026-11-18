@@ -5,8 +5,8 @@
   --ink-2: #4a453d;
   --ink-3: #7d766a;
   --rule: #d9d1c2;
-  --accent: #8a2c1f;
-  --accent-2: #2f4f6b;
+  --accent: #843a2e;
+  --accent-2: #3d566b;
   --chip: #ece5d8;
   --shadow: 0 1px 2px rgba(40,30,10,.06), 0 8px 24px rgba(40,30,10,.07);
   --serif: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
@@ -19,14 +19,14 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #15140f; --paper: #1c1a15; --ink: #ece6da; --ink-2: #c3bba9; --ink-3: #8e8676;
-    --rule: #39342a; --accent: #e08a6e; --accent-2: #8fb3d6; --chip: #2a261e;
+    --rule: #39342a; --accent: #d6917a; --accent-2: #97b1cb; --chip: #2a261e;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #15140f; --paper: #1c1a15; --ink: #ece6da; --ink-2: #c3bba9; --ink-3: #8e8676;
-  --rule: #39342a; --accent: #e08a6e; --accent-2: #8fb3d6; --chip: #2a261e;
+  --rule: #39342a; --accent: #d6917a; --accent-2: #97b1cb; --chip: #2a261e;
   --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
   color-scheme: dark;
 }

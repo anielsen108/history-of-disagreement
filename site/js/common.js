@@ -4,13 +4,14 @@
   const H = window.HOD;
   const REPO = "https://github.com/anielsen108/history-of-disagreement";
 
+  // The group colours are deliberately muted: about half the saturation of a full hue, so the page stays calm and neighbouring groups stay distinct.
   H.teloColor = {
-    truth: "#2b6cb0", victory: "#c53030", formation: "#a07a1c", decision: "#6b46c1",
-    settlement: "#2c9a8a", understanding: "#dd6b20", plurality: "#4a8a2e", release: "#a35d8a"
+    truth: "#4170a1", victory: "#af4444", formation: "#9c803c", decision: "#6f54ad",
+    settlement: "#47968b", understanding: "#ca7841", plurality: "#5a8846", release: "#9d6a8b"
   };
   H.domainColor = {
-    epistemic: "#3a6ea5", linguistic: "#7d5ba6", axiological: "#b7791f", interest: "#2f855a",
-    power: "#9b2c2c", psyche: "#c05621", relational: "#b83280", contemplative: "#5f8b99", generative: "#5a6b2f"
+    epistemic: "#4d729a", linguistic: "#7f679d", axiological: "#a88c3c", interest: "#458364",
+    power: "#8e3d3d", psyche: "#b0643d", relational: "#a7477f", contemplative: "#6e8d97", generative: "#636f44"
   };
 
   const by = (arr) => Object.fromEntries((arr || []).map((x) => [x.id, x]));
