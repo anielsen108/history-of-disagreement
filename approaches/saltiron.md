@@ -10,7 +10,7 @@
 - **Descends from:** [Rectification of names](zhengming.md)
 
 
-An imperial conference on the state monopolies of salt and iron, written up by Huan Kuan as a set-piece dialogue. On one side stood fiscal statecraft and frontier defence. On the other stood agrarian virtue and the Confucian distrust of profit. It is an early documented instance of structured policy debate between institutional factions before a sovereign arbiter.
+An imperial conference on the state monopolies of salt and iron, written up by Huan Kuan as a set-piece dialogue. On one side stood fiscal statecraft and frontier defence. On the other stood agrarian virtue and the Confucian distrust of profit. It is one of the earliest records of a structured policy debate between institutional factions before a sovereign arbiter.
 
 ## Moves
 - Each faction speaks in turn before the throne

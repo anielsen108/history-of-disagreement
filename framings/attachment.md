@@ -6,7 +6,7 @@
 - **Remedy implied:** Non-dispute; emptiness of views; suspension.
 - **Methods presupposing it:** [Pyrrhonian equipollence](../approaches/pyrrhonian.md), [Refusing dispute](../approaches/atthaka.md), [Prasaṅga (reductio without thesis)](../approaches/prasanga.md), [Walking two roads](../approaches/liangxing.md), [Bohmian dialogue](../approaches/bohm.md)
 
-Suffering in dispute comes from grasping at views (diṭṭhi-upādāna), not from which view is right. Even right view held as a possession breeds conflict. The remedy is not a better position but release from positionality.
+Suffering in dispute comes from grasping at views (diṭṭhi-upādāna). Which view is right matters less. Even right view, held as a possession, breeds conflict. The remedy is to let go of positions altogether.
 
 ## Sources
 - Bodhi, Bhikkhu, trans. *The Suttanipāta: An Ancient Collection of the Buddha’s Discourses*. Boston: Wisdom Publications, 2017. — Sn 4.8–4.13

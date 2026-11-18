@@ -10,7 +10,7 @@
 
 - **Gave rise to:** [Eristic](eristic.md), [Socratic elenchus](elenchus.md), [Deliberative rhetoric](rhetoric.md), [Pyrrhonian equipollence](pyrrhonian.md)
 
-Protagoras was reported to be the first to say that on every matter there are two logoi opposed to each other. Antilogic is the drill that follows: argue the case, then argue its contrary with equal force. Its premise is the homo-mensura doctrine. If each person is the measure, then disagreement is not a defect to be cured but the normal condition of speech, and the trained speaker learns to make the weaker logos the stronger.
+Protagoras was reported to be the first to say that on every matter there are two logoi opposed to each other. Antilogic is the drill that follows: argue the case, then argue its contrary with equal force. Its premise is the homo-mensura doctrine. If each person is the measure, disagreement is the normal condition of speech. The trained speaker learns to make the weaker logos the stronger.
 
 ## Moves
 - Pair every speech with its counter-speech

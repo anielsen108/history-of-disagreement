@@ -10,7 +10,7 @@
 - **Descends from:** [Refusing dispute](atthaka.md)
 - **Gave rise to:** [Prasaṅga (reductio without thesis)](prasanga.md)
 
-A canonical text of over two hundred points of controversy between the Theravāda and rival schools, set out as formalised exchanges. The orthodox questioner extracts an admission, then shows that it entails a contradiction with another admission. It is an early Indian dialogue-logic, structurally close to elenchus but used to police doctrinal boundaries.
+A canonical text of over two hundred points of controversy between the Theravāda and rival schools, set out as formalised exchanges. The orthodox questioner extracts an admission, then shows that it entails a contradiction with another admission. It is an early Indian dialogue-logic. Its structure is close to the elenchus, but the school used it to police the boundaries of doctrine.
 
 ## Moves
 - Establish the opponent’s thesis

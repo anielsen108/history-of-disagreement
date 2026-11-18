@@ -10,7 +10,7 @@
 
 
 
-Crime and conflict are reframed as harm to people and relationships, not violation of a rule against the state. Victim, offender and community meet in a facilitated encounter or a talking-piece circle to name the harm, take responsibility and repair. Braithwaite adds ‘reintegrative shaming’: disapproval of the act within continued respect for the person.
+Restorative justice treats crime and conflict as harm to people and relationships. The legal model sees a broken rule; this model sees people who were hurt. Victim, offender and community meet in a facilitated encounter or a talking-piece circle to name the harm, take responsibility and repair. Braithwaite adds ‘reintegrative shaming’: disapproval of the act within continued respect for the person.
 
 ## Moves
 - Talking piece; speak from experience

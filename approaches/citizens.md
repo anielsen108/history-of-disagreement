@@ -10,7 +10,7 @@
 - **Descends from:** [Deliberative polling](delib_polling.md)
 
 
-A body selected by lot hears evidence, deliberates over weeks or months, and recommends. The Irish Assembly’s recommendation on the Eighth Amendment preceded the 2018 referendum. Gutmann and Thompson supply the normative frame. Moral disagreement is permanent and reasonable, so the rules of deliberation should be reciprocity, publicity and accountability, not the hope of agreement.
+A body selected by lot hears evidence, deliberates over weeks or months, and recommends. The Irish Assembly’s recommendation on the Eighth Amendment preceded the 2018 referendum. Gutmann and Thompson supply the normative frame. Moral disagreement is permanent and reasonable, so deliberation should follow rules of reciprocity, publicity and accountability and should not aim at agreement.
 
 ## Moves
 - Sortition

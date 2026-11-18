@@ -40,7 +40,7 @@ Generated from `site/data/methods.js`. Grouped by telos.
 
 ## Formation
 
-*Disputation as gymnasium: the point is the trained disputant, not the settled question.*
+*Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open.*
 
 - [Aristotelian dialectic](aristotelian_dialectic.md) — c. 350 BCE
 - [Havruta](havruta.md) — Talmudic ideal; modern yeshiva practice

@@ -10,7 +10,7 @@
 
 - **Gave rise to:** [Abhidharma controversy](kathavatthu.md)
 
-The sage does not enter disputes. Those who say ‘only this is pure’ and call the other a fool are bound by their views (diṭṭhi), and their debates yield only praise or blame and the anxiety of losing. Quarrels arise from what is held dear, and what is held dear from desire. Gómez reads this as a proto-Madhyamaka strand, a therapy of views rather than a better view.
+The sage does not enter disputes. Those who say ‘only this is pure’ and call the other a fool are bound by their views (diṭṭhi), and their debates yield only praise or blame and the anxiety of losing. Quarrels arise from what is held dear, and what is held dear from desire. Gómez reads this as an early form of the Madhyamaka stance, which treats holding a view as the illness and offers no better view as a cure.
 
 ## Moves
 - Decline to adopt a view to defend

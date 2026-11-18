@@ -10,7 +10,7 @@
 - **Descends from:** [Stasis theory](stasis.md)
 
 
-Truth is to emerge from a contest between partisan advocates before a passive judge and lay jury. Wigmore called cross-examination ‘beyond any doubt the greatest legal engine ever invented for the discovery of truth’. Langbein traces how defence counsel entered English felony trials only in the 1730s, and with them the modern theory that partisanship itself is truth-conducive.
+Truth is to emerge from a contest between partisan advocates before a passive judge and lay jury. Wigmore called cross-examination ‘beyond any doubt the greatest legal engine ever invented for the discovery of truth’. Langbein traces how defence counsel entered English felony trials only in the 1730s, and with them the modern theory that a contest between partisans finds the truth.
 
 ## Moves
 - Each side presents its own case

@@ -10,7 +10,7 @@
 - **Descends from:** [Antilogic](antilogic.md)
 - **Gave rise to:** [Platonic dialectic](platonic_dialectic.md), [Arguing both sides](utramque.md), [Street epistemology](street_epist.md)
 
-The interlocutor states a thesis, usually a definition of a virtue. Socrates secures assent to further premises the interlocutor holds, then shows that these entail the thesis’s negation. The outcome is aporia, a stalled certainty. Vlastos’s ‘problem of the elenchus’ asks how exposing inconsistency could ever establish truth; the dialogues answer obliquely that what is examined is the person, not only the proposition.
+The interlocutor states a thesis, usually a definition of a virtue. Socrates secures assent to further premises the interlocutor holds, then shows that these entail the thesis’s negation. The outcome is aporia: the interlocutor no longer knows what to say. Vlastos’s ‘problem of the elenchus’ asks how exposing inconsistency could establish any truth. The dialogues suggest an indirect answer. Socrates examines the person as well as the proposition.
 
 ## Moves
 - Ask for a definition (‘What is X?’)

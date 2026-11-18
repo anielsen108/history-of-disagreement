@@ -10,7 +10,7 @@
 - **Descends from:** [Socratic elenchus](elenchus.md)
 - **Gave rise to:** [Aristotelian dialectic](aristotelian_dialectic.md), [Speculative dialectic](hegel.md)
 
-In the middle and late dialogues, dialectic becomes the capstone discipline. It runs by hypothesis upward to an unhypothetical first principle, and by collection and division: gather scattered instances under one form, then cut that form ‘at its natural joints’. Disagreement here is a symptom of failure to see the forms. The *Republic* bars dialectic to the young, who use argument like puppies tearing at whatever is near.
+In the middle and late dialogues, dialectic becomes the capstone discipline. It runs by hypothesis upward to an unhypothetical first principle, and by collection and division: gather scattered instances under one form, then cut that form ‘at its natural joints’. On this account, people disagree because they fail to see the forms. The *Republic* bars dialectic to the young, who use argument like puppies tearing at whatever is near.
 
 ## Moves
 - Collect instances under one idea

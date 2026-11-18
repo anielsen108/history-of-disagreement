@@ -6,7 +6,7 @@
 - **Remedy implied:** Formalisation; ‘Calculemus!’
 - **Methods presupposing it:** [Calculemus](../approaches/calculemus.md)
 
-With an adequate notation, every dispute would be a mistake in calculation, checkable like a sum. Disagreement is an artefact of natural language’s imprecision.
+With an adequate notation, every dispute would be a mistake in calculation, checkable like a sum. On this view, people disagree because natural language is imprecise.
 
 > “Let us calculate, without further ado, to see who is right.” — Leibniz, The Art of Discovery (1685)
 

@@ -10,7 +10,7 @@
 - **Descends from:** [Deliberative rhetoric](rhetoric.md)
 - **Gave rise to:** [Competitive debate](debate.md), [Deliberative polling](delib_polling.md), [Agonistic pluralism](agonism.md)
 
-Rule-governed adversarial deliberation that ends in a division. Motions, amendments, speaking in turn and through the chair, and the ban on imputing motives to members all contain hostility without denying it. The ‘loyal opposition’ (Hobhouse, 1826) formalises disagreement as a permanent and legitimate office. Rules of order are a technology for making a body decide while still divided.
+Rule-governed adversarial deliberation that ends in a division. Motions, amendments, speaking in turn and through the chair, and the ban on imputing motives to members all contain hostility without denying it. The ‘loyal opposition’ (Hobhouse, 1826) formalises disagreement as a permanent and legitimate office. Rules of order let a body decide while it remains divided.
 
 ## Moves
 - Move; second; debate; amend; divide

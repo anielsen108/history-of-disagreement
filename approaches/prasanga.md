@@ -10,7 +10,7 @@
 - **Descends from:** [Abhidharma controversy](kathavatthu.md), [Jalpa & vitaṇḍā](jalpa.md)
 - **Gave rise to:** [Tibetan monastic debate](tibetan.md)
 
-The Mādhyamika shows that each of the opponent’s positions entails absurdity, without advancing a position of its own. Pressed by Nyāya critics, Nāgārjuna answers: ‘If I had any thesis, that fault would apply to me. But I do not have any thesis.’ Formally this resembles vitaṇḍā. Its purpose is soteriological, the ‘pacification of conceptual proliferation’ (prapañcopaśama).
+The Mādhyamika shows that each of the opponent’s positions entails absurdity, without advancing a position of its own. Pressed by Nyāya critics, Nāgārjuna answers: ‘If I had any thesis, that fault would apply to me. But I do not have any thesis.’ In form this resembles vitaṇḍā. Its purpose is liberation, the ‘pacification of conceptual proliferation’ (prapañcopaśama).
 
 ## Moves
 - Take the opponent’s view on its own terms

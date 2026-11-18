@@ -3,7 +3,7 @@
 - **Domain:** Linguistic
 - **When:** Stevenson 1944, 1948
 - **Who:** C. L. Stevenson
-- **Remedy implied:** Separate belief from attitude; persuasive definitions are moves, not findings.
+- **Remedy implied:** Separate belief from attitude; treat persuasive definitions as moves in the argument.
 - **Methods presupposing it:** none in this survey
 
 Stevenson distinguishes disagreement in belief, about how things are, from disagreement in attitude, about what to favour. Ethical disputes are chiefly the latter, carried on in language that sounds descriptive. Belief-change can shift attitude, but nothing guarantees it will.

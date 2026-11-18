@@ -10,7 +10,7 @@
 - **Descends from:** [Bridging systems](polis.md), [Deliberative polling](delib_polling.md)
 
 
-A language model drafts group statements from individual opinions, collects critiques, and revises. In UK experiments the AI-mediated statements were preferred over those of human mediators, and they reduced within-group division. This raises an old question in new form: whose ‘common ground’ does the mediator find, and what does it leave out?
+A language model drafts group statements from individual opinions, collects critiques, and revises. In UK experiments the AI-mediated statements were preferred over those of human mediators, and they reduced within-group division. This revives an old question in new form. The mediator decides whose ‘common ground’ counts, and something is always left out.
 
 ## Moves
 - Collect private opinions

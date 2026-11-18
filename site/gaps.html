@@ -15,7 +15,7 @@
 <main>
   <div class="kicker">What no one has built</div>
   <h1>Gap gallery</h1>
-  <p class="lede">Thirteen diagnoses in this survey have no method built on them. Each says what disagreement is really about, but no tradition turned it into a practice. For each one, this page sketches what such a practice might look like. The sketches are this site’s proposals, not historical methods, and they are marked as such.</p>
+  <p class="lede">Thirteen diagnoses in this survey have no method built on them. Each says what disagreement is really about, but no tradition turned it into a practice. For each one, this page sketches what such a practice might look like. The sketches are this site’s own proposals, and each is labelled as one.</p>
   <div id="gaps"></div>
 </main>
 <script src="vendor/d3.min.js"></script>
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h2>${H.link(v.id)}</h2><div class="meta">${v.when}${v.who ? " · " + v.who : ""}</div>
       <p>${H.glossify(v.summary)}</p>
       <p class="meta"><b>Why there is a gap:</b> ${g.why || ""}</p>
-      ${g.method ? `<p><span class="meta">Sketch, not a historical method:</span> <span class="sketch-name">${g.method}</span></p><ol>${g.sketch.map((s) => `<li>${s}</li>`).join("")}</ol>` : ""}
+      ${g.method ? `<p><span class="meta">Sketch proposed by this site:</span> <span class="sketch-name">${g.method}</span></p><ol>${g.sketch.map((s) => `<li>${s}</li>`).join("")}</ol>` : ""}
     </section>`; }).join("");
   if (location.hash && !location.hash.includes("=")) setTimeout(() => { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }, 30);
 });

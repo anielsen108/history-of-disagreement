@@ -10,7 +10,7 @@
 - **Descends from:** [Antilogic](antilogic.md), [Aristotelian dialectic](aristotelian_dialectic.md)
 - **Gave rise to:** [Stasis theory](stasis.md), [Parliamentary debate](parliament.md), [Competitive debate](debate.md), [Moral reframing](moral_reframing.md)
 
-Rhetoric is the counterpart (antistrophos) of dialectic. It finds the available means of persuasion in matters that admit of being otherwise. In its deliberative genre an assembly is persuaded about future advantage. Disagreement is ordinary practical uncertainty, worked through by appeals of ēthos, pathos and logos before a crowd that cannot follow long chains of argument.
+Rhetoric is the counterpart (antistrophos) of dialectic. It finds the available means of persuasion in matters that admit of being otherwise. In its deliberative genre an assembly is persuaded about future advantage. Here disagreement is ordinary uncertainty about what to do. The speaker works through it by appeals to character (ēthos), emotion (pathos) and argument (logos). The audience is a crowd that cannot follow long chains of reasoning.
 
 ## Moves
 - Argue from probabilities and signs (enthymeme)

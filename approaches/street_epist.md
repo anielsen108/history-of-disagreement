@@ -8,7 +8,7 @@
 - **Descends from:** [Socratic elenchus](elenchus.md), [Motivational interviewing](mi.md)
 
 
-This is the elenchus crossed with motivational interviewing. The questioner targets not the belief but the method by which the belief is held, asks for a confidence level, and explores what would change it. It is openly persuasive in intent, though practitioners stress rapport and the interlocutor’s autonomy.
+This is the elenchus crossed with motivational interviewing. The questioner examines how a belief is held more than the belief itself. They ask for a confidence level and explore what would change it. It is openly persuasive in intent, though practitioners stress rapport and the interlocutor’s autonomy.
 
 ## Moves
 - Identify a claim and a confidence level

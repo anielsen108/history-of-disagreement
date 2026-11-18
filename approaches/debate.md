@@ -10,7 +10,7 @@
 - **Descends from:** [Parliamentary debate](parliament.md), [Deliberative rhetoric](rhetoric.md)
 
 
-Sides are assigned, often by lot, and the speaker argues whatever they are given. Ticketed London debating societies of the 1770s–90s took up questions of politics, religion and the sexes. The Unions trained a governing class. The modern tournament formats (British Parliamentary, policy, Lincoln–Douglas) descend from in utramque partem. They prize advocacy over belief, which is either their virtue or their vice.
+Sides are assigned, often by lot, and the speaker argues whatever they are given. Ticketed London debating societies of the 1770s–90s took up questions of politics, religion and the sexes. The Unions trained a governing class. The modern tournament formats (British Parliamentary, policy, Lincoln–Douglas) descend from in utramque partem. They prize advocacy over belief. Defenders call this a virtue and critics a vice.
 
 ## Moves
 - Sides assigned

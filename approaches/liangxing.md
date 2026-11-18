@@ -10,7 +10,7 @@
 - **Descends from:** [Mohist disputation](bian.md)
 
 
-Suppose you and I argue and you beat me: does that make you right? No third party can adjudicate, since any judge either agrees with one of us or with neither. The sage stops at the pivot of the Way (daoshu), lets ‘this’ and ‘that’ both proceed, and uses the light (yiming) of seeing that each ‘this’ is someone else’s ‘that’. This is a mockery of Mohist bian that is also a technique.
+Zhuangzi asks whether winning an argument makes the winner right, and answers that it does not. No third party can adjudicate, since any judge either agrees with one of us or with neither. The sage stops at the pivot of the Way (daoshu), lets ‘this’ and ‘that’ both proceed, and uses the light (yiming) of seeing that each ‘this’ is someone else’s ‘that’. The passage mocks Mohist disputation and also teaches a technique.
 
 ## Moves
 - Notice each side’s ‘this’ (shi) is indexical

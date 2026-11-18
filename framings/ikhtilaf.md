@@ -6,7 +6,7 @@
 - **Remedy implied:** Tolerate madhhab difference; study khilāf.
 - **Methods presupposing it:** [Science of juristic disagreement](../approaches/khilaf.md)
 
-Diverse rulings reached by sincere ijtihād are each rewarded, even when mistaken. A saying attributed to the Prophet, ‘the disagreement of my community is a mercy’, is of weak attestation but culturally powerful. The schools’ plurality was understood as latitude for believers, not as scandal.
+Diverse rulings reached by sincere ijtihād are each rewarded, even when mistaken. A saying attributed to the Prophet, ‘the disagreement of my community is a mercy’, is weakly attested, yet it has been widely cited. Jurists read the plurality of the schools as latitude for believers.
 
 ## Sources
 - al-Bukhārī. *Ṣaḥīḥ al-Bukhārī*, Kitāb al-Iʿtiṣām, no. 7352 (the ijtihād hadith). https://sunnah.com/bukhari:7352 — 7352

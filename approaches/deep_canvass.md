@@ -10,11 +10,11 @@
 - **Descends from:** [Motivational interviewing](mi.md), [Rogerian exchange](rogerian.md)
 
 
-Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier, fabricated study of the method (LaCour & Green, 2014, retracted 2015) makes the later replication more, not less, significant.
+Canvassers hold ten-minute door-step conversations. They ask for the voter’s view, listen non-judgmentally, exchange personal stories, and invite the voter to reflect on a time they were judged. Field experiments found durable attitude change. An earlier study of the method was fabricated (LaCour & Green, 2014, retracted 2015). The genuine replication that followed therefore carries extra weight.
 
 ## Moves
 - Elicit their view and rating
-- Exchange stories rather than arguments
+- Exchange stories instead of arguments
 - Invite reflection; re-ask the rating
 
 ## Sources

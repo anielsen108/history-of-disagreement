@@ -10,7 +10,7 @@
 - **Descends from:** [Arguing both sides](utramque.md), [Antilogic](antilogic.md)
 - **Gave rise to:** [Free conversation](conference.md)
 
-Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement itself (diaphōnia) is the first of Agrippa’s five modes. Undecidable dispute among philosophers and ordinary people is a reason to suspend judgment, not to pick a side.
+Scepticism is ‘an ability to set out oppositions among things that appear and are thought of in any way at all’. Equal force on both sides yields suspension of judgment, and tranquillity follows ‘like a shadow’. Disagreement itself (diaphōnia) is the first of Agrippa’s five modes. When philosophers and ordinary people dispute with no way to decide, the sceptic suspends judgment and picks no side.
 
 ## Moves
 - Oppose appearance to appearance, thought to thought

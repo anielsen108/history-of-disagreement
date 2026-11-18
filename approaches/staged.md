@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md)
 - **Gave rise to:** [Sovereign arbitration](arbitration.md)
 
-Before a king, Jewish scholars were compelled to debate Christian (often convert) disputants on whether the Talmud attests the Messiah’s advent. The outcome was politically fixed before it began. Nahmanides was granted freedom of speech and was later prosecuted for publishing his account. The form of disputation persisted while its content became theatre of domination.
+Before a king, Jewish scholars were compelled to debate Christian (often convert) disputants on whether the Talmud attests the Messiah’s advent. The outcome was politically fixed before it began. Nahmanides was granted freedom of speech and was later prosecuted for publishing his account. The disputation kept its form, but power had settled the result in advance.
 
 ## Moves
 - Sovereign sets the question and the limits of speech

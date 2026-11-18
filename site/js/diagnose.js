@@ -24,7 +24,7 @@
     axiological: "a choice of priorities, or an arrangement for coexistence", interest: "a deal both can accept",
     power: "a decision procedure both accept as legitimate", psyche: "safety and being heard",
     relational: "recognition, respect and repair", contemplative: "letting go of the position, or reverence for what is at stake",
-    generative: "keeping the tension productive rather than ending it"
+    generative: "keeping the tension productive and leaving it open"
   };
   const STASIS_ORDER = ["epistemic", "linguistic", "axiological", "power"];
 

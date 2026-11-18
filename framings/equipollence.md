@@ -6,7 +6,7 @@
 - **Remedy implied:** Suspension; critique of the question; demarcation.
 - **Methods presupposing it:** [Arguing both sides](../approaches/utramque.md), [Pyrrhonian equipollence](../approaches/pyrrhonian.md), [Prasaṅga (reductio without thesis)](../approaches/prasanga.md)
 
-Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The dispute is a structural feature of the question, not a fault of the disputants.
+Some disputes are interminable because the arguments on each side are of equal force (isostheneia). For Sextus this is a reason to suspend judgment. For Kant, the antinomies show reason in conflict with itself whenever it overreaches experience. The deadlock comes from the question itself, so neither disputant is at fault.
 
 ## Sources
 - Sextus Empiricus. *Outlines of Scepticism*. Translated by Julia Annas and Jonathan Barnes. 2nd ed. Cambridge: Cambridge University Press, 2000. — PH 1.8, 1.165

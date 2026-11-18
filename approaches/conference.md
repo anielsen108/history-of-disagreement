@@ -10,7 +10,7 @@
 - **Descends from:** [Arguing both sides](utramque.md), [Pyrrhonian equipollence](pyrrhonian.md)
 - **Gave rise to:** [Coffeehouse & public sphere](coffeehouse.md)
 
-Montaigne calls conversation ‘the most fruitful and natural exercise of our mind’. He welcomes contradiction: ‘when someone opposes me, he arouses my attention, not my anger’. What he hates is obstinacy and the scholastic manner that cares more for forms than for truth. Disagreement is pleasurable friction between well-made minds, a model taken up by the salon and the honnête homme.
+Montaigne calls conversation ‘the most fruitful and natural exercise of our mind’. He welcomes contradiction: ‘when someone opposes me, he arouses my attention, not my anger’. What he hates is obstinacy and the scholastic manner that cares more for forms than for truth. For Montaigne, disagreement is a pleasure shared by well-made minds. The salon and the ideal of the honnête homme took up this model.
 
 ## Moves
 - Welcome correction

@@ -10,7 +10,7 @@
 - **Descends from:** [Parliamentary debate](parliament.md)
 
 
-Against Habermasian consensus, Mouffe argues that antagonism is ineradicable and every consensus is a hegemonic settlement that excludes. The democratic task is to turn antagonism (enemy against enemy) into agonism (adversary against adversary): opponents who share allegiance to liberty and equality and fight over their interpretation. Disagreement should be given institutional channels, not dissolved.
+Against Habermasian consensus, Mouffe argues that antagonism is ineradicable and every consensus is a hegemonic settlement that excludes. The democratic task is to turn antagonism (enemy against enemy) into agonism (adversary against adversary): opponents who share allegiance to liberty and equality and fight over their interpretation. Democracies should give disagreement institutional channels and stop trying to dissolve it.
 
 ## Moves
 - Name the conflict as political, not moral

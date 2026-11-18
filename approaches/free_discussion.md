@@ -10,7 +10,7 @@
 - **Descends from:** [Arguing both sides](utramque.md)
 - **Gave rise to:** [Ideological Turing test & steelmanning](itt.md)
 
-Milton wrote: ‘Let her and Falsehood grapple; who ever knew Truth put to the worse, in a free and open encounter?’ Mill’s second chapter gives the argument its canonical form. The suppressed opinion may be true. It may hold part of the truth. Even if false, its collision with truth keeps truth from becoming dead dogma. ‘He who knows only his own side of the case, knows little of that.’
+Milton wrote: ‘Let her and Falsehood grapple; who ever knew Truth put to the worse, in a free and open encounter?’ The second chapter of Mill’s *On Liberty* gives the argument its canonical form. The suppressed opinion may be true. It may hold part of the truth. Even if false, its collision with truth keeps truth from becoming dead dogma. ‘He who knows only his own side of the case, knows little of that.’
 
 ## Moves
 - Do not suppress dissent

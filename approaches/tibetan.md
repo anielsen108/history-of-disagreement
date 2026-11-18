@@ -10,7 +10,7 @@
 - **Descends from:** [Prasaṅga (reductio without thesis)](prasanga.md), [Vāda (good-faith debate)](vada.md)
 
 
-A standing defender sits, and a challenger stands, claps and stamps on each point. The challenger presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. Dreyfus describes it as hermeneutics through combat: a pedagogy of internalising a canon by being forced to defend it in public.
+A standing defender sits, and a challenger stands, claps and stamps on each point. The challenger presses consequences (thal ’gyur) built from the defender’s own answers. The defender may reply only ‘I accept’, ‘the reason is not established’ or ‘there is no pervasion’. Dreyfus calls it hermeneutics through combat. Monks learn the canon by being forced to defend it in public.
 
 ## Moves
 - State a consequence

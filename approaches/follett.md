@@ -10,7 +10,7 @@
 - **Descends from:** [Speculative dialectic](hegel.md)
 - **Gave rise to:** [Mediation](mediation.md), [Principled negotiation](principled.md)
 
-Conflict is ‘the appearance of difference, difference of opinions, of interests’, and should be used rather than deplored. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.
+Conflict is ‘the appearance of difference, difference of opinions, of interests’, and Follett says we should use it. There are three ways to deal with it. Domination gives one side its way. Compromise makes each side give up something. Integration finds a solution in which ‘both desires have found a place’. In her library example, one reader wanted the window open and another wanted it shut, and opening a window in the next room satisfied both. Getting to Yes is largely Follett with case studies.
 
 ## Moves
 - Bring the difference into the open

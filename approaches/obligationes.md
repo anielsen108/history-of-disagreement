@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md), [Aristotelian dialectic](aristotelian_dialectic.md)
 - **Gave rise to:** [Formal dialectic & dialogue types](formal_dialectic.md)
 
-A formal logic game. The respondent is ‘obliged’ to maintain a possibly false proposition (the positum). The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. It is commitment management, and modern scholars read it as an ancestor of belief-revision and dialogue logics.
+A formal logic game. The respondent is ‘obliged’ to maintain a possibly false proposition (the positum). The opponent then proposes further sentences, which the respondent must grant, deny or doubt so as to keep the set consistent. The respondent loses by contradiction. The game trains the management of commitments. Modern scholars read it as an ancestor of belief-revision and dialogue logics.
 
 ## Moves
 - Positum accepted

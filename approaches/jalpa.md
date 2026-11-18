@@ -10,7 +10,7 @@
 - **Descends from:** [Vāda (good-faith debate)](vada.md)
 - **Gave rise to:** [Prasaṅga (reductio without thesis)](prasanga.md)
 
-Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis: pure refutation. Nyāya permits both, as a hedge of thorns protecting the seedling of truth against unscrupulous opponents. This is a sober admission that good-faith procedures need a defence against bad faith.
+Jalpa is debate for victory, permitted to use quibbles (chala), futile rejoinders (jāti) and the opponent’s slips. Vitaṇḍā is jalpa without a counter-thesis: pure refutation. Nyāya permits both. The Nyāya-sūtra compares them to a hedge of thorns that protects the seedling of truth from unscrupulous opponents. The school thus admits that good-faith debate needs a defence against bad faith.
 
 ## Moves
 - Exploit chala and jāti

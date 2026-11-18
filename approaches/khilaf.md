@@ -10,7 +10,7 @@
 - **Descends from:** [Jadal & munāẓara](munazara.md)
 
 
-Juristic disagreement is catalogued and explained rather than eliminated. The hadith of ijtihād holds that a judge who strives and is right earns two rewards, and one who strives and errs still earns one. Ibn Rushd’s handbook traces each disagreement to its cause: an ambiguous term, conflicting reports, an analogy pulling against a text. The genre is in effect an ancient account of the burdens of judgment.
+The khilāf literature catalogues and explains juristic disagreement and makes no attempt to eliminate it. The hadith of ijtihād holds that a judge who strives and is right earns two rewards, and one who strives and errs still earns one. Ibn Rushd’s handbook traces each disagreement to its cause: an ambiguous term, conflicting reports, an analogy pulling against a text. The genre anticipates Rawls’s burdens of judgment by eight centuries.
 
 ## Moves
 - Lay out each school’s ruling

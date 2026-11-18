@@ -6,7 +6,7 @@
 - **Remedy implied:** Bridging ranking; cross-cutting contact; de-sorting.
 - **Methods presupposing it:** [Reflective structured dialogue](../approaches/public_conv.md), [Bridging systems](../approaches/polis.md), [AI-mediated deliberation](../approaches/ai_mediated.md)
 
-Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement becomes a sorting of social identity, amplified by engagement-ranked media. The measurable object is not belief distance but cross-group affect.
+Partisans increasingly dislike and distrust each other, often more than their policy differences warrant. Disagreement becomes a sorting of social identity, amplified by engagement-ranked media. Researchers measure it as hostility between groups, which can grow while policy views stay close.
 
 ## Sources
 - Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. “Affect, Not Ideology: A Social Identity Perspective on Polarization.” *Public Opinion Quarterly* 76, no. 3 (2012): 405–431.

@@ -10,7 +10,7 @@
 - **Descends from:** [Scholastic disputation](disputatio.md)
 - **Gave rise to:** [Community of inquiry](peirce.md), [Adversarial collaboration](adv_collab.md)
 
-After civil war over doctrine, natural philosophers moved dispute off contested causes and onto witnessed matters of fact. These were produced by machines such as the air-pump, attested by gentlemen, and reported in a modest style. Shapin and Schaffer show this was as much a political technology as an epistemic one: a way of making disagreement safe by giving it a narrow, public, inspectable object. Hobbes saw it as a recipe for faction.
+After civil war over doctrine, natural philosophers moved dispute off contested causes and onto witnessed matters of fact. These were produced by machines such as the air-pump, attested by gentlemen, and reported in a modest style. Shapin and Schaffer argue that this was a political technology as well as an epistemic one. It made disagreement safe by giving it a narrow, public object that anyone could inspect. Hobbes saw it as a recipe for faction.
 
 ## Moves
 - Narrow the dispute to an observable

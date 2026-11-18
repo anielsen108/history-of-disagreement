@@ -8,7 +8,7 @@
 - **Descends from:** [Free and open encounter](free_discussion.md), [Rapoport’s rules & region of validity](rapoport.md)
 - **Gave rise to:** [Double crux](double_crux.md)
 
-Can you state your opponent’s view so well that their own side cannot tell you from a true believer? Caplan’s test, taking off from Mill’s ‘know the other side’, operationalises understanding as indistinguishability. Steelmanning asks for the strongest version, which may be stronger than the one its holders actually hold. That subtle difference sometimes turns charity into ventriloquism.
+Caplan’s test asks whether you can state your opponent’s view so well that their own side cannot tell you from a true believer. It builds on Mill’s ‘know the other side’ and measures understanding by indistinguishability. Steelmanning asks for the strongest version, which may be stronger than the one its holders actually hold. At that point charity can turn into ventriloquism.
 
 ## Moves
 - Write the opposing position

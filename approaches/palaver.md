@@ -10,7 +10,7 @@
 
 
 
-Wiredu reconstructs Asante council politics as consensual rather than majoritarian. Talk continues until a position is reached that all can accept as a basis for action, though not necessarily one all believe true. The premise is that ultimate interests are shared even when immediate interests conflict. Wiredu offers it as a model for a ‘non-party polity’.
+Wiredu reconstructs Asante council politics as government by consensus, with no majority vote. Talk continues until a position is reached that all can accept as a basis for action, though not necessarily one all believe true. The premise is that ultimate interests are shared even when immediate interests conflict. Wiredu offers it as a model for a ‘non-party polity’.
 
 ## Moves
 - Talk until a common basis for action is found

@@ -6,7 +6,7 @@ var HOD = window.HOD = window.HOD || {};
 HOD.teloi = [
   { id: "truth",       name: "Truth",        gloss: "Disagreement is a symptom of error; the exchange exists to remove it. Winning is incidental." },
   { id: "victory",     name: "Victory",      gloss: "The exchange is a contest. Its product is a winner, a reputation, or an audience persuaded." },
-  { id: "formation",   name: "Formation",    gloss: "Disputation as gymnasium: the point is the trained disputant, not the settled question." },
+  { id: "formation",   name: "Formation",    gloss: "Disputation is a gymnasium. Its product is a trained disputant, and the question may stay open." },
   { id: "decision",    name: "Decision",     gloss: "A collective must act; disagreement is processed into a binding choice without being dissolved." },
   { id: "settlement",  name: "Settlement",   gloss: "Parties want different things; the exchange seeks terms both can accept." },
   { id: "understanding", name: "Understanding", gloss: "The exchange aims at accurate mutual comprehension and repaired relation; agreement is optional." },

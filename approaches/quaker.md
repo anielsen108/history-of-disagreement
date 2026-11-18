@@ -10,7 +10,7 @@
 
 - **Gave rise to:** [Activist consensus process](consensus.md)
 
-No vote is taken. The clerk listens for and minutes the ‘sense of the meeting’, the unity the gathered body discerns under divine guidance. A Friend who disagrees may ‘stand aside’ or may block. Disagreement is read as unfinished discernment, not as opposing interests, and silence is a working instrument. This is the source of most secular consensus process.
+No vote is taken. The clerk listens for and minutes the ‘sense of the meeting’, the unity the gathered body discerns under divine guidance. A Friend who disagrees may ‘stand aside’ or may block. Friends read disagreement as discernment that is not yet finished. Silence is one of the meeting’s working tools. Most secular consensus process descends from this practice.
 
 ## Moves
 - Worshipful silence
