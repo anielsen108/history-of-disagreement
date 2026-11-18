@@ -24,6 +24,7 @@
     if (H.M[id]) { open.add(tk(H.M[id])); H.M[id].views.forEach((v) => open.add(dk(H.V[v]))); }
     else if (H.V[id]) { open.add(dk(H.V[id])); H.V[id].methods.forEach((x) => open.add(tk(H.M[x.id]))); }
   });
+  H.bipAllLinks = (on) => { allLinks = on; };
   H.bipOpenAll = () => { H.teloi.forEach((t) => open.add("t:" + t.id)); H.domains.forEach((d) => open.add("d:" + d.id)); };
 
   H.drawBipartite = function (host, opts = {}) {

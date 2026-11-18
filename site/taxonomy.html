@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // A link to one entry opens its group and its partners' groups. A Diagnose result opens every group it kept.
   if (pinned) H.bipExpand([pinned]);
-  if (H.filters.only) H.bipOpenAll();
+  if (H.filters.only) { H.bipOpenAll(); H.bipAllLinks(true); }
   function draw() {
     H.drawBipartite(document.getElementById("wheel"), { filtered: true, to, pin: pinned, onPin: (id) => { pinned = id; writeURL(); } });
     writeURL();

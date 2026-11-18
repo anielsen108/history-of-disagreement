@@ -386,22 +386,7 @@ pre.schema { background: var(--paper); border: 1px solid var(--rule); border-rad
 .thesis b { font-family: var(--sans); font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-right: .3rem; }
 .page-thesis { font-size: .9rem; color: var(--ink-3); max-width: var(--measure); border-left: 2px solid var(--rule); padding-left: .7rem; }
 
-/* ── folded entries on the list pages ───────────────── */
-details.fold { padding: .55rem 0 .5rem; scroll-margin-top: 120px; }
-.group-head { scroll-margin-top: 120px; }
-details.fold > summary { cursor: pointer; list-style: none; display: grid; grid-template-columns: 1fr auto; column-gap: .8rem; align-items: baseline; }
-details.fold > summary::-webkit-details-marker { display: none; }
-details.fold .f-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; line-height: 1.2; }
-details.fold .f-name::before { content: "▸"; display: inline-block; width: 1em; font-size: .7em; color: var(--ink-3); transition: transform .12s; }
-details.fold[open] .f-name::before { transform: rotate(90deg); }
-details.fold > summary .chip { grid-column: 2; }
-details.fold .f-when { grid-column: 1 / -1; font-family: var(--sans); font-size: .8rem; color: var(--ink-3); padding-left: 1rem; }
-details.fold .f-line { grid-column: 1 / -1; color: var(--ink-2); padding-left: 1rem; }
-details.fold[open] .f-line { display: none; }
-details.fold[open] { padding-bottom: 1.1rem; }
-details.fold[open] > summary { margin-bottom: .4rem; }
-details.fold > summary:hover .f-name { color: var(--accent); }
-details.fold > :not(summary) { margin-left: 1rem; }
+/* ── list page helpers ──────────────────────────────── */
 .legend.jump { margin: .6rem 0 0; }
 .legend.jump a.chip { text-decoration: none; color: var(--ink); }
 .filterbar .btn { margin-left: .3rem; }
@@ -429,7 +414,7 @@ svg.mini .mh { font-size: 9.5px; letter-spacing: .08em; fill: var(--ink-3); font
 .helpdl dd { margin: 0; }
 kbd { font-family: var(--mono, ui-monospace, monospace); font-size: .8em; border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0 .35em; background: var(--bg); }
 @media (max-width: 640px) { .helpdl { grid-template-columns: 1fr; gap: 0; } .helpdl dd { margin-bottom: .45rem; } .help-btn { margin-left: 0; } }
-@media print { dialog.modal { display: none !important; } details.fold > :not(summary) { display: block; } }
+@media print { dialog.modal, .dock { display: none !important; } }
 
 /* ── marks: a square for methods and aims, a circle for views and domains ── */
 .dot { display: inline-block; width: .6em; height: .6em; border-radius: 50%; margin-right: .32em; flex: none; }
