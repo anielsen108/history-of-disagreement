@@ -15,20 +15,27 @@
 <main>
   <div class="kicker">Graphic taxonomy</div>
   <h1>Taxonomy</h1>
-  <p class="lede">The same corpus is drawn three ways. The two-column diagram shows which diagnosis each method presupposes. The lineage map shows who descends from whom. The table spells out every link by name.</p>
+  <p class="lede">The same corpus is drawn four ways. The two-column diagram shows which diagnosis each method presupposes. The lineage map shows who descends from whom. The table spells out every link by name. The last tab shows how the mix of diagnoses shifted over time.</p>
 
   <div class="tabs" role="tablist">
     <button role="tab" aria-selected="true" data-tab="t-wheel">Method ↔ view</button>
     <button role="tab" aria-selected="false" data-tab="t-lineage">Lineage of methods</button>
     <button role="tab" aria-selected="false" data-tab="t-matrix">Table</button>
+    <button role="tab" aria-selected="false" data-tab="t-drift">Over time</button>
   </div>
 
   <section class="tabpanel" id="t-wheel">
     <div class="viz-frame">
-      <div id="legend-t1"></div><div id="legend-d1"></div>
+      <div class="facets">
+        <div id="f-telos"></div><div id="f-domain"></div><div id="f-culture"></div>
+        <div class="slider"><button type="button" class="btn" id="play" aria-label="Play through the centuries">▶ Play</button>
+          <label for="to">Show everything up to</label><input type="range" id="to" min="-600" max="2100" step="100" value="2100"><output id="to-out" for="to">the present</output></div>
+        <div class="facet-actions"><span class="meta">Click chips to hide or show a group. The address bar keeps the current filters, so you can share the exact view.</span>
+          <button type="button" class="linkbtn" id="reset">Reset filters</button> <button type="button" class="linkbtn" id="copy">Copy link to this view</button></div>
+      </div>
       <div id="wheel"></div>
     </div>
-    <p class="viz-caption">Threads are coloured by the method’s telos. Within each domain, views are ordered by the average height of the methods that use them, which cuts down crossings. Dashed threads mark primary pairings that scholars contest. Hover a group heading to light a whole telos or domain. Click a name to focus it; click again, or press “Read entry”, to open it.</p>
+    <p class="viz-caption">Threads are coloured by the method’s telos. Within each domain, views are ordered by the average height of the methods that use them, which cuts down crossings. Dashed threads mark primary pairings that scholars contest. Hover a group heading to light a whole telos or domain. Click a name to focus it; click again, or press “Read entry”, to open it. The slider hides methods and views dated after the chosen year, so pressing Play builds the field century by century.</p>
   </section>
 
   <section class="tabpanel" id="t-lineage" hidden>
@@ -47,6 +54,14 @@
     <h2>Telos × domain</h2>
     <div id="tdt"></div>
   </section>
+
+  <section class="tabpanel" id="t-drift" hidden>
+    <div class="viz-toolbar"><label for="dmode">Count</label>
+      <select id="dmode"><option value="primary">each method once, by its primary view</option><option value="all">every view a method presupposes</option></select></div>
+    <div class="viz-frame"><div id="legend-d3"></div><div id="driftchart"></div></div>
+    <p class="viz-caption">Each bar is one period; its segments give the share of that period’s methods whose diagnosis falls in each domain. Some periods hold only a few methods (one, for 1900–1950), so read their percentages as rough. Two things still show. Before 1800 no method locates disagreement in the psyche or in the relationship; epistemic, linguistic, power and contemplative diagnoses fill most of it. From 1950 to 1980 the psyche, interest and relational domains together hold seven methods in ten. After 1980 epistemic diagnoses recover with the rationalist and deliberative practices, but relational ones keep a fifth of the field. That is the “therapeutic turn” discussed on the <a href="index.html">overview</a>, and its partial reversal.</p>
+    <div id="drifttable"></div>
+  </section>
 </main>
 <script src="vendor/d3.min.js"></script>
 <script src="data/sources.js"></script>
@@ -54,32 +69,95 @@
 <script src="data/methods.js"></script>
 <script src="data/views.js"></script>
 <script src="data/extras.js"></script>
+<script src="data/people.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/content.js"></script>
 <script src="js/common.js"></script>
 <script src="js/bipartite.js"></script>
 <script src="js/lineage.js"></script>
 <script src="js/matrix.js"></script>
+<script src="js/drift.js"></script>
 <script src="js/pages.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const H = HOD;
-  document.getElementById("legend-t1").append(H.legend("Telos", H.teloi, H.teloColor));
-  document.getElementById("legend-d1").append(H.legend("Domain", H.domains, H.domainColor));
-  document.querySelectorAll("#t-wheel .legend button").forEach(b => b.disabled = true);
-  H.drawBipartite(document.getElementById("wheel"));
+  const q = new URLSearchParams(location.search);
+  const setOf = (k, all) => q.get(k) ? new Set(q.get(k).split(",").filter((x) => all.some((y) => y.id === x))) : null;
+  const F = { telos: setOf("telos", H.teloi), domain: setOf("domain", H.domains), culture: setOf("culture", H.cultures), to: q.get("to") ? +q.get("to") : null };
+  let pinned = q.get("focus"), tab = q.get("tab") || (["wheel", "lineage", "matrix", "drift"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "wheel");
+  const MAXY = 2100;
+
+  function writeURL() {
+    const p = new URLSearchParams();
+    if (tab !== "wheel") p.set("tab", tab);
+    ["telos", "domain", "culture"].forEach((k) => { if (F[k]) p.set(k, [...F[k]].join(",")); });
+    if (F.to != null && F.to < MAXY) p.set("to", F.to);
+    if (pinned) p.set("focus", pinned);
+    const s = p.toString();
+    try { history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash.replace(/^#(wheel|lineage|matrix|drift)$/, "")); } catch (e) {}
+  }
+  const full = (set, all) => !set || set.size === all.length ? null : set;
+  let api = {};
+  function draw() {
+    api = H.drawBipartite(document.getElementById("wheel"), { filter: F, pin: pinned, onPin: (id) => { pinned = id; writeURL(); } });
+    writeURL();
+  }
+  const facet = (host, title, items, colors, key) => document.getElementById(host).append(
+    H.legend(title, items, colors, (on) => { F[key] = full(on, items); draw(); }, F[key] || undefined));
+  facet("f-telos", "Telos", H.teloi, H.teloColor, "telos");
+  facet("f-domain", "Domain", H.domains, H.domainColor, "domain");
+  facet("f-culture", "Culture", H.cultures, null, "culture");
+
+  const to = document.getElementById("to"), out = document.getElementById("to-out"), play = document.getElementById("play");
+  const label = (y) => (y >= MAXY ? "the present" : H.year(y));
+  if (F.to != null) to.value = F.to;
+  out.textContent = label(+to.value);
+  to.oninput = () => { F.to = +to.value >= MAXY ? null : +to.value; out.textContent = label(+to.value); draw(); };
+  let timer = null;
+  const stop = () => { clearInterval(timer); timer = null; play.textContent = "▶ Play"; };
+  play.onclick = () => {
+    if (timer) return stop();
+    if (+to.value >= MAXY) to.value = to.min;
+    play.textContent = "❚❚ Pause";
+    to.oninput();
+    timer = setInterval(() => {
+      const v = +to.value + 100;
+      if (v > MAXY) return stop();
+      to.value = v; to.oninput();
+    }, 650);
+  };
+  document.getElementById("reset").onclick = () => { location.href = location.pathname; };
+  document.getElementById("copy").onclick = (e) => {
+    const done = () => { e.target.textContent = "Link copied"; setTimeout(() => (e.target.textContent = "Copy link to this view"), 1500); };
+    try { navigator.clipboard.writeText(location.href).then(done, done); } catch (err) { done(); }
+  };
+  draw();
+
   const lin = H.drawLineage(document.getElementById("lineage"));
-  document.getElementById("legend-t2").append(H.legend("Telos (click to filter)", H.teloi, H.teloColor, on => lin.filter(on)));
+  document.getElementById("legend-t2").append(H.legend("Telos (click to filter)", H.teloi, H.teloColor, (on) => lin.filter(on)));
   const sort = document.getElementById("sort");
-  const draw = () => H.drawMatrix(document.getElementById("matrix"), sort.value);
-  sort.onchange = draw; draw();
+  const drawM = () => H.drawMatrix(document.getElementById("matrix"), sort.value);
+  sort.onchange = drawM; drawM();
   H.telosDomainTable(document.getElementById("tdt"));
+
+  const dl = H.legend("Domain", H.domains, H.domainColor); dl.querySelectorAll("button").forEach((b) => (b.disabled = true));
+  document.getElementById("legend-d3").append(dl);
+  const dmode = document.getElementById("dmode");
+  const drawD = () => {
+    const rows = H.drawDrift(document.getElementById("driftchart"), dmode.value);
+    document.getElementById("drifttable").innerHTML = `<div class="mtable-wrap" style="max-height:none"><table class="simple"><thead><tr><th>Period</th>${H.domains.map((d) => `<th>${d.name}</th>`).join("")}<th>Total</th></tr></thead><tbody>${rows.map((r) => `<tr><th>${r.n}</th>${H.domains.map((d) => `<td>${r.c[d.id] || ""}</td>`).join("")}<td>${r.total}</td></tr>`).join("")}</tbody></table></div>`;
+  };
+  dmode.onchange = drawD; drawD();
+
   const tabs = document.querySelectorAll("[role=tab]");
   function show(id) {
-    tabs.forEach(t => t.setAttribute("aria-selected", t.dataset.tab === id));
-    document.querySelectorAll(".tabpanel").forEach(p => p.hidden = p.id !== id);
-    try { history.replaceState(null, "", "#" + id.slice(2)); } catch (e) {}
+    tab = id;
+    tabs.forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === "t-" + id));
+    document.querySelectorAll(".tabpanel").forEach((p) => (p.hidden = p.id !== "t-" + id));
+    writeURL();
   }
-  tabs.forEach(t => t.onclick = () => show(t.dataset.tab));
-  const h = location.hash.slice(1); if (["wheel", "lineage", "matrix"].includes(h)) show("t-" + h);
+  tabs.forEach((t) => (t.onclick = () => show(t.dataset.tab.slice(2))));
+  show(tab);
 });
 </script>
 </body>

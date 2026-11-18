@@ -1,0 +1,61 @@
+id,name,born,died,approx,region,infl,methods,views
+heraclitus,Heraclitus,-535,-475,true,greek,,,dialectical
+protagoras,Protagoras,-490,-420,true,greek,,antilogic,perspectival
+socrates,Socrates,-470,-399,false,greek,protagoras,elenchus,"aporia;unmeasurable"
+plato,Plato,-428,-348,true,greek,"socrates;heraclitus",platonic_dialectic,error
+aristotle,Aristotle,-384,-322,false,greek,plato,"aristotelian_dialectic;rhetoric","endoxa;equivocation"
+carneades,Carneades,-214,-129,false,greek,plato,utramque,
+cicero,Cicero,-106,-43,false,greek,"carneades;aristotle","stasis;utramque",
+sextus,Sextus Empiricus,160,210,true,greek,carneades,pyrrhonian,equipollence
+buddha,The Buddha,-480,-400,true,indic,,atthaka,attachment
+gautama,Akṣapāda Gautama,100,200,true,indic,,"vada;jalpa",
+nagarjuna,Nāgārjuna,150,250,true,indic,"buddha;gautama",prasanga,
+dharmakirti,Dharmakīrti,600,660,true,indic,"nagarjuna;gautama",,
+tsongkhapa,Tsongkhapa,1357,1419,false,indic,"nagarjuna;dharmakirti",tibetan,
+confucius,Confucius,-551,-479,false,sinitic,,zhengming,names
+mozi,Mozi,-470,-391,true,sinitic,confucius,bian,
+zhuangzi,Zhuangzi,-369,-286,true,sinitic,"mozi;confucius",liangxing,shi_fei
+xunzi,Xunzi,-310,-235,true,sinitic,"confucius;zhuangzi;mozi",zhengming,
+hillel,Hillel,-110,10,true,jewish,,machloket,divine_plurality
+maimonides,Maimonides,1138,1204,false,jewish,"hillel;aristotle;farabi",,
+nahmanides,Nahmanides,1194,1270,false,jewish,maimonides,staged,
+farabi,al-Fārābī,872,950,false,islamic,aristotle,,
+ghazali,al-Ghazālī,1058,1111,false,islamic,farabi,munazara,
+ibnrushd,Ibn Rushd,1126,1198,false,islamic,"aristotle;ghazali;farabi",khilaf,ikhtilaf
+abelard,Peter Abelard,1079,1142,false,latin,aristotle,disputatio,
+aquinas,Thomas Aquinas,1225,1274,false,latin,"abelard;aristotle;ibnrushd;maimonides",disputatio,
+burley,Walter Burley,1275,1344,true,latin,aristotle,obligationes,
+montaigne,Montaigne,1533,1592,false,early,"sextus;cicero",conference,
+hobbes,Thomas Hobbes,1588,1679,false,early,aristotle,arbitration,sovereign
+milton,John Milton,1608,1674,false,early,cicero,free_discussion,collision
+boyle,Robert Boyle,1627,1691,false,early,,experimental,
+leibniz,G. W. Leibniz,1646,1716,false,early,"aristotle;hobbes",calculemus,calculation
+hume,David Hume,1711,1776,false,early,"sextus;hobbes",,faction
+madison,James Madison,1751,1836,false,early,hume,,faction
+kant,Immanuel Kant,1724,1804,false,phil,"hume;leibniz",,equipollence
+hegel,G. W. F. Hegel,1770,1831,false,phil,"kant;heraclitus;plato",hegel,"recognition;dialectical"
+schopenhauer,Arthur Schopenhauer,1788,1860,false,phil,"kant;aristotle",schopenhauer,vanity
+mill,John Stuart Mill,1806,1873,false,phil,"milton;hume",free_discussion,"collision;perspectival"
+marx,Karl Marx,1818,1883,false,phil,hegel,,class
+peirce,C. S. Peirce,1839,1914,false,phil,kant,peirce,inquiry
+james,William James,1842,1910,false,phil,peirce,,equivocation
+nietzsche,Friedrich Nietzsche,1844,1900,false,phil,"heraclitus;schopenhauer",,"perspectival;powerknow"
+wittgenstein,Ludwig Wittgenstein,1889,1951,false,phil,schopenhauer,,hinges
+simmel,Georg Simmel,1858,1918,false,social,kant,,sociation
+weber,Max Weber,1864,1920,false,social,"nietzsche;kant",,warring_gods
+follett,Mary Parker Follett,1868,1933,false,social,hegel,follett,"constructive;interests"
+schmitt,Carl Schmitt,1888,1985,false,social,"hobbes;weber",,friend_enemy
+rogers,Carl Rogers,1902,1987,false,social,,rogerian,threat
+rapoport,Anatol Rapoport,1911,2007,false,social,rogers,rapoport,
+toulmin,Stephen Toulmin,1922,2009,false,phil,wittgenstein,toulmin,
+kuhn,Thomas Kuhn,1922,1996,false,phil,wittgenstein,,paradigm
+rawls,John Rawls,1921,2002,false,phil,"kant;mill",,burdens
+habermas,Jürgen Habermas,1929,,false,phil,"peirce;hegel;marx;kant",discourse_ethics,validity
+fisher,Roger Fisher,1922,2012,false,social,follett,principled,
+rosenberg,Marshall Rosenberg,1934,2015,false,social,rogers,nvc,needs
+rorty,Richard Rorty,1931,2007,false,phil,"james;wittgenstein;kuhn;hegel",,vocabularies
+lyotard,Jean-François Lyotard,1924,1998,false,phil,"wittgenstein;kant",,differend
+foucault,Michel Foucault,1926,1984,false,phil,nietzsche,,powerknow
+mouffe,Chantal Mouffe,1943,,false,social,"schmitt;wittgenstein",agonism,hegemony
+aumann,Robert Aumann,1930,,false,social,,,priors
+kahneman,Daniel Kahneman,1934,2024,false,social,,adv_collab,

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worked example · Disagreement, a history</title>
+<meta name="description" content="One family dispute run through stasis theory, the elenchus, principled negotiation, nonviolent communication and double crux: what each sees and what each misses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+</head>
+<body data-page="example" data-drawer-links="1">
+<main>
+  <div class="kicker">One dispute, several methods</div>
+  <h1>Worked example</h1>
+  <p class="lede">The same quarrel looks different through each method. Each one picks out a real part of it, and each one is blind to something the others see.</p>
+  <div id="ex"></div>
+</main>
+<script src="vendor/d3.min.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/taxonomy.js"></script>
+<script src="data/methods.js"></script>
+<script src="data/views.js"></script>
+<script src="data/extras.js"></script>
+<script src="data/people.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/content.js"></script>
+<script src="js/common.js"></script>
+<script src="js/pages.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const H = HOD;
+  const X = H.example;
+  document.getElementById("ex").innerHTML = `<section class="gcard"><h2>${X.title}</h2><p>${X.case}</p></section>` +
+    X.runs.map((r) => { const m = H.M[r.m]; return `<section class="gcard" style="border-left:4px solid ${H.teloColor[m.telos]}">
+      <h3>${H.link(m.id)}</h3><div class="meta">Telos: ${H.T[m.telos].name} · diagnosis: ${H.V[m.views[0]].name} (${H.D[H.V[m.views[0]].domain].name})</div>
+      <div class="ex-run"><div><h4>What it sees</h4><p>${r.sees}</p></div><div><h4>What it misses</h4><p>${r.misses}</p></div></div></section>`; }).join("") +
+    `<section class="gcard"><h3>The moral</h3><p>${X.moral}</p><p><a href="diagnose.html">Try the diagnostic on a dispute of your own →</a></p></section>`;
+});
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 // Regenerates the Markdown research notes (approaches/, framings/, sources/, timeline.md)
 // from the site's data files, so the site and the notes never drift.
+// Also writes the open-data files in site/data/open/ (hod.json and CSVs).
 // Usage: node scripts/export-markdown.mjs
 import fs from "node:fs";
 import path from "node:path";
@@ -8,7 +9,7 @@ import vm from "node:vm";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const ctx = { window: {} };
 vm.createContext(ctx);
-for (const f of ["sources", "taxonomy", "methods", "views"]) {
+for (const f of ["sources", "taxonomy", "methods", "views", "extras", "people", "glossary", "content"]) {
   vm.runInContext(fs.readFileSync(path.join(root, "site/data", f + ".js"), "utf8"), ctx);
 }
 const H = ctx.window.HOD;
@@ -74,3 +75,40 @@ write(path.join(root, "timeline.md"), `# Timeline\n\nGenerated from the site dat
   [...H.methods.map((x) => ["method", x]), ...H.views.map((x) => ["view", x])].sort((a, b) => a[1].date - b[1].date)
     .map(([k, x]) => `| ${year(x.date)} | ${k} | [${x.name}](${k === "method" ? "approaches" : "framings"}/${x.id}.md) | ${md(x.when)} |`).join("\n"));
 console.log(`wrote ${H.methods.length} approaches, ${H.views.length} framings, ${keys.length} sources`);
+
+// ── open data ─────────────────────────────────────────
+const plain = (s) => (s == null ? "" : String(s).replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
+const csvCell = (v) => { const s = Array.isArray(v) ? v.join(";") : plain(v); return /[",\n;]/.test(s) || /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+const csv = (cols, rows) => [cols.join(","), ...rows.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\n") + "\n";
+const X = H.extras || {};
+const methods = H.methods.map((m) => ({
+  id: m.id, name: plain(m.name), native: plain(m.native), date: m.date, when: plain(m.when), who: plain(m.who), family: m.family, telos: m.telos,
+  primary_view: m.views[0], views: m.views, parents: m.parents, summary: plain(m.summary), moves: (m.moves || []).map(plain), note: plain(m.note),
+  date_confidence: (X[m.id] && X[m.id].conf && X[m.id].conf.date) || (m.date >= 1500 ? "firm" : "approx"),
+  pairing_confidence: (X[m.id] && X[m.id].conf && X[m.id].conf.pair) || "interpretive",
+  third_party: plain(X[m.id] && X[m.id].third), ends_well_when: plain(X[m.id] && X[m.id].resolution), typical_failure: plain(X[m.id] && X[m.id].failure),
+  critique: X[m.id] && X[m.id].critic ? { who: plain(X[m.id].critic.who), from_view: X[m.id].critic.view, text: plain(X[m.id].critic.text) } : null,
+  sources: m.cite.map(([k, loc]) => ({ key: k, loc: loc || "" }))
+}));
+const views = H.views.map((v) => ({
+  id: v.id, name: plain(v.name), date: v.date, when: plain(v.when), who: plain(v.who), domain: v.domain, summary: plain(v.summary), implies: plain(v.implies),
+  quote: v.quote ? { text: plain(v.quote.t), source: plain(v.quote.src) } : null, date_confidence: (H.viewConf || {})[v.id] || "firm",
+  methods: H.methods.filter((m) => m.views.includes(v.id)).map((m) => m.id), sources: v.cite.map(([k, loc]) => ({ key: k, loc: loc || "" }))
+}));
+const links = [];
+H.methods.forEach((m) => m.views.forEach((v, i) => links.push({ method: m.id, view: v, primary: i === 0, contested: i === 0 && X[m.id] && X[m.id].conf && X[m.id].conf.pair === "contested" ? true : false })));
+const out = path.join(root, "site/data/open");
+fs.mkdirSync(out, { recursive: true });
+const data = {
+  title: "Disagreement, a history: open data", license: "CC BY 4.0 for the data; quoted texts remain under their own terms", generated: new Date().toISOString().slice(0, 10),
+  teloi: H.teloi, families: H.families, domains: H.domains, regions: H.regions,
+  methods, views, links, people: H.people, glossary: H.glossary.map(({ id, term, lang, def, see }) => ({ id, term, lang, def, see })),
+  excerpts: H.excerpts, paths: H.paths, gaps: H.gaps, sources: Object.fromEntries(Object.entries(H.sources).map(([k, v]) => [k, plain(v)]))
+};
+fs.writeFileSync(path.join(out, "hod.json"), JSON.stringify(data, null, 1) + "\n");
+fs.writeFileSync(path.join(out, "methods.csv"), csv(["id", "name", "native", "date", "when", "who", "family", "telos", "primary_view", "views", "parents", "date_confidence", "pairing_confidence", "third_party", "ends_well_when", "typical_failure", "summary"], methods));
+fs.writeFileSync(path.join(out, "views.csv"), csv(["id", "name", "date", "when", "who", "domain", "date_confidence", "methods", "implies", "summary"], views));
+fs.writeFileSync(path.join(out, "links.csv"), csv(["method", "view", "primary", "contested"], links));
+fs.writeFileSync(path.join(out, "people.csv"), csv(["id", "name", "born", "died", "approx", "region", "infl", "methods", "views"], H.people.map((p) => ({ ...p, approx: !!p.approx, died: p.died == null ? "" : p.died, methods: p.methods || [], views: p.views || [] }))));
+fs.writeFileSync(path.join(out, "sources.csv"), csv(["key", "citation"], Object.entries(H.sources).map(([key, c]) => ({ key, citation: c }))));
+console.log(`wrote open data: ${methods.length} methods, ${views.length} views, ${links.length} links, ${H.people.length} people`);

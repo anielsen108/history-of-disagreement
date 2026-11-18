@@ -83,8 +83,8 @@
     // in-page xrefs open the drawer instead of navigating, on pages that have visuals
     document.addEventListener("click", (e) => {
       const a = e.target.closest("a.xref");
-      if (!a || !document.body.dataset.drawerLinks) return;
-      e.preventDefault(); H.open(a.dataset.id);
+      if (!a || !document.body.dataset.drawerLinks || a.closest(".drawer")) return;
+      e.preventDefault(); H.goto(a.dataset.id);
     });
   }
 

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading paths · Disagreement, a history</title>
+<meta name="description" content="Guided tours through the history of disagreement: dialectic, the therapeutic turn, refusing the fight, keeping the minority, computation, power, and words.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+</head>
+<body data-page="paths" data-drawer-links="1">
+<main>
+  <div class="kicker">Guided reading</div>
+  <h1>Reading paths</h1>
+  <p class="lede">Each path is a short tour of seven to nine entries, chosen to tell one story across traditions. Start a tour and step through it with the Next button or the arrow keys. Every stop has its own link.</p>
+  <div id="paths"></div>
+</main>
+<script src="vendor/d3.min.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/taxonomy.js"></script>
+<script src="data/methods.js"></script>
+<script src="data/views.js"></script>
+<script src="data/extras.js"></script>
+<script src="data/people.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/content.js"></script>
+<script src="js/common.js"></script>
+<script src="js/pages.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const H = HOD;
+  document.getElementById("paths").innerHTML = H.paths.map((p) => `<section class="gcard" id="${p.id}">
+    <h2>${p.name}</h2><p>${p.blurb}</p>
+    <div class="path-steps">${p.steps.map((s, i) => `<a href="#tour=${p.id}.${i}" data-tour="${p.id}" data-i="${i}">${H.dot(H.colorOf(s))}${H.get(s).name}</a>`).join('<span class="arrow">→</span>')}</div>
+    <button type="button" class="btn primary" data-tour="${p.id}" data-i="0">Start the tour</button> <span class="meta">${p.steps.length} stops</span></section>`).join("");
+  document.getElementById("paths").addEventListener("click", (e) => {
+    const t = e.target.closest("[data-tour]"); if (!t) return;
+    e.preventDefault(); H.startTour(t.dataset.tour, +t.dataset.i);
+  });
+});
+</script>
+</body>
+</html>

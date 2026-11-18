@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data and notes · Disagreement, a history</title>
+<meta name="description" content="Download the full dataset behind the site as JSON or CSV, and export the private notes you have made on entries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+</head>
+<body data-page="data" data-drawer-links="1">
+<main>
+  <div class="kicker">Open data & your notes</div>
+  <h1>Data and notes</h1>
+  <p class="lede">Everything on this site is drawn from a small set of data files. They are free to reuse under CC BY 4.0. The notes you write on entries stay in this browser; you can export them here.</p>
+  <h2>Download</h2>
+  <ul class="dl-list">
+    <li><a href="data/open/hod.json" download>hod.json</a>: everything (methods, views, links, people, glossary, excerpts, paths, gaps, sources, and the axes).</li>
+    <li><a href="data/open/methods.csv" download>methods.csv</a>: one row per method, with telos, family, views, confidence, third party, success and failure.</li>
+    <li><a href="data/open/views.csv" download>views.csv</a>: one row per view, with domain and the methods that presuppose it.</li>
+    <li><a href="data/open/links.csv" download>links.csv</a>: the method → view edges, flagged primary and contested.</li>
+    <li><a href="data/open/people.csv" download>people.csv</a>: people, lifetimes, regions and lines of influence.</li>
+    <li><a href="data/open/sources.csv" download>sources.csv</a>: the bibliography.</li>
+  </ul>
+  <p class="meta">List-valued CSV cells are separated by semicolons. Dates are plotting years (negative = BCE); the <code>when</code> field gives the honest range.</p>
+  <h2>Schema</h2>
+  <pre class="schema" id="schema"></pre>
+  <h2>Your notes</h2>
+  <div id="notes"></div>
+  <p><button type="button" class="btn" id="export">Export notes as JSON</button> <label class="btn" style="display:inline-block">Import notes <input type="file" id="import" accept="application/json" hidden></label> <button type="button" class="btn" id="clear">Delete all notes</button></p>
+  <h2>Corrections</h2>
+  <p class="prose">Every entry has a “Propose a correction” link under “Your notes”. It opens a pre-filled issue on <a href="https://github.com/anielsen108/history-of-disagreement/issues">GitHub</a>. Please name a source.</p>
+</main>
+<script src="vendor/d3.min.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/taxonomy.js"></script>
+<script src="data/methods.js"></script>
+<script src="data/views.js"></script>
+<script src="data/extras.js"></script>
+<script src="data/people.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/content.js"></script>
+<script src="js/common.js"></script>
+<script src="js/pages.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const H = HOD;
+  const ex = (o) => JSON.stringify(o, null, 1).slice(0, 900);
+  const m = H.methods[0];
+  document.getElementById("schema").textContent = `teloi, families, domains, regions: [{ id, name, gloss }]
+methods: [{ id, name, native, date, when, who, family, telos, primary_view, views[], parents[],
+            summary, moves[], note, date_confidence, pairing_confidence,
+            third_party, ends_well_when, typical_failure, critique: { who, from_view, text }, sources: [{ key, loc }] }]
+views:   [{ id, name, date, when, who, domain, summary, implies, quote: { text, source },
+            date_confidence, methods[], sources: [{ key, loc }] }]
+links:   [{ method, view, primary, contested }]
+people:  [{ id, name, born, died, approx, region, infl[], methods[], views[] }]
+glossary:[{ id, term, lang, def, see }]
+excerpts:[{ id, entry, who, src, tr, text }]
+paths:   [{ id, name, blurb, steps[] }]
+gaps:    { viewId: { method, sketch[], why } }
+sources: { key: citation }
+
+date_confidence: firm | approx | contested
+pairing_confidence: explicit (stated by the tradition) | interpretive (this site's reading) | contested`;
+  function renderNotes() {
+    const n = H.allNotes(), ks = Object.keys(n);
+    document.getElementById("notes").innerHTML = ks.length ? `<div class="viz-frame">${ks.map((k) => `<p><b>${H.get(k) ? H.link(k) : k}</b><br>${H.esc(n[k]).replace(/\n/g, "<br>")}</p>`).join("")}</div>`
+      : `<p class="meta">No notes yet. Open any entry and use “Your notes” at the bottom.</p>`;
+  }
+  renderNotes();
+  document.getElementById("export").onclick = () => {
+    const blob = new Blob([JSON.stringify({ exported: new Date().toISOString(), notes: H.allNotes() }, null, 1)], { type: "application/json" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "disagreement-notes.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  };
+  document.getElementById("import").onchange = (e) => {
+    const f = e.target.files[0]; if (!f) return;
+    f.text().then((t) => { try { const o = JSON.parse(t).notes || {}; Object.entries(o).forEach(([k, v]) => localStorage.setItem("hod-note-" + k, String(v))); renderNotes(); } catch (err) { document.getElementById("notes").insertAdjacentHTML("afterbegin", `<p class="note">That file could not be read as exported notes.</p>`); } });
+  };
+  document.getElementById("clear").onclick = (e) => {
+    if (e.target.dataset.armed) { Object.keys(H.allNotes()).forEach((k) => localStorage.removeItem("hod-note-" + k)); delete e.target.dataset.armed; e.target.textContent = "Delete all notes"; renderNotes(); }
+    else { e.target.dataset.armed = 1; e.target.textContent = "Click again to delete every note"; }
+  };
+});
+</script>
+</body>
+</html>

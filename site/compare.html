@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare two methods · Disagreement, a history</title>
+<meta name="description" content="Compare any two methods of disagreement side by side: telos, diagnosis, third party, what success looks like, how it fails, and its strongest critique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%232b6cb0' fill-opacity='.8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23c53030' fill-opacity='.8'/%3E%3C/svg%3E">
+</head>
+<body data-page="compare" data-drawer-links="1">
+<main>
+  <div class="kicker">Side by side</div>
+  <h1>Compare two methods</h1>
+  <p class="lede">Pick two methods. Rows where they agree are shaded, so the differences stand out. The address bar keeps your choice, so the comparison can be shared.</p>
+  <form class="cmp-pick" id="pick" onsubmit="return false">
+    <label>First method <select name="a"></select></label>
+    <label>Second method <select name="b"></select></label>
+    <button type="button" class="btn" id="swap">Swap</button>
+  </form>
+  <div id="verdict" class="prose"></div>
+  <div class="viz-frame"><table class="cmp" id="cmp"></table></div>
+</main>
+<script src="vendor/d3.min.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/taxonomy.js"></script>
+<script src="data/methods.js"></script>
+<script src="data/views.js"></script>
+<script src="data/extras.js"></script>
+<script src="data/people.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/content.js"></script>
+<script src="js/common.js"></script>
+<script src="js/pages.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const H = HOD;
+  const f = document.getElementById("pick"), A = f.a, B = f.b;
+  const opts = H.teloi.map((t) => `<optgroup label="${t.name}">${H.methods.filter((m) => m.telos === t.id).sort((a, b) => a.date - b.date).map((m) => `<option value="${m.id}">${H.strip(m.name)}</option>`).join("")}</optgroup>`).join("");
+  A.innerHTML = B.innerHTML = opts;
+  const q = new URLSearchParams(location.search);
+  A.value = H.M[q.get("a")] ? q.get("a") : "elenchus";
+  B.value = H.M[q.get("b")] ? q.get("b") : (A.value === "vada" ? "elenchus" : "vada");
+  const views = (m) => m.views.map((v, i) => H.link(v, { star: i === 0 })).join(", ");
+  const rows = [
+    ["Native name", (m) => m.native || "", (a, b) => false],
+    ["Date", (m) => m.when, (a, b) => Math.abs(a.date - b.date) < 50],
+    ["Family", (m) => H.F[m.family].name, (a, b) => a.family === b.family],
+    ["Telos", (m) => H.chip(H.T[m.telos].name, H.teloColor[m.telos]) + `<div class="meta">${H.T[m.telos].gloss}</div>`, (a, b) => a.telos === b.telos],
+    ["Primary diagnosis", (m) => H.link(m.views[0]) + ` <span class="meta">(${H.D[H.V[m.views[0]].domain].name})</span>`, (a, b) => a.views[0] === b.views[0]],
+    ["Domain of diagnosis", (m) => H.chip(H.D[H.V[m.views[0]].domain].name, H.domainColor[H.V[m.views[0]].domain]), (a, b) => H.V[a.views[0]].domain === H.V[b.views[0]].domain],
+    ["All views presupposed", views, (a, b) => a.views.some((v) => b.views.includes(v))],
+    ["Moves", (m) => (m.moves || []).length ? `<ul class="moves">${m.moves.map((x) => `<li>${x}</li>`).join("")}</ul>` : "", () => false],
+    ["Third party", (m) => m.third || "", () => false],
+    ["Ends well when", (m) => m.resolution || "", () => false],
+    ["Typical failure", (m) => m.failure || "", () => false],
+    ["Strongest critique", (m) => m.critic ? `${m.critic.text} <span class="meta">— ${m.critic.who}, from ${H.link(m.critic.view)}</span>` : "", () => false],
+    ["Confidence", (m) => H.confBadges(m), () => false],
+    ["Lineage", (m) => [m.parents.length ? "from " + m.parents.map((p) => H.link(p)).join(", ") : "", m.children.length ? "to " + m.children.map((p) => H.link(p)).join(", ") : ""].filter(Boolean).join("; "), () => false]
+  ];
+  function ancestors(id, seen = new Set()) { H.M[id].parents.forEach((p) => { if (!seen.has(p)) { seen.add(p); ancestors(p, seen); } }); return seen; }
+  function render() {
+    const a = H.M[A.value], b = H.M[B.value];
+    try { history.replaceState(null, "", `?a=${a.id}&b=${b.id}` + location.hash); } catch (e) {}
+    document.getElementById("cmp").innerHTML = `<thead><tr><th></th><th>${a.name}</th><th>${b.name}</th></tr></thead><tbody>` +
+      rows.map(([l, fn, same]) => { const s = same(a, b) ? " same" : ""; return `<tr><th>${l}</th><td class="c${s}" data-l="${H.strip(a.name)}">${fn(a)}</td><td class="c${s}" data-l="${H.strip(b.name)}">${fn(b)}</td></tr>`; }).join("") + "</tbody>";
+    const shared = a.views.filter((v) => b.views.includes(v));
+    const anA = ancestors(a.id), anB = ancestors(b.id);
+    const kin = anA.has(b.id) ? `${b.name} is an ancestor of ${a.name}.` : anB.has(a.id) ? `${a.name} is an ancestor of ${b.name}.` : [...anA].some((x) => anB.has(x)) ? `They share an ancestor: ${[...anA].filter((x) => anB.has(x)).map((x) => H.link(x)).join(", ")}.` : "They have no common ancestor in this survey.";
+    const sameT = a.telos === b.telos, sameV = a.views[0] === b.views[0], sameD = H.V[a.views[0]].domain === H.V[b.views[0]].domain;
+    const gist = sameT && sameV ? "Same end, same diagnosis. The differences are in technique and setting."
+      : sameT && sameD ? "Same end, and diagnoses in the same domain. The differences are in what exactly is thought to go wrong, and in technique."
+      : sameT ? "Same end, different diagnoses. Each will think the other is working on the wrong problem."
+      : sameD ? "Same domain of diagnosis, different ends. They see the dispute alike but want different things from it."
+      : "Different ends and different diagnoses. Using one where the other is expected will feel like a category mistake.";
+    document.getElementById("verdict").innerHTML = `<p><b>${gist}</b> ${shared.length ? `Both presuppose ${shared.map((v) => H.link(v)).join(", ")}.` : "They share no presupposed view."} ${kin}</p>`;
+  }
+  A.onchange = B.onchange = render;
+  document.getElementById("swap").onclick = () => { [A.value, B.value] = [B.value, A.value]; render(); };
+  render();
+});
+</script>
+</body>
+</html>
