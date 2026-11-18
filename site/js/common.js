@@ -72,7 +72,7 @@
       <nav class="nav">${primary.map(a).join("")}
         <details class="more"><summary${more.some(([h]) => h === here) ? ' aria-current="page"' : ""}>More</summary><div class="more-menu">${more.map(a).join("")}</div></details></nav>
       <div class="search-wrap"><input class="site-search" type="search" placeholder="Search methods, views, people, terms" aria-label="Search the site" autocomplete="off"><div class="search-results" role="listbox" hidden></div></div>
-      <button class="help-btn" type="button" aria-label="Help: how to use this site">? Help</button>
+      <button class="help-btn" type="button" aria-label="Help: how to use this site" title="Help">?</button>
       <button class="theme-toggle" type="button" aria-label="Toggle colour theme">◐ theme</button></div>`;
     document.body.prepend(hdr);
     const ftr = document.createElement("footer");
@@ -116,7 +116,7 @@
     { h: "Bring a dispute of your own", b: `<p><a href="diagnose.html">Diagnose</a> asks a few questions about a dispute and suggests methods that fit it. Its mismatch finder shows what happens when two parties hold different views of the same quarrel.</p>
       <p><a href="compare.html">Compare</a> sets two methods side by side. The <a href="example.html">worked example</a> runs one family dispute through five methods.</p>` },
     { h: "Find your way back", b: `<p>Press <kbd>/</kbd> to search methods, views, people and terms. <a href="paths.html">Paths</a> offers guided tours through the entries. Dotted underlines in the text open glossary cards.</p>
-      <p>The <b>? Help</b> button in the header reopens this guide on any page.</p>` }
+      <p>The <b>?</b> button in the header reopens this guide on any page.</p>` }
   ];
   let dlg;
   function dialog(cls, html) {
